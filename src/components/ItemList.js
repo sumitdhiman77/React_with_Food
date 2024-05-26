@@ -51,7 +51,6 @@ const ItemList = ({ items }) => {
               className="bg-black text-white absolute top-[88px] px-[1px]"
               onClick={() => {
                 handleAddItem(item);
-                console.log(dish.lastChild);
               }}
             >
               Add+
