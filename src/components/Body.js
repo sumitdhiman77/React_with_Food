@@ -1,21 +1,44 @@
 import { useState, useEffect } from "react";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import { ITEM_IMG_URL } from "../utils/constants";
 import RestaurantCard, { withOffer } from "./RestaurantCard";
 import { Link } from "react-router-dom";
 import Shimmer from "./Shimmer";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import { useDispatch } from "react-redux";
 import { showUserInfo } from "../utils/userSlice";
-import { RemoveUserInfo } from "../utils/userSlice";
 const Body = () => {
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 7,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 6,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
+  const [userInput, setUserInput] = useState("");
   const dispatch = useDispatch();
+  const blur = () => {
+    dispatch(showUserInfo(userInput));
+  };
+  const [bannerItems, setBannerItems] = useState([]);
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
-  const [userInput, setUserInput] = useState("");
+  const [title, setTitle] = useState("");
   const RestaurantWithOffer = withOffer(RestaurantCard);
-  const handleLogIn = () => {
-    dispatch(showUserInfo(userInput));
-  };
   useEffect(() => {
     fetchData();
   }, []);
@@ -24,28 +47,37 @@ const Body = () => {
     const data = await fetch(
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=32.219042&lng=76.3234037&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     );
-    const json = await data.json();
-    console.log(json);
-    setListOfRestaurants(
-      json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants
-    );
 
+    const json = await data.json();
+    setTitle(json.data.cards[0].card.card.header.title);
+    setBannerItems(
+      json.data.cards[0].card.card.gridElements.infoWithStyle.info
+    );
+    console.log(json.data.cards[0].card.card.gridElements.infoWithStyle.info);
+    setListOfRestaurants(
+      json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle
+        ?.restaurants ??
+        json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
+          ?.restaurants
+    );
     setFilteredRestaurants(
-      json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants
+      json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle
+        ?.restaurants ??
+        json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
+          ?.restaurants
     );
   };
-
   const onlineStatus = useOnlineStatus();
   if (onlineStatus === false)
     return (
       <h1>Look Like You're offline!!Please Check your Internet Connection;</h1>
     );
 
-  return listOfRestaurants.length === 0 ? (
+  return listOfRestaurants?.length === 0 ? (
     <Shimmer />
   ) : (
-    <div>
-      <div className="flex justify-between pr-44 pl-28 my-3">
+    <div className="bg-slate-50 bg-opacity-20 font-[Lato]">
+      <div className="px-5 mt-14 mb-20 flex justify-between">
         <div>
           <input
             className="py-2 px-6 border border-gray-100 rounded-md "
@@ -69,7 +101,7 @@ const Body = () => {
           </button>
         </div>
         <div>
-          <label>Username:</label>
+          <label className="font-semibold">Username:</label>
           <input
             id="userName"
             className="border border-black p-1 rounded-lg"
@@ -77,12 +109,12 @@ const Body = () => {
             onChange={(e) => {
               setUserInput(e.target.value);
             }}
+            onBlur={() => blur()}
           ></input>
         </div>
-        {handleLogIn()}
         <div>
           <button
-            className="font-medium italic"
+            className="font-medium text-2xl tracking-tighter"
             onClick={() => {
               const topRestaurants = listOfRestaurants.filter(
                 (res) => res.info.avgRating >= 4
@@ -94,20 +126,58 @@ const Body = () => {
           </button>
         </div>
       </div>
-      <div className="flex flex-wrap mx-12">
-        {filteredRestaurants.map((restaurant) => (
-          <Link
-            className="mb-5 overflow-hidden relative z-0"
-            key={restaurant.info.id}
-            to={"/restaurants/" + restaurant.info.id}
+      <div className="ml-[calc(10%+36px)] mr-[calc(10%+36px)] ">
+        <h2 className="font-[Lato] font-extrabold text-2xl tracking-tight line leading-7">
+          {title}
+        </h2>
+        <div className="p-5 mb-16 z-0 border-b-2 border-gray-100">
+          <Carousel
+            swipeable={false}
+            draggable={false}
+            showDots={false}
+            responsive={responsive}
+            ssr={true} // means to render carousel on server-side.
+            infinite={false}
+            autoPlaySpeed={1000}
+            keyBoardControl={true}
+            customTransition="all .5"
+            transitionDuration={500}
+            containerClass="carousel-container"
+            removeArrowOnDeviceType={["tablet", "mobile"]}
+            dotListClass="custom-dot-list-style"
+            itemClass="carousel-item-padding-40-px "
           >
-            {restaurant.info.aggregatedDiscountInfoV3 ? (
-              <RestaurantWithOffer resData={restaurant} />
-            ) : (
-              <RestaurantCard resData={restaurant} />
-            )}
-          </Link>
-        ))}
+            {bannerItems.map((bannerItem) => {
+              const collectionId = bannerItem.action.link.match(/(\d+)/);
+              console.log(collectionId);
+              return (
+                <div key={bannerItem.id}>
+                  <Link to={"/collections/" + collectionId[0]}>
+                    <img
+                      className="w-36 h-48 border-none rounded-full object-cover"
+                      src={ITEM_IMG_URL + bannerItem.imageId}
+                    />
+                  </Link>
+                </div>
+              );
+            })}
+          </Carousel>
+        </div>
+        <div className="h-[529px] flex flex-wrap content-between ">
+          {filteredRestaurants?.map((restaurant) => (
+            <Link
+              className="relative z-0"
+              key={restaurant.info.id}
+              to={"/restaurants/" + restaurant.info.id}
+            >
+              {restaurant.info.aggregatedDiscountInfoV3 ? (
+                <RestaurantWithOffer resData={restaurant} />
+              ) : (
+                <RestaurantCard resData={restaurant} />
+              )}
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );

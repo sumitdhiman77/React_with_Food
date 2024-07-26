@@ -1,64 +1,52 @@
-import { useDispatch } from "react-redux";
-import { ITEM_IMG_URL } from "../utils/constants";
 import { BiCheckboxSquare } from "react-icons/bi";
-import { addItem } from "../utils/cartSlice";
-const ItemList = ({ items }) => {
-  const dispatch = useDispatch();
-  const handleAddItem = (item) => {
-    dispatch(addItem(item));
+import { EXPLORE_IMG_URL } from "../utils/constants";
+import AddButton from "./AddButton";
+import { useState } from "react";
+const ItemList = ({ items, name, cloudinaryImageId, areaName, setItem }) => {
+  const [, forceRender] = useState(undefined);
+  const forceRenderCart = () => {
+    forceRender((prev) => !prev);
   };
-
-  return (
-    <div className="itemList ">
-      {items.map((item) => (
-        <div
-          key={item.card.info.id}
-          className={
-            "flex items-center py-6 dish " +
-            item.card.info.itemAttribute.vegClassifier
-          }
-        >
-          <div className="w-9/12 item-info">
-            {item.card.info.itemAttribute.vegClassifier === "VEG" ? (
-              <BiCheckboxSquare className="text-green-500 w-6 h-8" />
+  return items.map((item, index) => (
+    <div key={item.id}>
+      <div className="h-36 w-[100%] flex justify-between">
+        <div className="w-[80%] gap-y-0 pr-28 grid  bg-white font-[Roboto]">
+          <div className="text-base font-normal tracking-tighter">
+            {item?.itemAttribute?.vegClassifier === "VEG" ? (
+              <BiCheckboxSquare className="text-green-600 text-2xl" />
             ) : (
-              <BiCheckboxSquare className="text-red-500 w-6 h-8" />
+              <BiCheckboxSquare className="text-red-600 text-2xl" />
             )}
-            <h3 className="font-bold text-gray-500 text-base">
-              {item?.card?.info?.name}
-            </h3>
-            <span className="font-bold  text-gray-400 text-sm">
-              ₹
-              {item?.card?.info?.price
-                ? item?.card?.info?.price / 100
-                : item?.card?.info?.defaultPrice / 100}
-            </span>
-            <p className="text-gray-400 text-xs">
-              {item?.card?.info?.description}
-            </p>
+            {item.name}
+            <div className="text-base font-normal tracking-tighter">
+              {item.price ? "₹ " + item.price / 100 : "₹ " + 0}
+            </div>
           </div>
-          <div className="ml-32 relative">
-            {item?.card?.info?.imageId ? (
-              <img
-                src={ITEM_IMG_URL + item?.card?.info?.imageId}
-                className=" h-28 w-32 object-cover rounded-lg shadow-md"
-                alt="Food Image is Here"
-              />
-            ) : (
-              ""
-            )}
-            <button
-              className="bg-black text-white absolute top-[88px] px-[1px]"
-              onClick={() => {
-                handleAddItem(item);
-              }}
-            >
-              Add+
-            </button>
+          <div className="font-normal text-base text-gray-400">
+            {item.description}
           </div>
         </div>
-      ))}
+        <div className="relative h-[113px]">
+          <img
+            className="w-40 h-36 object-cover rounded-lg shadow-lg"
+            alt="yummy food image"
+            src={EXPLORE_IMG_URL + item.imageId}
+          ></img>
+          <div className="absolute bottom-[-9px] left-7">
+            <AddButton
+              item={item}
+              index={index}
+              name={name}
+              areaName={areaName}
+              cloudinaryImageId={cloudinaryImageId}
+              setItem={setItem}
+            />
+          </div>
+        </div>
+      </div>
+      <div className="border-b my-6"></div>
     </div>
-  );
+  ));
 };
+
 export default ItemList;

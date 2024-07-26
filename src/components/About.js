@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <div>
-      <h1>This is About Component Page</h1>
+      <h1> welcome in food junction</h1>
     </div>
   );
 };

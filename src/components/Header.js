@@ -1,57 +1,64 @@
-import { FaMagnifyingGlass } from "react-icons/fa6";
-import { FaBriefcase } from "react-icons/fa6";
-import { FaCompass } from "react-icons/fa6";
-import { FaUser } from "react-icons/fa6";
-import { FaCartShopping } from "react-icons/fa6";
+import {
+  FaBriefcase,
+  FaMagnifyingGlass,
+  FaCompass,
+  FaUser,
+  FaCartShopping,
+} from "react-icons/fa6";
 import { LOGO_URL } from "../utils/constants";
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
-import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
-
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 const Header = () => {
+  let location = useLocation();
+  useEffect(() => {
+    location.pathname = "/"
+      ? document.getElementById("header").classList.add("sticky")
+      : document.getElementById("header").classList.add("fixed");
+  }, []);
+  console.log(location);
+  const userInfo = useSelector((store) => store.user.userInfo);
   const [btnName, setBtnName] = useState("Login");
   const onlineStatus = useOnlineStatus();
-  const dispatch = useDispatch();
   const cartItems = useSelector((store) => store.cart.items);
-  const userName = useSelector((store) => store.user.userInfo);
-
   return (
-    <div className="flex justify-between bg-pink-50 shadow-lg">
-      <div className="flex items-center">
+    <div
+      id={"header"}
+      className="font-[Roboto] bg-white z-[1001] top-0 flex justify-between shadow-lg"
+    >
+      <div className="flex grow items-center">
         <img className="w-[177px]" src={LOGO_URL}></img>
-        {/* <p>Dharamshala,Himachal Pradesh,India</p> */}
       </div>
-      <div className="nav-items">
-        <ul className="list-none p-0 m-0 flex">
+      <div>
+        <ul className="opacity-70 list-none p-0 m-0 flex">
           <li>
-            <Link className="my-8 mr-1  flex items-center" to="/">
+            <Link className="my-8 mr-5  flex items-center" to="/">
               <FaMagnifyingGlass className="text-red-500 m-2" />
               Home
             </Link>
           </li>
           <li>
-            {" "}
-            <Link className="my-8 mr-2 flex items-center" to="/about">
+            <Link className="my-8 mr-5 flex items-center" to="/about">
               <FaBriefcase className="text-red-500 m-2" />
               About
             </Link>
           </li>
           <li>
-            <Link className="my-8 mr-2 flex items-center" to="/contact">
+            <Link className="my-8 mr-5 flex items-center" to="/contact">
               <FaCompass className="text-red-500 m-2" />
               Contact
             </Link>
           </li>
           <li>
-            <Link className="my-8 mr-2 flex items-center" to="/signin">
+            <Link className="my-8 mr-5 flex items-center" to="/signin">
               <FaUser className="text-red-500 m-2" />
               Sign in
             </Link>
           </li>
           <li>
-            <Link className="my-8 mr-2  flex items-center" to="/grocery">
+            <Link className="my-8 mr-5  flex items-center" to="/grocery">
               <FaBriefcase className="text-red-500 m-2" />
               Grocery
             </Link>
@@ -70,19 +77,14 @@ const Header = () => {
               className="font-bold border rounded-md bg-gray-300 p-1"
               onClick={() => {
                 btnName === "Login"
-                  ? setBtnName(userName)
+                  ? setBtnName(userInfo)
                   : setBtnName("Login");
               }}
             >
               {btnName}
             </button>
           </li>
-          <span>
-            Online Status: {onlineStatus ? "✅" : "🔴"}
-            {/* <h6 className="mt-[18px] font-bold text-xs">
-              default User default
-            </h6> */}
-          </span>
+          <span>Online Status: {onlineStatus ? "✅" : "🔴"}</span>
         </ul>
       </div>
     </div>

@@ -1,19 +1,28 @@
 import { CDN_URL } from "../utils/constants";
-const RestaurantCard = (props) => {
-  const { resData } = props;
-  const { name, id, avgRating, cuisines, areaName, cloudinaryImageId } =
+const RestaurantCard = ({ resData }) => {
+  const { name, avgRating, cuisines, areaName, cloudinaryImageId } =
     resData?.info;
   return (
-    <div className="w-44  h-60 my-14 mx-16">
+    <div className="truncate grid w-44 h-60 ml-16 ">
       <img
-        className="w-52  h-36 object-cover rounded-md shadow-md"
+        className="w-52 h-36 object-cover rounded-md shadow-md 
+        transition ease-linear delay-50 hover:-translate-y-1 hover:scale-110 duration-70"
         src={CDN_URL + cloudinaryImageId}
       />
-      <h3>{name}</h3>
-      <h2>{id}</h2>
-      <h5>{areaName}</h5>
-      <h3>{avgRating}</h3>
-      <p>{cuisines.join(",")}</p>
+      <div>
+        <div className="font-bold tracking-tighter-[-0.3px] text-black text-lg">
+          {name}
+        </div>
+        <div className="font-bold tracking-tighter-[-0.3px text-black text-md">
+          {avgRating}
+        </div>
+        <div className="tracking-tighter text-base font-medium text-gray-500">
+          {cuisines.join(",")}
+        </div>
+        <div className="font-medium tracking-tighter text-gray-500 text-base">
+          {areaName}
+        </div>
+      </div>
     </div>
   );
 };
