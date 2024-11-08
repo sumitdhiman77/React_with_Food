@@ -25,7 +25,7 @@ const Chat = () => {
 
       setResponse(data.choices[0].message.content);
     } catch (error) {
-      console.error("Error sending message:", error);
+      // console.error("Error sending message:", error);
     }
   };
 

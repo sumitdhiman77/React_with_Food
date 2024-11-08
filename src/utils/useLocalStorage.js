@@ -5,7 +5,7 @@ const useLocalStorage = (key, initialValue) => {
   const updateValue = (newValue) => {
     setValue(newValue);
     localStorage.setItem(key, JSON.stringify(newValue));
-    console.log(newValue);
+    // console.log(newValue);
   };
   return [value, updateValue];
 };

@@ -6,7 +6,7 @@ import {
 import useLocalStorage from "../utils/useLocalStorage";
 import { useDispatch } from "react-redux";
 const NotificationBanner = ({ item, name, cloudinaryImageId, areaName }) => {
-  console.log(areaName);
+  // console.log(areaName);
   const dispatch = useDispatch();
   const [count, setCount] = useLocalStorage(item.id, null);
   const handleYesClick = (item) => {
@@ -16,9 +16,9 @@ const NotificationBanner = ({ item, name, cloudinaryImageId, areaName }) => {
     dispatch(addRestaurantName(name));
     dispatch(addRestaurantName(cloudinaryImageId));
     dispatch(addRestaurantName(areaName));
-    console.log(count);
+    // console.log(count);
     setCount(count + 1);
-    console.log(count);
+    // console.log(count);
   };
   return (
     <div id="banner" className="">

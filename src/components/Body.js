@@ -54,7 +54,7 @@ const Body = () => {
     setBannerItems(
       json.data.cards[0].card.card.gridElements.infoWithStyle.info
     );
-    console.log(json.data.cards[0].card.card.gridElements.infoWithStyle.info);
+    // console.log(json.data.cards[0].card.card.gridElements.infoWithStyle.info);
     setListOfRestaurants(
       json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants ??
@@ -151,7 +151,9 @@ const Body = () => {
             >
               {bannerItems.map((bannerItem) => {
                 const collectionId = bannerItem.action.link.match(/(\d+)/);
-                console.log(collectionId);
+                {
+                  /* console.log(collectionId); */
+                }
                 return (
                   <div key={bannerItem.id}>
                     <Link to={"/collections/" + collectionId[0]}>

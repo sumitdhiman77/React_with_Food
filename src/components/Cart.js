@@ -58,7 +58,9 @@ const Cart = () => {
             </div>
             {cartItems.map((cartItem) => {
               const count = JSON.parse(localStorage.getItem(cartItem.id));
-              console.log(count);
+              {
+                /* console.log(count); */
+              }
               priceArray.push((cartItem.price / 100) * count);
               return (
                 count && (

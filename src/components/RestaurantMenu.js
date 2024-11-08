@@ -34,7 +34,7 @@ const RestaurantMenu = () => {
 
   return (
     <>
-      {console.log(item)}
+      {/* {console.log(item)} */}
       {item && (
         <NotificationBanner
           item={item}
