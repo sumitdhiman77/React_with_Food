@@ -9,9 +9,7 @@ const cartSlice = createSlice({
       state.items.push(action.payload);
     },
     removeItem: (state, action) => {
-      console.log(current(state));
       state.items.splice(action.payload, 1);
-      console.log(current(state));
     },
     clearCart: (state) => {
       state.items.length = 0;

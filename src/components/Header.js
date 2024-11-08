@@ -10,7 +10,6 @@ import { Link, useLocation } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
 const Header = () => {
   let location = useLocation();
   useEffect(() => {
@@ -18,7 +17,6 @@ const Header = () => {
       ? document.getElementById("header").classList.add("sticky")
       : document.getElementById("header").classList.add("fixed");
   }, []);
-  console.log(location);
   const userInfo = useSelector((store) => store.user.userInfo);
   const [btnName, setBtnName] = useState("Login");
   const onlineStatus = useOnlineStatus();

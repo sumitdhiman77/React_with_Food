@@ -8,6 +8,7 @@ import Shimmer from "./Shimmer";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import { useDispatch } from "react-redux";
 import { showUserInfo } from "../utils/userSlice";
+import Chat from "./chat";
 const Body = () => {
   const responsive = {
     superLargeDesktop: {
@@ -76,110 +77,113 @@ const Body = () => {
   return listOfRestaurants?.length === 0 ? (
     <Shimmer />
   ) : (
-    <div className="bg-slate-50 bg-opacity-20 font-[Lato]">
-      <div className="px-5 mt-14 mb-20 flex justify-between">
-        <div>
-          <input
-            className="py-2 px-6 border border-gray-100 rounded-md "
-            placeholder="Search Restaurant"
-            type="text"
-            value={searchText}
-            onChange={(e) => {
-              setSearchText(e.target.value);
-            }}
-          ></input>
-          <button
-            className="font-semibold  ml-1 italic"
-            onClick={() => {
-              const selectedRestaurants = listOfRestaurants.filter((res) =>
-                res.info.name.toLowerCase().includes(searchText.toLowerCase())
-              );
-              setFilteredRestaurants(selectedRestaurants);
-            }}
-          >
-            Search
-          </button>
-        </div>
-        <div>
-          <label className="font-semibold">Username:</label>
-          <input
-            id="userName"
-            className="border border-black p-1 rounded-lg"
-            value={userInput}
-            onChange={(e) => {
-              setUserInput(e.target.value);
-            }}
-            onBlur={() => blur()}
-          ></input>
-        </div>
-        <div>
-          <button
-            className="font-medium text-2xl tracking-tighter"
-            onClick={() => {
-              const topRestaurants = listOfRestaurants.filter(
-                (res) => res.info.avgRating >= 4
-              );
-              setFilteredRestaurants(topRestaurants);
-            }}
-          >
-            Top Rating Restaurant
-          </button>
-        </div>
-      </div>
-      <div className="ml-[calc(10%+36px)] mr-[calc(10%+36px)] ">
-        <h2 className="font-[Lato] font-extrabold text-2xl tracking-tight line leading-7">
-          {title}
-        </h2>
-        <div className="p-5 mb-16 z-0 border-b-2 border-gray-100">
-          <Carousel
-            swipeable={false}
-            draggable={false}
-            showDots={false}
-            responsive={responsive}
-            ssr={true} // means to render carousel on server-side.
-            infinite={false}
-            autoPlaySpeed={1000}
-            keyBoardControl={true}
-            customTransition="all .5"
-            transitionDuration={500}
-            containerClass="carousel-container"
-            removeArrowOnDeviceType={["tablet", "mobile"]}
-            dotListClass="custom-dot-list-style"
-            itemClass="carousel-item-padding-40-px "
-          >
-            {bannerItems.map((bannerItem) => {
-              const collectionId = bannerItem.action.link.match(/(\d+)/);
-              console.log(collectionId);
-              return (
-                <div key={bannerItem.id}>
-                  <Link to={"/collections/" + collectionId[0]}>
-                    <img
-                      className="w-36 h-48 border-none rounded-full object-cover"
-                      src={ITEM_IMG_URL + bannerItem.imageId}
-                    />
-                  </Link>
-                </div>
-              );
-            })}
-          </Carousel>
-        </div>
-        <div className="h-[529px] flex flex-wrap content-between ">
-          {filteredRestaurants?.map((restaurant) => (
-            <Link
-              className="relative z-0"
-              key={restaurant.info.id}
-              to={"/restaurants/" + restaurant.info.id}
+    <>
+      <div className="bg-slate-50 bg-opacity-20 font-[Lato] relative">
+        <div className="px-5 mt-14 mb-20 flex justify-between">
+          <div>
+            <input
+              className="py-2 px-6 border border-gray-100 rounded-md "
+              placeholder="Search Restaurant"
+              type="text"
+              value={searchText}
+              onChange={(e) => {
+                setSearchText(e.target.value);
+              }}
+            ></input>
+            <button
+              className="font-semibold  ml-1 italic"
+              onClick={() => {
+                const selectedRestaurants = listOfRestaurants.filter((res) =>
+                  res.info.name.toLowerCase().includes(searchText.toLowerCase())
+                );
+                setFilteredRestaurants(selectedRestaurants);
+              }}
             >
-              {restaurant.info.aggregatedDiscountInfoV3 ? (
-                <RestaurantWithOffer resData={restaurant} />
-              ) : (
-                <RestaurantCard resData={restaurant} />
-              )}
-            </Link>
-          ))}
+              Search
+            </button>
+          </div>
+          <div>
+            <label className="font-semibold">Username:</label>
+            <input
+              id="userName"
+              className="border border-black p-1 rounded-lg"
+              value={userInput}
+              onChange={(e) => {
+                setUserInput(e.target.value);
+              }}
+              onBlur={() => blur()}
+            ></input>
+          </div>
+          <div>
+            <button
+              className="font-medium text-2xl tracking-tighter"
+              onClick={() => {
+                const topRestaurants = listOfRestaurants.filter(
+                  (res) => res.info.avgRating >= 4
+                );
+                setFilteredRestaurants(topRestaurants);
+              }}
+            >
+              Top Rating Restaurant
+            </button>
+          </div>
+        </div>
+        <div className="ml-[calc(10%+36px)] mr-[calc(10%+36px)] ">
+          <h2 className="font-[Lato] font-extrabold text-2xl tracking-tight line leading-7">
+            {title}
+          </h2>
+          <div className="p-5 mb-16 z-0 border-b-2 border-gray-100">
+            <Carousel
+              swipeable={false}
+              draggable={false}
+              showDots={false}
+              responsive={responsive}
+              ssr={true} // means to render carousel on server-side.
+              infinite={false}
+              autoPlaySpeed={1000}
+              keyBoardControl={true}
+              customTransition="all .5"
+              transitionDuration={500}
+              containerClass="carousel-container"
+              removeArrowOnDeviceType={["tablet", "mobile"]}
+              dotListClass="custom-dot-list-style"
+              itemClass="carousel-item-padding-40-px "
+            >
+              {bannerItems.map((bannerItem) => {
+                const collectionId = bannerItem.action.link.match(/(\d+)/);
+                console.log(collectionId);
+                return (
+                  <div key={bannerItem.id}>
+                    <Link to={"/collections/" + collectionId[0]}>
+                      <img
+                        className="w-36 h-48 border-none rounded-full object-cover"
+                        src={ITEM_IMG_URL + bannerItem.imageId}
+                      />
+                    </Link>
+                  </div>
+                );
+              })}
+            </Carousel>
+          </div>
+          <div className="h-[529px] flex flex-wrap content-between ">
+            {filteredRestaurants?.map((restaurant) => (
+              <Link
+                className="relative z-0"
+                key={restaurant.info.id}
+                to={"/restaurants/" + restaurant.info.id}
+              >
+                {restaurant.info.aggregatedDiscountInfoV3 ? (
+                  <RestaurantWithOffer resData={restaurant} />
+                ) : (
+                  <RestaurantCard resData={restaurant} />
+                )}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+      <Chat className="sticky top-0" />
+    </>
   );
 };
 export default Body;

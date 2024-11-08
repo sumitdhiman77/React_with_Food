@@ -20,4 +20,5 @@ export const appStore = configureStore({
   reducer: persistedReducer,
   middleware: () => [thunk],
 });
+console.log(typeof appStore.getState());
 export const persistor = persistStore(appStore);

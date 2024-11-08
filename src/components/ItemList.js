@@ -19,7 +19,7 @@ const ItemList = ({ items, name, cloudinaryImageId, areaName, setItem }) => {
             )}
             {item.name}
             <div className="text-base font-normal tracking-tighter">
-              {item.price ? "₹ " + item.price / 100 : "₹ " + 0}
+              {item.price ? "₹ " + item.price / 100 : "sorry, Not deliverable"}
             </div>
           </div>
           <div className="font-normal text-base text-gray-400">
