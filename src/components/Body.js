@@ -8,7 +8,6 @@ import Shimmer from "./Shimmer";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import { useDispatch } from "react-redux";
 import { showUserInfo } from "../utils/userSlice";
-import Chat from "./chat";
 const Body = () => {
   const responsive = {
     superLargeDesktop: {
