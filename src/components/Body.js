@@ -183,7 +183,6 @@ const Body = () => {
           </div>
         </div>
       </div>
-      <Chat className="sticky top-0" />
     </>
   );
 };
