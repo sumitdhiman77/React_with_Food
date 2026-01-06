@@ -1,5 +1,7 @@
 {
+  "version": 2,
   "rewrites": [
-    { "source": "/proxy/swiggy/:path*", "destination": "www.swiggy.com*" }
+    { "source": "/proxy/swiggy/:path*", "destination": "www.swiggy.com*" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
