@@ -3,7 +3,7 @@
   "rewrites": [
     {
       "source": "/proxy/swiggy/:path*",
-      "destination": "https://www.swiggy.com*"
+      "destination": "https://www.swiggy.com/dapi/:path*"
     },
     { "source": "/((?!proxy/swiggy).*)", "destination": "/index.html" }
   ]
