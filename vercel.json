@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/proxy/swiggy/:path*", "destination": "www.swiggy.com*" }
+  ]
+}
