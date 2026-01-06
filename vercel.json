@@ -4,7 +4,6 @@
     {
       "source": "/proxy/swiggy/:path*",
       "destination": "https://www.swiggy.com/dapi/:path*"
-    },
-    { "source": "/:path*", "destination": "/index.html" }
+    }
   ]
 }
