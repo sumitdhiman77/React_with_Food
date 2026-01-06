@@ -8,6 +8,7 @@ import Shimmer from "./Shimmer";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import { useDispatch } from "react-redux";
 import { showUserInfo } from "../utils/userSlice";
+import {ExploreRestaurants_URL} from "../utils/constants"
 const Body = () => {
   const responsive = {
     superLargeDesktop: {
@@ -45,7 +46,7 @@ const Body = () => {
 
   const fetchData = async () => {
     const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=32.219042&lng=76.3234037&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+     ExploreRestaurants_URL
     );
 
     const json = await data.json();
