@@ -1,9 +1,1 @@
-{
-  "version": 2,
-  "rewrites": [
-    {
-      "source": "/proxy/swiggy/:path*",
-      "destination": "https://www.swiggy.com/dapi/:path*"
-    }
-  ]
-}
+{ "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
