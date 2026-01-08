@@ -11,14 +11,16 @@ import RestaurantMenu from "./components/RestaurantMenu";
 import Error from "./components/Error";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { Provider } from "react-redux";
+import { LocationProvider } from "./utils/LocationContext";
+
 import { appStore } from "./utils/appStore";
 const Grocery = lazy(() => import("./components/Grocery"));
 const App = () => {
   return (
-    <Provider store={appStore}>
+    <>
       <Header />
       <Outlet />
-    </Provider>
+    </>
   );
 };
 const appRouter = createBrowserRouter([
@@ -26,22 +28,10 @@ const appRouter = createBrowserRouter([
     path: "/",
     element: <App />,
     children: [
-      {
-        path: "/",
-        element: <Body />,
-      },
-      {
-        path: "/about",
-        element: <About />,
-      },
-      {
-        path: "/contact",
-        element: <Contact />,
-      },
-      {
-        path: "/signIn",
-        element: <SignIn />,
-      },
+      { path: "/", element: <Body /> },
+      { path: "/about", element: <About /> },
+      { path: "/contact", element: <Contact /> },
+      { path: "/signIn", element: <SignIn /> },
       {
         path: "/grocery",
         element: (
@@ -50,22 +40,19 @@ const appRouter = createBrowserRouter([
           </Suspense>
         ),
       },
-      {
-        path: "/collections/:collectionId",
-        element: <ExploreRestaurants />,
-      },
-      {
-        path: "/restaurants/:resId",
-        element: <RestaurantMenu />,
-      },
-      {
-        path: "/cart",
-        element: <Cart />,
-      },
+      { path: "/collections/:collectionId", element: <ExploreRestaurants /> },
+      { path: "/restaurants/:resId", element: <RestaurantMenu /> },
+      { path: "/cart", element: <Cart /> },
     ],
     errorElement: <Error />,
   },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<RouterProvider router={appRouter} />);
+root.render(
+  <Provider store={appStore}>
+    <LocationProvider>
+      <RouterProvider router={appRouter} />
+    </LocationProvider>
+  </Provider>
+);

@@ -13,6 +13,7 @@ const RestaurantMenu = () => {
   const [veg, setVeg] = useState(false);
   const { resId } = useParams();
   const { lat, lng } = useContext(LocationContext); // or state
+  if (!lat || !lng) return <Shimmer />;
   const resInfo = useRestaurantMenu(resId,lat,lng);
   if (resInfo === null) return <Shimmer />;
   const {
