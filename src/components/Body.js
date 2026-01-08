@@ -9,6 +9,7 @@ import useOnlineStatus from "../utils/useOnlineStatus";
 import { useDispatch } from "react-redux";
 import { showUserInfo } from "../utils/userSlice";
 import {ExploreRestaurants_URL} from "../utils/constants"
+import { useContext } from "react";
 import LocationContext from "../utils/LocationContext";
 const Body = () => {
   const responsive = {
@@ -30,6 +31,7 @@ const Body = () => {
       items: 1,
     },
   };
+  const { lat, lng } = useContext(LocationContext);
   const [userInput, setUserInput] = useState("");
   const dispatch = useDispatch();
   const blur = () => {
@@ -42,31 +44,47 @@ const Body = () => {
   const [title, setTitle] = useState("");
   const RestaurantWithOffer = withOffer(RestaurantCard);
   useEffect(() => {
-    fetchData();
-  }, []);
+  if (!lat || !lng) return;
+  fetchData();
+}, [lat, lng]);
+
 
   const fetchData = async () => {
-    const data = await fetch(ExploreRestaurants_URL);
+  try {
+    const res = await fetch(
+      `${ExploreRestaurants_URL}&lat=${lat}&lng=${lng}`
+    );
 
-    const json = await data.json();
-    setTitle(json.data.cards[0].card.card.header.title);
+    const json = await res.json();
+
+    if (!json?.data?.cards) {
+      console.error("Invalid Swiggy response", json);
+      return;
+    }
+
+    setTitle(
+      json.data.cards[0]?.card?.card?.header?.title || ""
+    );
+
     setBannerItems(
-      json.data.cards[0].card.card.gridElements.infoWithStyle.info
+      json.data.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info || []
     );
-    // console.log(json.data.cards[0].card.card.gridElements.infoWithStyle.info);
-    setListOfRestaurants(
-      json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle
-        ?.restaurants ??
-        json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
-          ?.restaurants
-    );
-    setFilteredRestaurants(
-      json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle
-        ?.restaurants ??
-        json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
-          ?.restaurants
-    );
-  };
+
+    const restaurants =
+      json?.data?.cards
+        ?.find(
+          (c) =>
+            c?.card?.card?.gridElements?.infoWithStyle?.restaurants
+        )
+        ?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+
+    setListOfRestaurants(restaurants);
+    setFilteredRestaurants(restaurants);
+  } catch (err) {
+    console.error("Fetch error:", err);
+  }
+};
+
   const onlineStatus = useOnlineStatus();
   if (onlineStatus === false)
     return (
