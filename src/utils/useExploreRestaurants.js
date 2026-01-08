@@ -26,7 +26,7 @@ console.log("json is ",json);
   cards.find(
     (c) => c?.card?.card?.header?.title
   )?.card?.card?.header || null;
-console.log("headerCard is",headerCard);
+console.log("header is",header);
       // 🔹 RESTAURANTS
       const restaurants =
   cards.find(
