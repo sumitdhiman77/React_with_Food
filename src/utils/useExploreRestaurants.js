@@ -16,8 +16,9 @@ const useExploreRestaurants = (collectionId) => {
     const res = await fetch(
       `${ExploreRestaurants_URL}&lat=${lat}&lng=${lng}&collection=${collectionId}`
     );
+    console.log(res)
     const json = await res.json();
-
+console.log(json)
     const masthead = json?.data?.cards?.find(
       c => c?.card?.card?.["@type"]?.includes("CollectionMasthead")
     )?.card?.card;
