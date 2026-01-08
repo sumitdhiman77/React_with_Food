@@ -1,5 +1,6 @@
 import useExploreRestaurants from "../utils/useExploreRestaurants";
 import { useParams } from "react-router-dom";
+import useExploreRestaurants from "../utils/useExploreRestaurants";
 import Shimmer from "./Shimmer";
 import RestaurantCard from "./RestaurantCard";
 import { Link } from "react-router-dom";
