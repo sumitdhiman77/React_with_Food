@@ -6,10 +6,11 @@ import { Link } from "react-router-dom";
 const ExploreRestaurants = () => {
   const { collectionId } = useParams();
   const data = useExploreRestaurants(collectionId);
-  if (!data || !data.header) return <Shimmer />;
+
+  if (!data) return <Shimmer />;
+
   const { header, restaurants } = data;
-  console.log(header, restaurants);
-  console.log("this is" + data);
+
   return (
     <div className="px-5 grow">
       <div className="mx-7 pt-16 pb-4">
@@ -17,19 +18,16 @@ const ExploreRestaurants = () => {
         <p className="text-lg">{header.description}</p>
         <p className="opacity-60">{header.count}</p>
       </div>
+
       <div className="flex flex-wrap gap-6 px-5">
-        {restaurants.length === 0 ? (
-          <p className="opacity-60">Loading restaurants…</p>
-        ) : (
-          restaurants.map((restaurant) => (
-            <Link
-              key={restaurant.info.id}
-              to={`/restaurants/${restaurant.info.id}`}
-            >
-              <RestaurantCard resData={restaurant.info} />
-            </Link>
-          ))
-        )}
+        {restaurants.map((restaurant) => (
+          <Link
+            key={restaurant.info.id}
+            to={`/restaurants/${restaurant.info.id}`}
+          >
+            <RestaurantCard resData={restaurant.info} />
+          </Link>
+        ))}
       </div>
     </div>
   );
