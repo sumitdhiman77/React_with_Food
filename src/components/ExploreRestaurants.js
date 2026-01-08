@@ -1,3 +1,9 @@
+import useExploreRestaurants from "../utils/useExploreRestaurants";
+import { useParams } from "react-router-dom";
+import Shimmer from "./Shimmer";
+import RestaurantCard from "./RestaurantCard";
+import { Link } from "react-router-dom";
+
 const ExploreRestaurants = () => {
   const { collectionId } = useParams();
   const data = useExploreRestaurants(collectionId);
@@ -28,3 +34,5 @@ const ExploreRestaurants = () => {
     </div>
   );
 };
+
+export default ExploreRestaurants;
