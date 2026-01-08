@@ -1,7 +1,8 @@
 import useExploreRestaurants from "../utils/useExploreRestaurants";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Shimmer from "./Shimmer";
 import RestaurantCard from "./RestaurantCard";
+import { Link } from "react-router-dom";
 
 const ExploreRestaurants = () => {
   const { collectionId } = useParams();
@@ -12,17 +13,15 @@ const ExploreRestaurants = () => {
   }
 
   return (
-    <div className="px-5 overflow-x-hidden overflow-y-auto grow">
-      <div className="mx-5 px-5 flex flex-row flex-wrap">
-        {restaurantsList.map((restaurant) => (
-          <Link
-            key={restaurant.info.id}
-            to={`/restaurants/${restaurant.info.id}`}
-          >
-            <RestaurantCard resData={restaurant} />
-          </Link>
-        ))}
-      </div>
+    <div className="px-5 pt-20 flex flex-wrap gap-4">
+      {restaurantsList.map((restaurant) => (
+        <Link
+          key={restaurant.info.id}
+          to={`/restaurants/${restaurant.info.id}`}
+        >
+          <RestaurantCard resData={restaurant} />
+        </Link>
+      ))}
     </div>
   );
 };
