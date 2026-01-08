@@ -3,7 +3,7 @@ import { ExploreRestaurants_URL } from "./constants";
 import LocationContext from "./LocationContext";
 
 const useExploreRestaurants = (collectionId) => {
-  const [restaurantsList, setRestaurantsList] = useState([]);
+  const [restaurants, setRestaurants] = useState([]);
   const { lat, lng } = useContext(LocationContext);
 
   useEffect(() => {
@@ -14,26 +14,28 @@ const useExploreRestaurants = (collectionId) => {
   const fetchData = async () => {
     try {
       const res = await fetch(
-        `${ExploreRestaurants_URL}&lat=${lat}&lng=${lng}${
-          collectionId ? `&collection=${collectionId}` : ""
-        }&sortBy=&filters=&type=rcv2`
+        `${ExploreRestaurants_URL}&lat=${lat}&lng=${lng}&collection=${collectionId}`
       );
 
       const json = await res.json();
 
-      const restaurants =
-        json?.data?.cards?.find(
-          (c) => c?.card?.card?.gridElements?.infoWithStyle?.restaurants
-        )?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+      const restaurantCards =
+        json?.data?.cards
+          ?.filter(
+            (c) =>
+              c?.card?.card?.["@type"] ===
+              "type.googleapis.com/swiggy.presentation.food.v2.Restaurant"
+          )
+          .map((c) => c.card.card) || [];
 
-      setRestaurantsList(restaurants);
+      setRestaurants(restaurantCards);
     } catch (err) {
       console.error("Explore restaurants error:", err);
-      setRestaurantsList([]);
+      setRestaurants([]);
     }
   };
 
-  return restaurantsList;
+  return restaurants;
 };
 
 export default useExploreRestaurants;

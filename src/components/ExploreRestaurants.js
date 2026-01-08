@@ -6,15 +6,15 @@ import { Link } from "react-router-dom";
 
 const ExploreRestaurants = () => {
   const { collectionId } = useParams();
-  const restaurantsList = useExploreRestaurants(collectionId);
+  const restaurants = useExploreRestaurants(collectionId);
 
-  if (!restaurantsList || restaurantsList.length === 0) {
+  if (!restaurants || restaurants.length === 0) {
     return <Shimmer />;
   }
 
   return (
-    <div className="px-5 pt-20 flex flex-wrap gap-4">
-      {restaurantsList.map((restaurant) => (
+    <div className="px-5 pt-20 flex flex-wrap gap-6">
+      {restaurants.map((restaurant) => (
         <Link
           key={restaurant.info.id}
           to={`/restaurants/${restaurant.info.id}`}
