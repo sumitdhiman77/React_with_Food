@@ -13,11 +13,13 @@ const ExploreRestaurants = () => {
 
   return (
     <div className="px-5 grow">
-      <div className="mx-7 pt-16 pb-4">
-        <h1 className="text-[40px] font-semibold">{header.title}</h1>
-        <p className="text-lg">{header.description}</p>
-        <p className="opacity-60">{header.count}</p>
-      </div>
+      {header && (
+        <div className="mx-7 pt-16 pb-4">
+          <h1 className="text-[40px] font-semibold">{header.title}</h1>
+          <p className="text-lg">{header.description}</p>
+          <p className="opacity-60">{header.count}</p>
+        </div>
+      )}
 
       <div className="flex flex-wrap gap-6 px-5">
         {restaurants.map((restaurant) => (

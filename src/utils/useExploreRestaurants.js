@@ -22,20 +22,20 @@ console.log("json is ",json);
       const cards = json?.data?.cards || [];
 
       // 🔹 HEADER (collection masthead)
-      const headerCard = cards.find(
-        (c) =>
-          c?.card?.card?.["@type"] ===
-          "type.googleapis.com/swiggy.gandalf.widgets.v2.CollectionMasthead"
-      )?.card?.card;
+      const header =
+  cards.find(
+    (c) => c?.card?.card?.header?.title
+  )?.card?.card?.header || null;
 console.log("headerCard is",headerCard);
       // 🔹 RESTAURANTS
       const restaurants =
-        cards.find(
-          (c) => c?.card?.card?.gridElements?.infoWithStyle?.restaurants
-        )?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+  cards.find(
+    (c) => c?.card?.card?.gridElements?.infoWithStyle?.restaurants
+  )?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+
 console.log("restaurants is",restaurants);
       setData({
-        header: headerCard,
+        header,
         restaurants,
       });
     } catch (err) {
