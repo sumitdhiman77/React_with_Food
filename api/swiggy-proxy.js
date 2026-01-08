@@ -4,7 +4,7 @@ export default async function handler(req, res) {
       ? "https://react-with-food.vercel.app"
       : "*";
 
-  // CORS headers
+  // CORS
   res.setHeader("Access-Control-Allow-Origin", ALLOWED_ORIGIN);
   res.setHeader("Access-Control-Allow-Methods", "GET, OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type");
@@ -22,8 +22,9 @@ export default async function handler(req, res) {
 
     const queryString = new URLSearchParams(query).toString();
 
+    // ✅ FIX: do NOT add /dapi again
     const swiggyURL =
-      `https://www.swiggy.com/dapi/${path}` +
+      `https://www.swiggy.com/${path}` +
       (queryString ? `?${queryString}` : "");
 
     const response = await fetch(swiggyURL, {
@@ -35,18 +36,25 @@ export default async function handler(req, res) {
       },
     });
 
-    const data = await response.json();
+    const text = await response.text();
+
+    // 🔥 Prevent JSON crash if Swiggy blocks
+    if (text.startsWith("<")) {
+      throw new Error("Swiggy blocked request (HTML response)");
+    }
 
     res.setHeader(
       "Cache-Control",
       "s-maxage=300, stale-while-revalidate=600"
     );
 
-    res.status(200).json(data);
+    res.status(200).send(text);
   } catch (err) {
+    console.error("Proxy error:", err);
     res.status(500).json({
       error: "Proxy failed",
       message: err.message,
     });
   }
 }
+
