@@ -15,9 +15,9 @@ const RestaurantCard = ({ resData }) => {
         <div className="font-bold tracking-tighter-[-0.3px text-black text-md">
           {avgRating}
         </div>
-        <div className="tracking-tighter text-base font-medium text-gray-500">
+        {/* <div className="tracking-tighter text-base font-medium text-gray-500">
           {cuisines.join(",")}
-        </div>
+        </div> */}
         <div className="font-medium tracking-tighter text-gray-500 text-base">
           {areaName}
         </div>
