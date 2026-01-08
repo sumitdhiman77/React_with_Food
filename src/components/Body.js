@@ -9,6 +9,7 @@ import useOnlineStatus from "../utils/useOnlineStatus";
 import { useDispatch } from "react-redux";
 import { showUserInfo } from "../utils/userSlice";
 import {ExploreRestaurants_URL} from "../utils/constants"
+import LocationContext from "../utils/LocationContext";
 const Body = () => {
   const responsive = {
     superLargeDesktop: {
@@ -45,9 +46,7 @@ const Body = () => {
   }, []);
 
   const fetchData = async () => {
-    const data = await fetch(
-  `${ExploreRestaurants_URL}&lat=${lat}&lng=${lng}`
-);
+    const data = await fetch(ExploreRestaurants_URL);
 
     const json = await data.json();
     setTitle(json.data.cards[0].card.card.header.title);
