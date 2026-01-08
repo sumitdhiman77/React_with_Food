@@ -11,7 +11,7 @@ const ExploreRestaurants = () => {
   if (!data || !data.header) return <Shimmer />;
 
   const { header, restaurants } = data;
-
+  console.log(data);
   return (
     <div className="px-5 grow">
       <div className="mx-7 pt-16 pb-4">
