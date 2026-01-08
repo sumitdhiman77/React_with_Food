@@ -8,30 +8,31 @@ const ExploreRestaurants = () => {
   const { collectionId } = useParams();
   const data = useExploreRestaurants(collectionId);
 
-  console.log(data);
-
-  if (!data) return <Shimmer />;
+  if (!data || !data.header) return <Shimmer />;
 
   const { header, restaurants } = data;
 
   return (
     <div className="px-5 grow">
       <div className="mx-7 pt-16 pb-4">
-        <h1 className="text-[40px] font-semibold">
-          {header?.card?.card?.title}
-        </h1>
-        <p className="text-lg">{header?.card?.card?.description}</p>
+        <h1 className="text-[40px] font-semibold">{header.title}</h1>
+        <p className="text-lg">{header.description}</p>
+        <p className="opacity-60">{header.count}</p>
       </div>
 
       <div className="flex flex-wrap gap-6 px-5">
-        {restaurants.map((restaurant) => (
-          <Link
-            key={restaurant.info.id}
-            to={`/restaurants/${restaurant.info.id}`}
-          >
-            <RestaurantCard resData={restaurant.info} />
-          </Link>
-        ))}
+        {restaurants.length === 0 ? (
+          <p className="opacity-60">Loading restaurants…</p>
+        ) : (
+          restaurants.map((restaurant) => (
+            <Link
+              key={restaurant.info.id}
+              to={`/restaurants/${restaurant.info.id}`}
+            >
+              <RestaurantCard resData={restaurant.info} />
+            </Link>
+          ))
+        )}
       </div>
     </div>
   );
