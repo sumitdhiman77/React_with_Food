@@ -16,7 +16,7 @@ const useExploreRestaurants = (collectionId) => {
       const res = await fetch(
         `${ExploreRestaurants_URL}&lat=${lat}&lng=${lng}&collection=${collectionId}`
       );
-
+console.log(res);
       const json = await res.json();
 
       const cards = json?.data?.cards || [];
@@ -27,13 +27,13 @@ const useExploreRestaurants = (collectionId) => {
           c?.card?.card?.["@type"] ===
           "type.googleapis.com/swiggy.gandalf.widgets.v2.CollectionMasthead"
       )?.card?.card;
-
+console.log("headerCard is",headerCard);
       // 🔹 RESTAURANTS
       const restaurants =
         cards.find(
           (c) => c?.card?.card?.gridElements?.infoWithStyle?.restaurants
         )?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
-
+console.log("restaurants is",restaurants);
       setData({
         header: headerCard,
         restaurants,
