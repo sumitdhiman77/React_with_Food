@@ -1,7 +1,6 @@
 import { CDN_URL } from "../utils/constants";
 const RestaurantCard = ({ resData }) => {
-  const { name, avgRating, cuisines, areaName, cloudinaryImageId } =
-    resData?.info;
+  const { name, avgRating, cuisines, areaName, cloudinaryImageId } = resData;
   return (
     <div className="truncate grid w-44 h-60 ml-16 ">
       <img
