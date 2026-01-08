@@ -46,8 +46,8 @@ const Body = () => {
 
   const fetchData = async () => {
     const data = await fetch(
-     ExploreRestaurants_URL
-    );
+  `${ExploreRestaurants_URL}&lat=${lat}&lng=${lng}`
+);
 
     const json = await data.json();
     setTitle(json.data.cards[0].card.card.header.title);
