@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import RestaurantCategory from "./RestaurantCategory";
 import { FaBicycle } from "react-icons/fa6";
 import Shimmer from "./Shimmer";
