@@ -18,7 +18,7 @@ const useExploreRestaurants = (collectionId) => {
       );
 console.log(res);
       const json = await res.json();
-
+console.log("json is ",json);
       const cards = json?.data?.cards || [];
 
       // 🔹 HEADER (collection masthead)
