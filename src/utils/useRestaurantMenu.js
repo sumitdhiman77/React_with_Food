@@ -11,7 +11,8 @@ const useRestaurantMenu = (resId, lat, lng) => {
 
   const fetchMenu = async () => {
     try {
-      const response = await fetch(`/data/207611.json`);
+      const response = await fetch("/data/207611.json");
+
       console.log("response is",response);
       // if (!response.ok) {
       //   throw new Error("Menu fetch failed");
