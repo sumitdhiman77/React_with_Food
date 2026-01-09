@@ -19,7 +19,7 @@ const RestaurantMenu = () => {
   // if (!lat || !lng) return <Shimmer />;
   const resInfo = useRestaurantMenu(resId);
   console.log(resInfo);
-  if (resInfo === null) return <Shimmer />;
+  if (!resInfo) return <Shimmer />;
   const {
     name,
     avgRatingString,

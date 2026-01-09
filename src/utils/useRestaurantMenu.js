@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
-import { MENU_URL } from "../utils/constants";
 
-const useRestaurantMenu = (resId, lat, lng) => {
+const useRestaurantMenu = (resId) => {
   const [resInfo, setResInfo] = useState(null);
 
   useEffect(() => {
@@ -11,17 +10,16 @@ const useRestaurantMenu = (resId, lat, lng) => {
 
   const fetchMenu = async () => {
     try {
-      const response = await fetch("/data/207611.json");
+      const response = await fetch(`/data/${resId}.json`);
 
-      console.log("response is",response);
-      // if (!response.ok) {
-      //   throw new Error("Menu fetch failed");
-      // }
+      if (!response.ok) {
+        throw new Error("Menu fetch failed");
+      }
+
       const json = await response.json();
-      console.log(json);
-      setResInfo(json?.data);
+      setResInfo(json.data);
     } catch (err) {
-      console.error("Swiggy menu error:", err);
+      console.error("Menu error:", err);
     }
   };
 
