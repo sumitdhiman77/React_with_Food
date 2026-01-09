@@ -12,7 +12,7 @@ const useRestaurantMenu = (resId, lat, lng) => {
   const fetchMenu = async () => {
     try {
       const response = await fetch(
-        `${MENU_URL}&lat=${lat}&lng=${lng}&restaurantId=${resId}`
+        `https://proxy.corsfix.com/?${MENU_URL}&lat=${lat}&lng=${lng}&restaurantId=${resId}`
       );
 
       if (!response.ok) {
