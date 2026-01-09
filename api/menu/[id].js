@@ -1,6 +1,6 @@
-import menu from menu_917055.json;
+import menu from "../src/data/menu_207611.json";
 
 console.log(menu);
-export default function handler(){
-  res.status(200).json(menu)
+export default function handler() {
+  res.status(200).json(menu);
 }
