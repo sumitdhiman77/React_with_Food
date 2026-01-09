@@ -140,4 +140,4 @@ const RestaurantMenu = () => {
   );
 };
 
-export default RestaurantMen;
+export default RestaurantMenu;
