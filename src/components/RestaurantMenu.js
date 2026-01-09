@@ -32,11 +32,11 @@ const RestaurantMenu = () => {
     cloudinaryImageId,
   } = resInfo?.cards[2]?.card?.card?.info;
   const categories =
-    resInfo?.cards[3]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.filter(
-      (c) =>
-        c?.card?.card?.["@type"] ===
-        "type.googleapis.com/swiggy.presentation.food.v2.MenuVegFilterAndBadge"
-    );
+  resInfo?.cards[3]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.filter(
+    (c) =>
+      c?.card?.card?.["@type"] ===
+      "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
+  );
 
   return (
     <>
@@ -108,10 +108,14 @@ const RestaurantMenu = () => {
             />
             <span className="w-16 h-10 flex items-center flex-shrink-0 ml-4 p-1 bg-gray-300 rounded-full duration-300 ease-in-out peer-checked:bg-green-400 after:w-8 after:h-8 after:bg-white after:rounded-full after:shadow-md after:duration-300 peer-checked:after:translate-x-6"></span>
           </label>
-          {categories.map((category, index) => {
-            const vegItems = category.card.card.itemCards.filter(
-              (item) => item?.card?.info?.itemAttribute?.vegClassifier === "VEG"
-            );
+          {categories?.map((category, index) => {
+  const items = category?.card?.card?.itemCards || [];
+
+  const vegItems = items.filter(
+    (item) =>
+      item?.card?.info?.itemAttribute?.vegClassifier === "VEG"
+  );
+
             return (
               <div
                 key={category?.card?.card?.title}
