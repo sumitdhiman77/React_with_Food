@@ -1,27 +1,15 @@
 import { useState, useEffect } from "react";
+import menu from "../data/207611.json";
 
 const useRestaurantMenu = (resId) => {
   const [resInfo, setResInfo] = useState(null);
 
   useEffect(() => {
     if (!resId) return;
-    fetchMenu();
+
+    // Directly set the imported JSON
+    setResInfo(menu.data);
   }, [resId]);
-
-  const fetchMenu = async () => {
-    try {
-      const response = await fetch(`/data/${resId}.json`);
-
-      if (!response.ok) {
-        throw new Error("Menu fetch failed");
-      }
-
-      const json = await response.json();
-      setResInfo(json.data);
-    } catch (err) {
-      console.error("Menu error:", err);
-    }
-  };
 
   return resInfo;
 };

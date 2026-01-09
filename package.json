@@ -4,7 +4,7 @@
   "description": "This is a react library based food ordering application",
   "proxy": "http://localhost:1234",
   "scripts": {
-    "start": "parcel index.html",
+    "dev": "parcel index.html",
     "build": "parcel build index.html --dist-dir dist --public-url /",
     "test": "jest",
     "watch-test": "jest --watch"
