@@ -4,8 +4,7 @@ export const LOGO_URL =
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpy3ngeHBciOImZmflgiGRiycD92hu_5xcSQ&usqp=CAU";
 
 export const MENU_URL =
-"https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=32.219042&lng=76.26450&restaurantId=917055"
-  // "/api/swiggy-proxy?path=dapi/menu/pl&page-type=REGULAR_MENU&complete-menu=true";
+  "/api/swiggy-proxy?path=dapi/menu/pl&page-type=REGULAR_MENU&complete-menu=true";
 
 export const ExploreRestaurants_URL =
   "/api/swiggy-proxy?path=dapi/restaurants/list/v5";
