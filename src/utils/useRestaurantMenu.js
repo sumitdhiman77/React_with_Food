@@ -1,5 +1,6 @@
+// src/utils/useRestaurantMenu.js
 import { useState, useEffect } from "react";
-import menu from "../data/207611.json";
+import menu from "../data/207611.json"; // Import JSON directly
 
 const useRestaurantMenu = (resId) => {
   const [resInfo, setResInfo] = useState(null);
@@ -7,8 +8,10 @@ const useRestaurantMenu = (resId) => {
   useEffect(() => {
     if (!resId) return;
 
-    // Directly set the imported JSON
-    setResInfo(menu.data);
+    // Since JSON is imported, we can filter if needed
+    if (menu.data && resId === "207611") {
+      setResInfo(menu.data);
+    }
   }, [resId]);
 
   return resInfo;
