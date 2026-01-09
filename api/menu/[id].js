@@ -1,4 +1,4 @@
-import menu from "../../src/data/menu_207611.json";
+import menu from "../../public/data";
 
 console.log(menu);
 export default function handler(req, res) {
