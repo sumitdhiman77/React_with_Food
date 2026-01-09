@@ -14,10 +14,10 @@ const RestaurantMenu = () => {
   const [item, setItem] = useState();
   const [veg, setVeg] = useState(false);
   const { resId } = useParams();
-  const { lat, lng } = useContext(LocationContext); // or state
-  if (!lat || !lng) return <Shimmer />;
-  const resInfo = useRestaurantMenu(resId,lat,lng);
-  console.log("resInfo");
+  // const { lat, lng } = useContext(LocationContext); // or state
+  // if (!lat || !lng) return <Shimmer />;
+  const resInfo = useRestaurantMenu(resId);
+  console.log(resInfo);
   if (resInfo === null) return <Shimmer />;
   const {
     name,

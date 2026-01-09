@@ -5,9 +5,9 @@ const useRestaurantMenu = (resId, lat, lng) => {
   const [resInfo, setResInfo] = useState(null);
 
   useEffect(() => {
-    if (!resId || !lat || !lng) return;
+    if (!resId) return;
     fetchMenu();
-  }, [resId, lat, lng]);
+  }, [resId]);
 
   const fetchMenu = async () => {
     try {
