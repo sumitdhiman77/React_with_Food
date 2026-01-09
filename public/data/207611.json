@@ -1,1 +1,182 @@
-{ "hello": "world" }
+{
+  "statusCode": 0,
+  "data": {
+    "statusMessage": "done successfully",
+    "cards": [
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.TextBoxV2",
+            "text": "KFC",
+            "headerStyling": {
+              "textColor": "text_Highest_Emphasis",
+              "textVariant": "header_H3_Black"
+            }
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.RestaurantBlTab",
+            "tabs": [{ "id": "Order Online", "title": "Order Online" }]
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "917055",
+              "name": "KFC",
+              "city": "Dharamshala",
+              "slugs": {
+                "restaurant": "kfc-dharamshala-kangra",
+                "city": "dharamshala"
+              },
+              "uniqueId": "e51e6528-4859-48c8-8fed-e84c17dc2d76",
+              "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2026/1/8/3d365002-db71-4f6c-83e6-3058a0415171_917055.JPG",
+              "locality": "Dharamshala",
+              "areaName": "Kangra",
+              "costForTwo": "40000",
+              "costForTwoMessage": "₹400 for two",
+              "cuisines": ["Burgers", "Fast Food"],
+              "avgRating": 4.2,
+              "feeDetails": { "restaurantId": "917055", "fees": [{}] },
+              "parentId": "547",
+              "avgRatingString": "4.2",
+              "totalRatingsString": "547 ratings",
+              "sla": {
+                "restaurantId": "917055",
+                "serviceability": "NON_SERVICEABLE",
+                "rainMode": "RAIN_MODE_NONE",
+                "longDistance": "LONG_DISTANCE_NOT_LONG_DISTANCE",
+                "iconType": "ICON_TYPE_EMPTY"
+              },
+              "availability": {
+                "nextOpenTimeMessage": "Opens next at 5:30 am, Thursday",
+                "nextOpenTime": "1970-01-01 05:30:00",
+                "visibility": true,
+                "restaurantClosedMeta": {}
+              },
+              "aggregatedDiscountInfo": { "visible": true },
+              "badges": {},
+              "slugString": "kfc-dharamshala-kangra",
+              "labels": [
+                { "title": "Timings", "message": "null" },
+                {
+                  "title": "Address",
+                  "message": "KFC at Food Court, Unit No.1 Kangra Dharamshala road Opposite Tara Devi Mandir Kangra, Kangra Town Kangra Himachal Pradesh 176001"
+                },
+                { "title": "Cuisines", "message": "Burgers,Fast Food" }
+              ],
+              "totalRatings": 547,
+              "aggregatedDiscountInfoV2": { "visible": true },
+              "type": "F",
+              "headerBanner": {
+                "url": "swiggy://webview?is_external=false&webview_url=https://www.swiggy.com/restaurant-info/917055"
+              },
+              "ratingSlab": "RATING_SLAB_5",
+              "availabilityServiceabilityMessage": "Does not deliver to your location",
+              "orderabilityCommunication": {
+                "title": { "text": "Wish you were" },
+                "subTitle": { "text": "CLOSER!" },
+                "message": {
+                  "text": "This location is outside the outlet's delivery area",
+                  "textColour": "negative"
+                },
+                "customIcon": {
+                  "bgGradientColorStart": "#F64C41",
+                  "bgGradientColorEnd": "#E53554"
+                },
+                "commsStyling": {}
+              },
+              "cartOrderabilityNudgeBanner": {
+                "parameters": {},
+                "presentation": {}
+              },
+              "latLong": "32.1217974,76.2876942",
+              "backgroundImageOverlayInfo": {},
+              "featuredSectionInfo": {}
+            },
+            "analytics": {}
+          },
+          "relevance": {
+            "type": "RELEVANCE_TYPE_CHECK_ORDERABILITY_AND_SHOW_MENU_OFFER_NUDGE",
+            "sectionId": "MENU_ITEM_CART_UPDATE_POP_CROUTON"
+          }
+        }
+      },
+      {
+        "groupedCard": {
+          "cardGroupMap": {
+            "REGULAR": {
+              "cards": [
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.MenuVegFilterAndBadge",
+                      "badges": {},
+                      "vegOnlyDetails": {
+                        "imageId": "AutoVegOnly_qkjowj",
+                        "title": "Showing only vegetarian options.",
+                        "description": "Tap on the VEG ONLY button to turn off the setting"
+                      },
+                      "topRatedFilter": {
+                        "attributes": { "displayText": "Ratings 4.0+" }
+                      },
+                      "kidsCategoryFilter": {
+                        "attributes": {
+                          "displayText": "Kids Favourites",
+                          "tooltip": {
+                            "enabled": true,
+                            "displayText": "Kids Favourites Filter applied. Remove this filter to see the full Menu."
+                          }
+                        }
+                      },
+                      "vegFilter": { "attributes": { "displayText": "VEG" } },
+                      "nonvegFilter": {
+                        "attributes": { "displayText": "NONVEG" }
+                      }
+                    },
+                    "relevance": {
+                      "type": "RELEVANCE_TYPE_ON_MENU_FILTER_TOGGLED",
+                      "sectionId": "MENU_FILTER_TOGGLE"
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.RestaurantLicenseInfo",
+                      "type": "FSSAI",
+                      "imageId": "fssai_final_edss9i",
+                      "text": ["License No. 10012011000726"]
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.RestaurantAddress",
+                      "name": "KFC",
+                      "area": "Kangra",
+                      "completeAddress": "KFC at Food Court, Unit No.1 Kangra Dharamshala road Opposite Tara Devi Mandir Kangra, Kangra Town Kangra Himachal Pradesh 176001"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "firstOffsetRequest": true,
+    "isQCLink": false
+  },
+  "tid": "b89baa34-4bf9-4ace-b182-40949856eb28",
+  "sid": "p102cdd3-8592-4857-9062-f74d29f730fa",
+  "deviceId": "21586c2f-0280-981d-9ddf-e8842937269e",
+  "csrfToken": "aRpeIXwsn5sf-e3NF3po_1pU2kAl7ElOXl168t_I"
+}
