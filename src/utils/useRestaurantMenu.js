@@ -18,6 +18,7 @@ const useRestaurantMenu = (resId, lat, lng) => {
       }
 
       const json = await response.json();
+      console.log(json);
       setResInfo(json?.data);
     } catch (err) {
       console.error("Swiggy menu error:", err);
