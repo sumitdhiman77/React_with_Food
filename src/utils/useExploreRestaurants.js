@@ -23,8 +23,11 @@ const useExploreRestaurants = (collectionId) => {
 
       // 🔹 HEADER (collection masthead)
       const header =
-        cards.find((c) => c?.card?.card?.header?.title)?.card?.card?.header ||
-        null;
+        cards.find((c) =>
+          c?.card?.card
+            ? "@type"
+            : "type.googleapis.com/swiggy.gandalf.widgets.v2.CollectionMasthead"
+        )?.card?.card || null;
       console.log("header is", header);
       // 🔹 RESTAURANTS
       const restaurants =

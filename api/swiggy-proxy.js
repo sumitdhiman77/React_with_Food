@@ -45,7 +45,8 @@ export default async function handler(req, res) {
     res.setHeader(
       "Cache-Control",
       "s-maxage=300, stale-while-revalidate=600",
-      res.setHeader("Content-Type", "application/json")
+      "Content-Type",
+      "application/json"
     );
 
     res.status(200).send(text);
