@@ -56,7 +56,7 @@ const Body = () => {
     );
 
     const json = await res.json();
-
+console.log("in body json is",json);
     if (!json?.data?.cards) {
       console.error("Invalid Swiggy response", json);
       return;
@@ -77,7 +77,7 @@ const Body = () => {
             c?.card?.card?.gridElements?.infoWithStyle?.restaurants
         )
         ?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
-
+console.log("restaurants are",restaurants);
     setListOfRestaurants(restaurants);
     setFilteredRestaurants(restaurants);
   } catch (err) {

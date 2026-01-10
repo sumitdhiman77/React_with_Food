@@ -1,5 +1,6 @@
 import { CDN_URL } from "../utils/constants";
 const RestaurantCard = ({ resData }) => {
+  console.log("in restaurant card resdata is:",resdata);
   const { name, avgRating, cuisines, areaName, cloudinaryImageId } = resData;
   return (
     <div className="truncate grid w-44 h-60 ml-16 ">
