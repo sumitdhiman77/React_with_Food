@@ -67,10 +67,10 @@ const Body = () => {
         json.data.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info || []
       );
 
-      const restaurants = json?.data?.cards?.find(
-        (c) => c?.card?.card?.gridElements?.infoWithStyle?.restaurants
-      );
-      // ?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+      const restaurants =
+        json?.data?.cards?.find(
+          (c) => c?.card?.card?.gridElements?.infoWithStyle?.restaurants
+        )?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
       console.log("restaurants are", restaurants);
       setListOfRestaurants(restaurants);
       setFilteredRestaurants(restaurants);
