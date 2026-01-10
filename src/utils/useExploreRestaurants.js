@@ -14,7 +14,7 @@ const useExploreRestaurants = (collectionId) => {
   const fetchData = async () => {
     try {
       const res = await fetch(
-        `${ExploreRestaurants_URL}&lat=${lat}&lng=${lng}&collection=${collectionId}&tags=layout_CCS_Pizza&sortBy=&filters=&type=rcv2&offset=0&page_type=null`
+        `${ExploreRestaurants_URL}?lat=${lat}&lng=${lng}&collection=${collectionId}&tags=layout_CCS_Pizza&sortBy=&filters=&type=rcv2&offset=0&page_type=null`
       );
       console.log(res);
       const json = await res.json();
