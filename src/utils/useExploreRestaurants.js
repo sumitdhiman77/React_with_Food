@@ -23,19 +23,21 @@ const useExploreRestaurants = (collectionId) => {
 
       // 🔹 HEADER (collection masthead)
       const header =
-        cards.find((c) =>
-          c?.card?.card
-            ? "@type"
-            : "type.googleapis.com/swiggy.gandalf.widgets.v2.CollectionMasthead"
+        cards.find(
+          (c) =>
+            c?.card?.card?.["@type"] ===
+            "type.googleapis.com/swiggy.gandalf.widgets.v2.CollectionMasthead"
         )?.card?.card || null;
       console.log("header is", header);
       // 🔹 RESTAURANTS
       const restaurants =
-        cards.filter((c) =>
-          c?.card?.card
-            ? "@type"
-            : "type.googleapis.com/swiggy.presentation.food.v2.Restaurant"
-        )?.card?.card?.info || [];
+        cards
+          .filter(
+            (c) =>
+              c?.card?.card?.["@type"] ===
+              "type.googleapis.com/swiggy.presentation.food.v2.Restaurant"
+          )
+          .map((c) => c?.card?.card?.info) || [];
 
       console.log("restaurants is", restaurants);
       setData({
