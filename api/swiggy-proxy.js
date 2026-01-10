@@ -24,15 +24,14 @@ export default async function handler(req, res) {
 
     // ✅ FIX: do NOT add /dapi again
     const swiggyURL =
-      `https://www.swiggy.com/${path}` +
-      (queryString ? `?${queryString}` : "");
+      `https://www.swiggy.com/${path}` + (queryString ? `?${queryString}` : "");
 
     const response = await fetch(swiggyURL, {
       headers: {
         "User-Agent":
           "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
-        "Accept": "application/json",
-        "Referer": "https://www.swiggy.com/",
+        Accept: "application/json",
+        Referer: "https://www.swiggy.com/",
       },
     });
 
@@ -45,7 +44,8 @@ export default async function handler(req, res) {
 
     res.setHeader(
       "Cache-Control",
-      "s-maxage=300, stale-while-revalidate=600"
+      "s-maxage=300, stale-while-revalidate=600",
+      res.setHeader("Content-Type", "application/json")
     );
 
     res.status(200).send(text);
@@ -57,4 +57,3 @@ export default async function handler(req, res) {
     });
   }
 }
-
