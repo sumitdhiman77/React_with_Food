@@ -8,7 +8,7 @@ import Shimmer from "./Shimmer";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import { useDispatch } from "react-redux";
 import { showUserInfo } from "../utils/userSlice";
-import {ExploreRestaurants_URL} from "../utils/constants"
+import { ExploreRestaurants_URL } from "../utils/constants";
 import { useContext } from "react";
 import LocationContext from "../utils/LocationContext";
 const Body = () => {
@@ -44,46 +44,40 @@ const Body = () => {
   const [title, setTitle] = useState("");
   const RestaurantWithOffer = withOffer(RestaurantCard);
   useEffect(() => {
-  if (!lat || !lng) return;
-  fetchData();
-}, [lat, lng]);
-
+    if (!lat || !lng) return;
+    fetchData();
+  }, [lat, lng]);
 
   const fetchData = async () => {
-  try {
-    const res = await fetch(
-      `${ExploreRestaurants_URL}&lat=${lat}&lng=${lng}`
-    );
+    try {
+      const res = await fetch(
+        `${ExploreRestaurants_URL}&lat=${lat}&lng=${lng}`
+      );
 
-    const json = await res.json();
-console.log("in body json is",json);
-    if (!json?.data?.cards) {
-      console.error("Invalid Swiggy response", json);
-      return;
+      const json = await res.json();
+      console.log("in body json is", json);
+      if (!json?.data?.cards) {
+        console.error("Invalid Swiggy response", json);
+        return;
+      }
+
+      setTitle(json.data.cards[0]?.card?.card?.header?.title || "");
+
+      setBannerItems(
+        json.data.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info || []
+      );
+
+      const restaurants = json?.data?.cards?.find(
+        (c) => c?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      );
+      // ?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+      console.log("restaurants are", restaurants);
+      setListOfRestaurants(restaurants);
+      setFilteredRestaurants(restaurants);
+    } catch (err) {
+      console.error("Fetch error:", err);
     }
-
-    setTitle(
-      json.data.cards[0]?.card?.card?.header?.title || ""
-    );
-
-    setBannerItems(
-      json.data.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info || []
-    );
-
-    const restaurants =
-      json?.data?.cards
-        ?.find(
-          (c) =>
-            c?.card?.card?.gridElements?.infoWithStyle?.restaurants
-        )
-        ?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
-console.log("restaurants are",restaurants);
-    setListOfRestaurants(restaurants);
-    setFilteredRestaurants(restaurants);
-  } catch (err) {
-    console.error("Fetch error:", err);
-  }
-};
+  };
 
   const onlineStatus = useOnlineStatus();
   if (onlineStatus === false)
