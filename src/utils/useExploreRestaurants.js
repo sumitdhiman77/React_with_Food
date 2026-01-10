@@ -5,7 +5,7 @@ import LocationContext from "./LocationContext";
 const useExploreRestaurants = (collectionId) => {
   const [data, setData] = useState(null);
   const { lat, lng } = useContext(LocationContext);
-
+  console.log("la & lang", lat, lng);
   useEffect(() => {
     if (!lat || !lng) return;
     fetchData();
