@@ -23,7 +23,11 @@ const ExploreRestaurants = () => {
 
       <div className="flex flex-wrap gap-6 px-5">
         {restaurants.map((restaurant) => (
-          <Link key={restaurant.info.id} to={`/restaurants/${restaurant.id}`}>
+          <Link
+            key={restaurant.id}
+            to={`/restaurants/${restaurant.id}`}
+            className="hover:scale-95 transition-transform duration-200" // Optional: adds a nice "press" effect
+          >
             <RestaurantCard resData={restaurant} />
           </Link>
         ))}
