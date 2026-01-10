@@ -31,9 +31,11 @@ const useExploreRestaurants = (collectionId) => {
       console.log("header is", header);
       // 🔹 RESTAURANTS
       const restaurants =
-        cards.find(
-          (c) => c?.card?.card?.gridElements?.infoWithStyle?.restaurants
-        )?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+        cards.filter((c) =>
+          c?.card?.card
+            ? "@type"
+            : "type.googleapis.com/swiggy.presentation.food.v2.Restaurant"
+        )?.card?.card?.info || [];
 
       console.log("restaurants is", restaurants);
       setData({
