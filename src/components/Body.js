@@ -40,11 +40,27 @@ const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
+  const [allData, setAllData] = useState(null);
   const RestaurantWithOffer = withOffer(RestaurantCard);
+
   useEffect(() => {
     if (!lat || !lng) return;
     fetchData();
   }, [lat, lng]);
+
+  const title =
+    allData?.data?.cards?.find(
+      (c) => c?.card?.card?.["@type"] === "type.googleapis.com"
+    )?.card?.card?.header?.title || "Restaurants near you";
+  const localListTitle = allData?.data?.cards?.find((c) => {
+    c?.card?.card?.["@type"] ===
+      "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget";
+  })?.card?.card?.header?.title;
+  const bannerItems =
+    json.data.cards.find((c) => {
+      c?.card.card?.["@type"] ===
+        "type.googleapis.com/swiggy.gandalf.widgets.v2.ImageInfoLayoutCard";
+    })?.card.card.gridElements.infoWithStyle.info || [];
 
   const fetchData = async () => {
     try {
@@ -53,29 +69,12 @@ const Body = () => {
       );
 
       const json = await res.json();
+      setAllData(json);
       console.log("in body json is", json);
       if (!json?.data?.cards) {
         console.error("Invalid Swiggy response", json);
         return;
       }
-
-      const title =
-        json?.data?.cards.find(
-          (c) =>
-            c?.card?.card?.["@type"] ===
-            "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget"
-        )?.card?.card?.header?.title || "";
-
-      const localListTitle = json?.data?.cards?.find((c) => {
-        c?.card?.card?.["@type"] ===
-          "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget";
-      })?.card?.card?.header?.title;
-
-      const bannerItems =
-        json.data.cards.find((c) => {
-          c?.card.card?.["@type"] ===
-            "type.googleapis.com/swiggy.gandalf.widgets.v2.ImageInfoLayoutCard";
-        })?.card.card.gridElements.infoWithStyle.info || [];
 
       const restaurants =
         json?.data?.cards?.find(
