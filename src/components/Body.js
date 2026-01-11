@@ -73,7 +73,7 @@ const Body = () => {
 
       const bannerItems =
         json.data.cards.find((c) => {
-          c.card.card.gridElements.infoWithStyle?.["@type"] ===
+          c.card.card?.["@type"] ===
             "type.googleapis.com/swiggy.gandalf.widgets.v2.ImageInfoLayoutCard";
         }).c.card.card.gridElements.infoWithStyle.info || [];
 
