@@ -18,7 +18,12 @@ export const LocationProvider = ({ children }) => {
       },
       () => {
         // fallback (optional)
-        setLocation({ lat: 28.6139, lng: 77.209 });
+        setLocation({ lat: 32.219, lng: 76.3234 }); //Dharamshala Fallback
+      },
+      {
+        enableHighAccuracy: true, // 👈 Force better accuracy
+        timeout: 5000,
+        maximumAge: 0,
       }
     );
   }, []);

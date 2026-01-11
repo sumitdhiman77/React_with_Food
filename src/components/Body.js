@@ -42,6 +42,7 @@ const Body = () => {
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
   const [title, setTitle] = useState("");
+  const [localListTitle, setLocalListTitle] = useState("");
   const RestaurantWithOffer = withOffer(RestaurantCard);
   useEffect(() => {
     if (!lat || !lng) return;
@@ -61,7 +62,20 @@ const Body = () => {
         return;
       }
 
-      setTitle(json.data.cards[0]?.card?.card?.header?.title || "");
+      setTitle(
+        cards.find(
+          (c) =>
+            (c?.card?.card?.["@type"] =
+              "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget")
+        )?.card?.card?.header?.title || ""
+      );
+
+      setLocalListTitle(
+        cards.find((c) => {
+          c?.card?.card?.["@type"] =
+            "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget";
+        }).card.card.header.title
+      );
 
       setBannerItems(
         json.data.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info || []
@@ -178,6 +192,9 @@ const Body = () => {
               })}
             </Carousel>
           </div>
+          <h2 className="font-[Lato] font-extrabold text-2xl tracking-tight line leading-7">
+            {title}
+          </h2>
           <div className="h-[529px] flex flex-wrap content-between ">
             {filteredRestaurants?.map((restaurant) => (
               <Link
