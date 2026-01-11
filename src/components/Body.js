@@ -37,12 +37,9 @@ const Body = () => {
   const blur = () => {
     dispatch(showUserInfo(userInput));
   };
-  const [bannerItems, setBannerItems] = useState([]);
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
-  const [title, setTitle] = useState("");
-  const [localListTitle, setLocalListTitle] = useState("");
   const RestaurantWithOffer = withOffer(RestaurantCard);
   useEffect(() => {
     if (!lat || !lng) return;
@@ -62,24 +59,23 @@ const Body = () => {
         return;
       }
 
-      setTitle(
-        cards.find(
+      const title =
+        json?.data?.cards.find(
           (c) =>
-            (c?.card?.card?.["@type"] =
-              "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget")
-        )?.card?.card?.header?.title || ""
-      );
+            c?.card?.card?.["@type"] ===
+            "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget"
+        )?.card?.card?.header?.title || "";
 
-      setLocalListTitle(
-        cards.find((c) => {
-          c?.card?.card?.["@type"] =
-            "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget";
-        }).card.card.header.title
-      );
+      const localListTitle = json?.data?.cards?.find((c) => {
+        c?.card?.card?.["@type"] ===
+          "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget";
+      })?.card?.card?.header?.title;
 
-      setBannerItems(
-        json.data.cards[0]?.card?.card?.gridElements?.infoWithStyle?.info || []
-      );
+      const bannerItems =
+        json.data.cards.find((c) => {
+          c.card.card.gridElements.infoWithStyle?.["@type"] ===
+            "type.googleapis.com/swiggy.gandalf.widgets.v2.ImageInfoLayoutCard";
+        }).c.card.card.gridElements.infoWithStyle.info || [];
 
       const restaurants =
         json?.data?.cards?.find(
