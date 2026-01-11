@@ -41,7 +41,8 @@ export default async function handler(req, res) {
     if (text.startsWith("<")) {
       throw new Error("Swiggy blocked request (HTML response)");
     }
-
+    const jsonData = JSON.parse(text);
+    res.status(200).json(jsonData);
     res.setHeader(
       "Cache-Control",
       "s-maxage=300, stale-while-revalidate=600",
