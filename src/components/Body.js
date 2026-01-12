@@ -43,11 +43,6 @@ const Body = () => {
   const [allData, setAllData] = useState(null);
   const RestaurantWithOffer = withOffer(RestaurantCard);
 
-  useEffect(() => {
-    if (!lat || !lng) return;
-    fetchData();
-  }, [lat, lng]);
-
   const fetchData = async () => {
     try {
       const res = await fetch(
@@ -64,6 +59,11 @@ const Body = () => {
       console.error("Fetch error:", err);
     }
   };
+
+  useEffect(() => {
+    if (!lat || !lng) return;
+    fetchData();
+  }, [lat, lng]);
 
   const title =
     allData?.data?.cards?.find(
