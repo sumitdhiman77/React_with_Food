@@ -48,6 +48,23 @@ const Body = () => {
     fetchData();
   }, [lat, lng]);
 
+  const fetchData = async () => {
+    try {
+      const res = await fetch(
+        `${ExploreRestaurants_URL}&lat=${lat}&lng=${lng}`
+      );
+      const json = await res.json();
+      console.log("in body json is", json);
+      if (!json?.data?.cards) {
+        console.error("Invalid Swiggy response", json);
+        return;
+      }
+      setAllData(json);
+    } catch (err) {
+      console.error("Fetch error:", err);
+    }
+  };
+
   const title =
     allData?.data?.cards?.find(
       (c) => c?.card?.card?.["@type"] === "type.googleapis.com"
@@ -61,32 +78,13 @@ const Body = () => {
       c?.card.card?.["@type"] ===
         "type.googleapis.com/swiggy.gandalf.widgets.v2.ImageInfoLayoutCard";
     })?.card.card.gridElements.infoWithStyle.info || [];
-
-  const fetchData = async () => {
-    try {
-      const res = await fetch(
-        `${ExploreRestaurants_URL}&lat=${lat}&lng=${lng}`
-      );
-
-      const json = await res.json();
-      console.log("in body json is", json);
-      setAllData(json);
-      if (!json?.data?.cards) {
-        console.error("Invalid Swiggy response", json);
-        return;
-      }
-
-      const restaurants =
-        json?.data?.cards?.find(
-          (c) => c?.card?.card?.gridElements?.infoWithStyle?.restaurants
-        )?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
-      console.log("restaurants are", restaurants);
-      setListOfRestaurants(restaurants);
-      setFilteredRestaurants(restaurants);
-    } catch (err) {
-      console.error("Fetch error:", err);
-    }
-  };
+  const restaurants =
+    allData?.data?.cards?.find(
+      (c) => c?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    )?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+  console.log("restaurants are", restaurants);
+  setListOfRestaurants(restaurants);
+  setFilteredRestaurants(restaurants);
 
   const onlineStatus = useOnlineStatus();
   if (onlineStatus === false)
