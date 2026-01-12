@@ -56,7 +56,7 @@ const Body = () => {
       console.log("in body json is", json);
       setAllData(json);
       const restaurants =
-        allData?.data?.cards?.find(
+        json?.data?.cards?.find(
           (c) =>
             c?.card?.card?.["@type"] ===
             "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget"
