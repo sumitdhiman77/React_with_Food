@@ -84,9 +84,9 @@ const Body = () => {
     c?.card?.card?.header.title.includes("Top")
   )?.card?.card?.header?.title;
   const bannerItems =
-    allData?.data.cards.find(
+    allData?.data?.cards?.find(
       (c) =>
-        c?.card.card?.["@type"] ===
+        c?.card.card?.gridElements?.infoWithStyle?.["@type"] ===
         "type.googleapis.com/swiggy.gandalf.widgets.v2.ImageInfoLayoutCard"
     )?.card.card.gridElements.infoWithStyle.info || [];
   console.log(bannerItems);
