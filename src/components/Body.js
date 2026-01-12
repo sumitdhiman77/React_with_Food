@@ -57,7 +57,7 @@ const Body = () => {
       "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget";
   })?.card?.card?.header?.title;
   const bannerItems =
-    json.data.cards.find((c) => {
+    allData?.data.cards.find((c) => {
       c?.card.card?.["@type"] ===
         "type.googleapis.com/swiggy.gandalf.widgets.v2.ImageInfoLayoutCard";
     })?.card.card.gridElements.infoWithStyle.info || [];
@@ -69,8 +69,8 @@ const Body = () => {
       );
 
       const json = await res.json();
-      setAllData(json);
       console.log("in body json is", json);
+      setAllData(json);
       if (!json?.data?.cards) {
         console.error("Invalid Swiggy response", json);
         return;
