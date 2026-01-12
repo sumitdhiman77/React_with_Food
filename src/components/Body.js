@@ -89,7 +89,7 @@ const Body = () => {
         c?.card.card?.["@type"] ===
         "type.googleapis.com/swiggy.gandalf.widgets.v2.ImageInfoLayoutCard"
     )?.card.card.gridElements.infoWithStyle.info || [];
-
+  console.log(bannerItems);
   const onlineStatus = useOnlineStatus();
   if (onlineStatus === false)
     return (
