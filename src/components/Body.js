@@ -49,11 +49,11 @@ const Body = () => {
         `${ExploreRestaurants_URL}&lat=${lat}&lng=${lng}`
       );
       const json = await res.json();
-      console.log("in body json is", json);
       if (!json?.data?.cards) {
         console.error("Invalid Swiggy response", json);
         return;
       }
+      console.log("in body json is", json);
       setAllData(json);
       const restaurants =
         allData?.data?.cards?.find(
