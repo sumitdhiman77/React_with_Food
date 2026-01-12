@@ -57,7 +57,9 @@ const Body = () => {
       setAllData(json);
       const restaurants =
         allData?.data?.cards?.find(
-          (c) => c?.card?.card?.gridElements?.infoWithStyle?.restaurants
+          (c) =>
+            c?.card?.card?.["@type"] ===
+            "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget"
         )?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
       console.log("restaurants are", restaurants);
       setListOfRestaurants(restaurants);
