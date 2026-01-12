@@ -55,6 +55,13 @@ const Body = () => {
         return;
       }
       setAllData(json);
+      const restaurants =
+        allData?.data?.cards?.find(
+          (c) => c?.card?.card?.gridElements?.infoWithStyle?.restaurants
+        )?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+      console.log("restaurants are", restaurants);
+      setListOfRestaurants(restaurants);
+      setFilteredRestaurants(restaurants);
     } catch (err) {
       console.error("Fetch error:", err);
     }
@@ -74,17 +81,11 @@ const Body = () => {
       "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget";
   })?.card?.card?.header?.title;
   const bannerItems =
-    allData?.data.cards.find((c) => {
-      c?.card.card?.["@type"] ===
-        "type.googleapis.com/swiggy.gandalf.widgets.v2.ImageInfoLayoutCard";
-    })?.card.card.gridElements.infoWithStyle.info || [];
-  const restaurants =
-    allData?.data?.cards?.find(
-      (c) => c?.card?.card?.gridElements?.infoWithStyle?.restaurants
-    )?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
-  console.log("restaurants are", restaurants);
-  setListOfRestaurants(restaurants);
-  setFilteredRestaurants(restaurants);
+    allData?.data.cards.find(
+      (c) =>
+        c?.card.card?.["@type"] ===
+        "type.googleapis.com/swiggy.gandalf.widgets.v2.ImageInfoLayoutCard"
+    )?.card.card.gridElements.infoWithStyle.info || [];
 
   const onlineStatus = useOnlineStatus();
   if (onlineStatus === false)
