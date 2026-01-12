@@ -58,8 +58,8 @@ const Body = () => {
       const restaurants =
         json?.data?.cards?.find(
           (c) =>
-            c?.card?.card?.["@type"] ===
-            "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget"
+            c?.card?.card?.gridElements?.infoWithStyle?.["@type"] ===
+            "type.googleapis.com/swiggy.presentation.food.v2.FavouriteRestaurantInfoWithStyle"
         )?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
       console.log("restaurants are", restaurants);
       setListOfRestaurants(restaurants);
@@ -74,10 +74,12 @@ const Body = () => {
     fetchData();
   }, [lat, lng]);
 
-  const title =
-    allData?.data?.cards?.find(
-      (c) => c?.card?.card?.["@type"] === "type.googleapis.com"
-    )?.card?.card?.header?.title || "Restaurants near you";
+  // const title =
+  //   allData?.data?.cards?.find(
+  //     (c) =>
+  //       c?.card?.card?.["@type"] ===
+  //       "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget"
+  //   )?.card?.card?.header?.title || "Restaurants near you";
   const localListTitle = allData?.data?.cards?.find(
     (c) =>
       c?.card?.card?.["@type"] ===
@@ -152,7 +154,7 @@ const Body = () => {
         </div>
         <div className="ml-[calc(10%+36px)] mr-[calc(10%+36px)] ">
           <h2 className="font-[Lato] font-extrabold text-2xl tracking-tight line leading-7">
-            {title}
+            "What's on your mind?"
           </h2>
           <div className="p-5 mb-16 z-0 border-b-2 border-gray-100">
             <Carousel
@@ -190,7 +192,7 @@ const Body = () => {
             </Carousel>
           </div>
           <h2 className="font-[Lato] font-extrabold text-2xl tracking-tight line leading-7">
-            {title}
+            {localListTitle}
           </h2>
           <div className="h-[529px] flex flex-wrap content-between ">
             {filteredRestaurants?.map((restaurant) => (
