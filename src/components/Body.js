@@ -78,10 +78,11 @@ const Body = () => {
     allData?.data?.cards?.find(
       (c) => c?.card?.card?.["@type"] === "type.googleapis.com"
     )?.card?.card?.header?.title || "Restaurants near you";
-  const localListTitle = allData?.data?.cards?.find((c) => {
-    c?.card?.card?.["@type"] ===
-      "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget";
-  })?.card?.card?.header?.title;
+  const localListTitle = allData?.data?.cards?.find(
+    (c) =>
+      c?.card?.card?.["@type"] ===
+      "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget"
+  )?.card?.card?.header?.title;
   const bannerItems =
     allData?.data.cards.find(
       (c) =>
