@@ -7,7 +7,7 @@ export const MENU_URL =
   "/api/swiggy-proxy?path=dapi/menu/pl&page-type=REGULAR_MENU&complete-menu=true";
 
 export const ExploreRestaurants_URL =
-  "/api/swiggy-proxy?path=dapi/restaurants/list/v5&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
+  "/api/swiggy-proxy?path=dapi/restaurants/list/v5";
 
 export const ITEM_IMG_URL =
   "https://media-assets.swiggy.com/swiggy/image/upload/";
