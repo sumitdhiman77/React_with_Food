@@ -22,7 +22,6 @@ export default async function handler(req, res) {
 
     const queryString = new URLSearchParams(query).toString();
 
-    // ✅ FIX: do NOT add /dapi again
     const swiggyURL =
       `https://www.swiggy.com/${path}` + (queryString ? `?${queryString}` : "");
 
@@ -32,25 +31,25 @@ export default async function handler(req, res) {
           "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
         Accept: "application/json",
         Referer: "https://www.swiggy.com/",
+        Origin: "https://www.swiggy.com",
       },
     });
 
-    const text = await response.text();
+    const jsonData = await response.json();
 
-    // 🔥 Prevent JSON crash if Swiggy blocks
-    if (text.startsWith("<")) {
-      throw new Error("Swiggy blocked request (HTML response)");
-    }
-    const jsonData = JSON.parse(text);
-    res.status(200).json(jsonData);
-    res.setHeader(
-      "Cache-Control",
-      "s-maxage=300, stale-while-revalidate=600",
-      "Content-Type",
-      "application/json"
+    // Detect Swiggy blocking
+    const isBlocked = jsonData?.data?.cards?.some(
+      (c) =>
+        c?.card?.card?.["@type"] ===
+        "type.googleapis.com/swiggy.seo.widgets.v1.SwiggyNotPresent"
     );
 
-    res.status(200).send(text);
+    res.setHeader("Cache-Control", "s-maxage=300, stale-while-revalidate=600");
+
+    res.status(200).json({
+      blocked: isBlocked,
+      data: jsonData,
+    });
   } catch (err) {
     console.error("Proxy error:", err);
     res.status(500).json({
