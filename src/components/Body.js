@@ -58,9 +58,10 @@ const Body = () => {
       const restaurants =
         json?.data?.cards?.find(
           (c) =>
-            c?.card?.card?.gridElements?.infoWithStyle?.["@type"] ===
-            "type.googleapis.com/swiggy.presentation.food.v2.FavouriteRestaurantInfoWithStyle"
+            c?.card?.card?.["@type"] ===
+            "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget"
         )?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+
       console.log("restaurants are", restaurants);
       setListOfRestaurants(restaurants);
       setFilteredRestaurants(restaurants);
@@ -80,15 +81,17 @@ const Body = () => {
   //       c?.card?.card?.["@type"] ===
   //       "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget"
   //   )?.card?.card?.header?.title || "Restaurants near you";
-  const localListTitle = allData?.data?.cards?.find((c) =>
-    c?.card?.card?.header.title.includes("Top")
-  )?.card?.card?.header?.title;
+  const localListTitle =
+    allData?.data?.cards?.find((c) =>
+      c?.card?.card?.header?.title?.includes("Top")
+    )?.card?.card?.header?.title || "Top Restaurants Near You";
+
   const bannerItems =
     allData?.data?.cards?.find(
       (c) =>
-        c?.card.card?.gridElements?.infoWithStyle?.["@type"] ===
+        c?.card?.card?.["@type"] ===
         "type.googleapis.com/swiggy.gandalf.widgets.v2.ImageInfoLayoutCard"
-    )?.card.card.gridElements.infoWithStyle.info || [];
+    )?.card?.card?.gridElements?.infoWithStyle?.info || [];
   console.log(bannerItems);
   const onlineStatus = useOnlineStatus();
   if (onlineStatus === false)
@@ -152,7 +155,7 @@ const Body = () => {
         </div>
         <div className="ml-[calc(10%+36px)] mr-[calc(10%+36px)] ">
           <h2 className="font-[Lato] font-extrabold text-2xl tracking-tight line leading-7">
-            "What's on your mind?"
+            What's on your mind?
           </h2>
           <div className="p-5 mb-16 z-0 border-b-2 border-gray-100">
             <Carousel
