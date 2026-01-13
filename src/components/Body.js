@@ -74,12 +74,12 @@ const Body = () => {
     fetchData();
   }, [lat, lng]);
 
-  const title =
-    allData?.data?.cards?.find(
-      (c) =>
-        c?.card?.card?.["@type"] ===
-        "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget"
-    )?.card?.card?.header?.title || "Restaurants near you";
+  // const title =
+  //   allData?.data?.cards?.find(
+  //     (c) =>
+  //       c?.card?.card?.["@type"] ===
+  //       "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget"
+  //   )?.card?.card?.header?.title || "Restaurants near you";
   const localListTitle = allData?.data?.cards?.find((c) =>
     c?.card?.card?.header.title.includes("Top")
   )?.card?.card?.header?.title;
