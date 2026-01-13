@@ -16,10 +16,10 @@ export const LocationProvider = ({ children }) => {
           lng: pos.coords.longitude,
         });
       },
-      () => {
-        // fallback (optional)
-        setLocation({ lat: 32.0883, lng: 76.2645 }); //Dharamshala Fallback
-      },
+      // () => {
+      //   // fallback (optional)
+      //   setLocation({ lat: 32.0883, lng: 76.2645 }); //Dharamshala Fallback
+      // },
       {
         enableHighAccuracy: true, // 👈 Force better accuracy
         timeout: 5000,
