@@ -18,7 +18,7 @@ export const LocationProvider = ({ children }) => {
       },
       () => {
         // fallback (optional)
-        setLocation({ lat: 32.219, lng: 76.3234 }); //Dharamshala Fallback
+        setLocation({ lat: 32.0883, lng: 76.2645 }); //Dharamshala Fallback
       },
       {
         enableHighAccuracy: true, // 👈 Force better accuracy
