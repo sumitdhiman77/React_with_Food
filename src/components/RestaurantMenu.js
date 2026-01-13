@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import useRestaurantMenu from "../utils/useRestaurantMenu";
 import RestaurantCategory from "./RestaurantCategory";
 import Shimmer from "./Shimmer";
-import LocationContext from "./LocationContext";
+import LocationContext from "../utils/LocationContext";
 import { useState } from "react";
 import { FaBicycle } from "react-icons/fa6";
 import { GiThreeLeaves } from "react-icons/gi";
