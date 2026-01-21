@@ -46,7 +46,7 @@ const Body = () => {
   const fetchData = async () => {
     try {
       const res = await fetch(
-        `${ExploreRestaurants_URL}&lat=${lat}&lng=${lng}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`
+        `${ExploreRestaurants_URL}&lat=${lat}&lng=${lng}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`,
       );
       const json = await res.json();
       if (!json?.data?.cards) {
@@ -59,7 +59,7 @@ const Body = () => {
         json?.data?.cards?.find(
           (c) =>
             c?.card?.card?.["@type"] ===
-            "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget"
+            "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget",
         )?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
 
       console.log("restaurants are", restaurants);
@@ -83,14 +83,14 @@ const Body = () => {
   //   )?.card?.card?.header?.title || "Restaurants near you";
   const localListTitle =
     allData?.data?.cards?.find((c) =>
-      c?.card?.card?.header?.title?.includes("Top")
+      c?.card?.card?.header?.title?.includes("Top"),
     )?.card?.card?.header?.title || "Top Restaurants Near You";
 
   const bannerItems =
     allData?.data?.cards?.find(
       (c) =>
-        c?.card?.card?.["@type"] ===
-        "type.googleapis.com/swiggy.gandalf.widgets.v2.ImageInfoLayoutCard"
+        c?.card?.card?.gridElements?.infoWithStyle?.["@type"] ===
+        "type.googleapis.com/swiggy.gandalf.widgets.v2.ImageInfoLayoutCard",
     )?.card?.card?.gridElements?.infoWithStyle?.info || [];
   console.log(bannerItems);
   const onlineStatus = useOnlineStatus();
@@ -119,7 +119,9 @@ const Body = () => {
               className="font-semibold  ml-1 italic"
               onClick={() => {
                 const selectedRestaurants = listOfRestaurants.filter((res) =>
-                  res.info.name.toLowerCase().includes(searchText.toLowerCase())
+                  res.info.name
+                    .toLowerCase()
+                    .includes(searchText.toLowerCase()),
                 );
                 setFilteredRestaurants(selectedRestaurants);
               }}
@@ -144,7 +146,7 @@ const Body = () => {
               className="font-medium text-2xl tracking-tighter"
               onClick={() => {
                 const topRestaurants = listOfRestaurants.filter(
-                  (res) => res.info.avgRating >= 4
+                  (res) => res.info.avgRating >= 4,
                 );
                 setFilteredRestaurants(topRestaurants);
               }}
