@@ -82,8 +82,11 @@ const Body = () => {
     )?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
 
   console.log("restaurants are", restaurants);
-  setListOfRestaurants(restaurants);
-  setFilteredRestaurants(restaurants);
+
+  {
+    setListOfRestaurants(restaurants);
+    setFilteredRestaurants(restaurants);
+  }
 
   const onlineStatus = useOnlineStatus();
   if (onlineStatus === false)
