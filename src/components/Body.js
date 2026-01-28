@@ -54,7 +54,7 @@ const Body = () => {
       const res = await fetch(
         `${ExploreRestaurants_URL}&lat=${lat}&lng=${lng}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`,
       );
-      json = await res.json();
+      const json = await res.json();
       if (!json?.data?.data?.cards) {
         console.error("Invalid Swiggy response", json);
         return;
