@@ -40,7 +40,6 @@ const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
-  const [allData, setAllData] = useState(null);
   const RestaurantWithOffer = withOffer(RestaurantCard);
 
   const fetchData = async () => {
@@ -54,10 +53,8 @@ const Body = () => {
         return;
       }
       console.log("in body json is", json);
-      setAllData(json);
-      console.log(allData);
       const restaurants =
-        allData?.data?.data?.cards?.find(
+        json?.data?.data?.cards?.find(
           (c) =>
             c?.card?.card?.["@type"] ===
             "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget",
@@ -77,17 +74,17 @@ const Body = () => {
   }, [lat, lng]);
 
   // const title =
-  //   allData?.data?.cards?.find(
+  //   json?.data?.cards?.find(
   //     (c) =>
   //       c?.card?.card?.["@type"] ===
   //       "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget"
   //   )?.card?.card?.header?.title || "Restaurants near you";
   const localListTitle =
-    allData?.data?.cards?.find((c) =>
+    json?.data?.data?.cards?.find((c) =>
       c?.card?.card?.header?.title?.includes("Top"),
     )?.card?.card?.header?.title || "Top Restaurants Near You";
 
-  const bannerItems = allData?.data?.data?.cards?.find(
+  const bannerItems = json?.data?.data?.cards?.find(
     (c) =>
       c?.card?.card?.gridElements?.infoWithStyle?.["@type"] ===
       "type.googleapis.com/swiggy.gandalf.widgets.v2.ImageInfoLayoutCard",
@@ -176,7 +173,7 @@ const Body = () => {
               dotListClass="custom-dot-list-style"
               itemClass="carousel-item-padding-40-px "
             >
-              {bannerItems.map((bannerItem) => {
+              {bannerItems?.map((bannerItem) => {
                 const collectionId = bannerItem.action.link.match(/(\d+)/);
                 {
                   /* console.log(collectionId); */
