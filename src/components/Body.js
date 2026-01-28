@@ -49,7 +49,7 @@ const Body = () => {
         `${ExploreRestaurants_URL}&lat=${lat}&lng=${lng}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`,
       );
       const json = await res.json();
-      if (!json?.data?.cards) {
+      if (!json?.data?.data?.cards) {
         console.error("Invalid Swiggy response", json);
         return;
       }
@@ -57,7 +57,7 @@ const Body = () => {
       setAllData(json);
       console.log(allData);
       const restaurants =
-        json?.data?.data?.cards?.find(
+        allData?.data?.data?.cards?.find(
           (c) =>
             c?.card?.card?.["@type"] ===
             "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget",
