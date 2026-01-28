@@ -53,26 +53,6 @@ const Body = () => {
         return;
       }
       console.log("in body json is", json);
-      const localListTitle =
-        json?.data?.data?.cards?.find((c) =>
-          c?.card?.card?.header?.title?.includes("Top"),
-        )?.card?.card?.header?.title || "Top Restaurants Near You";
-
-      const bannerItems = json?.data?.data?.cards?.find(
-        (c) =>
-          c?.card?.card?.gridElements?.infoWithStyle?.["@type"] ===
-          "type.googleapis.com/swiggy.gandalf.widgets.v2.ImageInfoLayoutCard",
-      )?.card?.card?.gridElements?.infoWithStyle?.info;
-      console.log(bannerItems);
-      const restaurants = json?.data?.data?.cards?.find(
-        (c) =>
-          c?.card?.card?.gridElements?.infoWithStyle?.["@type"] ===
-          "type.googleapis.com/swiggy.seo.widgets.v1.FoodRestaurantGridListingInfo",
-      )?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-
-      console.log("restaurants are", restaurants);
-      setListOfRestaurants(restaurants);
-      setFilteredRestaurants(restaurants);
     } catch (err) {
       console.error("Fetch error:", err);
     }
@@ -82,6 +62,28 @@ const Body = () => {
     if (!lat || !lng) return;
     fetchData();
   }, [lat, lng]);
+
+  const localListTitle =
+    json?.data?.data?.cards?.find((c) =>
+      c?.card?.card?.header?.title?.includes("Top"),
+    )?.card?.card?.header?.title || "Top Restaurants Near You";
+
+  const bannerItems = json?.data?.data?.cards?.find(
+    (c) =>
+      c?.card?.card?.gridElements?.infoWithStyle?.["@type"] ===
+      "type.googleapis.com/swiggy.gandalf.widgets.v2.ImageInfoLayoutCard",
+  )?.card?.card?.gridElements?.infoWithStyle?.info;
+  console.log(bannerItems);
+  const restaurants =
+    json?.data?.data?.cards?.find(
+      (c) =>
+        c?.card?.card?.gridElements?.infoWithStyle?.["@type"] ===
+        "type.googleapis.com/swiggy.seo.widgets.v1.FoodRestaurantGridListingInfo",
+    )?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+
+  console.log("restaurants are", restaurants);
+  setListOfRestaurants(restaurants);
+  setFilteredRestaurants(restaurants);
 
   const onlineStatus = useOnlineStatus();
   if (onlineStatus === false)
