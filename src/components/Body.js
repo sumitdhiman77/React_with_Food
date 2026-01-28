@@ -33,11 +33,13 @@ const Body = () => {
   };
   const { lat, lng } = useContext(LocationContext);
   const [userInput, setUserInput] = useState("");
+  // Remove these: let json, localListTitle, bannerItems;
+
+  // Add these:
   const [bannerItems, setBannerItems] = useState([]);
   const [localListTitle, setLocalListTitle] = useState(
     "Top Restaurants Near You",
   );
-
   const dispatch = useDispatch();
   const blur = () => {
     dispatch(showUserInfo(userInput));
@@ -46,43 +48,44 @@ const Body = () => {
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
   const RestaurantWithOffer = withOffer(RestaurantCard);
+
   const fetchData = async () => {
     try {
       const res = await fetch(
-        `${ExploreRestaurants_URL}&lat=${lat}&lng=${lng}...`,
+        `${ExploreRestaurants_URL}&lat=${lat}&lng=${lng}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`,
       );
-      const json = await res.json(); // Declare json here
-
-      if (!json?.data?.data?.cards) return;
-
-      // Extract values
-      const title = json?.data?.data?.cards?.find((c) =>
-        c?.card?.card?.header?.title?.includes("Top"),
-      )?.card?.card?.header?.title;
-
-      const items = json?.data?.data?.cards?.find(
-        (c) =>
-          c?.card?.card?.gridElements?.infoWithStyle?.["@type"] ===
-          "type.googleapis.com/swiggy.gandalf.widgets.v2.ImageInfoLayoutCard",
-      )?.card?.card?.gridElements?.infoWithStyle?.info;
-
+      json = await res.json();
+      if (!json?.data?.data?.cards) {
+        console.error("Invalid Swiggy response", json);
+        return;
+      }
+      console.log("in body json is", json);
+      setLocalListTitle(
+        json?.data?.data?.cards?.find((c) =>
+          c?.card?.card?.header?.title?.includes("Top"),
+        )?.card?.card?.header?.title || "Top Restaurants Near You",
+      );
+      setBannerItems(
+        json?.data?.data?.cards?.find(
+          (c) =>
+            c?.card?.card?.gridElements?.infoWithStyle?.["@type"] ===
+            "type.googleapis.com/swiggy.gandalf.widgets.v2.ImageInfoLayoutCard",
+        )?.card?.card?.gridElements?.infoWithStyle?.info,
+      );
+      console.log(bannerItems);
       const restaurants =
         json?.data?.data?.cards?.find(
           (c) =>
             c?.card?.card?.gridElements?.infoWithStyle?.["@type"] ===
             "type.googleapis.com/swiggy.seo.widgets.v1.FoodRestaurantGridListingInfo",
         )?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
-
-      // Update State (This triggers the render with DATA)
-      setLocalListTitle(title || "Top Restaurants Near You");
-      setBannerItems(items || []);
+      console.log("restaurants are", restaurants);
       setListOfRestaurants(restaurants);
       setFilteredRestaurants(restaurants);
     } catch (err) {
       console.error("Fetch error:", err);
     }
   };
-
   useEffect(() => {
     if (!lat || !lng) return;
     fetchData();
