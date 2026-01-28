@@ -41,41 +41,43 @@ const Body = () => {
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
   const RestaurantWithOffer = withOffer(RestaurantCard);
-  let json, localListTitle, bannerItems;
   const fetchData = async () => {
     try {
       const res = await fetch(
-        `${ExploreRestaurants_URL}&lat=${lat}&lng=${lng}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`,
+        `${ExploreRestaurants_URL}&lat=${lat}&lng=${lng}...`,
       );
-      json = await res.json();
-      if (!json?.data?.data?.cards) {
-        console.error("Invalid Swiggy response", json);
-        return;
-      }
-      console.log("in body json is", json);
-      localListTitle =
-        json?.data?.data?.cards?.find((c) =>
-          c?.card?.card?.header?.title?.includes("Top"),
-        )?.card?.card?.header?.title || "Top Restaurants Near You";
-      bannerItems = json?.data?.data?.cards?.find(
+      const json = await res.json(); // Declare json here
+
+      if (!json?.data?.data?.cards) return;
+
+      // Extract values
+      const title = json?.data?.data?.cards?.find((c) =>
+        c?.card?.card?.header?.title?.includes("Top"),
+      )?.card?.card?.header?.title;
+
+      const items = json?.data?.data?.cards?.find(
         (c) =>
           c?.card?.card?.gridElements?.infoWithStyle?.["@type"] ===
           "type.googleapis.com/swiggy.gandalf.widgets.v2.ImageInfoLayoutCard",
       )?.card?.card?.gridElements?.infoWithStyle?.info;
-      console.log(bannerItems);
+
       const restaurants =
         json?.data?.data?.cards?.find(
           (c) =>
             c?.card?.card?.gridElements?.infoWithStyle?.["@type"] ===
             "type.googleapis.com/swiggy.seo.widgets.v1.FoodRestaurantGridListingInfo",
         )?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
-      console.log("restaurants are", restaurants);
+
+      // Update State (This triggers the render with DATA)
+      setLocalListTitle(title || "Top Restaurants Near You");
+      setBannerItems(items || []);
       setListOfRestaurants(restaurants);
       setFilteredRestaurants(restaurants);
     } catch (err) {
       console.error("Fetch error:", err);
     }
   };
+
   useEffect(() => {
     if (!lat || !lng) return;
     fetchData();
