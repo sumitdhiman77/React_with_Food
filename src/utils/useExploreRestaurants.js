@@ -14,19 +14,19 @@ const useExploreRestaurants = (collectionId) => {
   const fetchData = async () => {
     try {
       const res = await fetch(
-        `${ExploreRestaurants_URL}&lat=${lat}&lng=${lng}&collection=${collectionId}&tags=layout_CCS_Pizza&sortBy=&filters=&type=rcv2&offset=0&page_type=null`
+        `${ExploreRestaurants_URL}&lat=${lat}&lng=${lng}&collection=${collectionId}&tags=layout_CCS_Pizza&sortBy=&filters=&type=rcv2&offset=0&page_type=null`,
       );
       console.log(res);
       const json = await res.json();
       console.log("json is ", json);
-      const cards = json?.data?.cards || [];
+      const cards = json?.data?.data?.cards || [];
 
       // 🔹 HEADER (collection masthead)
       const header =
         cards.find(
           (c) =>
             c?.card?.card?.["@type"] ===
-            "type.googleapis.com/swiggy.gandalf.widgets.v2.CollectionMasthead"
+            "type.googleapis.com/swiggy.gandalf.widgets.v2.CollectionMasthead",
         )?.card?.card || null;
       console.log("header is", header);
       // 🔹 RESTAURANTS
@@ -35,7 +35,7 @@ const useExploreRestaurants = (collectionId) => {
           .filter(
             (c) =>
               c?.card?.card?.["@type"] ===
-              "type.googleapis.com/swiggy.presentation.food.v2.Restaurant"
+              "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
           )
           .map((c) => c?.card?.card?.info) || [];
 
