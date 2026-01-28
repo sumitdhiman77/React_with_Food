@@ -73,12 +73,6 @@ const Body = () => {
     fetchData();
   }, [lat, lng]);
 
-  // const title =
-  //   json?.data?.cards?.find(
-  //     (c) =>
-  //       c?.card?.card?.["@type"] ===
-  //       "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget"
-  //   )?.card?.card?.header?.title || "Restaurants near you";
   const localListTitle =
     json?.data?.data?.cards?.find((c) =>
       c?.card?.card?.header?.title?.includes("Top"),
