@@ -64,12 +64,11 @@ const Body = () => {
           "type.googleapis.com/swiggy.gandalf.widgets.v2.ImageInfoLayoutCard",
       )?.card?.card?.gridElements?.infoWithStyle?.info;
       console.log(bannerItems);
-      const restaurants =
-        json?.data?.data?.cards?.find(
-          (c) =>
-            c?.card?.card?.["@type"] ===
-            "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget",
-        )?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
+      const restaurants = json?.data?.data?.cards?.find(
+        (c) =>
+          c?.card?.card?.gridElements?.infoWithStyle?.["@type"] ===
+          "type.googleapis.com/swiggy.seo.widgets.v1.FoodRestaurantGridListingInfo",
+      )?.card?.card?.gridElements?.infoWithStyle?.restaurants;
 
       console.log("restaurants are", restaurants);
       setListOfRestaurants(restaurants);
