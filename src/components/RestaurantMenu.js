@@ -3,6 +3,7 @@ import useRestaurantMenu from "../utils/useRestaurantMenu";
 import RestaurantCategory from "./RestaurantCategory";
 import Shimmer from "./Shimmer";
 import LocationContext from "../utils/LocationContext";
+import { useContext } from "react";
 import { useState } from "react";
 import { FaBicycle } from "react-icons/fa6";
 import { GiThreeLeaves } from "react-icons/gi";
@@ -36,7 +37,7 @@ const RestaurantMenu = () => {
     resInfo?.cards[3]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.filter(
       (c) =>
         c?.card?.card?.["@type"] ===
-        "type.googleapis.com/swiggy.presentation.food.v2.MenuVegFilterAndBadge"
+        "type.googleapis.com/swiggy.presentation.food.v2.MenuVegFilterAndBadge",
     );
 
   return (
@@ -102,7 +103,8 @@ const RestaurantMenu = () => {
 
           {categories.map((category, index) => {
             const vegItems = category.card.card.itemCards.filter(
-              (item) => item?.card?.info?.itemAttribute?.vegClassifier === "VEG"
+              (item) =>
+                item?.card?.info?.itemAttribute?.vegClassifier === "VEG",
             );
 
             return (
