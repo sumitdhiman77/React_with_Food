@@ -23,7 +23,7 @@ export default async function handler(req, res) {
     const queryString = new URLSearchParams(query).toString();
 
     const swiggyURL =
-      `https://www.swiggy.com/${path}` + (queryString ? `?${queryString}` : "");
+      `https://www.swiggy.com/${path}` + (queryString ? `${queryString}` : "");
 
     const response = await fetch(swiggyURL, {
       headers: {
@@ -41,7 +41,7 @@ export default async function handler(req, res) {
     const isBlocked = jsonData?.data?.cards?.some(
       (c) =>
         c?.card?.card?.["@type"] ===
-        "type.googleapis.com/swiggy.seo.widgets.v1.SwiggyNotPresent"
+        "type.googleapis.com/swiggy.seo.widgets.v1.SwiggyNotPresent",
     );
 
     res.setHeader("Cache-Control", "s-maxage=300, stale-while-revalidate=600");
