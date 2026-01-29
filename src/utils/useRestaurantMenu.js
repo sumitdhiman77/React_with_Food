@@ -6,7 +6,7 @@ const useRestaurantMenu = (resId, lat, lng, query) => {
   const fetchData = async () => {
     try {
       const res = await fetch(
-        `${MENU_URL}&lat=${lat}&lng=${lng}&restaurantId=${resId}&catalog_qa=undefined&query=${query}&submitAction=ENTER`,
+        `${MENU_URL}&page-type=REGULAR_MENU&complete-menu=true&lat=${lat}&lng=${lng}&restaurantId=${resId}&catalog_qa=undefined&submitAction=ENTER`,
       );
       const resData = await res.json();
       if (!resData?.data?.cards) {
@@ -17,7 +17,7 @@ const useRestaurantMenu = (resId, lat, lng, query) => {
       setResInfo(resData);
       console.log(resInfo);
     } catch (error) {
-      console.error("Fetch error:", err);
+      console.error("Fetch error:", error);
     }
   };
 
