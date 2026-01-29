@@ -23,7 +23,7 @@ export default async function handler(req, res) {
     const queryString = new URLSearchParams(query).toString();
 
     const swiggyURL =
-      `https://www.swiggy.com/${path}` + (queryString ? `${queryString}` : "");
+      `https://www.swiggy.com/${path}` + (queryString ? `?${queryString}` : "");
 
     const response = await fetch(swiggyURL, {
       headers: {
