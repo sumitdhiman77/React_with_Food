@@ -28,7 +28,7 @@ const RestaurantCard = ({ resData }) => {
 };
 export const withOffer = (RestaurantCard) => {
   return (props) => {
-    const { header, subHeader } = props.resData.info.aggregatedDiscountInfoV3;
+    const { header, subHeader } = props.resData.aggregatedDiscountInfoV3;
     return (
       <div>
         <label className="absolute z-50  bottom-[149px] left-[67px] text-white text-base font-bold">
