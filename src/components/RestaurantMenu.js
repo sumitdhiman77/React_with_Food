@@ -16,7 +16,7 @@ const RestaurantMenu = () => {
   const [item, setItem] = useState(null);
   const [veg, setVeg] = useState(false);
   const { resId } = useParams();
-  const resInfo = useRestaurantMenu(resId, lat, lng, query);
+  const resInfo = useRestaurantMenu(resId, lat, lng);
   console.log("resInfo is:", resInfo);
   if (!resInfo) return <Shimmer />;
 
@@ -144,7 +144,3 @@ const RestaurantMenu = () => {
 };
 
 export default RestaurantMenu;
-
-// https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=32.2182266&lng=76.3172673&restaurantId=118350&catalog_qa=undefined&query=Pizza&submitAction=ENTER
-
-// https://react-with-food.vercel.app/api/swiggy-proxy?path=dapi/menu/pl&page-type=REGULAR_MENU&complete-menu=true&lat=32.0883&lng=76.2645&restaurantId=918987&catalog_qa=undefined&query=undefined&submitAction=ENTER
