@@ -202,9 +202,9 @@ const Body = () => {
                 to={"/restaurants/" + restaurant.info.id}
               >
                 {restaurant.info.aggregatedDiscountInfoV3 ? (
-                  <RestaurantWithOffer resData={restaurant} />
+                  <RestaurantWithOffer resData={restaurant.info} />
                 ) : (
-                  <RestaurantCard resData={restaurant} />
+                  <RestaurantCard resData={restaurant.info} />
                 )}
               </Link>
             ))}

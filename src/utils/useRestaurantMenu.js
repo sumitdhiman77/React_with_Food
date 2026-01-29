@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { MENU_URL } from "./constants";
-const useRestaurantMenu = (resId, lat, lng, query) => {
+const useRestaurantMenu = (resId, lat, lng) => {
   const [resInfo, setResInfo] = useState(null);
 
   const fetchData = async () => {
