@@ -6,7 +6,7 @@ const useRestaurantMenu = (resId, lat, lng) => {
   const fetchData = async () => {
     try {
       const res = await fetch(
-        `${MENU_URL}&page-type=REGULAR_MENU&complete-menu=true&lat=${lat}&lng=${lng}&restaurantId=${resId}&catalog_qa=undefined&submitAction=ENTER`,
+        `${MENU_URL}&page-type=REGULAR_MENU&complete-menu=true&lat=${lat}&lng=${lng}&restaurantId=${resId}&submitAction=ENTER`,
       );
       const resData = await res.json();
       if (!resData?.data?.cards) {
