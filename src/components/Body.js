@@ -33,9 +33,7 @@ const Body = () => {
   };
   const { lat, lng } = useContext(LocationContext);
   const [userInput, setUserInput] = useState("");
-  // Remove these: let json, localListTitle, bannerItems;
 
-  // Add these:
   const [bannerItems, setBannerItems] = useState([]);
   const [localListTitle, setLocalListTitle] = useState(
     "Top Restaurants Near You",

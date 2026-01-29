@@ -10,7 +10,7 @@ const useRestaurantMenu = (resId, lat, lng) => {
       );
       const resData = await res.json();
       if (!resData?.data?.cards) {
-        console.error("Invalid Swiggy response", json);
+        console.error("Invalid Swiggy response", resData);
         return;
       }
       console.log("in useRestaurantMenu resData is", resData);
