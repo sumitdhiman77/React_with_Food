@@ -173,15 +173,14 @@ const Body = () => {
             >
               {bannerItems?.map((bannerItem) => {
                 const url = new URL(bannerItem.action.link);
-                const collectionId = url.searchParams.get("collectionId");
+                const collectionId = url.searchParams.get("collection_id");
                 const tags = url.searchParams.get("tags");
                 {
                   /* console.log(collectionId); */
                 }
                 return (
                   <div key={bannerItem.id}>
-                    {/* <Link to={"/collections/" + collectionId + tags}> */}
-                    <Link to={url}>
+                    <Link to={"/collections/" + collectionId + tags}>
                       <img
                         className="w-36 h-48 border-none rounded-full object-cover"
                         src={ITEM_IMG_URL + bannerItem.imageId}
