@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { MENU_URL } from "./constants";
-const useRestaurantMenu = (resId, lat, lng) => {
+const useRestaurantMenu = (resId, lat, lng, query) => {
   const [resInfo, setResInfo] = useState(null);
 
   const fetchData = async () => {
     try {
       const res = await fetch(
-        `${MENU_URL}&page-type=REGULAR_MENU&complete-menu=true&lat=${lat}&lng=${lng}&restaurantId=${resId}&submitAction=ENTER`,
+        `${MENU_URL}&page-type=REGULAR_MENU&complete-menu=true&lat=${lat}&lng=${lng}&restaurantId=${resId}&catalog_qa=undefined&query=${query}&submitAction=ENTER`,
       );
       const resData = await res.json();
       if (!resData?.data?.cards) {

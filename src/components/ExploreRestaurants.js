@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 const ExploreRestaurants = () => {
   const parameters = useParams();
   console.log(parameters);
-  const { collectionId, tags } = useParams();
-  const data = useExploreRestaurants(collectionId, tags);
+  const { collectionId, tags, query } = useParams();
+  const data = useExploreRestaurants(collectionId, tags, query);
   console.log("data is", data);
   if (!data) return <Shimmer />;
 
@@ -27,7 +27,7 @@ const ExploreRestaurants = () => {
         {restaurants.map((restaurant) => (
           <Link
             key={restaurant.id}
-            to={`/restaurants/${restaurant.id}`}
+            to={`/restaurants/${restaurant.id}/${query}`}
             className="hover:scale-95 transition-transform duration-200" // Optional: adds a nice "press" effect
           >
             <RestaurantCard resData={restaurant} />
