@@ -1,0 +1,2219 @@
+{
+  "statusCode": 0,
+  "data": {
+    "statusMessage": "done successfully",
+    "cards": [
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.TextBoxV2",
+            "text": "Thor Express",
+            "headerStyling": {
+              "textColor": "text_Highest_Emphasis",
+              "textVariant": "header_H3_Black"
+            }
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.RestaurantBlTab",
+            "tabs": [
+              {
+                "id": "Order Online",
+                "title": "Order Online"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "1072890",
+              "name": "Thor Express",
+              "city": "Dharamshala",
+              "slugs": {
+                "restaurant": "thor-express-dharamshala-city-dharamshala-city",
+                "city": "dharamshala"
+              },
+              "uniqueId": "e51e6528-4859-48c8-8fed-e84c17dc2d76",
+              "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/4/1/477a6a70-3378-4f61-a392-64a7c9073384_1072890.jpg",
+              "locality": "Dharamshala City",
+              "areaName": "Dharamshala City",
+              "costForTwo": "40000",
+              "costForTwoMessage": "₹400 for two",
+              "cuisines": ["Desserts", "Continental"],
+              "avgRating": 4.5,
+              "feeDetails": {
+                "restaurantId": "1072890",
+                "fees": [{}]
+              },
+              "parentId": "624346",
+              "avgRatingString": "4.5",
+              "totalRatingsString": "112 ratings",
+              "sla": {
+                "restaurantId": "1072890",
+                "deliveryTime": 48,
+                "minDeliveryTime": 45,
+                "maxDeliveryTime": 50,
+                "lastMileTravel": 0.8,
+                "serviceability": "SERVICEABLE",
+                "stressFactor": 1,
+                "rainMode": "RAIN_MODE_NONE",
+                "longDistance": "LONG_DISTANCE_NOT_LONG_DISTANCE",
+                "zoneId": 1248,
+                "slaString": "45-50 MINS",
+                "lastMileTravelString": "0.8 km",
+                "iconType": "ICON_TYPE_EMPTY"
+              },
+              "availability": {
+                "nextCloseTime": "2026-01-31 23:15:00",
+                "visibility": true,
+                "opened": true,
+                "restaurantClosedMeta": {}
+              },
+              "aggregatedDiscountInfo": {
+                "header": "Get every item @ 109",
+                "shortDescriptionList": [
+                  {
+                    "meta": "Get every item @ 109",
+                    "discountType": "FinalPrice",
+                    "operationType": "RESTAURANT"
+                  },
+                  {
+                    "meta": "60% Off | Use FEASTMODE60",
+                    "discountType": "Percentage",
+                    "operationType": "RESTAURANT"
+                  }
+                ],
+                "descriptionList": [
+                  {
+                    "meta": "Get every item @ 109",
+                    "discountType": "FinalPrice",
+                    "operationType": "RESTAURANT"
+                  },
+                  {
+                    "meta": "60% Off | Use FEASTMODE60",
+                    "discountType": "Percentage",
+                    "operationType": "RESTAURANT"
+                  }
+                ],
+                "visible": true
+              },
+              "badges": {},
+              "slugString": "thor-express-dharamshala-city-dharamshala-city",
+              "isOpen": true,
+              "labels": [
+                {
+                  "title": "Timings",
+                  "message": "null"
+                },
+                {
+                  "title": "Address",
+                  "message": "Old chari Road, Kotwali Bazar , Dharamshala.Himachal Pardesh 176215 ,,Kangra Town,Kangra,Himachal Pradesh-176215\t"
+                },
+                {
+                  "title": "Cuisines",
+                  "message": "Desserts,Continental"
+                }
+              ],
+              "totalRatings": 112,
+              "aggregatedDiscountInfoV2": {
+                "header": "Get every item @ 109",
+                "shortDescriptionList": [
+                  {
+                    "meta": "Get every item @ 109",
+                    "discountType": "FinalPrice",
+                    "operationType": "RESTAURANT"
+                  },
+                  {
+                    "meta": "60% Off | Use FEASTMODE60",
+                    "discountType": "Percentage",
+                    "operationType": "RESTAURANT"
+                  }
+                ],
+                "descriptionList": [
+                  {
+                    "meta": "Get every item @ 109",
+                    "discountType": "FinalPrice",
+                    "operationType": "RESTAURANT"
+                  },
+                  {
+                    "meta": "60% Off | Use FEASTMODE60",
+                    "discountType": "Percentage",
+                    "operationType": "RESTAURANT"
+                  }
+                ],
+                "couponDetailsCta": "View coupon details"
+              },
+              "type": "F",
+              "nudgeBanners": [
+                {
+                  "minValue": 132,
+                  "maxValue": 189,
+                  "priority": 4,
+                  "couponCode": "FEASTMODE60",
+                  "discountInfo": {
+                    "discountType": "Percentage",
+                    "value": 60
+                  },
+                  "lockedMessage": "Add items worth ₹<amount> to save upto ₹120 | Code FEASTMODE60",
+                  "unlockedMessage": "FEASTMODE60 Coupon Unlocked! Use it to save upto ₹120",
+                  "logoCtx": {},
+                  "movComputationType": "MOV_COMPUTATION_TYPE_DISCOUNTED_PRICE"
+                },
+                {
+                  "minValue": 279,
+                  "maxValue": 399,
+                  "priority": 6,
+                  "couponCode": "MEGASAVER",
+                  "discountInfo": {
+                    "discountType": "Flat",
+                    "value": 175
+                  },
+                  "lockedMessage": "Add items worth ₹<amount> to save ₹175 | Code MEGASAVER",
+                  "unlockedMessage": "MEGASAVER Coupon Unlocked! Use it to save ₹175",
+                  "logoCtx": {},
+                  "movComputationType": "MOV_COMPUTATION_TYPE_DISCOUNTED_PRICE"
+                }
+              ],
+              "headerBanner": {
+                "url": "swiggy://webview?is_external=false&webview_url=https://www.swiggy.com/restaurant-info/1072890"
+              },
+              "ratingSlab": "RATING_SLAB_5",
+              "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {},
+                "commsStyling": {}
+              },
+              "hasBestsellerItems": true,
+              "cartOrderabilityNudgeBanner": {
+                "parameters": {},
+                "presentation": {}
+              },
+              "latLong": "32.2213927,76.31784739999999",
+              "backgroundImageOverlayInfo": {},
+              "menuHeaderLottie": {
+                "menuHeaderLottie": "https://media-assets.swiggy.com/bolt/bolt%2015%20black.json?updatedAt=1733379625251",
+                "frequencyCapping": {}
+              },
+              "featuredSectionInfo": {},
+              "hasBoltItems": true
+            },
+            "analytics": {}
+          },
+          "relevance": {
+            "type": "RELEVANCE_TYPE_CHECK_ORDERABILITY_AND_SHOW_MENU_OFFER_NUDGE",
+            "sectionId": "MENU_ITEM_CART_UPDATE_POP_CROUTON"
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget",
+            "layout": {
+              "rows": 1,
+              "columns": 5,
+              "horizontalScrollEnabled": true,
+              "itemSpacing": 12,
+              "lineSpacing": 10,
+              "widgetPadding": {},
+              "containerStyle": {
+                "containerPadding": {
+                  "left": 10,
+                  "right": 10,
+                  "bottom": 16
+                }
+              }
+            },
+            "id": "offerCollectionWidget_UX4",
+            "gridElements": {
+              "infoWithStyle": {
+                "@type": "type.googleapis.com/swiggy.presentation.food.v2.OfferInfoWithStyle",
+                "offers": [
+                  {
+                    "info": {
+                      "header": "ITEMS AT ₹109",
+                      "offerTag": "DEAL OF DAY",
+                      "offerTagColor": "#E46D47",
+                      "offerIds": ["cbf5f9bc-ef5f-4dee-8571-a400eed0b48a"],
+                      "expiryTime": "1970-01-02T10:29:07Z",
+                      "description": "ON SELECT ITEMS |",
+                      "offerType": "offers",
+                      "restId": "1072890",
+                      "offerLogo": "offers/DealRush_Offer_Icon.png",
+                      "descriptionTextColor": "#7302060C"
+                    },
+                    "cta": {
+                      "type": "OFFER_HALF_CARD"
+                    }
+                  },
+                  {
+                    "info": {
+                      "header": "60% OFF UPTO ₹120",
+                      "offerTag": "DEFAULT",
+                      "offerTagColor": "#E46D47",
+                      "offerIds": ["26419103-0460-4e75-a457-4cac0d4c477f"],
+                      "expiryTime": "1970-01-01T00:00:00Z",
+                      "couponCode": "USE FEASTMODE60",
+                      "description": "ABOVE ₹189",
+                      "offerType": "offers",
+                      "restId": "1072890",
+                      "offerLogo": "offers/generic",
+                      "descriptionTextColor": "#7302060C",
+                      "primaryDescription": "USE FEASTMODE60"
+                    },
+                    "cta": {
+                      "type": "OFFER_HALF_CARD"
+                    }
+                  },
+                  {
+                    "info": {
+                      "header": "50% OFF UPTO ₹100",
+                      "offerTag": "DEAL OF DAY",
+                      "offerTagColor": "#E46D47",
+                      "offerIds": ["27c0cb70-221c-4fd7-b13b-1b371d08d9a2"],
+                      "expiryTime": "1970-01-01T00:00:00Z",
+                      "couponCode": "USE STEALDEAL",
+                      "description": "ABOVE ₹149",
+                      "offerType": "offers",
+                      "restId": "1072890",
+                      "offerLogo": "offers/deal-of-day",
+                      "descriptionTextColor": "#7302060C",
+                      "primaryDescription": "USE STEALDEAL"
+                    },
+                    "cta": {
+                      "type": "OFFER_HALF_CARD"
+                    }
+                  },
+                  {
+                    "info": {
+                      "header": "FLAT ₹175 OFF",
+                      "offerTag": "DEFAULT",
+                      "offerTagColor": "#E46D47",
+                      "offerIds": ["a58b1b3b-c654-4547-8ec0-bea7fff703cf"],
+                      "expiryTime": "1970-01-01T00:00:00Z",
+                      "couponCode": "USE MEGASAVER",
+                      "description": "ABOVE ₹399",
+                      "offerType": "offers",
+                      "restId": "1072890",
+                      "offerLogo": "offers/generic",
+                      "descriptionTextColor": "#7302060C",
+                      "primaryDescription": "USE MEGASAVER"
+                    },
+                    "cta": {
+                      "type": "OFFER_HALF_CARD"
+                    }
+                  },
+                  {
+                    "info": {
+                      "header": "10% OFF UPTO ₹100",
+                      "offerTagColor": "#E46D47",
+                      "logoBottom": "MARKETING_BANNERS/IMAGES/OFFERS/2026/1/27/ab51c16b-d66e-411e-8df0-49984eeeff6a_SBIMenuLogo.png",
+                      "offerIds": ["febf18d0-c5b4-4e9b-8dd4-78648914fca1"],
+                      "expiryTime": "1970-01-01T00:00:00Z",
+                      "couponCode": "USE SBIDC100",
+                      "description": "ABOVE ₹599",
+                      "offerType": "offers",
+                      "restId": "1072890",
+                      "offerLogo": "MARKETING_BANNERS/IMAGES/OFFERS/2026/1/27/ab51c16b-d66e-411e-8df0-49984eeeff6a_SBIMenuLogo.png",
+                      "descriptionTextColor": "#7302060C",
+                      "primaryDescription": "USE SBIDC100"
+                    },
+                    "cta": {
+                      "type": "OFFER_HALF_CARD"
+                    }
+                  }
+                ],
+                "habitMilestoneInfo": {
+                  "callout": {}
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {}
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "groupedCard": {
+          "cardGroupMap": {
+            "REGULAR": {
+              "cards": [
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.MenuVegFilterAndBadge",
+                      "badges": {},
+                      "vegOnlyDetails": {
+                        "imageId": "AutoVegOnly_qkjowj",
+                        "title": "Showing only vegetarian options.",
+                        "description": "Tap on the VEG ONLY button to turn off the setting"
+                      },
+                      "topRatedFilter": {
+                        "attributes": {
+                          "displayText": "Ratings 4.0+"
+                        }
+                      },
+                      "kidsCategoryFilter": {
+                        "attributes": {
+                          "displayText": "Kids Favourites",
+                          "tooltip": {
+                            "enabled": true,
+                            "displayText": "Kids Favourites Filter applied. Remove this filter to see the full Menu."
+                          }
+                        }
+                      },
+                      "vegFilter": {
+                        "attributes": {
+                          "displayText": "VEG"
+                        }
+                      },
+                      "nonvegFilter": {
+                        "attributes": {
+                          "displayText": "NONVEG"
+                        }
+                      },
+                      "bolt": {
+                        "attributes": {
+                          "displayText": "Food in 10-15 mins",
+                          "displayImage": "bolt/bolt%2011.png",
+                          "unselectedDisplayImage": "bolt/bolt%2011.png"
+                        }
+                      }
+                    },
+                    "relevance": {
+                      "type": "RELEVANCE_TYPE_ON_MENU_FILTER_TOGGLED",
+                      "sectionId": "MENU_FILTER_TOGGLE"
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Plates To Remember",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "169048022",
+                              "name": "Chicken Steak With Mashed Potatoes & Veggies",
+                              "category": "Plates To Remember",
+                              "description": "Juicy grilled chicken steak with mashed potatoes and sauted vegetables. Classic and hearty. Nutritional: 500 kcal | protein: 45g | carbs: 35g | fats: 25g",
+                              "inStock": 1,
+                              "price": 40000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.3",
+                                  "ratingCount": "9 ratings",
+                                  "ratingCountV2": "9"
+                                },
+                                "ratingsPresentationConfig": {
+                                  "bgGradient": {
+                                    "colours": ["#C8F9E5", "#00FFFFFF"],
+                                    "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                  },
+                                  "ratingIconColor": "rating_very_good",
+                                  "ratingTextColor": "rating_very_good",
+                                  "ratingCountTextColor": "rating_very_good",
+                                  "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                  "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                }
+                              },
+                              "itemPriceStrikeOff": true,
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "parentId": "101998914",
+                              "menuFilterIds": ["NONVEG", "offer", "toprated"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "169048040",
+                              "name": "Paneer Bhurji With 3 Rotis Or Paratha & Curd",
+                              "category": "Plates To Remember",
+                              "description": "Spiced paneer bhurji served with fresh rotis or paratha and a side of curd. Indian comfort. Nutritional: 350 kcal | protein: 20g | carbs: 40g | fats: 18g",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 25000,
+                              "finalPrice": 11900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "offerTags": [
+                                {
+                                  "matchText": "SILD"
+                                }
+                              ],
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "itemNudgeType": "FinalPrice",
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.8",
+                                  "ratingCount": "11 ratings",
+                                  "ratingCountV2": "11"
+                                },
+                                "ratingsPresentationConfig": {
+                                  "bgGradient": {
+                                    "colours": ["#C8F9E5", "#00FFFFFF"],
+                                    "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                  },
+                                  "ratingIconColor": "rating_very_good",
+                                  "ratingTextColor": "rating_very_good",
+                                  "ratingCountTextColor": "rating_very_good",
+                                  "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                  "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                }
+                              },
+                              "itemPriceStrikeOff": true,
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "offerIds": [
+                                "3a36485c-359d-4403-8595-50d2b4f3f8d3"
+                              ],
+                              "parentId": "101998945",
+                              "offerCategory": "OFFER_CATEGORY_DEAL_RUSH",
+                              "offerHeader": "Only till",
+                              "offerSubHeader": "2:00 PM",
+                              "menuFilterIds": ["VEG", "offer", "toprated"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "169048080",
+                              "name": "Mexican Chicken (Boneless)",
+                              "category": "Plates To Remember",
+                              "description": "Boneless chicken in smoky mexican spices with roasted vegetables. Nutritional: 500 kcal | protein: 45g | carbs: 25g | fats: 20g",
+                              "inStock": 1,
+                              "price": 47000,
+                              "finalPrice": 21900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "offerTags": [
+                                {
+                                  "matchText": "SILD"
+                                }
+                              ],
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "itemNudgeType": "FinalPrice",
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.9",
+                                  "ratingCount": "26 ratings",
+                                  "ratingCountV2": "26"
+                                },
+                                "ratingsPresentationConfig": {
+                                  "bgGradient": {
+                                    "colours": ["#C8F9E5", "#00FFFFFF"],
+                                    "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                  },
+                                  "ratingIconColor": "rating_very_good",
+                                  "ratingTextColor": "rating_very_good",
+                                  "ratingCountTextColor": "rating_very_good",
+                                  "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                  "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                }
+                              },
+                              "itemPriceStrikeOff": true,
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "offerIds": [
+                                "ce80dbff-0959-4f7d-95d1-8a3b50e7016d"
+                              ],
+                              "parentId": "101998937",
+                              "offerCategory": "OFFER_CATEGORY_DEAL_RUSH",
+                              "offerHeader": "Only till",
+                              "offerSubHeader": "2:00 PM",
+                              "menuFilterIds": ["NONVEG", "offer", "toprated"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "169048018",
+                              "name": "Baked Fish With Lemon Butter Sauce & Mashed Potatoes",
+                              "category": "Plates To Remember",
+                              "description": "Oven-baked fish drizzled in lemon butter, served with creamy mashed potatoes. Rich, tender, and fulfilling. Nutritional: 550 kcal | protein: 45g | carbs: 30g | fats: 25g",
+                              "inStock": 1,
+                              "price": 53000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "parentId": "101998900",
+                              "menuFilterIds": ["NONVEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "177160948",
+                              "name": "Chicken In Red Wine Sauce With Mashed Potato & Veggies",
+                              "category": "Plates To Remember",
+                              "description": "Slow-cooked chicken in a red wine reduction, paired with mash and vegetables. A gourmet plate. Nutritional: 600 kcal | protein: 45g | carbs: 40g | fats: 25g",
+                              "inStock": 1,
+                              "price": 45000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "parentId": "107137857",
+                              "menuFilterIds": ["NONVEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "169047987",
+                              "name": "Boiled Eggs Baked In Cheddar Cheese With Veggies",
+                              "category": "Plates To Remember",
+                              "description": "Cheddar-baked boiled eggs served with sauted veggies. Protein meets indulgence. Nutritional: 400 kcal | protein: 25g | carbs: 15g | fats: 30g",
+                              "inStock": 1,
+                              "price": 25000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "parentId": "101998904",
+                              "menuFilterIds": ["NONVEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        }
+                      ],
+                      "subtitleSuffix": {},
+                      "categoryId": "64456896"
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Wrap & Roll",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "169048046",
+                              "name": "Paneer Mexican Veggies Wrap",
+                              "category": "Wrap & Roll",
+                              "description": "Spicy paneer, salsa, and grilled veggies in a soft tortilla. A veg lovers fiesta. Nutritional: 380 kcal | protein: 15g | carbs: 50g | fats: 16g",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 23000,
+                              "finalPrice": 10900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "offerTags": [
+                                {
+                                  "matchText": "SILD"
+                                }
+                              ],
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "itemNudgeType": "FinalPrice",
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.2",
+                                  "ratingCount": "5 ratings",
+                                  "ratingCountV2": "5"
+                                },
+                                "ratingsPresentationConfig": {
+                                  "bgGradient": {
+                                    "colours": ["#C8F9E5", "#00FFFFFF"],
+                                    "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                  },
+                                  "ratingIconColor": "rating_very_good",
+                                  "ratingTextColor": "rating_very_good",
+                                  "ratingCountTextColor": "rating_very_good",
+                                  "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                  "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                }
+                              },
+                              "itemPriceStrikeOff": true,
+                              "isBolt": true,
+                              "boltImageId": "bolt/bolt-tag/bolt_menu_tag.png",
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "offerIds": [
+                                "cbf5f9bc-ef5f-4dee-8571-a400eed0b48a"
+                              ],
+                              "parentId": "101998947",
+                              "offerCategory": "OFFER_CATEGORY_DEAL_RUSH",
+                              "offerHeader": "Only till",
+                              "offerSubHeader": "2:00 PM",
+                              "menuFilterIds": [
+                                "BOLT",
+                                "VEG",
+                                "offer",
+                                "toprated"
+                              ]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "169048044",
+                              "name": "Paneer Italian Veggies Wrap",
+                              "category": "Wrap & Roll",
+                              "description": "Grilled paneer, italian-style veggies, cheese in a wheat wrap. Flavor meets nutrition. Nutritional: 380 kcal | protein: 15g | carbs: 45g | fats: 18g",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 23000,
+                              "finalPrice": 10900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "offerTags": [
+                                {
+                                  "matchText": "SILD"
+                                }
+                              ],
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "itemNudgeType": "FinalPrice",
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.5",
+                                  "ratingCount": "12 ratings",
+                                  "ratingCountV2": "12"
+                                },
+                                "ratingsPresentationConfig": {
+                                  "bgGradient": {
+                                    "colours": ["#C8F9E5", "#00FFFFFF"],
+                                    "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                  },
+                                  "ratingIconColor": "rating_very_good",
+                                  "ratingTextColor": "rating_very_good",
+                                  "ratingCountTextColor": "rating_very_good",
+                                  "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                  "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                }
+                              },
+                              "itemPriceStrikeOff": true,
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "offerIds": [
+                                "cbf5f9bc-ef5f-4dee-8571-a400eed0b48a"
+                              ],
+                              "parentId": "101998946",
+                              "offerCategory": "OFFER_CATEGORY_DEAL_RUSH",
+                              "offerHeader": "Only till",
+                              "offerSubHeader": "2:00 PM",
+                              "menuFilterIds": ["VEG", "offer", "toprated"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "177160929",
+                              "name": "Fish Italiano Wrap",
+                              "category": "Wrap & Roll",
+                              "description": "Grilled herbed fish, veggies, and cheese in a wheat wrap. High protein, low carb. Nutritional: 380 kcal | protein: 30g | carbs: 40g | fats: 15g",
+                              "inStock": 1,
+                              "price": 28000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "parentId": "107137872",
+                              "menuFilterIds": ["NONVEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "169047989",
+                              "name": "Chicken Mexican Veggies Wrap",
+                              "category": "Wrap & Roll",
+                              "description": "Mexican-spiced chicken, bell peppers, salsa in a tortilla. Full-on flavor. Nutritional: 420 kcal | protein: 28g | carbs: 48g | fats: 20g",
+                              "inStock": 1,
+                              "price": 25000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "parentId": "101998912",
+                              "menuFilterIds": ["NONVEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "169047988",
+                              "name": "Chicken Italian Veggies Wrap",
+                              "category": "Wrap & Roll",
+                              "description": "Grilled chicken, italian-seasoned veggies, and cheese in a wheat wrap. Balanced and bold. Nutritional: 420 kcal | protein: 30g | carbs: 45g | fats: 18g",
+                              "inStock": 1,
+                              "price": 25000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.5",
+                                  "ratingCount": "8 ratings",
+                                  "ratingCountV2": "8"
+                                },
+                                "ratingsPresentationConfig": {
+                                  "bgGradient": {
+                                    "colours": ["#C8F9E5", "#00FFFFFF"],
+                                    "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                  },
+                                  "ratingIconColor": "rating_very_good",
+                                  "ratingTextColor": "rating_very_good",
+                                  "ratingCountTextColor": "rating_very_good",
+                                  "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                  "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                }
+                              },
+                              "itemPriceStrikeOff": true,
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "parentId": "101998911",
+                              "menuFilterIds": ["NONVEG", "offer", "toprated"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        }
+                      ],
+                      "subtitleSuffix": {},
+                      "categoryId": "64456894"
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Whole Wheat Crusts Pizza",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "177160946",
+                              "name": "Mushroom And Paneer Pizza",
+                              "category": "Whole Wheat Crusts Pizza",
+                              "description": "Creamy paneer and mushrooms on a cheese-covered crust, finished with oregano. Nutritional: 400 kcal | protein: 20g | carbs: 55g | fats: 22g",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 42000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "parentId": "107137881",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "177160947",
+                              "name": "Chicken Overloaded Pizza",
+                              "category": "Whole Wheat Crusts Pizza",
+                              "description": "Packed with mexican, peri-peri, and italian chicken, plus mozzarella. The ultimate meat lovers pie. Nutritional: 550 kcal | protein: 42g | carbs: 60g | fats: 30g",
+                              "inStock": 1,
+                              "price": 45000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "parentId": "107137858",
+                              "menuFilterIds": ["NONVEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "169048075",
+                              "name": "Mexican Chicken Pizza",
+                              "category": "Whole Wheat Crusts Pizza",
+                              "description": "Spicy mexican chicken, bell peppers, and onions with smoky bbq sauce on a wheat crust. Nutritional: 450 kcal | protein: 30g | carbs: 55g | fats: 22g",
+                              "inStock": 1,
+                              "price": 45000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "parentId": "101998938",
+                              "menuFilterIds": ["NONVEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "177160951",
+                              "name": "Peri Peri Chicken Pizza",
+                              "category": "Whole Wheat Crusts Pizza",
+                              "description": "Bold peri-peri grilled chicken with peppers, onions & cheese on a whole wheat base. Nutritional: 480 kcal | protein: 35g | carbs: 55g | fats: 28g",
+                              "inStock": 1,
+                              "price": 45000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "parentId": "101998951",
+                              "menuFilterIds": ["NONVEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "177160942",
+                              "name": "Farmhouse Pizza",
+                              "category": "Whole Wheat Crusts Pizza",
+                              "description": "Loaded with bell peppers, mushrooms, olives, and cheese on a hearty tomato base. Nutritional: 420 kcal | protein: 16g | carbs: 60g | fats: 22g",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 42000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "parentId": "107137871",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "177160944",
+                              "name": "Italian Thin Crust Veg Pizza",
+                              "category": "Whole Wheat Crusts Pizza",
+                              "description": "Italian herbs, tomatoes, mozzarella, and cheddar on an ultra-thin whole wheat base. Nutritional: 350 kcal | protein: 14g | carbs: 45g | fats: 16g",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 42000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "107137877",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "169048009",
+                              "name": "Double Cheese Tomato Pizza",
+                              "category": "Whole Wheat Crusts Pizza",
+                              "description": "Two layers of melty mozzarella, tangy tomato sauce, and herbs on a wholesome wheat crust. Nutritional: 380 kcal | protein: 15g | carbs: 50g | fats: 18g",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 42000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "101998919",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "169048014",
+                              "name": "Italian Chicken Pizza",
+                              "category": "Whole Wheat Crusts Pizza",
+                              "description": "Grilled italian-style chicken, tomatoes, mozzarella & cheddar on thin crust. Nutritional: 350 kcal | protein: 14g | carbs: 45g | fats: 16g",
+                              "inStock": 1,
+                              "price": 45000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "101998930",
+                              "menuFilterIds": ["NONVEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        }
+                      ],
+                      "subtitleSuffix": {},
+                      "categoryId": "64456900"
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Comfort Pasta",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "177160931",
+                              "name": "Alfredo Penne (Non Veg)",
+                              "category": "Comfort Pasta",
+                              "description": "Classic white alfredo sauce with grilled chicken and parmesan cheese. A hearty plate. Nutritional: 520 kcal | protein: 28g | carbs: 48g | fats: 26g",
+                              "inStock": 1,
+                              "price": 30000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "parentId": "107137849",
+                              "menuFilterIds": ["NONVEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "177160933",
+                              "name": "Classic Mac & Cheese (Non Veg)",
+                              "category": "Comfort Pasta",
+                              "description": "Loaded with juicy grilled chicken, this version delivers extra comfort and protein. Nutritional: 580 kcal | protein: 30g | carbs: 46g | fats: 28g",
+                              "inStock": 1,
+                              "price": 30000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "parentId": "107137863",
+                              "menuFilterIds": ["NONVEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "177160932",
+                              "name": "Arrabbiata Penne (Non Veg)",
+                              "category": "Comfort Pasta",
+                              "description": "Bold tomato sauce tossed with grilled chicken and penne. Tangy with a kick. Nutritional: 490 kcal | protein: 27g | carbs: 52g | fats: 16g",
+                              "inStock": 1,
+                              "price": 30000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "parentId": "107137853",
+                              "menuFilterIds": ["NONVEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "177160927",
+                              "name": "Classic Mac & Cheese (Veg)",
+                              "category": "Comfort Pasta",
+                              "description": "Creamy, cheesy macaroni baked to golden perfection. Childhood favorite, adult-approved. Nutritional: 520 kcal | protein: 18g | carbs: 48g | fats: 26g",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 28000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "parentId": "107137864",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "177160925",
+                              "name": "Alfredo Penne (Veg)",
+                              "category": "Comfort Pasta",
+                              "description": "Creamy white alfredo sauce with parmesan and sauted mushrooms. Cozy and comforting. Nutritional: 450 kcal | protein: 15g | carbs: 50g | fats: 22g",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 28000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "parentId": "107137850",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "177160926",
+                              "name": "Arrabbiata Penne (Veg)",
+                              "category": "Comfort Pasta",
+                              "description": "Spicy tomato sauce with olives, herbs, and whole wheat penne. Fresh and fiery. Nutritional: 420 kcal | protein: 13g | carbs: 55g | fats: 12g",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 28000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "107137854",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        }
+                      ],
+                      "subtitleSuffix": {},
+                      "categoryId": "64456898"
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Power Bowls",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "169048007",
+                              "name": "Fish & Rice Bowl",
+                              "category": "Power Bowls",
+                              "description": "Grilled fish, stir-fried greens, lemon butter sauce, and white rice. Light yet indulgent. Nutritional: 420 kcal | protein: 30g | carbs: 45g | fats: 18g",
+                              "inStock": 1,
+                              "price": 36000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {
+                                "text": "Bestseller",
+                                "textColor": "#ffffff",
+                                "topBackgroundColor": "#d53d4c",
+                                "bottomBackgroundColor": "#b02331"
+                              },
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "isBestseller": true,
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "parentId": "101998921",
+                              "menuFilterIds": ["bestseller", "NONVEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "177160937",
+                              "name": "Grilled Chicken Rice Bowl",
+                              "category": "Power Bowls",
+                              "description": "Tender grilled chicken, white rice, roasted veggies & herb dressing. Simple. Satisfying. Nutritional: 400 kcal | protein: 28g | carbs: 45g | fats: 12g",
+                              "inStock": 1,
+                              "price": 32000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "parentId": "107137875",
+                              "menuFilterIds": ["NONVEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "169047998",
+                              "name": "Chicken Broccoli Creamy Bowl",
+                              "category": "Power Bowls",
+                              "description": "Juicy chicken & broccoli in creamy garlic sauce over rice. Hearty and wholesome. Nutritional: 380 kcal | protein: 28g | carbs: 40g | fats: 15g",
+                              "inStock": 1,
+                              "price": 32000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "isBolt": true,
+                              "boltImageId": "bolt/bolt-tag/bolt_menu_tag.png",
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "parentId": "101998908",
+                              "menuFilterIds": ["BOLT", "NONVEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "177160935",
+                              "name": "Paneer Veggie Rice Bowl",
+                              "category": "Power Bowls",
+                              "description": "Grilled paneer, sauted veggies, and yogurt sauce on rice. Pure vegetarian energy. Nutritional: 380 kcal | protein: 22g | carbs: 50g | fats: 14g",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 30000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "107137882",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        }
+                      ],
+                      "subtitleSuffix": {},
+                      "categoryId": "64456899"
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Salads With Soul",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "169048004",
+                              "name": "Chicken Power Bowl Salad",
+                              "category": "Salads With Soul",
+                              "description": "Grilled chicken served with greens, quinoa, avocado, and a balsamic glaze. A perfect proteinpacked refreshment. Nutritional: 400 kcal | protein: 28g | carbs: 22g | fats: 18g",
+                              "inStock": 1,
+                              "price": 35000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "parentId": "101998913",
+                              "menuFilterIds": ["NONVEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "177160940",
+                              "name": "Basa And Avaocado Salad",
+                              "category": "Salads With Soul",
+                              "description": "Flaky basa fish, fresh greens, avocado, olives, and citrus vinaigrette. A light, refreshing catch. Nutritional: 420 kcal | protein: 25g | carbs: 15g | fats: 20g",
+                              "inStock": 1,
+                              "price": 39000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "parentId": "107137856",
+                              "menuFilterIds": ["NONVEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "169047992",
+                              "name": "Lettuce & Cucumber With Egg & Chicken Salad",
+                              "category": "Salads With Soul",
+                              "description": "Boiled eggs, grilled chicken, and greens in creamy dressing. A full-on protein refresher. Nutritional: 300 kcal | protein: 25g | carbs: 10g | fats: 18g",
+                              "inStock": 1,
+                              "price": 25000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "5.0",
+                                  "ratingCount": "5 ratings",
+                                  "ratingCountV2": "5"
+                                },
+                                "ratingsPresentationConfig": {
+                                  "bgGradient": {
+                                    "colours": ["#C8F9E5", "#00FFFFFF"],
+                                    "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                  },
+                                  "ratingIconColor": "rating_very_good",
+                                  "ratingTextColor": "rating_very_good",
+                                  "ratingCountTextColor": "rating_very_good",
+                                  "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                  "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                }
+                              },
+                              "itemPriceStrikeOff": true,
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "parentId": "101998933",
+                              "menuFilterIds": ["NONVEG", "offer", "toprated"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "169048029",
+                              "name": "Lettuce And Cucumber Salad",
+                              "category": "Salads With Soul",
+                              "description": "Crisp lettuce and cucumber slices with a zesty lemon dressing. Light, crunchy, hydrating. Nutritional: 100 kcal | protein: 2g | carbs: 15g | fats: 4g",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 20000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "imageBadges": [
+                                {
+                                  "imageId": "Low%20cal/Low%20cal%201_1.png"
+                                }
+                              ],
+                              "parentId": "101998932",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "177160938",
+                              "name": "Thor Superfood Salad",
+                              "category": "Salads With Soul",
+                              "description": "Kale, spinach, walnuts, pumpkin seeds, blueberries, and honey mustard. Supercharged nutrition. Nutritional: 350 kcal | protein: 12g | carbs: 30g | fats: 22g",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 32000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "107137892",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        }
+                      ],
+                      "subtitleSuffix": {},
+                      "categoryId": "64456895"
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Cheat Meals",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "177160952",
+                              "name": "Thor Chilly Chicken",
+                              "category": "Cheat Meals",
+                              "description": "Bold & spicy chicken tossed in chili sauce with fries on the side. The perfect cheat. Nutritional: 600 kcal | protein: 40g | carbs: 50g | fats: 30g",
+                              "inStock": 1,
+                              "price": 45000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "parentId": "107137891",
+                              "menuFilterIds": ["NONVEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "177160939",
+                              "name": "Thor Cheese Chilly (Veg)",
+                              "category": "Cheat Meals",
+                              "description": "Paneer coated in creamy spicy chili sauce. Rich, fiery, and indulgent. Nutritional: 500 kcal | protein: 30g | carbs: 40g | fats: 35g",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 38000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "parentId": "107137890",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        }
+                      ],
+                      "subtitleSuffix": {},
+                      "categoryId": "64456897"
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.NestedItemCategory",
+                      "title": "Cold Press Goodness",
+                      "categories": [
+                        {
+                          "title": "Smoothies",
+                          "itemCards": [
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "177160917",
+                                  "name": "Avocado & Banana Smoothie",
+                                  "category": "Cold Press Goodness",
+                                  "description": "Creamy and heart-healthy. Avocado, banana, milk, honey, chia seeds. Nutritional: 180 kcal | protein: 3g | carbs: 24g | fats: 10g | fiber: 5g",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 18900,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {}
+                                  },
+                                  "itemPriceStrikeOff": true,
+                                  "parentId": "107137855",
+                                  "menuFilterIds": ["VEG", "offer"]
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "177160918",
+                                  "name": "Chocolate Peanut Butter Protein Smoothie",
+                                  "category": "Cold Press Goodness",
+                                  "description": "Peanut butter, chocolate protein, almond milk, banana. Post-workout fuel. Nutritional: 220 kcal | protein: 15g | carbs: 18g | fats: 12g",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 18900,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {}
+                                  },
+                                  "itemPriceStrikeOff": true,
+                                  "imageBadges": [
+                                    {
+                                      "imageId": "merch_bau/High%20Protein%201_1.png"
+                                    }
+                                  ],
+                                  "parentId": "107137860",
+                                  "menuFilterIds": ["VEG", "offer"]
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            },
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "177160919",
+                                  "name": "Citrus Power Smoothie",
+                                  "category": "Cold Press Goodness",
+                                  "description": "Orange, grapefruit, ginger, honey, almond milk. Zesty and revitalizing. Nutritional: 100 kcal | protein: 2g | carbs: 24g | vitamin c: 120% dv",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 18900,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {}
+                                  },
+                                  "itemPriceStrikeOff": true,
+                                  "parentId": "107137861",
+                                  "menuFilterIds": ["VEG", "offer"]
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            }
+                          ],
+                          "subtitleSuffix": {},
+                          "categoryId": "64456904"
+                        }
+                      ],
+                      "categoryId": "64456892"
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Sips Of Goodness",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "177160921",
+                              "name": "Chicken & Veggie Soup",
+                              "category": "Sips Of Goodness",
+                              "description": "A hearty bowl of shredded chicken, seasonal vegetables, and herbs in a flavorful clear broth. Nutritional: 160 kcal | protein: 18g | carbs: 8g | fats: 6g",
+                              "inStock": 1,
+                              "price": 22000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "imageBadges": [
+                                {
+                                  "imageId": "merch_bau/High%20Protein%201_1.png"
+                                }
+                              ],
+                              "parentId": "107137859",
+                              "menuFilterIds": ["NONVEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "177160922",
+                              "name": "Creamy Broccoli Almond Soup",
+                              "category": "Sips Of Goodness",
+                              "description": "Slow-cooked broccoli blended with roasted almonds for a creamy, nutty delight. Nutritional: 160 kcal | protein: 5g | carbs: 15g | fats: 9g",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 22000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "107137866",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "177160920",
+                              "name": "Hot & Sour Soup",
+                              "category": "Sips Of Goodness",
+                              "description": "A classic indo-chinese favorite made with shredded vegetables and a spicy tangy broth. Perfect for cooler days. Nutritional: 130 kcal | protein: 4g | carbs: 18g | fats: 5g",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 20000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "107137876",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "177160916",
+                              "name": "Lemon Coriander Clear Soup",
+                              "category": "Sips Of Goodness",
+                              "description": "Light, herby broth with lemon and coriander  the perfect immune booster. Nutritional: 80 kcal | protein: 2g | carbs: 10g | fats: 2g",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 18000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "107137878",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "177160915",
+                              "name": "Classic Tomato Basil Soup",
+                              "category": "Sips Of Goodness",
+                              "description": "A velvety blend of ripe tomatoes and basil, finished with olive oil and croutons. Nutritional: 120 kcal | protein: 3g | carbs: 18g | fats: 4g",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 18000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "107137865",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        }
+                      ],
+                      "subtitleSuffix": {},
+                      "categoryId": "64456893"
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.RestaurantLicenseInfo",
+                      "type": "FSSAI",
+                      "imageId": "fssai_final_edss9i",
+                      "text": ["License No. 20925004000636"]
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.RestaurantAddress",
+                      "name": "Thor Express",
+                      "area": "Dharamshala City",
+                      "completeAddress": "Old chari Road, Kotwali Bazar , Dharamshala.Himachal Pardesh 176215 ,,Kangra Town,Kangra,Himachal Pradesh-176215\t"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "firstOffsetRequest": true,
+    "isQCLink": false
+  },
+  "tid": "922eb3ed-defa-4e01-9f54-3bafafb86e9a",
+  "sid": "pfo9e6ba-bd7b-449d-8f22-cd8944a8c7c1",
+  "deviceId": "21586c2f-0280-981d-9ddf-e8842937269e",
+  "csrfToken": "JR8Q6zvqizTh-UMpmouEdLwXt8feaec17RAVx0Ks"
+}

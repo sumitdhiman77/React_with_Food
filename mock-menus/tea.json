@@ -1,0 +1,1277 @@
+{
+  "statusCode": 0,
+  "data": {
+    "statusMessage": "done successfully",
+    "pageOffset": {
+      "nextOffset": "CJFDEOskKIDwofirrO7WejDNEzgC",
+      "widgetOffset": {
+        "restaurantCountWidget": "",
+        "collectionV5RestaurantListWidget_SimRestoRelevance_food": "11",
+        "inlineFacetFilter": "",
+        "collectionV5MastheadWidget": ""
+      }
+    },
+    "cards": [
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.CollectionMasthead",
+            "collectionId": "80406",
+            "title": "Tea",
+            "description": "Hot sips of tea to brighten your mood instantly.",
+            "imageId": "COLLECTIONS/IMAGES/MERCH/2024/7/1/4506c870-aabc-4ef3-ba26-9753c6bf293c_pic",
+            "aspectRatio": "3.44",
+            "cta": {
+              "link": "swiggy://collectionV2?collection_id=80406&tags=layout_CCS_Tea,tea",
+              "type": "collectionv2"
+            },
+            "type": "COLLECTION_MASTHEAD_TYPE_IMAGE_WITH_TEXT",
+            "count": "22 restaurants",
+            "navBarConfig": {}
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.InlineViewFilterSortWidget",
+            "sortConfigs": [
+              {
+                "key": "relevance",
+                "title": "Relevance (Default)",
+                "selected": true,
+                "defaultSelection": true
+              },
+              {
+                "key": "deliveryTimeAsc",
+                "title": "Delivery Time"
+              },
+              {
+                "key": "modelBasedRatingDesc",
+                "title": "Rating"
+              },
+              {
+                "key": "costForTwoAsc",
+                "title": "Cost: Low to High"
+              },
+              {
+                "key": "costForTwoDesc",
+                "title": "Cost: High to Low"
+              }
+            ],
+            "restaurantCount": 22,
+            "facetList": [
+              {
+                "label": "10 Mins Delivery",
+                "id": "isRestaurantBolt",
+                "selection": "SELECT_TYPE_SINGLESELECT",
+                "facetInfo": [
+                  {
+                    "label": "10 Mins Delivery",
+                    "id": "isRestaurantBoltfacetquery0",
+                    "analytics": {},
+                    "openFilter": true
+                  }
+                ],
+                "viewType": "VIEW_TYPE_FLATTENED",
+                "subLabel": "Filter by",
+                "icon": "COLLECTIONS/IMAGES/MERCH/2024/12/18/4b2e8903-0e25-401b-8ede-088491b4cfa0_937977a3-b03b-4a9e-8b6a-24937664d1a9_pic.png",
+                "selectedIcon": "COLLECTIONS/IMAGES/MERCH/2024/12/26/3072d307-2f8e-471c-862d-d426fb93c0bf_4b2e8903-0e25-401b-8ede-088491b4cfa0_937977a3-b03b-4a9e-8b6a-24937664d1a9_pic.png"
+              },
+              {
+                "label": "Veg/Non-Veg",
+                "id": "isVeg",
+                "selection": "SELECT_TYPE_MULTISELECT",
+                "facetInfo": [
+                  {
+                    "label": "Non Veg",
+                    "id": "isVegfacetquery0",
+                    "analytics": {},
+                    "openFilter": true
+                  },
+                  {
+                    "label": "Pure Veg",
+                    "id": "isVegfacetquery1",
+                    "analytics": {},
+                    "openFilter": true
+                  }
+                ],
+                "viewType": "VIEW_TYPE_HALF_CARD",
+                "subLabel": "Filter by",
+                "openFilter": true
+              },
+              {
+                "label": "Ratings",
+                "id": "rating",
+                "selection": "SELECT_TYPE_MULTISELECT",
+                "facetInfo": [
+                  {
+                    "label": "Ratings",
+                    "id": "ratingfacetquery0",
+                    "analytics": {},
+                    "openFilter": true
+                  },
+                  {
+                    "label": "Ratings 4.0+",
+                    "id": "ratingfacetquery1",
+                    "analytics": {},
+                    "openFilter": true
+                  },
+                  {
+                    "label": "Ratings 4.5+",
+                    "id": "ratingfacetquery2",
+                    "analytics": {},
+                    "openFilter": true
+                  }
+                ],
+                "viewType": "VIEW_TYPE_HALF_CARD",
+                "subLabel": "Filter by",
+                "openFilter": true
+              },
+              {
+                "label": "Delivery Time",
+                "id": "deliveryTime",
+                "selection": "SELECT_TYPE_MULTISELECT",
+                "facetInfo": [
+                  {
+                    "label": "Less than 30 mins",
+                    "id": "deliveryTimefacetquery0",
+                    "analytics": {},
+                    "openFilter": true
+                  },
+                  {
+                    "label": "Less than 45 mins",
+                    "id": "deliveryTimefacetquery1",
+                    "analytics": {},
+                    "openFilter": true
+                  }
+                ],
+                "viewType": "VIEW_TYPE_HALF_CARD",
+                "subLabel": "Filter by",
+                "openFilter": true
+              },
+              {
+                "label": "Cost For Two",
+                "id": "costForTwo",
+                "selection": "SELECT_TYPE_MULTISELECT",
+                "facetInfo": [
+                  {
+                    "label": "Less than Rs. 300",
+                    "id": "costForTwofacetquery0",
+                    "analytics": {},
+                    "openFilter": true
+                  },
+                  {
+                    "label": "Rs.300 - Rs.600",
+                    "id": "costForTwofacetquery1",
+                    "analytics": {},
+                    "openFilter": true
+                  },
+                  {
+                    "label": "Greater than Rs. 600",
+                    "id": "costForTwofacetquery2",
+                    "analytics": {},
+                    "openFilter": true
+                  }
+                ],
+                "viewType": "VIEW_TYPE_HALF_CARD",
+                "subLabel": "Filter by",
+                "openFilter": true
+              }
+            ],
+            "widgetId": "inlineFacetFilter"
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget",
+            "layout": {
+              "rows": 1,
+              "widgetPadding": {
+                "left": 16,
+                "top": 12,
+                "right": 16
+              },
+              "widgetTheme": {
+                "defaultMode": {
+                  "backgroundColour": "#FFFFFF",
+                  "theme": "THEME_TYPE_LIGHT"
+                },
+                "darkMode": {
+                  "backgroundColour": "#1B3028",
+                  "theme": "THEME_TYPE_DARK"
+                }
+              }
+            },
+            "id": "restaurantCountWidget",
+            "gridElements": {
+              "infoWithStyle": {
+                "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.TextBoxV2",
+                "text": "Restaurants to explore",
+                "headerStyling": {
+                  "textSize": 15,
+                  "textColor": "text_color_highest_emphasis",
+                  "textFontName": "FONT_NAME_HEADER_H5",
+                  "maxLines": 1
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "119501",
+              "name": "Sher-E-Punjab",
+              "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/7/13/980efe37-e44a-4af8-a46e-7fe1030134bd_9502667f-daf8-4610-b464-afd87d579e9c.jpg",
+              "locality": "Dharamshala City",
+              "areaName": "Kotwali Bazar",
+              "costForTwo": "₹400 for two",
+              "cuisines": ["Chinese", "Thalis", "Momos", "Biryani"],
+              "avgRating": 4.1,
+              "parentId": "840",
+              "avgRatingString": "4.1",
+              "totalRatingsString": "885",
+              "promoted": true,
+              "adTrackingId": "cid=456c1649-cb6f-49ac-a557-59f594f542fc~p=0~adgrpid=456c1649-cb6f-49ac-a557-59f594f542fc#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=119501~plpr=COLLECTION~eid=5b6b64cf-e985-4f0e-9e09-4df3f5599753~srvts=1769845922573~collid=80406",
+              "sla": {
+                "deliveryTime": 19,
+                "lastMileTravel": 0.6,
+                "serviceability": "SERVICEABLE",
+                "slaString": "15-20 mins",
+                "lastMileTravelString": "0.6 km",
+                "iconType": "ICON_TYPE_EMPTY"
+              },
+              "availability": {
+                "nextCloseTime": "2026-01-31 23:00:00",
+                "opened": true
+              },
+              "badges": {
+                "imageBadges": [
+                  {
+                    "imageId": "android/static-assets/icons/big_rx.png",
+                    "description": "bolt!"
+                  }
+                ]
+              },
+              "isOpen": true,
+              "type": "F",
+              "badgesV2": {
+                "entityBadges": {
+                  "imageBased": {
+                    "badgeObject": [
+                      {
+                        "attributes": {
+                          "imageId": "android/static-assets/icons/big_rx.png",
+                          "description": "bolt!"
+                        }
+                      }
+                    ]
+                  },
+                  "textExtendedBadges": {},
+                  "textBased": {}
+                }
+              },
+              "aggregatedDiscountInfoV3": {
+                "header": "10% OFF",
+                "subHeader": "UPTO ₹40",
+                "logoCtx": {
+                  "text": "BENEFITS"
+                }
+              },
+              "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {},
+                "commsStyling": {}
+              },
+              "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+                }
+              },
+              "reviewsSummary": {},
+              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              "restaurantOfferPresentationInfo": {},
+              "externalRatings": {
+                "aggregatedRating": {
+                  "rating": "--"
+                }
+              },
+              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+              "campaignId": "456c1649-cb6f-49ac-a557-59f594f542fc"
+            },
+            "analytics": {},
+            "cta": {
+              "link": "swiggy://menu?restaurant_id=119501&source=collection&query=Tea",
+              "text": "RESTAURANT_MENU",
+              "type": "DEEPLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+          },
+          "relevance": {
+            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+            "sectionId": "MENU_RETURN_FOOD"
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "126729",
+              "name": "Moti Mahal Delux",
+              "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/7/10/bf4f3422-3c15-466b-84b4-996bf1c289bc_eafe295d-06a5-4910-9254-c29e5342f5f2.jpg",
+              "locality": "Maximus Mall",
+              "areaName": "Chilgari",
+              "costForTwo": "₹600 for two",
+              "cuisines": [
+                "North Indian",
+                "Chinese",
+                "Biryani and Beverages",
+                "Tandoor",
+                "Desserts"
+              ],
+              "avgRating": 4.3,
+              "parentId": "739630",
+              "avgRatingString": "4.3",
+              "totalRatingsString": "199",
+              "sla": {
+                "deliveryTime": 24,
+                "lastMileTravel": 0.4,
+                "serviceability": "SERVICEABLE",
+                "slaString": "20-25 mins",
+                "lastMileTravelString": "0.4 km",
+                "iconType": "ICON_TYPE_EMPTY"
+              },
+              "availability": {
+                "nextCloseTime": "2026-01-31 22:15:00",
+                "opened": true
+              },
+              "badges": {
+                "imageBadges": [
+                  {
+                    "imageId": "android/static-assets/icons/big_rx.png",
+                    "description": "bolt!"
+                  }
+                ]
+              },
+              "isOpen": true,
+              "type": "F",
+              "badgesV2": {
+                "entityBadges": {
+                  "imageBased": {
+                    "badgeObject": [
+                      {
+                        "attributes": {
+                          "imageId": "android/static-assets/icons/big_rx.png",
+                          "description": "bolt!"
+                        }
+                      }
+                    ]
+                  },
+                  "textExtendedBadges": {},
+                  "textBased": {}
+                }
+              },
+              "aggregatedDiscountInfoV3": {
+                "header": "60% OFF",
+                "subHeader": "UPTO ₹120",
+                "logoCtx": {
+                  "text": "BENEFITS"
+                }
+              },
+              "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {},
+                "commsStyling": {}
+              },
+              "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+                }
+              },
+              "reviewsSummary": {},
+              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              "restaurantOfferPresentationInfo": {},
+              "externalRatings": {
+                "aggregatedRating": {
+                  "rating": "--"
+                }
+              },
+              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {},
+            "cta": {
+              "link": "swiggy://menu?restaurant_id=126729&source=collection&query=Tea",
+              "text": "RESTAURANT_MENU",
+              "type": "DEEPLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+          },
+          "relevance": {
+            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+            "sectionId": "MENU_RETURN_FOOD"
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "417440",
+              "name": "Vinod Chat Bhandar",
+              "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2025/1/20/f1e04eb6-6609-4cbb-b0e4-9b3966e2e9ae_6387a53d-9f44-4d07-8e6c-a81dfe0d5db8.JPG",
+              "locality": "Cantt Road",
+              "areaName": "Dharamshala City",
+              "costForTwo": "₹300 for two",
+              "cuisines": ["South Indian", "Chinese", "Snacks", "Cafe"],
+              "avgRating": 4.6,
+              "veg": true,
+              "parentId": "223760",
+              "avgRatingString": "4.6",
+              "totalRatingsString": "3.2K+",
+              "promoted": true,
+              "adTrackingId": "cid=36c322a5-8d4d-4e54-94f3-ffa73e813fd7~p=1~adgrpid=36c322a5-8d4d-4e54-94f3-ffa73e813fd7#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=417440~plpr=COLLECTION~eid=9996a3f7-b685-4a54-b333-0dc301a9c174~srvts=1769845922573~collid=80406",
+              "sla": {
+                "deliveryTime": 17,
+                "lastMileTravel": 0.7,
+                "serviceability": "SERVICEABLE",
+                "slaString": "15-20 mins",
+                "lastMileTravelString": "0.7 km",
+                "iconType": "ICON_TYPE_EMPTY"
+              },
+              "availability": {
+                "nextCloseTime": "2026-01-31 22:00:00",
+                "opened": true
+              },
+              "badges": {
+                "imageBadges": [
+                  {
+                    "imageId": "android/static-assets/icons/big_rx.png",
+                    "description": "bolt!"
+                  },
+                  {
+                    "imageId": "Rxawards/_CATEGORY-North%20Indian.png",
+                    "description": "Delivery!"
+                  },
+                  {
+                    "imageId": "Ratnesh_Badges/Rx_Awards_2025/_Milestone%20Restaurants.png",
+                    "description": "Delivery!"
+                  }
+                ]
+              },
+              "isOpen": true,
+              "type": "F",
+              "badgesV2": {
+                "entityBadges": {
+                  "textExtendedBadges": {},
+                  "textBased": {},
+                  "imageBased": {
+                    "badgeObject": [
+                      {
+                        "attributes": {
+                          "imageId": "android/static-assets/icons/big_rx.png",
+                          "description": "bolt!"
+                        }
+                      },
+                      {
+                        "attributes": {
+                          "imageId": "Rxawards/_CATEGORY-North%20Indian.png",
+                          "description": "Delivery!"
+                        }
+                      },
+                      {
+                        "attributes": {
+                          "imageId": "Ratnesh_Badges/Rx_Awards_2025/_Milestone%20Restaurants.png",
+                          "description": "Delivery!"
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT ₹15",
+                "logoCtx": {
+                  "text": "BENEFITS"
+                }
+              },
+              "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {},
+                "commsStyling": {}
+              },
+              "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+                }
+              },
+              "reviewsSummary": {},
+              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              "restaurantOfferPresentationInfo": {},
+              "externalRatings": {
+                "aggregatedRating": {
+                  "rating": "--"
+                }
+              },
+              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+              "campaignId": "36c322a5-8d4d-4e54-94f3-ffa73e813fd7"
+            },
+            "analytics": {},
+            "cta": {
+              "link": "swiggy://menu?restaurant_id=417440&source=collection&query=Tea",
+              "text": "RESTAURANT_MENU",
+              "type": "DEEPLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+          },
+          "relevance": {
+            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+            "sectionId": "MENU_RETURN_FOOD"
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "989769",
+              "name": "Surya Sweets & Cafe",
+              "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/12/bbb9badf-fb09-4705-8932-c77c31a0c363_989769.jpg",
+              "locality": "Dharamshala City",
+              "areaName": "Dharamshala City",
+              "costForTwo": "₹250 for two",
+              "cuisines": [
+                "Chinese",
+                "Desserts",
+                "South Indian",
+                "Thalis",
+                "Indian",
+                "Beverages",
+                "Pastas"
+              ],
+              "avgRating": 4.1,
+              "parentId": "577591",
+              "avgRatingString": "4.1",
+              "totalRatingsString": "461",
+              "sla": {
+                "deliveryTime": 25,
+                "lastMileTravel": 1.3,
+                "serviceability": "SERVICEABLE",
+                "slaString": "25-30 mins",
+                "lastMileTravelString": "1.3 km",
+                "iconType": "ICON_TYPE_EMPTY"
+              },
+              "availability": {
+                "nextCloseTime": "2026-01-31 21:00:00",
+                "opened": true
+              },
+              "badges": {
+                "imageBadges": [
+                  {
+                    "imageId": "android/static-assets/icons/big_rx.png",
+                    "description": "bolt!"
+                  }
+                ]
+              },
+              "isOpen": true,
+              "type": "F",
+              "badgesV2": {
+                "entityBadges": {
+                  "textBased": {},
+                  "imageBased": {
+                    "badgeObject": [
+                      {
+                        "attributes": {
+                          "imageId": "android/static-assets/icons/big_rx.png",
+                          "description": "bolt!"
+                        }
+                      }
+                    ]
+                  },
+                  "textExtendedBadges": {}
+                }
+              },
+              "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT ₹49",
+                "logoCtx": {
+                  "text": "BENEFITS"
+                }
+              },
+              "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {},
+                "commsStyling": {}
+              },
+              "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+                }
+              },
+              "reviewsSummary": {},
+              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              "restaurantOfferPresentationInfo": {},
+              "externalRatings": {
+                "aggregatedRating": {
+                  "rating": "--"
+                }
+              },
+              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {},
+            "cta": {
+              "link": "swiggy://menu?restaurant_id=989769&source=collection&query=Tea",
+              "text": "RESTAURANT_MENU",
+              "type": "DEEPLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+          },
+          "relevance": {
+            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+            "sectionId": "MENU_RETURN_FOOD"
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "753833",
+              "name": "Kala Momo",
+              "cloudinaryImageId": "37046e7dd84eb1b692b4b1a3c251faf0",
+              "locality": "Kangra",
+              "areaName": "Dharamshala City",
+              "costForTwo": "₹200 for two",
+              "cuisines": ["Indian"],
+              "avgRating": 4.4,
+              "parentId": "113850",
+              "avgRatingString": "4.4",
+              "totalRatingsString": "99",
+              "promoted": true,
+              "adTrackingId": "cid=c048b74f-4577-461e-8e37-3295d7854658~p=4~adgrpid=c048b74f-4577-461e-8e37-3295d7854658#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=753833~plpr=COLLECTION~eid=5e86ee19-506d-434b-927a-209cec08eb7c~srvts=1769845922573~collid=80406",
+              "sla": {
+                "deliveryTime": 23,
+                "lastMileTravel": 0.6,
+                "serviceability": "SERVICEABLE",
+                "slaString": "20-25 mins",
+                "lastMileTravelString": "0.6 km",
+                "iconType": "ICON_TYPE_EMPTY"
+              },
+              "availability": {
+                "nextCloseTime": "2026-01-31 22:45:00",
+                "opened": true
+              },
+              "badges": {
+                "imageBadges": [
+                  {
+                    "imageId": "android/static-assets/icons/big_rx.png",
+                    "description": "bolt!"
+                  }
+                ]
+              },
+              "isOpen": true,
+              "type": "F",
+              "badgesV2": {
+                "entityBadges": {
+                  "textExtendedBadges": {},
+                  "textBased": {},
+                  "imageBased": {
+                    "badgeObject": [
+                      {
+                        "attributes": {
+                          "imageId": "android/static-assets/icons/big_rx.png",
+                          "description": "bolt!"
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT ₹139",
+                "logoCtx": {
+                  "text": "BENEFITS"
+                }
+              },
+              "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {},
+                "commsStyling": {}
+              },
+              "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+                }
+              },
+              "reviewsSummary": {},
+              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              "restaurantOfferPresentationInfo": {},
+              "externalRatings": {
+                "aggregatedRating": {
+                  "rating": "--"
+                }
+              },
+              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+              "campaignId": "c048b74f-4577-461e-8e37-3295d7854658"
+            },
+            "analytics": {},
+            "cta": {
+              "link": "swiggy://menu?restaurant_id=753833&source=collection&query=Tea",
+              "text": "RESTAURANT_MENU",
+              "type": "DEEPLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+          },
+          "relevance": {
+            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+            "sectionId": "MENU_RETURN_FOOD"
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "788551",
+              "name": "Shiva Drink & Dine",
+              "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2025/2/10/0ef5a304-069c-4304-bbea-1c9e718fe94a_62e2051c-e56e-4629-ae26-acc9a7eb3fb7.jpg",
+              "locality": "Prayas Bhavan Dharamshala",
+              "areaName": "Dharamshala City",
+              "costForTwo": "₹250 for two",
+              "cuisines": [
+                "North Indian",
+                "Chinese",
+                "South Indian",
+                "Tandoor",
+                "Pizzas",
+                "Thali",
+                "Snacks",
+                "indian snacks",
+                "Burgers"
+              ],
+              "avgRating": 4.3,
+              "parentId": "470194",
+              "avgRatingString": "4.3",
+              "totalRatingsString": "660",
+              "sla": {
+                "deliveryTime": 32,
+                "lastMileTravel": 1.8,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30-35 mins",
+                "lastMileTravelString": "1.8 km",
+                "iconType": "ICON_TYPE_EMPTY"
+              },
+              "availability": {
+                "nextCloseTime": "2026-01-31 22:45:00",
+                "opened": true
+              },
+              "badges": {},
+              "isOpen": true,
+              "type": "F",
+              "badgesV2": {
+                "entityBadges": {
+                  "imageBased": {},
+                  "textExtendedBadges": {},
+                  "textBased": {}
+                }
+              },
+              "aggregatedDiscountInfoV3": {
+                "header": "₹200 OFF",
+                "subHeader": "ABOVE ₹1299",
+                "discountTag": "FLAT DEAL",
+                "logoCtx": {
+                  "text": "BENEFITS"
+                }
+              },
+              "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {},
+                "commsStyling": {}
+              },
+              "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+                }
+              },
+              "reviewsSummary": {},
+              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              "restaurantOfferPresentationInfo": {},
+              "externalRatings": {
+                "aggregatedRating": {
+                  "rating": "--"
+                }
+              },
+              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {},
+            "cta": {
+              "link": "swiggy://menu?restaurant_id=788551&source=collection&query=Tea",
+              "text": "RESTAURANT_MENU",
+              "type": "DEEPLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+          },
+          "relevance": {
+            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+            "sectionId": "MENU_RETURN_FOOD"
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "1087080",
+              "name": "Hops N Chops",
+              "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2025/4/30/cd0e5af9-1a57-4959-a93f-579afc6e95d7_75145e15-809e-4811-bbb9-8a35d7f0df3e.jpg",
+              "locality": "Dharamshala City",
+              "areaName": "Dharamshala City",
+              "costForTwo": "₹350 for two",
+              "cuisines": [
+                "Indian",
+                "Chinese",
+                "Tandoori",
+                "South Indian",
+                "Continental",
+                "Sweets"
+              ],
+              "avgRating": 4.4,
+              "parentId": "631805",
+              "avgRatingString": "4.4",
+              "totalRatingsString": "154",
+              "promoted": true,
+              "adTrackingId": "cid=cbf2d091-b407-4afc-aceb-8df7292fafc7~p=7~adgrpid=cbf2d091-b407-4afc-aceb-8df7292fafc7#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=1087080~plpr=COLLECTION~eid=19bddf6e-7d7a-4e44-bd7c-9b7ff376713b~srvts=1769845922573~collid=80406",
+              "sla": {
+                "deliveryTime": 35,
+                "lastMileTravel": 5.8,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30-35 mins",
+                "lastMileTravelString": "5.8 km",
+                "iconType": "ICON_TYPE_EMPTY"
+              },
+              "availability": {
+                "nextCloseTime": "2026-01-31 22:30:00",
+                "opened": true
+              },
+              "badges": {},
+              "isOpen": true,
+              "type": "F",
+              "badgesV2": {
+                "entityBadges": {
+                  "textExtendedBadges": {},
+                  "textBased": {},
+                  "imageBased": {}
+                }
+              },
+              "aggregatedDiscountInfoV3": {
+                "header": "10% OFF",
+                "subHeader": "UPTO ₹40",
+                "logoCtx": {
+                  "text": "BENEFITS"
+                }
+              },
+              "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {},
+                "commsStyling": {}
+              },
+              "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+                }
+              },
+              "reviewsSummary": {},
+              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              "restaurantOfferPresentationInfo": {},
+              "externalRatings": {
+                "aggregatedRating": {
+                  "rating": "--"
+                }
+              },
+              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+              "campaignId": "cbf2d091-b407-4afc-aceb-8df7292fafc7"
+            },
+            "analytics": {},
+            "cta": {
+              "link": "swiggy://menu?restaurant_id=1087080&source=collection&query=Tea",
+              "text": "RESTAURANT_MENU",
+              "type": "DEEPLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+          },
+          "relevance": {
+            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+            "sectionId": "MENU_RETURN_FOOD"
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "542832",
+              "name": "RASEELA by Kaash I Wish",
+              "cloudinaryImageId": "jzdho8sgu14ktbc2koxo",
+              "locality": "Barol",
+              "areaName": "Shyam Nagar",
+              "costForTwo": "₹150 for two",
+              "cuisines": ["Fast Food", "North Indian", "Beverages"],
+              "avgRating": 4.3,
+              "veg": true,
+              "parentId": "326224",
+              "avgRatingString": "4.3",
+              "totalRatingsString": "638",
+              "sla": {
+                "deliveryTime": 24,
+                "lastMileTravel": 3,
+                "serviceability": "SERVICEABLE",
+                "slaString": "20-25 mins",
+                "lastMileTravelString": "3.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+              },
+              "availability": {
+                "nextCloseTime": "2026-01-31 22:00:00",
+                "opened": true
+              },
+              "badges": {
+                "imageBadges": [
+                  {
+                    "imageId": "v1695133679/badges/Pure_Veg111.png",
+                    "description": "pureveg"
+                  }
+                ]
+              },
+              "isOpen": true,
+              "type": "F",
+              "badgesV2": {
+                "entityBadges": {
+                  "imageBased": {
+                    "badgeObject": [
+                      {
+                        "attributes": {
+                          "imageId": "v1695133679/badges/Pure_Veg111.png",
+                          "description": "pureveg"
+                        }
+                      }
+                    ]
+                  },
+                  "textExtendedBadges": {},
+                  "textBased": {}
+                }
+              },
+              "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT ₹55",
+                "logoCtx": {
+                  "text": "BENEFITS"
+                }
+              },
+              "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {},
+                "commsStyling": {}
+              },
+              "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+                }
+              },
+              "reviewsSummary": {},
+              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              "restaurantOfferPresentationInfo": {},
+              "externalRatings": {
+                "aggregatedRating": {
+                  "rating": "--"
+                }
+              },
+              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {},
+            "cta": {
+              "link": "swiggy://menu?restaurant_id=542832&source=collection&query=Tea",
+              "text": "RESTAURANT_MENU",
+              "type": "DEEPLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+          },
+          "relevance": {
+            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+            "sectionId": "MENU_RETURN_FOOD"
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "1059752",
+              "name": "Cafe Coco London",
+              "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2025/3/15/064d66e7-2bf5-4e56-ac99-f37319b68ec8_ba3a3425-6234-4d75-9d1f-52f86211213a.jpg",
+              "locality": "Dharamshala City",
+              "areaName": "Dharamshala City",
+              "costForTwo": "₹250 for two",
+              "cuisines": [
+                "Desserts",
+                "Beverages",
+                "Pizzas",
+                "Pastas",
+                "Burgers",
+                "Cafe"
+              ],
+              "avgRating": 4.1,
+              "parentId": "615359",
+              "avgRatingString": "4.1",
+              "totalRatingsString": "37",
+              "promoted": true,
+              "adTrackingId": "cid=a4b07a66-d18f-4ab8-b49c-2b4be9c3bb89~p=8~adgrpid=a4b07a66-d18f-4ab8-b49c-2b4be9c3bb89#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=1059752~plpr=COLLECTION~eid=3f8706cb-fd2a-4e67-a110-ff63042c4da3~srvts=1769845922573~collid=80406",
+              "sla": {
+                "deliveryTime": 30,
+                "lastMileTravel": 2.1,
+                "serviceability": "SERVICEABLE",
+                "slaString": "25-30 mins",
+                "lastMileTravelString": "2.1 km",
+                "iconType": "ICON_TYPE_EMPTY"
+              },
+              "availability": {
+                "nextCloseTime": "2026-01-31 21:00:00",
+                "opened": true
+              },
+              "badges": {
+                "imageBadges": [
+                  {
+                    "imageId": "android/static-assets/icons/big_rx.png",
+                    "description": "bolt!"
+                  }
+                ]
+              },
+              "isOpen": true,
+              "type": "F",
+              "badgesV2": {
+                "entityBadges": {
+                  "textBased": {},
+                  "imageBased": {
+                    "badgeObject": [
+                      {
+                        "attributes": {
+                          "description": "bolt!",
+                          "imageId": "android/static-assets/icons/big_rx.png"
+                        }
+                      }
+                    ]
+                  },
+                  "textExtendedBadges": {}
+                }
+              },
+              "aggregatedDiscountInfoV3": {
+                "header": "ITEMS",
+                "subHeader": "AT ₹44",
+                "logoCtx": {
+                  "text": "BENEFITS"
+                }
+              },
+              "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {},
+                "commsStyling": {}
+              },
+              "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+                }
+              },
+              "reviewsSummary": {},
+              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              "restaurantOfferPresentationInfo": {},
+              "externalRatings": {
+                "aggregatedRating": {
+                  "rating": "--"
+                }
+              },
+              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+              "campaignId": "a4b07a66-d18f-4ab8-b49c-2b4be9c3bb89"
+            },
+            "analytics": {},
+            "cta": {
+              "link": "swiggy://menu?restaurant_id=1059752&source=collection&query=Tea",
+              "text": "RESTAURANT_MENU",
+              "type": "DEEPLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+          },
+          "relevance": {
+            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+            "sectionId": "MENU_RETURN_FOOD"
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "1072795",
+              "name": "Chaat Express",
+              "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/4/1/beb5fc64-387c-49bf-97da-c28ff2e439eb_1072795.jpg",
+              "locality": "Dharamshala City",
+              "areaName": "Dharamshala City",
+              "costForTwo": "₹280 for two",
+              "cuisines": ["Chaat"],
+              "avgRating": 4.2,
+              "veg": true,
+              "parentId": "56643",
+              "avgRatingString": "4.2",
+              "totalRatingsString": "20",
+              "sla": {
+                "deliveryTime": 25,
+                "lastMileTravel": 0.4,
+                "serviceability": "SERVICEABLE",
+                "slaString": "20-25 mins",
+                "lastMileTravelString": "0.4 km",
+                "iconType": "ICON_TYPE_EMPTY"
+              },
+              "availability": {
+                "nextCloseTime": "2026-01-31 22:30:00",
+                "opened": true
+              },
+              "badges": {
+                "imageBadges": [
+                  {
+                    "imageId": "android/static-assets/icons/big_rx.png",
+                    "description": "bolt!"
+                  }
+                ]
+              },
+              "isOpen": true,
+              "type": "F",
+              "badgesV2": {
+                "entityBadges": {
+                  "textBased": {},
+                  "imageBased": {
+                    "badgeObject": [
+                      {
+                        "attributes": {
+                          "description": "bolt!",
+                          "imageId": "android/static-assets/icons/big_rx.png"
+                        }
+                      }
+                    ]
+                  },
+                  "textExtendedBadges": {}
+                }
+              },
+              "aggregatedDiscountInfoV3": {
+                "header": "10% OFF",
+                "subHeader": "UPTO ₹40",
+                "logoCtx": {
+                  "text": "BENEFITS"
+                }
+              },
+              "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {},
+                "commsStyling": {}
+              },
+              "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+                }
+              },
+              "reviewsSummary": {},
+              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              "restaurantOfferPresentationInfo": {},
+              "externalRatings": {
+                "aggregatedRating": {
+                  "rating": "--"
+                }
+              },
+              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {},
+            "cta": {
+              "link": "swiggy://menu?restaurant_id=1072795&source=collection&query=Tea",
+              "text": "RESTAURANT_MENU",
+              "type": "DEEPLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+          },
+          "relevance": {
+            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+            "sectionId": "MENU_RETURN_FOOD"
+          }
+        }
+      }
+    ],
+    "firstOffsetRequest": true,
+    "nextFetch": 3
+  },
+  "tid": "922eb3ed-defa-4e01-9f54-3bafafb86e9a",
+  "sid": "pfo9e6ba-bd7b-449d-8f22-cd8944a8c7c1",
+  "deviceId": "21586c2f-0280-981d-9ddf-e8842937269e",
+  "csrfToken": "fJtEhMHHektX-FmmVcL5KaydfMCbJoa3sRQpeicA"
+}

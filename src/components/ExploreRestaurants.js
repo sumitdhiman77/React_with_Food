@@ -4,6 +4,8 @@ import Shimmer from "./Shimmer";
 import RestaurantCard from "./RestaurantCard";
 import { Link } from "react-router-dom";
 const ExploreRestaurants = () => {
+  const parameters = useParams();
+  console.log(parameters);
   const { collectionId } = useParams();
   const data = useExploreRestaurants(collectionId);
   console.log("data is", data);

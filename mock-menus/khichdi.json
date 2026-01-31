@@ -1,0 +1,501 @@
+{
+  "statusCode": 0,
+  "data": {
+    "statusMessage": "done successfully",
+    "cards": [
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.CollectionMasthead",
+            "collectionId": "80455",
+            "title": "Khichdi",
+            "description": "Comforting and filling, dive into the delicious flavour of Khichdi.",
+            "imageId": "COLLECTIONS/IMAGES/MERCH/2024/7/1/1b929125-327e-4e8d-93cc-1c8005a4b677_pic",
+            "aspectRatio": "3.44",
+            "cta": {
+              "link": "swiggy://collectionV2?collection_id=80455&tags=layout_BAU_Contextual,khichdi",
+              "type": "collectionv2"
+            },
+            "type": "COLLECTION_MASTHEAD_TYPE_IMAGE_WITH_TEXT",
+            "count": "3 restaurants",
+            "navBarConfig": {}
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.InlineViewFilterSortWidget",
+            "sortConfigs": [
+              {
+                "key": "relevance",
+                "title": "Relevance (Default)",
+                "selected": true,
+                "defaultSelection": true
+              },
+              {
+                "key": "deliveryTimeAsc",
+                "title": "Delivery Time"
+              },
+              {
+                "key": "modelBasedRatingDesc",
+                "title": "Rating"
+              },
+              {
+                "key": "costForTwoAsc",
+                "title": "Cost: Low to High"
+              },
+              {
+                "key": "costForTwoDesc",
+                "title": "Cost: High to Low"
+              }
+            ],
+            "restaurantCount": 3,
+            "facetList": [
+              {
+                "label": "10 Mins Delivery",
+                "id": "isRestaurantBolt",
+                "selection": "SELECT_TYPE_SINGLESELECT",
+                "facetInfo": [
+                  {
+                    "label": "10 Mins Delivery",
+                    "id": "isRestaurantBoltfacetquery0",
+                    "analytics": {},
+                    "openFilter": true
+                  }
+                ],
+                "viewType": "VIEW_TYPE_FLATTENED",
+                "subLabel": "Filter by",
+                "icon": "COLLECTIONS/IMAGES/MERCH/2024/12/18/4b2e8903-0e25-401b-8ede-088491b4cfa0_937977a3-b03b-4a9e-8b6a-24937664d1a9_pic.png",
+                "selectedIcon": "COLLECTIONS/IMAGES/MERCH/2024/12/26/3072d307-2f8e-471c-862d-d426fb93c0bf_4b2e8903-0e25-401b-8ede-088491b4cfa0_937977a3-b03b-4a9e-8b6a-24937664d1a9_pic.png"
+              },
+              {
+                "label": "Veg/Non-Veg",
+                "id": "isVeg",
+                "selection": "SELECT_TYPE_MULTISELECT",
+                "facetInfo": [
+                  {
+                    "label": "Non Veg",
+                    "id": "isVegfacetquery0",
+                    "analytics": {},
+                    "openFilter": true
+                  }
+                ],
+                "viewType": "VIEW_TYPE_HALF_CARD",
+                "subLabel": "Filter by",
+                "openFilter": true
+              },
+              {
+                "label": "Ratings",
+                "id": "rating",
+                "selection": "SELECT_TYPE_MULTISELECT",
+                "facetInfo": [
+                  {
+                    "label": "Ratings",
+                    "id": "ratingfacetquery0",
+                    "analytics": {},
+                    "openFilter": true
+                  },
+                  {
+                    "label": "Ratings 4.0+",
+                    "id": "ratingfacetquery1",
+                    "analytics": {},
+                    "openFilter": true
+                  },
+                  {
+                    "label": "Ratings 4.5+",
+                    "id": "ratingfacetquery2",
+                    "analytics": {},
+                    "openFilter": true
+                  }
+                ],
+                "viewType": "VIEW_TYPE_HALF_CARD",
+                "subLabel": "Filter by",
+                "openFilter": true
+              },
+              {
+                "label": "Delivery Time",
+                "id": "deliveryTime",
+                "selection": "SELECT_TYPE_MULTISELECT",
+                "facetInfo": [
+                  {
+                    "label": "Less than 30 mins",
+                    "id": "deliveryTimefacetquery0",
+                    "analytics": {},
+                    "openFilter": true
+                  },
+                  {
+                    "label": "Less than 45 mins",
+                    "id": "deliveryTimefacetquery1",
+                    "analytics": {},
+                    "openFilter": true
+                  }
+                ],
+                "viewType": "VIEW_TYPE_HALF_CARD",
+                "subLabel": "Filter by",
+                "openFilter": true
+              },
+              {
+                "label": "Cost For Two",
+                "id": "costForTwo",
+                "selection": "SELECT_TYPE_MULTISELECT",
+                "facetInfo": [
+                  {
+                    "label": "Less than Rs. 300",
+                    "id": "costForTwofacetquery0",
+                    "analytics": {},
+                    "openFilter": true
+                  },
+                  {
+                    "label": "Rs.300 - Rs.600",
+                    "id": "costForTwofacetquery1",
+                    "analytics": {},
+                    "openFilter": true
+                  }
+                ],
+                "viewType": "VIEW_TYPE_HALF_CARD",
+                "subLabel": "Filter by",
+                "openFilter": true
+              }
+            ],
+            "widgetId": "inlineFacetFilter"
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget",
+            "layout": {
+              "rows": 1,
+              "widgetPadding": {
+                "left": 16,
+                "top": 12,
+                "right": 16
+              },
+              "widgetTheme": {
+                "defaultMode": {
+                  "backgroundColour": "#FFFFFF",
+                  "theme": "THEME_TYPE_LIGHT"
+                },
+                "darkMode": {
+                  "backgroundColour": "#1B3028",
+                  "theme": "THEME_TYPE_DARK"
+                }
+              }
+            },
+            "id": "restaurantCountWidget",
+            "gridElements": {
+              "infoWithStyle": {
+                "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.TextBoxV2",
+                "text": "Restaurants to explore",
+                "headerStyling": {
+                  "textSize": 15,
+                  "textColor": "text_color_highest_emphasis",
+                  "textFontName": "FONT_NAME_HEADER_H5",
+                  "maxLines": 1
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "751682",
+              "name": "Khaana Khazana",
+              "cloudinaryImageId": "07bf36948a8541af17921b51a4c2e605",
+              "locality": "Shyam Nagar",
+              "areaName": "Dharamshala City",
+              "costForTwo": "₹300 for two",
+              "cuisines": ["Biryani", "Fast Food", "Pizzas"],
+              "avgRating": 4.2,
+              "parentId": "3424",
+              "avgRatingString": "4.2",
+              "totalRatingsString": "149",
+              "sla": {
+                "deliveryTime": 33,
+                "lastMileTravel": 2,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30-35 mins",
+                "lastMileTravelString": "2.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+              },
+              "availability": {
+                "nextCloseTime": "2026-01-31 22:00:00",
+                "opened": true
+              },
+              "badges": {
+                "imageBadges": [
+                  {
+                    "imageId": "android/static-assets/icons/big_rx.png",
+                    "description": "bolt!"
+                  }
+                ]
+              },
+              "isOpen": true,
+              "type": "F",
+              "badgesV2": {
+                "entityBadges": {
+                  "imageBased": {
+                    "badgeObject": [
+                      {
+                        "attributes": {
+                          "imageId": "android/static-assets/icons/big_rx.png",
+                          "description": "bolt!"
+                        }
+                      }
+                    ]
+                  },
+                  "textExtendedBadges": {},
+                  "textBased": {}
+                }
+              },
+              "aggregatedDiscountInfoV3": {
+                "header": "FREE ITEM",
+                "logoCtx": {
+                  "text": "BENEFITS"
+                }
+              },
+              "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {},
+                "commsStyling": {}
+              },
+              "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                  "maxDuration": "3000",
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+                }
+              },
+              "reviewsSummary": {},
+              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              "restaurantOfferPresentationInfo": {},
+              "externalRatings": {
+                "aggregatedRating": {
+                  "rating": "--"
+                }
+              },
+              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {},
+            "cta": {
+              "link": "swiggy://menu?restaurant_id=751682&source=collection&query=Khichdi",
+              "text": "RESTAURANT_MENU",
+              "type": "DEEPLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget_Contextual"
+          },
+          "relevance": {
+            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+            "sectionId": "MENU_RETURN_FOOD"
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "119500",
+              "name": "Hotel pong view",
+              "cloudinaryImageId": "vj6ereutdquwofahh4wb",
+              "locality": "Dharamshala",
+              "areaName": "Gamru",
+              "costForTwo": "₹350 for two",
+              "cuisines": ["North Indian", "Chinese", "Thalis", "Snacks"],
+              "avgRating": 4.5,
+              "parentId": "101092",
+              "avgRatingString": "4.5",
+              "totalRatingsString": "111",
+              "sla": {
+                "deliveryTime": 26,
+                "lastMileTravel": 1.4,
+                "serviceability": "SERVICEABLE",
+                "slaString": "25-30 mins",
+                "lastMileTravelString": "1.4 km",
+                "iconType": "ICON_TYPE_EMPTY"
+              },
+              "availability": {
+                "nextCloseTime": "2026-01-31 22:30:00",
+                "opened": true
+              },
+              "badges": {
+                "imageBadges": [
+                  {
+                    "imageId": "android/static-assets/icons/big_rx.png",
+                    "description": "bolt!"
+                  }
+                ]
+              },
+              "isOpen": true,
+              "type": "F",
+              "badgesV2": {
+                "entityBadges": {
+                  "textExtendedBadges": {},
+                  "textBased": {},
+                  "imageBased": {
+                    "badgeObject": [
+                      {
+                        "attributes": {
+                          "imageId": "android/static-assets/icons/big_rx.png",
+                          "description": "bolt!"
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "aggregatedDiscountInfoV3": {
+                "header": "25% OFF",
+                "subHeader": "UPTO ₹65",
+                "logoCtx": {
+                  "text": "BENEFITS"
+                }
+              },
+              "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {},
+                "commsStyling": {}
+              },
+              "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                  "maxDuration": "3000",
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+                }
+              },
+              "reviewsSummary": {},
+              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              "restaurantOfferPresentationInfo": {},
+              "externalRatings": {
+                "aggregatedRating": {
+                  "rating": "4.4",
+                  "ratingCount": "1.4K+"
+                },
+                "source": "GOOGLE",
+                "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+              },
+              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {},
+            "cta": {
+              "link": "swiggy://menu?restaurant_id=119500&source=collection&query=Khichdi",
+              "text": "RESTAURANT_MENU",
+              "type": "DEEPLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget_Contextual"
+          },
+          "relevance": {
+            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+            "sectionId": "MENU_RETURN_FOOD"
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "802716",
+              "name": "Zasty by Desi Curries",
+              "cloudinaryImageId": "6137264cbf90966740c7ca9a55b109e1",
+              "locality": "Dharamshala",
+              "areaName": "Dharamshala City",
+              "costForTwo": "₹350 for two",
+              "cuisines": ["North Indian", "Mughlai", "Snacks"],
+              "avgRating": 4.4,
+              "parentId": "601305",
+              "avgRatingString": "4.4",
+              "totalRatingsString": "23",
+              "sla": {
+                "deliveryTime": 32,
+                "lastMileTravel": 4.4,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30-35 mins",
+                "lastMileTravelString": "4.4 km",
+                "iconType": "ICON_TYPE_EMPTY"
+              },
+              "availability": {
+                "nextCloseTime": "2026-01-31 23:00:00",
+                "opened": true
+              },
+              "badges": {},
+              "isOpen": true,
+              "type": "F",
+              "badgesV2": {
+                "entityBadges": {
+                  "textBased": {},
+                  "imageBased": {},
+                  "textExtendedBadges": {}
+                }
+              },
+              "aggregatedDiscountInfoV3": {
+                "header": "₹40 OFF",
+                "subHeader": "ABOVE ₹499",
+                "discountTag": "FLAT DEAL",
+                "logoCtx": {
+                  "text": "BENEFITS"
+                }
+              },
+              "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {},
+                "commsStyling": {}
+              },
+              "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                  "maxDuration": "3000",
+                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                  "lottie": {},
+                  "video": {}
+                }
+              },
+              "reviewsSummary": {},
+              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+              "restaurantOfferPresentationInfo": {},
+              "externalRatings": {
+                "aggregatedRating": {
+                  "rating": "--"
+                }
+              },
+              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {},
+            "cta": {
+              "link": "swiggy://menu?restaurant_id=802716&source=collection&query=Khichdi",
+              "text": "RESTAURANT_MENU",
+              "type": "DEEPLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget_Contextual"
+          },
+          "relevance": {
+            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+            "sectionId": "MENU_RETURN_FOOD"
+          }
+        }
+      }
+    ],
+    "firstOffsetRequest": true,
+    "nextFetch": 3
+  },
+  "tid": "922eb3ed-defa-4e01-9f54-3bafafb86e9a",
+  "sid": "pfo9e6ba-bd7b-449d-8f22-cd8944a8c7c1",
+  "deviceId": "21586c2f-0280-981d-9ddf-e8842937269e",
+  "csrfToken": "rMbJTph6CXw5-X03bg23yOWqk4Ma7YZi4HEfVJXA"
+}
