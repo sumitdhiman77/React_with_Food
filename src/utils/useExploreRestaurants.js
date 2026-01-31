@@ -14,7 +14,7 @@ const useExploreRestaurants = (collectionId, tags) => {
   const fetchData = async () => {
     try {
       const res = await fetch(
-        `${ExploreRestaurants_URL}&lat=${lat}&lng=${lng}&collection=${collectionId}&tags=${tags}&sortBy=&filters=&type=rcv2&offset=0&page_type=null`,
+        `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=32.2182266&lng=76.3172673&restaurantId=408501&catalog_qa=undefined&submitAction=ENTER`,
       );
       console.log(res);
       const json = await res.json();
