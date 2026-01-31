@@ -59,3 +59,5 @@ root.render(
     </LocationProvider>
   </Provider>,
 );
+
+// https://www.swiggy.com/dapi/restaurants/list/v5?lat=32.2182266&lng=76.3172673&collection=83637&tags=layout_CCS_Burger&sortBy=&filters=&type=rcv2&offset=0&page_type=null

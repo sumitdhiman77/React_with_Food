@@ -172,7 +172,7 @@ const Body = () => {
               itemClass="carousel-item-padding-40-px "
             >
               {bannerItems?.map((bannerItem) => {
-                const url = new URL(bannerItem.action.link);
+                const url = new URL(bannerItem.cta.link);
                 const collectionId = url.searchParams.get("collectionId");
                 const tags = url.searchParams.get("tags");
                 {
