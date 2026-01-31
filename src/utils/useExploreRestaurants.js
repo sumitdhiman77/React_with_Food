@@ -2,7 +2,7 @@ import { useState, useEffect, useContext } from "react";
 import { ExploreRestaurants_URL } from "./constants";
 import LocationContext from "./LocationContext";
 
-const useExploreRestaurants = (collectionId) => {
+const useExploreRestaurants = (collectionId, tags) => {
   const [data, setData] = useState(null);
   const { lat, lng } = useContext(LocationContext);
   console.log("la & lang", lat, lng);
@@ -14,7 +14,7 @@ const useExploreRestaurants = (collectionId) => {
   const fetchData = async () => {
     try {
       const res = await fetch(
-        `${ExploreRestaurants_URL}&lat=${lat}&lng=${lng}&collection=${collectionId}&tags=layout_CCS_Pizza&sortBy=&filters=&type=rcv2&offset=0&page_type=null`,
+        `${ExploreRestaurants_URL}&lat=${lat}&lng=${lng}&collection=${collectionId}&tags=${tags}&sortBy=&filters=&type=rcv2&offset=0&page_type=null`,
       );
       console.log(res);
       const json = await res.json();

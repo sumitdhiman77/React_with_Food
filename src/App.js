@@ -40,7 +40,10 @@ const appRouter = createBrowserRouter([
           </Suspense>
         ),
       },
-      { path: "/collections/:collectionId", element: <ExploreRestaurants /> },
+      {
+        path: "/collections/:collectionId/:tags",
+        element: <ExploreRestaurants />,
+      },
       { path: "/restaurants/:resId", element: <RestaurantMenu /> },
       { path: "/cart", element: <Cart /> },
     ],
@@ -54,5 +57,5 @@ root.render(
     <LocationProvider>
       <RouterProvider router={appRouter} />
     </LocationProvider>
-  </Provider>
+  </Provider>,
 );

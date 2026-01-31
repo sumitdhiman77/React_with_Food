@@ -172,13 +172,15 @@ const Body = () => {
               itemClass="carousel-item-padding-40-px "
             >
               {bannerItems?.map((bannerItem) => {
-                const collectionId = bannerItem.action.link.match(/(\d+)/);
+                const url = new URL(bannerItem.action.link);
+                const collectionId = url.searchParams.get("collectionId");
+                const tags = url.searchParams.get("tags");
                 {
                   /* console.log(collectionId); */
                 }
                 return (
                   <div key={bannerItem.id}>
-                    <Link to={"/collections/" + collectionId[0]}>
+                    <Link to={"/collections/" + collectionId + tags}>
                       <img
                         className="w-36 h-48 border-none rounded-full object-cover"
                         src={ITEM_IMG_URL + bannerItem.imageId}
