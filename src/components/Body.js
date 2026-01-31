@@ -175,9 +175,9 @@ const Body = () => {
                 const url = new URL(bannerItem.action.link);
                 const collectionId = url.searchParams.get("collection_id");
                 const tags = url.searchParams.get("tags");
-                {
-                  /* console.log(collectionId); */
-                }
+                console.log(collectionId);
+                console.log(url);
+                console.log(tags);
                 return (
                   <div key={bannerItem.id}>
                     <Link to={"/collections/" + collectionId + "/" + tags}>
