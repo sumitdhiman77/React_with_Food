@@ -180,7 +180,7 @@ const Body = () => {
                 }
                 return (
                   <div key={bannerItem.id}>
-                    <Link to={"/collections/" + collectionId + tags}>
+                    <Link to={"/collections/" + collectionId / +tags}>
                       <img
                         className="w-36 h-48 border-none rounded-full object-cover"
                         src={ITEM_IMG_URL + bannerItem.imageId}
