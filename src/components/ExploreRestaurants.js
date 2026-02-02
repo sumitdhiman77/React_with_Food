@@ -6,8 +6,15 @@ import { Link } from "react-router-dom";
 const ExploreRestaurants = () => {
   const parameters = useParams();
   console.log(parameters);
-  const { collectionId, tags, query } = useParams();
-  const data = useExploreRestaurants(collectionId, tags, query);
+  const { collectionId, tags, query, type } = useParams();
+  const data = useExploreRestaurants(collectionId, query, tags, type);
+  console.log(
+    "collectionId,query, tags,type is:",
+    collectionId,
+    query,
+    tags,
+    type,
+  );
   console.log("data is", data);
   if (!data) return <Shimmer />;
 

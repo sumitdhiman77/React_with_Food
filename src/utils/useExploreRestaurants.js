@@ -2,7 +2,7 @@ import { useState, useEffect, useContext } from "react";
 import { ExploreRestaurants_URL } from "./constants";
 import LocationContext from "./LocationContext";
 
-const useExploreRestaurants = (collectionId, tags) => {
+const useExploreRestaurants = (collectionId, query, tags, type) => {
   const [data, setData] = useState(null);
   const { lat, lng } = useContext(LocationContext);
   console.log("la & lang", lat, lng);

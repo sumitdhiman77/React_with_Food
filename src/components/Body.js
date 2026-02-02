@@ -174,15 +174,18 @@ const Body = () => {
               {bannerItems?.map((bannerItem) => {
                 const url = new URL(bannerItem.action.link);
                 const collectionId = url.searchParams.get("collection_id");
-                const tags = url.searchParams.get("tags");
                 const query = url.searchParams.get("search_context");
-                console.log(collectionId);
+                const tags = url.searchParams.get("tags");
+                const type = url.searchParams.get("type");
                 console.log(url);
-                console.log(tags);
+                console.log("collectionId is:", collectionId);
+                console.log("query is:", query);
+                console.log("tags is:", tags);
+                console.log("type is:", type);
                 return (
                   <div key={bannerItem.id}>
                     <Link
-                      to={"/collections/" + collectionId + "/" + tags + query}
+                      to={`/collections/${collectionId}/${query}/${tags}/${type}`}
                     >
                       <img
                         className="w-36 h-48 border-none rounded-full object-cover"
