@@ -19,23 +19,35 @@ export default async function handler(req, res) {
 
     const response = await fetch(swiggyURL, {
       headers: {
+        // 1. Critical headers found in the official request
+        __fetch_req__: "true",
+        platform: "dweb",
+
+        // 2. Matching your actual browser exactly
         "User-Agent":
-          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
-        Accept: "application/json",
-        Referer: "https://www.swiggy.com/",
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",
+
+        // 3. Standard headers
+        Accept: "application/json, text/plain, */*",
+        Referer: "https://www.swiggy.com",
         Origin: "https://www.swiggy.com",
+        "Accept-Language": "en-US,en;q=0.9,hi;q=0.8",
+
+        // 4. The "Last Resort" (Manually copy your aws-waf-token if the above fails)
+        // "Cookie": "aws-waf-token=PASTE_YOUR_TOKEN_HERE; _device_id=21586c2f-..."
       },
     });
 
     if (!response.ok) {
       const errorText = await response.text();
+      console.error("Swiggy Original Status:", response.status);
       return res.status(response.status).json({
         error: "Swiggy API request failed",
         status: response.status,
-        bodyPreview: errorText.slice(0, 200),
+        isHtml: errorText.trim().startsWith("<!DOCTYPE"), // Check if it's a block page
+        bodyPreview: errorText.slice(0, 500),
       });
     }
-
     const text = await response.text();
 
     let jsonData;
