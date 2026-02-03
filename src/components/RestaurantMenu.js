@@ -15,8 +15,8 @@ const RestaurantMenu = () => {
   const { lat, lng } = useContext(LocationContext);
   const [item, setItem] = useState(null);
   const [veg, setVeg] = useState(false);
-  const { resId, query } = useParams();
-  const resInfo = useRestaurantMenu(resId, lat, lng, query);
+  const { resId } = useParams();
+  const resInfo = useRestaurantMenu(resId, lat, lng);
   console.log("resInfo is:", resInfo);
   if (!resInfo) return <Shimmer />;
 
@@ -27,11 +27,13 @@ const RestaurantMenu = () => {
     totalRatingsString,
     costForTwoMessage,
     areaName,
+    feeDetails,
+    sla,
     cloudinaryImageId,
-  } = resInfo?.cards[2]?.card?.card?.info;
+  } = resInfo?.data?.cards[2]?.card?.card?.info;
 
   const categories =
-    resInfo?.cards[3]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.filter(
+    resInfo?.data?.cards[3]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.filter(
       (c) =>
         c?.card?.card?.["@type"] ===
         "type.googleapis.com/swiggy.presentation.food.v2.MenuVegFilterAndBadge",
