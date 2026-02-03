@@ -15,6 +15,7 @@ const RestaurantMenu = () => {
   const { lat, lng } = useContext(LocationContext);
   const [item, setItem] = useState(null);
   const [veg, setVeg] = useState(false);
+  const [vegItems, setVegItems] = useState(null);
   const [categories, setCategories] = useState(null);
   const { resId, query } = useParams();
   const resInfo = useRestaurantMenu(resId, lat, lng, query);
@@ -99,9 +100,11 @@ const RestaurantMenu = () => {
           </label>
 
           {categories.map((category, index) => {
-            const vegItems = category.card.card.itemCards.filter(
-              (item) =>
-                item?.card?.info?.itemAttribute?.vegClassifier === "VEG",
+            setVegItems(
+              category.card.card.itemCards.filter(
+                (item) =>
+                  item?.card?.info?.itemAttribute?.vegClassifier === "VEG",
+              ),
             );
 
             return (
