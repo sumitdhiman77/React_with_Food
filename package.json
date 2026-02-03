@@ -5,7 +5,7 @@
   "proxy": "http://localhost:1234",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html --dist-dir dist --public-url / && cp -r public/mock-menus dist/",
+    "build": "parcel build index.html --dist-dir dist --public-url / && xcopy public\\mock-menus dist\\mock-menus /E /I /Y",
     "test": "jest",
     "watch-test": "jest --watch"
   },
