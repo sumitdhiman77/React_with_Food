@@ -15,6 +15,7 @@ const RestaurantMenu = () => {
   const { lat, lng } = useContext(LocationContext);
   const [item, setItem] = useState(null);
   const [veg, setVeg] = useState(false);
+  const [categories, setCategories] = useState(null);
   const { resId, query } = useParams();
   const resInfo = useRestaurantMenu(resId, lat, lng, query);
   console.log("resInfo is:", resInfo);
@@ -32,8 +33,9 @@ const RestaurantMenu = () => {
     cloudinaryImageId,
   } = resInfo?.data?.cards[2]?.card?.card?.info;
 
-  const categories =
-    resInfo?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
+  setCategories(
+    resInfo?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards,
+  );
   console.log(categories);
   return (
     <>
