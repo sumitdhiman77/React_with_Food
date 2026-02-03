@@ -27,7 +27,6 @@ const RestaurantMenu = () => {
     totalRatingsString,
     costForTwoMessage,
     areaName,
-    feeDetails,
     cloudinaryImageId,
   } = resInfo?.cards[2]?.card?.card?.info;
 
