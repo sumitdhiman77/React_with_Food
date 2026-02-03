@@ -12,8 +12,9 @@ const useRestaurantMenu = (resId, lat, lng, query) => {
         return;
       }
       const resData = await res.json();
-      console.log("in useRestaurantMenu resData is", resData);
       setResInfo(resData);
+      console.log("in useRestaurantMenu resInfo is", resInfo);
+      return resInfo;
     } catch (error) {
       console.error("Fetch error:", error);
     }
@@ -23,7 +24,7 @@ const useRestaurantMenu = (resId, lat, lng, query) => {
     // if (!lat || !lng) return;
     fetchData();
     console.log(resInfo);
-  }, [lat, lng]);
+  }, [query]);
 };
 
 export default useRestaurantMenu;
