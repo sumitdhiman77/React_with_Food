@@ -10,7 +10,8 @@ const useRestaurantMenu = (resId, lat, lng, query) => {
       );
       let resData = await res.json();
       if (!resData?.data?.cards) {
-        resData = fetch(`/mock-menus/${query}.json}`);
+        resData = await fetch(`/mock-menus/${query}.json}`);
+        console.log("resData is:", resData);
         // console.error("Invalid Swiggy response:", resData);
         // return;
       }
