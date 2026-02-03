@@ -34,7 +34,7 @@ const RestaurantMenu = () => {
 
   const categories =
     resInfo?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
-
+  console.log(categories);
   return (
     <>
       {item && (
