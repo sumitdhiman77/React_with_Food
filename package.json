@@ -5,7 +5,7 @@
   "proxy": "http://localhost:1234",
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html --dist-dir dist --public-url / && xcopy public\\mock-menus dist\\mock-menus /E /I /Y",
+    "build": "parcel build index.html --dist-dir dist --public-url / && shx cp -r public/mock-menus dist/",
     "test": "jest",
     "watch-test": "jest --watch"
   },
@@ -32,6 +32,7 @@
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.13",
     "process": "^0.11.10",
+    "shx": "^0.4.0",
     "tailwindcss": "^3.4.3"
   },
   "dependencies": {
