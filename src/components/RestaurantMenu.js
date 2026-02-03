@@ -16,7 +16,7 @@ const RestaurantMenu = () => {
   const [item, setItem] = useState(null);
   const [veg, setVeg] = useState(false);
   const { resId } = useParams();
-  const resInfo = useRestaurantMenu(resId, lat, lng);
+  const resInfo = useRestaurantMenu(resId, lat, lng, query);
   console.log("resInfo is:", resInfo);
   if (!resInfo) return <Shimmer />;
 
