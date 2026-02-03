@@ -33,11 +33,7 @@ const RestaurantMenu = () => {
   } = resInfo?.data?.cards[2]?.card?.card?.info;
 
   const categories =
-    resInfo?.data?.cards[3]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.filter(
-      (c) =>
-        c?.card?.card?.["@type"] ===
-        "type.googleapis.com/swiggy.presentation.food.v2.MenuVegFilterAndBadge",
-    );
+    resInfo?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
 
   return (
     <>
