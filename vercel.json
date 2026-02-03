@@ -4,6 +4,6 @@
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/$1" },
     { "source": "/mock-menus/(.*)", "destination": "/mock-menus/$1" },
-    { "source": "/((?!data/).*)", "destination": "/index.html" }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
