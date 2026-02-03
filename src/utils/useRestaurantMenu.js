@@ -20,7 +20,7 @@ const useRestaurantMenu = (resId, lat, lng, query) => {
   };
 
   useEffect(() => {
-    if (!lat || !lng) return;
+    // if (!lat || !lng) return;
     fetchData();
     console.log(resInfo);
   }, [lat, lng]);
