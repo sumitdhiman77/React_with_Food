@@ -44,7 +44,7 @@ const appRouter = createBrowserRouter([
         path: "/collections/:collectionId/:query/:tags/:type",
         element: <ExploreRestaurants />,
       },
-      { path: "/restaurants/:resId/:query", element: <RestaurantMenu /> },
+      { path: "/restaurants/:name/:query", element: <RestaurantMenu /> },
       { path: "/cart", element: <Cart /> },
     ],
     errorElement: <Error />,

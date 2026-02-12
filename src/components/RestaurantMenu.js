@@ -17,13 +17,12 @@ const RestaurantMenu = () => {
   const [veg, setVeg] = useState(false);
   // const [vegItems, setVegItems] = useState(null);
   // const [categories, setCategories] = useState([]);
-  const { resId, query } = useParams();
+  const { name, query } = useParams();
   const resInfo = useRestaurantMenu(resId, lat, lng, query);
   console.log("resInfo is:", resInfo);
   if (!resInfo) return <Shimmer />;
 
   const {
-    name,
     avgRatingString,
     cuisines,
     totalRatingsString,
