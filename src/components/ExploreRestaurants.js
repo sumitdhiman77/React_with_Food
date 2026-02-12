@@ -34,7 +34,7 @@ const ExploreRestaurants = () => {
         {restaurants.map((restaurant) => (
           <Link
             key={restaurant.id}
-            to={`/restaurants/${restaurant.id}/${query}`}
+            to={`/restaurants/${restaurant.name}/${query}`}
             className="hover:scale-95 transition-transform duration-200" // Optional: adds a nice "press" effect
           >
             <RestaurantCard resData={restaurant} />
