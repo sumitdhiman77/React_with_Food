@@ -91,7 +91,7 @@ const RestaurantMenu = () => {
 
           <label className="relative flex justify-between items-center mx-3 p-2 font-medium text-xl">
             <div className="flex items-center">
-              <GiThreeLeaves className="text-green-600" />
+              <GiThreeLeaves className="text-green-600 text-xl" />
               <span> Only Veg</span>
             </div>
             <input
