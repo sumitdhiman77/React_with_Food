@@ -129,6 +129,7 @@ const RestaurantMenu = () => {
                   </span>
                 </div>
                 <div id={index}>
+                  {console.log(category?.card?.card.itemCards)}
                   <RestaurantCategory
                     data={veg ? vegItems : category?.card?.card.itemCards}
                     name={name}

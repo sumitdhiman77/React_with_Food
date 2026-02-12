@@ -1,6 +1,6 @@
 import ItemList from "./ItemList";
 const RestaurantCategory = ({
-  data,
+  data = [],
   name,
   cloudinaryImageId,
   areaName,
@@ -8,6 +8,7 @@ const RestaurantCategory = ({
   setItem,
 }) => {
   const dataInfo = data.map((item) => item.card.info);
+  console.log(dataInfo);
   return (
     <ItemList
       items={dataInfo}
