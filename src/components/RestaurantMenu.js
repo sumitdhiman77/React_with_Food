@@ -3,7 +3,7 @@ import useRestaurantMenu from "../utils/useRestaurantMenu";
 import RestaurantCategory from "./RestaurantCategory";
 import Shimmer from "./Shimmer";
 import LocationContext from "../utils/LocationContext";
-import { useContext } from "react";
+import { use, useContext, useEffect } from "react";
 import { useState } from "react";
 import { FaBicycle } from "react-icons/fa6";
 import { GiThreeLeaves } from "react-icons/gi";
@@ -15,8 +15,8 @@ const RestaurantMenu = () => {
   const { lat, lng } = useContext(LocationContext);
   const [item, setItem] = useState(null);
   const [veg, setVeg] = useState(false);
-  const [vegItems, setVegItems] = useState(null);
-  const [categories, setCategories] = useState([]);
+  // const [vegItems, setVegItems] = useState(null);
+  // const [categories, setCategories] = useState([]);
   const { resId, query } = useParams();
   const resInfo = useRestaurantMenu(resId, lat, lng, query);
   console.log("resInfo is:", resInfo);
@@ -34,9 +34,12 @@ const RestaurantMenu = () => {
     cloudinaryImageId,
   } = resInfo?.data?.cards[2]?.card?.card?.info;
 
-  setCategories(
-    resInfo?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards,
-  );
+  const categories =
+    resInfo?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
+      (c) =>
+        c?.card?.card?.["@type"] ===
+          "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory" || [],
+    );
   console.log(categories);
   return (
     <>
@@ -100,12 +103,11 @@ const RestaurantMenu = () => {
           </label>
 
           {categories.map((category, index) => {
-            setVegItems(
+            const vegItems =
               category?.card?.card?.itemCards?.filter(
                 (item) =>
                   item?.card?.info?.itemAttribute?.vegClassifier === "VEG",
-              ),
-            );
+              ) || [];
 
             return (
               <div
