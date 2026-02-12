@@ -19,7 +19,7 @@ const RestaurantMenu = () => {
   // const [categories, setCategories] = useState([]);
   let { name, query } = useParams();
   name = decodeURIComponent(name);
-  const resInfo = useRestaurantMenu(resId, lat, lng, query);
+  const resInfo = useRestaurantMenu(name, lat, lng, query);
   console.log("resInfo is:", resInfo);
   if (!resInfo) return <Shimmer />;
 
