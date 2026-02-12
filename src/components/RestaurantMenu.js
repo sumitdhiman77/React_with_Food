@@ -16,7 +16,7 @@ const RestaurantMenu = () => {
   const [item, setItem] = useState(null);
   const [veg, setVeg] = useState(false);
   const [vegItems, setVegItems] = useState(null);
-  const [categories, setCategories] = useState(null);
+  const [categories, setCategories] = useState([]);
   const { resId, query } = useParams();
   const resInfo = useRestaurantMenu(resId, lat, lng, query);
   console.log("resInfo is:", resInfo);
@@ -101,7 +101,7 @@ const RestaurantMenu = () => {
 
           {categories.map((category, index) => {
             setVegItems(
-              category.card.card.itemCards.filter(
+              category?.card?.card?.itemCards?.filter(
                 (item) =>
                   item?.card?.info?.itemAttribute?.vegClassifier === "VEG",
               ),
