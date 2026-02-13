@@ -14,7 +14,7 @@ const ItemList = ({ items, name, cloudinaryImageId, areaName, setItem }) => {
           <div className="text-base font-normal tracking-tighter">
             <BiCheckboxSquare
               className={`text-2xl 
-            ${item?.itemAttribute?.vegClassifier === "VEG" ? "text-green-600" : "text-gray-600"}`}
+            ${item?.itemAttribute?.vegClassifier === "VEG" ? "text-green-600" : "text-red-600"}`}
             ></BiCheckboxSquare>
             {item.name}
             <div className="text-base font-normal tracking-tighter">
