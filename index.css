@@ -7,3 +7,11 @@
 .slideInAnimate {
   animation: slideInAnimate 0.3s ease;
 }
+html,
+body,
+#root {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
