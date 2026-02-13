@@ -174,10 +174,9 @@ const Body = () => {
               {bannerItems?.map((bannerItem) => {
                 const url = new URL(bannerItem.action.link);
                 const collectionId = url.searchParams.get("collection_id");
-                const query = bannerItem.action.text.replace(
-                  /s$/,
-                  "",
-                ).toLowerCase;
+                const query = bannerItem.action.text
+                  .replace(/s$/, "")
+                  .toLowerCase();
                 const tags = url.searchParams.get("tags");
                 const type = url.searchParams.get("type");
                 console.log(url);
