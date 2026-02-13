@@ -24,7 +24,10 @@ const NotificationBanner = ({ item, name, cloudinaryImageId, areaName }) => {
     <div id="banner" className="">
       <div className="flex items-end justify-center fixed top-0 left-0 w-[100vw] h-[100vh] bg-transparent opacity-[1] z-[10001]">
         <div className="opacity-[1]">
-          <div className="inline-block bg-white p-8 shadow-md max-w-max-[520px] min-w-[300px] mb-9">
+          <div
+            className="inline-block bg-white p-8 shadow-lg hover:shadow-xl
+ max-w-max-[520px] min-w-[300px] mb-9"
+          >
             <div className="mb-6">
               <div className="font-bold">"Items already in cart"</div>
               <div>
@@ -37,16 +40,18 @@ const NotificationBanner = ({ item, name, cloudinaryImageId, areaName }) => {
                 onClick={() =>
                   document.getElementById("banner").classList.toggle("hidden")
                 }
-                className="bg-white uppercase text-green-400 hover:shadow-md"
+                className="bg-white uppercase text-green-400 hover:shadow-lg hover:shadow-xl
+"
               >
                 no
               </button>
               <button
                 onClick={() => {
-                  document.getElementById("banner").classList.toggle("hidden"),
-                    handleYesClick(item);
+                  (document.getElementById("banner").classList.toggle("hidden"),
+                    handleYesClick(item));
                 }}
-                className="bg-green-400 uppercase text-white hover:shadow-md"
+                className="bg-green-400 uppercase text-white hover:shadow-lg hover:shadow-xl
+"
               >
                 yes,start afresh
               </button>

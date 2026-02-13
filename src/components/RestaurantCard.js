@@ -5,7 +5,8 @@ const RestaurantCard = ({ resData }) => {
   return (
     <div className="truncate grid w-44 h-60 ml-16 ">
       <img
-        className="w-52 h-36 object-cover rounded-md shadow-md 
+        className="w-52 h-36 object-cover rounded-md shadow-lg hover:shadow-xl
+ 
         transition ease-linear delay-50 hover:-translate-y-1 hover:scale-110 duration-70"
         src={CDN_URL + cloudinaryImageId}
       />
@@ -16,10 +17,14 @@ const RestaurantCard = ({ resData }) => {
         <div className="font-bold tracking-tighter-[-0.3px text-black text-md">
           {avgRating}
         </div>
-        {/* <div className="tracking-tighter text-base font-medium text-gray-500">
+        {/* <div className="tracking-tighter text-base font-medium text-gray-600
+">
           {cuisines.join(",")}
         </div> */}
-        <div className="font-medium tracking-tighter text-gray-500 text-base">
+        <div
+          className="font-medium tracking-tighter text-gray-600
+ text-base"
+        >
           {areaName}
         </div>
       </div>

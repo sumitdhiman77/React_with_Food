@@ -98,7 +98,7 @@ const Body = () => {
     <Shimmer />
   ) : (
     <>
-      <div className="bg-slate-50 bg-opacity-20 font-[Lato] relative">
+      <div className="bg-white font-[Lato] relative">
         <div className="px-5 mt-14 mb-20 flex justify-between">
           <div>
             <input

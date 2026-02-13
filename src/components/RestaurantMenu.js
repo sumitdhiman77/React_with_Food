@@ -56,12 +56,17 @@ const RestaurantMenu = () => {
           {name}
         </h1>
         <div className="-z-40 w-[701px] mx-auto mt-5 mb-0">
-          <div className="bg-slate-100 px-4 pb-4 rounded-bl-3xl rounded-br-3xl">
+          <div className="bg-gray-50 px-4 pb-4 rounded-3xl">
             <div className="border p-6 rounded-xl bg-white shadow-lg">
               <div className="font-bold text-sm tracking-wide">
                 <span className="font-bold text-3xl text-green-800">✪ </span>
                 {avgRatingString} ({totalRatingsString})
-                <span className="text-base font-bold text-gray-500">.</span>
+                <span
+                  className="text-base font-bold text-gray-600
+"
+                >
+                  .
+                </span>
                 {costForTwoMessage}
               </div>
               <div className="text-orange-700 font-bold text-sm tracking-wide">
@@ -101,7 +106,10 @@ const RestaurantMenu = () => {
               className="absolute left-1/2 -translate-x-1/2 w-full h-full peer appearance-none rounded-md"
               onClick={() => setVeg(!veg)}
             />
-            <span className="w-16 h-10 flex items-center flex-shrink-0 ml-4 p-1 bg-gray-300 rounded-full duration-300 ease-in-out peer-checked:bg-green-400 after:w-8 after:h-8 after:bg-white after:rounded-full after:shadow-md after:duration-300 peer-checked:after:translate-x-6"></span>
+            <span
+              className="w-16 h-10 flex items-center flex-shrink-0 ml-4 p-1 bg-gray-300 rounded-full duration-300 ease-in-out peer-checked:bg-green-400 after:w-8 after:h-8 after:bg-white after:rounded-full after:shadow-lg hover:shadow-xl
+ after:duration-300 peer-checked:after:translate-x-6"
+            ></span>
           </label>
 
           {categories.map((category, index) => {

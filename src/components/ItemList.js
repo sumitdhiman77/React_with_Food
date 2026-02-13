@@ -21,7 +21,7 @@ const ItemList = ({ items, name, cloudinaryImageId, areaName, setItem }) => {
               {item.price ? "₹ " + item.price / 100 : "sorry, Not deliverable"}
             </div>
           </div>
-          <div className="font-normal text-base text-gray-400">
+          <div className="font-normal text-base text-blue-600">
             {item.description}
           </div>
         </div>

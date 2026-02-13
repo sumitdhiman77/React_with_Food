@@ -13,7 +13,7 @@ const Cart = () => {
   const priceArray = [];
   const cartItems = useSelector((store) => store.cart.items);
   const nameOfRestaurant = useSelector(
-    (store) => store.restaurant.restaurantName
+    (store) => store.restaurant.restaurantName,
   );
   useEffect(() => {
     setTotalPrice(
@@ -21,7 +21,7 @@ const Cart = () => {
         .reduce((accumulator, currentValue) => {
           return (accumulator += currentValue);
         }, 0)
-        .toFixed(2)
+        .toFixed(2),
     );
   });
   const forceRenderCart = () => {
@@ -43,7 +43,8 @@ const Cart = () => {
             <div className="flex w-80 items-center">
               <div className="mr-2">
                 <img
-                  className="w-10  h-12 object-cover rounded-md shadow-md 
+                  className="w-10  h-12 object-cover rounded-md shadow-lg hover:shadow-xl
+ 
         transition ease-linear delay-50 hover:-translate-y-1 hover:scale-110 duration-70"
                   src={CDN_URL + nameOfRestaurant[1]}
                 />
