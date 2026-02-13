@@ -200,7 +200,7 @@ const Body = () => {
           <h2 className="font-[Lato] font-extrabold text-2xl tracking-tight line leading-7">
             {localListTitle}
           </h2>
-          <div className="">
+          <div className="flex flex-wrap justify-start">
             {filteredRestaurants?.map((restaurant) => (
               <Link
                 className="relative z-0"

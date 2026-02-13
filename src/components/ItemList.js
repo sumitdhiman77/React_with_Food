@@ -12,11 +12,10 @@ const ItemList = ({ items, name, cloudinaryImageId, areaName, setItem }) => {
       <div className="h-36 w-[100%] flex justify-between">
         <div className="w-[80%] gap-y-0 pr-28 grid  bg-white font-[Roboto]">
           <div className="text-base font-normal tracking-tighter">
-            {item?.itemAttribute?.vegClassifier === "VEG" ? (
-              <BiCheckboxSquare className="text-green-600 text-2xl" />
-            ) : (
-              <BiCheckboxSquare className="text-red-600 text-2xl" />
-            )}
+            <BiCheckboxSquare
+              className={`text-2xl 
+            ${item?.itemAttribute?.vegClassifier === "VEG" ? "text-green-600" : "text-gray-600"}`}
+            ></BiCheckboxSquare>
             {item.name}
             <div className="text-base font-normal tracking-tighter">
               {item.price ? "₹ " + item.price / 100 : "sorry, Not deliverable"}

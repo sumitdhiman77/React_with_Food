@@ -91,7 +91,9 @@ const RestaurantMenu = () => {
 
           <label className="relative flex justify-between items-center mx-3 p-2 font-medium text-xl">
             <div className="flex items-center">
-              <GiThreeLeaves className="text-green-600 text-xl" />
+              <GiThreeLeaves
+                className={`text-xl ${veg === true ? "text-green-600" : "text-gray-600"}`}
+              />
               <span> Only Veg</span>
             </div>
             <input
