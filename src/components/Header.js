@@ -12,11 +12,6 @@ import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 const Header = () => {
   let location = useLocation();
-  useEffect(() => {
-    location.pathname = "/"
-      ? document.getElementById("header").classList.add("sticky")
-      : document.getElementById("header").classList.add("fixed");
-  }, []);
   const userInfo = useSelector((store) => store.user.userInfo);
   const [btnName, setBtnName] = useState("Login");
   const onlineStatus = useOnlineStatus();
@@ -24,7 +19,7 @@ const Header = () => {
   return (
     <div
       id={"header"}
-      className="font-[Roboto] bg-white z-[1001] top-0 flex justify-between shadow-lg"
+      className="font-[Roboto] bg-white sticky top-0 z-[1001] flex justify-between shadow-lg"
     >
       <div className="flex grow items-center">
         <img className="w-[177px]" src={LOGO_URL}></img>
