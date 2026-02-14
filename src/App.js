@@ -1,5 +1,10 @@
-import React, { Suspense, lazy } from "react";
+import "./index.css";
+import React, { Suspense, lazy, StrictMode } from "react";
 import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import { Provider } from "react-redux";
+
+// Static Component Imports
 import Header from "./components/Header";
 import Body from "./components/Body";
 import ExploreRestaurants from "./components/ExploreRestaurants";
@@ -9,24 +14,37 @@ import Cart from "./components/Cart";
 import SignIn from "./components/SignIn";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Error from "./components/Error";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import { Provider } from "react-redux";
+
+// Utils & Store
+import Shimmer from "./components/Shimmer";
+import { appStore } from "./utils/appStore";
 import { LocationProvider } from "./utils/LocationContext";
 
-import { appStore } from "./utils/appStore";
+// Lazy Loading (Optimized for performance)
 const Grocery = lazy(() => import("./components/Grocery"));
+
+/**
+ * Main Layout Component
+ * Wrapped in a div with min-h-screen to ensure the gray background
+ * fills the page even when content is short.
+ */
 const App = () => {
   return (
-    <>
+    <div className="app-layout min-h-screen flex flex-col">
       <Header />
-      <Outlet />
-    </>
+      <main className="flex-grow">
+        <Outlet />
+      </main>
+      {/* <Footer /> - Add a footer here later */}
+    </div>
   );
 };
+
 const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <Error />,
     children: [
       { path: "/", element: <Body /> },
       { path: "/about", element: <About /> },
@@ -35,7 +53,11 @@ const appRouter = createBrowserRouter([
       {
         path: "/grocery",
         element: (
-          <Suspense fallback={<h1>Loading......</h1>}>
+          <Suspense
+            fallback={
+              <h1 className="p-10 text-center">Loading Grocery Store...</h1>
+            }
+          >
             <Grocery />
           </Suspense>
         ),
@@ -47,17 +69,20 @@ const appRouter = createBrowserRouter([
       { path: "/restaurants/:name/:query", element: <RestaurantMenu /> },
       { path: "/cart", element: <Cart /> },
     ],
-    errorElement: <Error />,
   },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <Provider store={appStore}>
-    <LocationProvider>
-      <RouterProvider router={appRouter} />
-    </LocationProvider>
-  </Provider>,
-);
 
-// https://www.swiggy.com/dapi/restaurants/list/v5?lat=32.2182266&lng=76.3172673&collection=83637&tags=layout_CCS_Burger&sortBy=&filters=&type=rcv2&offset=0&page_type=null
+root.render(
+  <StrictMode>
+    <Provider store={appStore}>
+      <LocationProvider>
+        {/* Global Suspense for the entire router transitions */}
+        <Suspense fallback={<Shimmer />}>
+          <RouterProvider router={appRouter} />
+        </Suspense>
+      </LocationProvider>
+    </Provider>
+  </StrictMode>,
+);
