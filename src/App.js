@@ -2,10 +2,9 @@ import { appRouter } from "./router";
 import "../index.css";
 import React, { Suspense, lazy, StrictMode } from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import { RouterProvider, Outlet } from "react-router-dom";
 import { Provider } from "react-redux";
 
-// Static Component Imports
 import Header from "./components/Header";
 import Body from "./components/Body";
 import ExploreRestaurants from "./components/ExploreRestaurants";
