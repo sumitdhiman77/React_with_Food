@@ -1,4 +1,4 @@
-import "./index.css";
+import "../index.css";
 import React, { Suspense, lazy, StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
