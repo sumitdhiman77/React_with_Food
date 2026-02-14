@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-[1001] w-full bg-white shadow-md transition-all duration-300">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6">
+      <div className="h-24 mx-auto flex max-w-7xl items-center justify-between px-6">
         {/* Logo Section */}
         <div className="flex items-center">
           <Link to="/">
@@ -33,7 +33,7 @@ const Header = () => {
 
         {/* Navigation Items */}
         <nav>
-          <ul className="flex items-center gap-6 font-roboto text-[15px] font-semibold text-gray-700">
+          <ul className="flex items-center gap-6 font-roboto  font-semibold text-gray-700">
             <li>
               <Link
                 className="flex items-center gap-2 py-1 hover:text-orange-500 transition-colors"
@@ -108,7 +108,7 @@ const Header = () => {
 
             {/* Online Status Indicator */}
             <li className="flex items-center pl-2 text-xs border-l border-gray-200 ml-2 ">
-              <span className="mr-1 hidden lg:block text-gray-400">
+              <span className="mr-1 hidden lg:block text-blue-700">
                 Status:
               </span>
               {onlineStatus ? "✅" : "🔴"}
