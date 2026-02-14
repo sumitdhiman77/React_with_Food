@@ -5,6 +5,10 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      colors: {
+        background: "#f8f9fa",
+        secondary: "#333333",
+      },
       fontFamily: {
         // Registers 'font-lato' and 'font-roboto'
         // Includes default sans stack as a fallback for better UX
