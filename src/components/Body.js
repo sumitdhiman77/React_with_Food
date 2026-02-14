@@ -101,7 +101,7 @@ const Body = () => {
     <div className="min-h-screen bg-gray font-roboto animate-slideIn">
       {/* Search & Filter Sticky Bar */}
       <div className="sticky top-0 z-50 w-full border-b bg-gray/95 backdrop-blur-md">
-        <div className="bg-orange-500 mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-8 py-4 md:flex-row">
+        <div className=" mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-8 py-4 md:flex-row">
           <div className="flex w-full items-center md:w-auto">
             <input
               className="flex-grow rounded-l-lg border border-gray-300 px-4 py-2 text-gray-700 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 focus:outline-none md:w-80"
