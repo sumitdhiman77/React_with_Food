@@ -17,10 +17,10 @@ const RestaurantCard = ({ resData }) => {
         <h4 className="font-bold text-md flex items-center gap-1 text-gray-700">
           ⭐ {avgRating}
         </h4>
-        <h4 className="text-gray-500 truncate font-medium tracking-tight">
+        <h4 className="text-blue-900 truncate font-medium tracking-tight">
           {cuisines.join(", ")}
         </h4>
-        <h4 className="text-gray-500 font-medium">{areaName}</h4>
+        <h4 className="text-orange-900 font-medium">{areaName}</h4>
       </div>
     </div>
   );
