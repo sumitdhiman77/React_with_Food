@@ -1,51 +1,37 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { ITEM_IMG_URL } from "../utils/constants";
-import RestaurantCard, { withOffer } from "./RestaurantCard";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+
+// Utils & Components
+import { ITEM_IMG_URL, ExploreRestaurants_URL } from "../utils/constants";
+import RestaurantCard, { withOffer } from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import useOnlineStatus from "../utils/useOnlineStatus";
-import { useDispatch } from "react-redux";
 import { showUserInfo } from "../utils/userSlice";
-import { ExploreRestaurants_URL } from "../utils/constants";
-import { useContext } from "react";
 import LocationContext from "../utils/LocationContext";
+
 const Body = () => {
   const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 7,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 6,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
+    desktop: { breakpoint: { max: 3000, min: 1024 }, items: 6 },
+    tablet: { breakpoint: { max: 1024, min: 464 }, items: 3 },
+    mobile: { breakpoint: { max: 464, min: 0 }, items: 2 },
   };
+
   const { lat, lng } = useContext(LocationContext);
   const [userInput, setUserInput] = useState("");
-
   const [bannerItems, setBannerItems] = useState([]);
   const [localListTitle, setLocalListTitle] = useState(
     "Top Restaurants Near You",
   );
-  const dispatch = useDispatch();
-  const blur = () => {
-    dispatch(showUserInfo(userInput));
-  };
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
+
+  const dispatch = useDispatch();
   const RestaurantWithOffer = withOffer(RestaurantCard);
+  const onlineStatus = useOnlineStatus();
 
   const fetchData = async () => {
     try {
@@ -53,161 +39,155 @@ const Body = () => {
         `${ExploreRestaurants_URL}&lat=${lat}&lng=${lng}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`,
       );
       const json = await res.json();
-      if (!json?.data?.data?.cards) {
-        console.error("Invalid Swiggy response", json);
-        return;
-      }
-      console.log("in body json is", json);
+
+      const cards = json?.data?.cards || json?.data?.data?.cards;
+      if (!cards) return;
+
+      // Extract Title
+      const titleCard = cards.find((c) =>
+        c?.card?.card?.header?.title?.includes("Top"),
+      );
       setLocalListTitle(
-        json?.data?.data?.cards?.find((c) =>
-          c?.card?.card?.header?.title?.includes("Top"),
-        )?.card?.card?.header?.title || "Top Restaurants Near You",
+        titleCard?.card?.card?.header?.title || "Top Restaurants Near You",
+      );
+
+      // Extract Banner Items
+      const bannerCard = cards.find((c) =>
+        c?.card?.card?.gridElements?.infoWithStyle?.["@type"]?.includes(
+          "ImageInfoLayoutCard",
+        ),
       );
       setBannerItems(
-        json?.data?.data?.cards?.find(
-          (c) =>
-            c?.card?.card?.gridElements?.infoWithStyle?.["@type"] ===
-            "type.googleapis.com/swiggy.gandalf.widgets.v2.ImageInfoLayoutCard",
-        )?.card?.card?.gridElements?.infoWithStyle?.info,
+        bannerCard?.card?.card?.gridElements?.infoWithStyle?.info || [],
       );
-      console.log(bannerItems);
+
+      // Extract Restaurants
+      const restaurantCard = cards.find((c) =>
+        c?.card?.card?.gridElements?.infoWithStyle?.["@type"]?.includes(
+          "FoodRestaurantGridListingInfo",
+        ),
+      );
       const restaurants =
-        json?.data?.data?.cards?.find(
-          (c) =>
-            c?.card?.card?.gridElements?.infoWithStyle?.["@type"] ===
-            "type.googleapis.com/swiggy.seo.widgets.v1.FoodRestaurantGridListingInfo",
-        )?.card?.card?.gridElements?.infoWithStyle?.restaurants || [];
-      console.log("restaurants are", restaurants);
+        restaurantCard?.card?.card?.gridElements?.infoWithStyle?.restaurants ||
+        [];
+
       setListOfRestaurants(restaurants);
       setFilteredRestaurants(restaurants);
     } catch (err) {
       console.error("Fetch error:", err);
     }
   };
+
   useEffect(() => {
-    if (!lat || !lng) return;
-    fetchData();
+    if (lat && lng) fetchData();
   }, [lat, lng]);
 
-  const onlineStatus = useOnlineStatus();
-  if (onlineStatus === false)
+  if (!onlineStatus) {
     return (
-      <h1>Look Like You're offline!!Please Check your Internet Connection;</h1>
+      <div className="flex h-screen flex-col items-center justify-center font-roboto">
+        <h1 className="text-2xl font-bold text-red-500">🔴 You are offline!</h1>
+        <p className="text-gray-600">Please check your internet connection.</p>
+      </div>
     );
+  }
+
   return listOfRestaurants?.length === 0 ? (
     <Shimmer />
   ) : (
-    <>
-      <div className="bg-gray-900 font-[Lato] relative">
-        <div className="px-5 mt-14 mb-20 flex justify-between">
-          <div>
-            <input
-              className="py-2 px-6 border border-gray-100 rounded-md "
-              placeholder="Search Restaurant"
-              type="text"
-              value={searchText}
-              onChange={(e) => {
-                setSearchText(e.target.value);
-              }}
-            ></input>
-            <button
-              className="font-semibold  ml-1 italic"
-              onClick={() => {
-                const selectedRestaurants = listOfRestaurants.filter((res) =>
-                  res.info.name
-                    .toLowerCase()
-                    .includes(searchText.toLowerCase()),
-                );
-                setFilteredRestaurants(selectedRestaurants);
-              }}
-            >
-              Search
-            </button>
-          </div>
-          <div>
-            <label className="font-semibold">Username:</label>
-            <input
-              id="userName"
-              className="border border-black p-1 rounded-lg"
-              value={userInput}
-              onChange={(e) => {
-                setUserInput(e.target.value);
-              }}
-              onBlur={() => blur()}
-            ></input>
-          </div>
-          <div>
-            <button
-              className="font-medium text-2xl tracking-tighter"
-              onClick={() => {
-                const topRestaurants = listOfRestaurants.filter(
-                  (res) => res.info.avgRating >= 4,
-                );
-                setFilteredRestaurants(topRestaurants);
-              }}
-            >
-              Top Rating Restaurant
-            </button>
-          </div>
+    <div className="min-h-screen bg-white font-roboto animate-slideIn">
+      {/* Search & Filter Section */}
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 border-b bg-white px-8 py-6 md:flex-row">
+        <div className="flex w-full items-center gap-2 md:w-auto">
+          <input
+            className="flex-grow rounded-l-md border border-gray-300 px-4 py-2 focus:border-orange-400 focus:outline-none md:w-80"
+            placeholder="Search for restaurants..."
+            type="text"
+            value={searchText}
+            onChange={(e) => setSearchText(e.target.value)}
+          />
+          <button
+            className="rounded-r-md bg-orange-500 px-6 py-2 font-bold text-white transition-colors hover:bg-orange-600"
+            onClick={() => {
+              const filtered = listOfRestaurants.filter((res) =>
+                res.info.name.toLowerCase().includes(searchText.toLowerCase()),
+              );
+              setFilteredRestaurants(filtered);
+            }}
+          >
+            Search
+          </button>
         </div>
-        <div className="ml-[calc(10%+36px)] mr-[calc(10%+36px)] ">
-          <h2 className="font-[Lato] font-extrabold text-2xl tracking-tight line leading-7">
+
+        <div className="flex items-center gap-4">
+          <button
+            className="rounded-full border border-gray-300 px-4 py-2 text-sm font-medium hover:bg-gray-100"
+            onClick={() => {
+              const topRes = listOfRestaurants.filter(
+                (res) => res.info.avgRating >= 4,
+              );
+              setFilteredRestaurants(topRes);
+            }}
+          >
+            Ratings 4.0+
+          </button>
+
+          <input
+            className="rounded-lg border border-gray-300 p-2 text-sm outline-none focus:ring-1 focus:ring-orange-400"
+            placeholder="Set Username"
+            value={userInput}
+            onChange={(e) => setUserInput(e.target.value)}
+            onBlur={() => dispatch(showUserInfo(userInput))}
+          />
+        </div>
+      </div>
+
+      {/* Main Content Container */}
+      <div className="mx-auto max-w-7xl px-8 pt-10">
+        {/* Banner Carousel Section */}
+        <section className="mb-12">
+          <h2 className="mb-6 font-lato text-2xl font-extrabold tracking-tight text-gray-800">
             What's on your mind?
           </h2>
-          <div className="p-5 mb-16 z-0 border-b-2 border-gray-100">
-            <Carousel
-              swipeable={false}
-              draggable={false}
-              showDots={false}
-              responsive={responsive}
-              ssr={true} // means to render carousel on server-side.
-              infinite={false}
-              autoPlaySpeed={1000}
-              keyBoardControl={true}
-              customTransition="all .5"
-              transitionDuration={500}
-              containerClass="carousel-container"
-              removeArrowOnDeviceType={["tablet", "mobile"]}
-              dotListClass="custom-dot-list-style"
-              itemClass="carousel-item-padding-40-px "
-            >
+          <div className="border-b border-gray-100 pb-10">
+            <Carousel responsive={responsive} infinite={true} itemClass="px-2">
               {bannerItems?.map((bannerItem) => {
                 const url = new URL(bannerItem.action.link);
                 const collectionId = url.searchParams.get("collection_id");
                 const query = bannerItem.action.text
-                  .replace(/s$/, "")
+                  ?.replace(/s$/, "")
                   .toLowerCase();
                 const tags = url.searchParams.get("tags");
                 const type = url.searchParams.get("type");
-                console.log(url);
-                console.log("collectionId is:", collectionId);
-                console.log("query is:", query);
-                console.log("tags is:", tags);
-                console.log("type is:", type);
+
                 return (
-                  <div key={bannerItem.id}>
-                    <Link
-                      to={`/collections/${collectionId}/${query}/${tags}/${type}`}
-                    >
-                      <img
-                        className="w-36 h-48 border-none rounded-full object-cover"
-                        src={ITEM_IMG_URL + bannerItem.imageId}
-                      />
-                    </Link>
-                  </div>
+                  <Link
+                    key={bannerItem.id}
+                    to={`/collections/${collectionId}/${query}/${tags}/${type}`}
+                    className="block transition-transform hover:scale-105"
+                  >
+                    <img
+                      className="aspect-[3/4] w-full rounded-2xl object-cover shadow-sm"
+                      src={ITEM_IMG_URL + bannerItem.imageId}
+                      alt={bannerItem.action.text}
+                    />
+                  </Link>
                 );
               })}
             </Carousel>
           </div>
-          <h2 className="font-[Lato] font-extrabold text-2xl tracking-tight line leading-7">
+        </section>
+
+        {/* Restaurant Grid Section */}
+        <section className="pb-20">
+          <h2 className="mb-8 font-lato text-2xl font-extrabold tracking-tight text-gray-800">
             {localListTitle}
           </h2>
-          <div className="flex flex-wrap justify-start">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {filteredRestaurants?.map((restaurant) => (
               <Link
-                className="relative z-0"
                 key={restaurant.info.id}
                 to={"/restaurants/" + restaurant.info.id}
+                className="transition-transform duration-200 hover:scale-95"
               >
                 {restaurant.info.aggregatedDiscountInfoV3 ? (
                   <RestaurantWithOffer resData={restaurant.info} />
@@ -217,9 +197,10 @@ const Body = () => {
               </Link>
             ))}
           </div>
-        </div>
+        </section>
       </div>
-    </>
+    </div>
   );
 };
+
 export default Body;
