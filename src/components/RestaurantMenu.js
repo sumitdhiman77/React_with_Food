@@ -34,9 +34,8 @@ const RestaurantMenu = () => {
     cloudinaryImageId,
   } = resInfo?.data?.cards.find(
     (c) =>
-      card?.card?.[
-        "@type" === "type.googleapis.com/swiggy.presentation.food.v2.Restaurant"
-      ],
+      c.card?.card?.["@type"] ===
+      "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
   )?.card?.card?.info;
 
   const categories =
