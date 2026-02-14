@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Suspense, lazy } from "react";
 const Grocery = lazy(() => import("./components/Grocery"));
-import App from "./App";
 import Body from "./components/Body";
 import ExploreRestaurants from "./components/ExploreRestaurants";
 import About from "./components/About";
