@@ -84,9 +84,13 @@ const Body = () => {
 
   if (!onlineStatus) {
     return (
-      <div className="flex h-screen flex-col items-center justify-center font-roboto">
-        <h1 className="text-2xl font-bold text-red-500">🔴 You are offline!</h1>
-        <p className="text-gray-600">Please check your internet connection.</p>
+      <div className="flex h-screen flex-col items-center justify-center font-roboto bg-white">
+        <h1 className="text-3xl font-bold text-red-500 mb-2">
+          🔴 Connection Lost
+        </h1>
+        <p className="text-gray-500">
+          Please check your internet connection and try again.
+        </p>
       </div>
     );
   }
@@ -95,61 +99,72 @@ const Body = () => {
     <Shimmer />
   ) : (
     <div className="min-h-screen bg-white font-roboto animate-slideIn">
-      {/* Search & Filter Section */}
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 border-b bg-white px-8 py-6 md:flex-row">
-        <div className="flex w-full items-center gap-2 md:w-auto">
-          <input
-            className="flex-grow rounded-l-md border border-gray-300 px-4 py-2 focus:border-orange-400 focus:outline-none md:w-80"
-            placeholder="Search for restaurants..."
-            type="text"
-            value={searchText}
-            onChange={(e) => setSearchText(e.target.value)}
-          />
-          <button
-            className="rounded-r-md bg-orange-500 px-6 py-2 font-bold text-white transition-colors hover:bg-orange-600"
-            onClick={() => {
-              const filtered = listOfRestaurants.filter((res) =>
-                res.info.name.toLowerCase().includes(searchText.toLowerCase()),
-              );
-              setFilteredRestaurants(filtered);
-            }}
-          >
-            Search
-          </button>
-        </div>
+      {/* Search & Filter Sticky Bar */}
+      <div className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur-md">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-8 py-4 md:flex-row">
+          <div className="flex w-full items-center md:w-auto">
+            <input
+              className="flex-grow rounded-l-lg border border-gray-300 px-4 py-2 text-gray-700 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 focus:outline-none md:w-80"
+              placeholder="Search for restaurants..."
+              type="text"
+              value={searchText}
+              onChange={(e) => setSearchText(e.target.value)}
+            />
+            <button
+              className="rounded-r-lg bg-orange-500 px-6 py-2 font-bold text-white transition-all hover:bg-orange-600 active:scale-95"
+              onClick={() => {
+                const filtered = listOfRestaurants.filter((res) =>
+                  res.info.name
+                    .toLowerCase()
+                    .includes(searchText.toLowerCase()),
+                );
+                setFilteredRestaurants(filtered);
+              }}
+            >
+              Search
+            </button>
+          </div>
 
-        <div className="flex items-center gap-4">
-          <button
-            className="rounded-full border border-gray-300 px-4 py-2 text-sm font-medium hover:bg-gray-100"
-            onClick={() => {
-              const topRes = listOfRestaurants.filter(
-                (res) => res.info.avgRating >= 4,
-              );
-              setFilteredRestaurants(topRes);
-            }}
-          >
-            Ratings 4.0+
-          </button>
+          <div className="flex items-center gap-3">
+            <button
+              className="rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-semibold text-gray-700 shadow-sm transition-all hover:bg-gray-50 hover:border-gray-400"
+              onClick={() => {
+                const topRes = listOfRestaurants.filter(
+                  (res) => res.info.avgRating >= 4,
+                );
+                setFilteredRestaurants(topRes);
+              }}
+            >
+              Ratings 4.0+
+            </button>
 
-          <input
-            className="rounded-lg border border-gray-300 p-2 text-sm outline-none focus:ring-1 focus:ring-orange-400"
-            placeholder="Set Username"
-            value={userInput}
-            onChange={(e) => setUserInput(e.target.value)}
-            onBlur={() => dispatch(showUserInfo(userInput))}
-          />
+            <div className="h-8 w-[1px] bg-gray-200 hidden md:block"></div>
+
+            <input
+              className="rounded-lg border border-gray-200 bg-gray-50 p-2 text-sm text-gray-700 focus:bg-white focus:ring-1 focus:ring-orange-400 outline-none transition-all"
+              placeholder="Enter Username"
+              value={userInput}
+              onChange={(e) => setUserInput(e.target.value)}
+              onBlur={() => dispatch(showUserInfo(userInput))}
+            />
+          </div>
         </div>
       </div>
 
-      {/* Main Content Container */}
-      <div className="mx-auto max-w-7xl px-8 pt-10">
+      {/* Main Content Area */}
+      <div className="mx-auto max-w-7xl px-8 pt-12">
         {/* Banner Carousel Section */}
-        <section className="mb-12">
-          <h2 className="mb-6 font-lato text-2xl font-extrabold tracking-tight text-gray-800">
+        <section className="mb-16">
+          <h2 className="mb-6 font-lato text-2xl font-extrabold tracking-tight text-gray-900">
             What's on your mind?
           </h2>
-          <div className="border-b border-gray-100 pb-10">
-            <Carousel responsive={responsive} infinite={true} itemClass="px-2">
+          <div className="border-b border-gray-100 pb-12">
+            <Carousel
+              responsive={responsive}
+              infinite={true}
+              itemClass="px-3"
+              removeArrowOnDeviceType={["mobile"]}
+            >
               {bannerItems?.map((bannerItem) => {
                 const url = new URL(bannerItem.action.link);
                 const collectionId = url.searchParams.get("collection_id");
@@ -163,10 +178,10 @@ const Body = () => {
                   <Link
                     key={bannerItem.id}
                     to={`/collections/${collectionId}/${query}/${tags}/${type}`}
-                    className="block transition-transform hover:scale-105"
+                    className="group block transition-transform duration-300 hover:scale-105"
                   >
                     <img
-                      className="aspect-[3/4] w-full rounded-2xl object-cover shadow-sm"
+                      className="aspect-[3/4] w-full rounded-2xl object-cover shadow-md group-hover:shadow-lg transition-shadow"
                       src={ITEM_IMG_URL + bannerItem.imageId}
                       alt={bannerItem.action.text}
                     />
@@ -178,16 +193,22 @@ const Body = () => {
         </section>
 
         {/* Restaurant Grid Section */}
-        <section className="pb-20">
-          <h2 className="mb-8 font-lato text-2xl font-extrabold tracking-tight text-gray-800">
-            {localListTitle}
-          </h2>
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <section className="pb-24">
+          <div className="mb-10 flex items-end justify-between">
+            <h2 className="font-lato text-2xl font-extrabold tracking-tight text-gray-900">
+              {localListTitle}
+            </h2>
+            <span className="text-sm font-medium text-gray-500">
+              {filteredRestaurants.length} Restaurants found
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {filteredRestaurants?.map((restaurant) => (
               <Link
                 key={restaurant.info.id}
                 to={"/restaurants/" + restaurant.info.id}
-                className="transition-transform duration-200 hover:scale-95"
+                className="block transition-all duration-300 hover:scale-[0.98]"
               >
                 {restaurant.info.aggregatedDiscountInfoV3 ? (
                   <RestaurantWithOffer resData={restaurant.info} />
