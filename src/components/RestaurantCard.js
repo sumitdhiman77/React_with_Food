@@ -34,7 +34,7 @@ export const withOffer = (RestaurantCard) => {
     return (
       <div className="relative">
         {header && (
-          <label className="absolute z-10 bottom-[145px] left-8 text-gray-950 font-extrabold text-lg bg-gradient-to-t from-black/80 to-transparent w-[180px] px-2 rounded-b-md">
+          <label className="absolute z-10 bottom-[145px] left-8 text-gray-700 font-extrabold text-lg bg-gradient-to-t from-black/80 to-transparent w-[180px] px-2 rounded-b-md">
             {header} {subHeader}
           </label>
         )}
