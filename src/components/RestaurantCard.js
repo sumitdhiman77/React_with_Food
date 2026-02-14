@@ -28,13 +28,16 @@ const RestaurantCard = ({ resData }) => {
 
 export const withOffer = (RestaurantCard) => {
   return (props) => {
-    // Optional chaining to prevent crashes if discount info is missing
     const { header, subHeader } = props.resData?.aggregatedDiscountInfoV3 || {};
 
     return (
-      <div className="relative">
+      <div className="relative transition-transform duration-200 hover:scale-95">
         {header && (
-          <label className="absolute z-10 bottom-[145px] left-8 text-gray-700 font-extrabold text-lg bg-gradient-to-t from-black/80 to-transparent w-[180px] px-2 rounded-b-md">
+          <label
+            className="absolute z-10 bottom-[108px] left-4 right-4 
+            text-white font-black text-xl uppercase italic tracking-tighter
+            drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] pointer-events-none"
+          >
             {header} {subHeader}
           </label>
         )}
