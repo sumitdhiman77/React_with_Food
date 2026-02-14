@@ -1,0 +1,460 @@
+{
+  "blocked": false,
+  "data": {
+    "statusCode": 0,
+    "data": {
+      "statusMessage": "done successfully",
+      "cards": [
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.CollectionMasthead",
+              "collectionId": "80373",
+              "title": "Poha",
+              "description": "Dive into a plate of delicious, rich and flavourful Poha.",
+              "imageId": "COLLECTIONS/IMAGES/MERCH/2024/7/1/01ac092d-3974-4062-860b-4a7ae8f48648_pic",
+              "aspectRatio": "3.44",
+              "cta": {
+                "link": "swiggy://collectionV2?collection_id=80373&tags=layout_CCS_Poha,poha,layout_BAU_Contextual",
+                "type": "collectionv2"
+              },
+              "type": "COLLECTION_MASTHEAD_TYPE_IMAGE_WITH_TEXT",
+              "count": "3 restaurants",
+              "navBarConfig": {}
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.InlineViewFilterSortWidget",
+              "sortConfigs": [
+                {
+                  "key": "relevance",
+                  "title": "Relevance (Default)",
+                  "selected": true,
+                  "defaultSelection": true
+                },
+                {
+                  "key": "deliveryTimeAsc",
+                  "title": "Delivery Time"
+                },
+                {
+                  "key": "modelBasedRatingDesc",
+                  "title": "Rating"
+                },
+                {
+                  "key": "costForTwoAsc",
+                  "title": "Cost: Low to High"
+                },
+                {
+                  "key": "costForTwoDesc",
+                  "title": "Cost: High to Low"
+                }
+              ],
+              "restaurantCount": 3,
+              "facetList": [
+                {
+                  "label": "Veg/Non-Veg",
+                  "id": "isVeg",
+                  "selection": "SELECT_TYPE_MULTISELECT",
+                  "facetInfo": [
+                    {
+                      "label": "Non Veg",
+                      "id": "isVegfacetquery0",
+                      "analytics": {},
+                      "openFilter": true
+                    }
+                  ],
+                  "viewType": "VIEW_TYPE_HALF_CARD",
+                  "subLabel": "Filter by",
+                  "openFilter": true
+                },
+                {
+                  "label": "Ratings",
+                  "id": "rating",
+                  "selection": "SELECT_TYPE_MULTISELECT",
+                  "facetInfo": [
+                    {
+                      "label": "Ratings",
+                      "id": "ratingfacetquery0",
+                      "analytics": {},
+                      "openFilter": true
+                    },
+                    {
+                      "label": "Ratings 4.0+",
+                      "id": "ratingfacetquery1",
+                      "analytics": {},
+                      "openFilter": true
+                    }
+                  ],
+                  "viewType": "VIEW_TYPE_HALF_CARD",
+                  "subLabel": "Filter by",
+                  "openFilter": true
+                },
+                {
+                  "label": "Delivery Time",
+                  "id": "deliveryTime",
+                  "selection": "SELECT_TYPE_MULTISELECT",
+                  "facetInfo": [
+                    {
+                      "label": "Less than 45 mins",
+                      "id": "deliveryTimefacetquery1",
+                      "analytics": {},
+                      "openFilter": true
+                    }
+                  ],
+                  "viewType": "VIEW_TYPE_HALF_CARD",
+                  "subLabel": "Filter by",
+                  "openFilter": true
+                },
+                {
+                  "label": "Cost For Two",
+                  "id": "costForTwo",
+                  "selection": "SELECT_TYPE_MULTISELECT",
+                  "facetInfo": [
+                    {
+                      "label": "Less than Rs. 300",
+                      "id": "costForTwofacetquery0",
+                      "analytics": {},
+                      "openFilter": true
+                    },
+                    {
+                      "label": "Rs.300 - Rs.600",
+                      "id": "costForTwofacetquery1",
+                      "analytics": {},
+                      "openFilter": true
+                    }
+                  ],
+                  "viewType": "VIEW_TYPE_HALF_CARD",
+                  "subLabel": "Filter by",
+                  "openFilter": true
+                }
+              ],
+              "widgetId": "inlineFacetFilter"
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget",
+              "layout": {
+                "rows": 1,
+                "widgetPadding": {
+                  "left": 16,
+                  "top": 12,
+                  "right": 16
+                },
+                "widgetTheme": {
+                  "defaultMode": {
+                    "backgroundColour": "#FFFFFF",
+                    "theme": "THEME_TYPE_LIGHT"
+                  },
+                  "darkMode": {
+                    "backgroundColour": "#1B3028",
+                    "theme": "THEME_TYPE_DARK"
+                  }
+                }
+              },
+              "id": "restaurantCountWidget",
+              "gridElements": {
+                "infoWithStyle": {
+                  "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.TextBoxV2",
+                  "text": "Restaurants to explore",
+                  "headerStyling": {
+                    "textSize": 15,
+                    "textColor": "text_color_highest_emphasis",
+                    "textFontName": "FONT_NAME_HEADER_H5",
+                    "maxLines": 1
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "814364",
+                "name": "Murli'S Dhaba",
+                "cloudinaryImageId": "b14cd9fc40129fcfb97aa7e621719d07",
+                "locality": "Govt Polytechnic",
+                "areaName": "Kangra",
+                "costForTwo": "₹350 for two",
+                "cuisines": [
+                  "South Indian",
+                  "Chinese",
+                  "Fast Food",
+                  "Pastas",
+                  "Snacks",
+                  "Beverages"
+                ],
+                "avgRating": 3.8,
+                "parentId": "485497",
+                "avgRatingString": "3.8",
+                "totalRatingsString": "262",
+                "promoted": true,
+                "adTrackingId": "cid=7f8ea118-32f8-4a87-b55d-170314b6ca7c~p=0~adgrpid=7f8ea118-32f8-4a87-b55d-170314b6ca7c#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=814364~plpr=COLLECTION~eid=9368a8a7-48df-453d-aa14-bdc696a392b7~srvts=1771070596821~collid=80373",
+                "sla": {
+                  "deliveryTime": 35,
+                  "lastMileTravel": 3,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "35-40 mins",
+                  "lastMileTravelString": "3.0 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2026-02-14 21:30:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "ITEMS",
+                  "subHeader": "AT ₹5",
+                  "logoCtx": {
+                    "text": "BENEFITS"
+                  }
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {},
+                  "commsStyling": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                  "aggregatedRating": {
+                    "rating": "--"
+                  }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                "campaignId": "7f8ea118-32f8-4a87-b55d-170314b6ca7c"
+              },
+              "analytics": {},
+              "cta": {
+                "link": "swiggy://menu?restaurant_id=814364&source=collection&query=Poha",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            "relevance": {
+              "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+              "sectionId": "MENU_RETURN_FOOD"
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "960775",
+                "name": "Royal Galaxy Dhaba",
+                "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/9/24/325dad70-c1df-4a47-aa43-e90ffb1368cb_3de6e639-eb46-4d70-b862-d995fac1d8d0.jpg",
+                "locality": "Kangra",
+                "areaName": "Kangra",
+                "costForTwo": "₹300 for two",
+                "cuisines": [
+                  "North Indian",
+                  "Biryani",
+                  "Chinese",
+                  "Street Food",
+                  "Beverages"
+                ],
+                "avgRating": 4.2,
+                "parentId": "563472",
+                "avgRatingString": "4.2",
+                "totalRatingsString": "97",
+                "sla": {
+                  "deliveryTime": 52,
+                  "lastMileTravel": 6.4,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "50-60 mins",
+                  "lastMileTravelString": "6.4 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2026-02-14 21:45:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹100 OFF",
+                  "subHeader": "ABOVE ₹999",
+                  "discountTag": "FLAT DEAL",
+                  "logoCtx": {
+                    "text": "BENEFITS"
+                  }
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {},
+                  "commsStyling": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                  "aggregatedRating": {
+                    "rating": "--"
+                  }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+              },
+              "analytics": {},
+              "cta": {
+                "link": "swiggy://menu?restaurant_id=960775&source=collection&query=Poha",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            "relevance": {
+              "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+              "sectionId": "MENU_RETURN_FOOD"
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "457173",
+                "name": "Kangra Kitchen",
+                "cloudinaryImageId": "sqbwp7x7pylopbltukvf",
+                "locality": "Tanda Hospital Road",
+                "areaName": "Kangra Locality",
+                "costForTwo": "₹200 for two",
+                "cuisines": [
+                  "Indian",
+                  "Biryani",
+                  "Chinese",
+                  "South Indian",
+                  "Mughlai"
+                ],
+                "avgRating": 3.9,
+                "parentId": "274624",
+                "avgRatingString": "3.9",
+                "totalRatingsString": "547",
+                "sla": {
+                  "deliveryTime": 52,
+                  "lastMileTravel": 6.2,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "50-60 mins",
+                  "lastMileTravelString": "6.2 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2026-02-14 22:30:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "50% OFF",
+                  "subHeader": "UPTO ₹100",
+                  "logoCtx": {
+                    "text": "BENEFITS"
+                  }
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {},
+                  "commsStyling": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                  "aggregatedRating": {
+                    "rating": "--"
+                  }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+              },
+              "analytics": {},
+              "cta": {
+                "link": "swiggy://menu?restaurant_id=457173&source=collection&query=Poha",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            "relevance": {
+              "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+              "sectionId": "MENU_RETURN_FOOD"
+            }
+          }
+        }
+      ],
+      "firstOffsetRequest": true,
+      "nextFetch": 3
+    },
+    "tid": "a8b903cc-b746-42b8-9562-58150a69e7a6",
+    "sid": "pp57b803-8179-46a7-86f5-3cdf218e6060",
+    "deviceId": "e92e1d45-139b-8096-734d-6469b546abd9",
+    "csrfToken": null
+  }
+}

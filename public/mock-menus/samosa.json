@@ -1,0 +1,561 @@
+{
+  "blocked": false,
+  "data": {
+    "statusCode": 0,
+    "data": {
+      "statusMessage": "done successfully",
+      "cards": [
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.CollectionMasthead",
+              "collectionId": "80396",
+              "title": "Samosas",
+              "description": "The perfect snack companion to enjoy your Chai or coffee.",
+              "imageId": "COLLECTIONS/IMAGES/MERCH/2024/7/1/2e655184-df22-452a-8f3d-71039e355311_pic",
+              "aspectRatio": "3.44",
+              "cta": {
+                "link": "swiggy://collectionV2?collection_id=80396&tags=layout_BAU_Contextual,samosa",
+                "type": "collectionv2"
+              },
+              "type": "COLLECTION_MASTHEAD_TYPE_IMAGE_WITH_TEXT",
+              "count": "4 restaurants",
+              "navBarConfig": {}
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.InlineViewFilterSortWidget",
+              "sortConfigs": [
+                {
+                  "key": "relevance",
+                  "title": "Relevance (Default)",
+                  "selected": true,
+                  "defaultSelection": true
+                },
+                {
+                  "key": "deliveryTimeAsc",
+                  "title": "Delivery Time"
+                },
+                {
+                  "key": "modelBasedRatingDesc",
+                  "title": "Rating"
+                },
+                {
+                  "key": "costForTwoAsc",
+                  "title": "Cost: Low to High"
+                },
+                {
+                  "key": "costForTwoDesc",
+                  "title": "Cost: High to Low"
+                }
+              ],
+              "restaurantCount": 4,
+              "facetList": [
+                {
+                  "label": "Veg/Non-Veg",
+                  "id": "isVeg",
+                  "selection": "SELECT_TYPE_MULTISELECT",
+                  "facetInfo": [
+                    {
+                      "label": "Non Veg",
+                      "id": "isVegfacetquery0",
+                      "analytics": {},
+                      "openFilter": true
+                    },
+                    {
+                      "label": "Pure Veg",
+                      "id": "isVegfacetquery1",
+                      "analytics": {},
+                      "openFilter": true
+                    }
+                  ],
+                  "viewType": "VIEW_TYPE_HALF_CARD",
+                  "subLabel": "Filter by",
+                  "openFilter": true
+                },
+                {
+                  "label": "Ratings",
+                  "id": "rating",
+                  "selection": "SELECT_TYPE_MULTISELECT",
+                  "facetInfo": [
+                    {
+                      "label": "Ratings",
+                      "id": "ratingfacetquery0",
+                      "analytics": {},
+                      "openFilter": true
+                    },
+                    {
+                      "label": "Ratings 4.0+",
+                      "id": "ratingfacetquery1",
+                      "analytics": {},
+                      "openFilter": true
+                    }
+                  ],
+                  "viewType": "VIEW_TYPE_HALF_CARD",
+                  "subLabel": "Filter by",
+                  "openFilter": true
+                },
+                {
+                  "label": "Delivery Time",
+                  "id": "deliveryTime",
+                  "selection": "SELECT_TYPE_MULTISELECT",
+                  "facetInfo": [
+                    {
+                      "label": "Less than 30 mins",
+                      "id": "deliveryTimefacetquery0",
+                      "analytics": {},
+                      "openFilter": true
+                    },
+                    {
+                      "label": "Less than 45 mins",
+                      "id": "deliveryTimefacetquery1",
+                      "analytics": {},
+                      "openFilter": true
+                    }
+                  ],
+                  "viewType": "VIEW_TYPE_HALF_CARD",
+                  "subLabel": "Filter by",
+                  "openFilter": true
+                },
+                {
+                  "label": "Cost For Two",
+                  "id": "costForTwo",
+                  "selection": "SELECT_TYPE_MULTISELECT",
+                  "facetInfo": [
+                    {
+                      "label": "Less than Rs. 300",
+                      "id": "costForTwofacetquery0",
+                      "analytics": {},
+                      "openFilter": true
+                    },
+                    {
+                      "label": "Rs.300 - Rs.600",
+                      "id": "costForTwofacetquery1",
+                      "analytics": {},
+                      "openFilter": true
+                    }
+                  ],
+                  "viewType": "VIEW_TYPE_HALF_CARD",
+                  "subLabel": "Filter by",
+                  "openFilter": true
+                }
+              ],
+              "widgetId": "inlineFacetFilter"
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget",
+              "layout": {
+                "rows": 1,
+                "widgetPadding": {
+                  "left": 16,
+                  "top": 12,
+                  "right": 16
+                },
+                "widgetTheme": {
+                  "defaultMode": {
+                    "backgroundColour": "#FFFFFF",
+                    "theme": "THEME_TYPE_LIGHT"
+                  },
+                  "darkMode": {
+                    "backgroundColour": "#1B3028",
+                    "theme": "THEME_TYPE_DARK"
+                  }
+                }
+              },
+              "id": "restaurantCountWidget",
+              "gridElements": {
+                "infoWithStyle": {
+                  "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.TextBoxV2",
+                  "text": "Restaurants to explore",
+                  "headerStyling": {
+                    "textSize": 15,
+                    "textColor": "text_color_highest_emphasis",
+                    "textFontName": "FONT_NAME_HEADER_H5",
+                    "maxLines": 1
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "814364",
+                "name": "Murli'S Dhaba",
+                "cloudinaryImageId": "b14cd9fc40129fcfb97aa7e621719d07",
+                "locality": "Govt Polytechnic",
+                "areaName": "Kangra",
+                "costForTwo": "₹350 for two",
+                "cuisines": [
+                  "South Indian",
+                  "Chinese",
+                  "Fast Food",
+                  "Pastas",
+                  "Snacks",
+                  "Beverages"
+                ],
+                "avgRating": 3.8,
+                "parentId": "485497",
+                "avgRatingString": "3.8",
+                "totalRatingsString": "262",
+                "promoted": true,
+                "adTrackingId": "cid=7f8ea118-32f8-4a87-b55d-170314b6ca7c~p=0~adgrpid=7f8ea118-32f8-4a87-b55d-170314b6ca7c#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=814364~plpr=COLLECTION~eid=35e2061b-fc65-41a0-83fc-a0a3ea438a13~srvts=1771070290513~collid=80396",
+                "sla": {
+                  "deliveryTime": 34,
+                  "lastMileTravel": 3,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "30-35 mins",
+                  "lastMileTravelString": "3.0 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2026-02-14 21:30:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "ITEMS",
+                  "subHeader": "AT ₹5",
+                  "logoCtx": {
+                    "text": "BENEFITS"
+                  }
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {},
+                  "commsStyling": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "maxDuration": "3000",
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                  "aggregatedRating": {
+                    "rating": "--"
+                  }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                "campaignId": "7f8ea118-32f8-4a87-b55d-170314b6ca7c"
+              },
+              "analytics": {},
+              "cta": {
+                "link": "swiggy://menu?restaurant_id=814364&source=collection&query=Samosa",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_Contextual"
+            },
+            "relevance": {
+              "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+              "sectionId": "MENU_RETURN_FOOD"
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "820385",
+                "name": "Hungry Point",
+                "cloudinaryImageId": "f77223f50d3641968bc5037fccb64ccc",
+                "locality": "Kangra",
+                "areaName": "Kangra",
+                "costForTwo": "₹350 for two",
+                "cuisines": ["Pizzas", "Burgers", "wrap", "Beverages"],
+                "avgRating": 4.4,
+                "parentId": "5290",
+                "avgRatingString": "4.4",
+                "totalRatingsString": "230",
+                "sla": {
+                  "deliveryTime": 28,
+                  "lastMileTravel": 3,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "25-30 mins",
+                  "lastMileTravelString": "3.0 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2026-02-14 22:30:00",
+                  "opened": true
+                },
+                "badges": {
+                  "imageBadges": [
+                    {
+                      "imageId": "v1695133679/badges/Pure_Veg111.png",
+                      "description": "pureveg"
+                    }
+                  ]
+                },
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {
+                      "badgeObject": [
+                        {
+                          "attributes": {
+                            "imageId": "v1695133679/badges/Pure_Veg111.png",
+                            "description": "pureveg"
+                          }
+                        }
+                      ]
+                    },
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "60% OFF",
+                  "subHeader": "UPTO ₹110",
+                  "headerTypeV2": "HEADER_TYPE_V2_TOP_UP",
+                  "secondaryDiscountCallout": "₹60 Cashback",
+                  "logoCtx": {
+                    "text": "BENEFITS"
+                  }
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {},
+                  "commsStyling": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "maxDuration": "3000",
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                  "aggregatedRating": {
+                    "rating": "--"
+                  }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+              },
+              "analytics": {},
+              "cta": {
+                "link": "swiggy://menu?restaurant_id=820385&source=collection&query=Samosa",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_Contextual"
+            },
+            "relevance": {
+              "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+              "sectionId": "MENU_RETURN_FOOD"
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "224947",
+                "name": "The Noodle House",
+                "cloudinaryImageId": "2aee9c1308180fd47d658ebbf7a99cbc",
+                "locality": "Kangra",
+                "areaName": "Kangra Locality",
+                "costForTwo": "₹350 for two",
+                "cuisines": [
+                  "Chinese",
+                  "Kebabs",
+                  "Tibetan",
+                  "Salads",
+                  "Italian",
+                  "Beverages"
+                ],
+                "avgRating": 3.8,
+                "parentId": "414654",
+                "avgRatingString": "3.8",
+                "totalRatingsString": "347",
+                "sla": {
+                  "deliveryTime": 53,
+                  "lastMileTravel": 8.5,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "50-60 mins",
+                  "lastMileTravelString": "8.5 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2026-02-14 22:00:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "aggregatedDiscountInfoV2": {},
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textExtendedBadges": {},
+                    "textBased": {}
+                  }
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {},
+                  "commsStyling": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "maxDuration": "3000",
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                  "aggregatedRating": {
+                    "rating": "--"
+                  }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+              },
+              "analytics": {},
+              "cta": {
+                "link": "swiggy://menu?restaurant_id=224947&source=collection&query=Samosa",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_Contextual"
+            },
+            "relevance": {
+              "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+              "sectionId": "MENU_RETURN_FOOD"
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "922443",
+                "name": "Chatkara by Home Bakers",
+                "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/7/9/a849c4f5-1f47-4237-84ac-5d191dc80260_69251696-6f6e-4402-a1af-45529d2d798e.jpg",
+                "locality": "Bahri commercial complex",
+                "areaName": "Kangra",
+                "costForTwo": "₹200 for two",
+                "cuisines": ["South Indian", "Chaat", "Snacks"],
+                "avgRating": 4.3,
+                "veg": true,
+                "parentId": "535177",
+                "avgRatingString": "4.3",
+                "totalRatingsString": "109",
+                "sla": {
+                  "deliveryTime": 35,
+                  "lastMileTravel": 3,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "35-40 mins",
+                  "lastMileTravelString": "3.0 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2026-02-14 20:45:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "aggregatedDiscountInfoV2": {},
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {},
+                  "commsStyling": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "maxDuration": "3000",
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                  "aggregatedRating": {
+                    "rating": "--"
+                  }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+              },
+              "analytics": {},
+              "cta": {
+                "link": "swiggy://menu?restaurant_id=922443&source=collection&query=Samosa",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_Contextual"
+            },
+            "relevance": {
+              "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+              "sectionId": "MENU_RETURN_FOOD"
+            }
+          }
+        }
+      ],
+      "firstOffsetRequest": true,
+      "nextFetch": 3
+    },
+    "tid": "d80a954c-b036-4420-b6e9-429182472df2",
+    "sid": "pp55341d-71bc-4d0e-83c8-ae1576f3b570",
+    "deviceId": "5f5a6328-108d-ecb9-ee47-ac088d8d0645",
+    "csrfToken": null
+  }
+}

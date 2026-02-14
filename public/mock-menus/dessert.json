@@ -1,0 +1,599 @@
+{
+  "blocked": false,
+  "data": {
+    "statusCode": 0,
+    "data": {
+      "statusMessage": "done successfully",
+      "cards": [
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.CollectionMasthead",
+              "collectionId": "83661",
+              "title": "Desserts",
+              "description": "Feast on amazing desserts to satisfy your sweet tooth.",
+              "imageId": "COLLECTIONS/IMAGES/MERCH/2024/8/20/05c15369-c8fc-4d35-a823-706bd8b8ce1c_desserts (1).png",
+              "aspectRatio": "3.44",
+              "cta": {
+                "link": "swiggy://collectionV2?collection_id=83661&tags=layout_CCS_Dessert,dessert",
+                "type": "collectionv2"
+              },
+              "type": "COLLECTION_MASTHEAD_TYPE_IMAGE_WITH_TEXT",
+              "count": "4 restaurants",
+              "navBarConfig": {}
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.InlineViewFilterSortWidget",
+              "sortConfigs": [
+                {
+                  "key": "relevance",
+                  "title": "Relevance (Default)",
+                  "selected": true,
+                  "defaultSelection": true
+                },
+                {
+                  "key": "deliveryTimeAsc",
+                  "title": "Delivery Time"
+                },
+                {
+                  "key": "modelBasedRatingDesc",
+                  "title": "Rating"
+                },
+                {
+                  "key": "costForTwoAsc",
+                  "title": "Cost: Low to High"
+                },
+                {
+                  "key": "costForTwoDesc",
+                  "title": "Cost: High to Low"
+                }
+              ],
+              "restaurantCount": 4,
+              "facetList": [
+                {
+                  "label": "Veg/Non-Veg",
+                  "id": "isVeg",
+                  "selection": "SELECT_TYPE_MULTISELECT",
+                  "facetInfo": [
+                    {
+                      "label": "Non Veg",
+                      "id": "isVegfacetquery0",
+                      "analytics": {},
+                      "openFilter": true
+                    },
+                    {
+                      "label": "Pure Veg",
+                      "id": "isVegfacetquery1",
+                      "analytics": {},
+                      "openFilter": true
+                    }
+                  ],
+                  "viewType": "VIEW_TYPE_HALF_CARD",
+                  "subLabel": "Filter by",
+                  "openFilter": true
+                },
+                {
+                  "label": "Ratings",
+                  "id": "rating",
+                  "selection": "SELECT_TYPE_MULTISELECT",
+                  "facetInfo": [
+                    {
+                      "label": "Ratings",
+                      "id": "ratingfacetquery0",
+                      "analytics": {},
+                      "openFilter": true
+                    },
+                    {
+                      "label": "Ratings 4.0+",
+                      "id": "ratingfacetquery1",
+                      "analytics": {},
+                      "openFilter": true
+                    },
+                    {
+                      "label": "Ratings 4.5+",
+                      "id": "ratingfacetquery2",
+                      "analytics": {},
+                      "openFilter": true
+                    }
+                  ],
+                  "viewType": "VIEW_TYPE_HALF_CARD",
+                  "subLabel": "Filter by",
+                  "openFilter": true
+                },
+                {
+                  "label": "Delivery Time",
+                  "id": "deliveryTime",
+                  "selection": "SELECT_TYPE_MULTISELECT",
+                  "facetInfo": [
+                    {
+                      "label": "Less than 30 mins",
+                      "id": "deliveryTimefacetquery0",
+                      "analytics": {},
+                      "openFilter": true
+                    },
+                    {
+                      "label": "Less than 45 mins",
+                      "id": "deliveryTimefacetquery1",
+                      "analytics": {},
+                      "openFilter": true
+                    }
+                  ],
+                  "viewType": "VIEW_TYPE_HALF_CARD",
+                  "subLabel": "Filter by",
+                  "openFilter": true
+                },
+                {
+                  "label": "Cost For Two",
+                  "id": "costForTwo",
+                  "selection": "SELECT_TYPE_MULTISELECT",
+                  "facetInfo": [
+                    {
+                      "label": "Less than Rs. 300",
+                      "id": "costForTwofacetquery0",
+                      "analytics": {},
+                      "openFilter": true
+                    },
+                    {
+                      "label": "Rs.300 - Rs.600",
+                      "id": "costForTwofacetquery1",
+                      "analytics": {},
+                      "openFilter": true
+                    },
+                    {
+                      "label": "Greater than Rs. 600",
+                      "id": "costForTwofacetquery2",
+                      "analytics": {},
+                      "openFilter": true
+                    }
+                  ],
+                  "viewType": "VIEW_TYPE_HALF_CARD",
+                  "subLabel": "Filter by",
+                  "openFilter": true
+                }
+              ],
+              "widgetId": "inlineFacetFilter"
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget",
+              "layout": {
+                "rows": 1,
+                "widgetPadding": {
+                  "left": 16,
+                  "top": 12,
+                  "right": 16
+                },
+                "widgetTheme": {
+                  "defaultMode": {
+                    "backgroundColour": "#FFFFFF",
+                    "theme": "THEME_TYPE_LIGHT"
+                  },
+                  "darkMode": {
+                    "backgroundColour": "#1B3028",
+                    "theme": "THEME_TYPE_DARK"
+                  }
+                }
+              },
+              "id": "restaurantCountWidget",
+              "gridElements": {
+                "infoWithStyle": {
+                  "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.TextBoxV2",
+                  "text": "Restaurants to explore",
+                  "headerStyling": {
+                    "textSize": 15,
+                    "textColor": "text_color_highest_emphasis",
+                    "textFontName": "FONT_NAME_HEADER_H5",
+                    "maxLines": 1
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "249278",
+                "name": "A one Bakers",
+                "cloudinaryImageId": "smfvfogzrpgiaslnpj16",
+                "locality": "College Road",
+                "areaName": "Kangra Locality",
+                "costForTwo": "₹400 for two",
+                "cuisines": ["Bakery"],
+                "avgRating": 4.9,
+                "veg": true,
+                "parentId": "24687",
+                "avgRatingString": "4.9",
+                "totalRatingsString": "59",
+                "promoted": true,
+                "adTrackingId": "cid=817b0702-a16c-4ae9-b69a-6139aea780a1~p=1~adgrpid=817b0702-a16c-4ae9-b69a-6139aea780a1#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=249278~plpr=COLLECTION~eid=291c7596-14b5-49a9-b3cd-665cb10829cb~srvts=1771070660280~collid=83661",
+                "sla": {
+                  "deliveryTime": 35,
+                  "lastMileTravel": 3,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "30-35 mins",
+                  "lastMileTravelString": "3.0 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2026-02-14 21:00:00",
+                  "opened": true
+                },
+                "badges": {
+                  "imageBadges": [
+                    {
+                      "imageId": "v1695133679/badges/Pure_Veg111.png",
+                      "description": "pureveg"
+                    }
+                  ]
+                },
+                "isOpen": true,
+                "aggregatedDiscountInfoV2": {},
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {
+                      "badgeObject": [
+                        {
+                          "attributes": {
+                            "imageId": "v1695133679/badges/Pure_Veg111.png",
+                            "description": "pureveg"
+                          }
+                        }
+                      ]
+                    },
+                    "textExtendedBadges": {},
+                    "textBased": {}
+                  }
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {},
+                  "commsStyling": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                  "aggregatedRating": {
+                    "rating": "--"
+                  }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                "campaignId": "817b0702-a16c-4ae9-b69a-6139aea780a1"
+              },
+              "analytics": {},
+              "cta": {
+                "link": "swiggy://menu?restaurant_id=249278&source=collection&query=Dessert",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            "relevance": {
+              "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+              "sectionId": "MENU_RETURN_FOOD"
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "192392",
+                "name": "Home Bakers",
+                "cloudinaryImageId": "pduf85ihy3bcjp9ylnmq",
+                "locality": "College Road",
+                "areaName": "Kangra Locality",
+                "costForTwo": "₹300 for two",
+                "cuisines": ["Bakery", "Desserts"],
+                "avgRating": 4.3,
+                "veg": true,
+                "parentId": "96432",
+                "avgRatingString": "4.3",
+                "totalRatingsString": "605",
+                "sla": {
+                  "deliveryTime": 34,
+                  "lastMileTravel": 3,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "30-35 mins",
+                  "lastMileTravelString": "3.0 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2026-02-14 21:00:00",
+                  "opened": true
+                },
+                "badges": {
+                  "imageBadges": [
+                    {
+                      "imageId": "v1695133679/badges/Pure_Veg111.png",
+                      "description": "pureveg"
+                    }
+                  ]
+                },
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {
+                      "badgeObject": [
+                        {
+                          "attributes": {
+                            "imageId": "v1695133679/badges/Pure_Veg111.png",
+                            "description": "pureveg"
+                          }
+                        }
+                      ]
+                    },
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹100 OFF",
+                  "subHeader": "ABOVE ₹499",
+                  "discountTag": "FLAT DEAL",
+                  "logoCtx": {
+                    "text": "BENEFITS"
+                  }
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {},
+                  "commsStyling": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                  "aggregatedRating": {
+                    "rating": "--"
+                  }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+              },
+              "analytics": {},
+              "cta": {
+                "link": "swiggy://menu?restaurant_id=192392&source=collection&query=Dessert",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            "relevance": {
+              "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+              "sectionId": "MENU_RETURN_FOOD"
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "513519",
+                "name": "Aggarwal cakes",
+                "cloudinaryImageId": "gfheddfsomkjgkezbzqo",
+                "locality": "Bali Complex College Road",
+                "areaName": "Kangra Locality",
+                "costForTwo": "₹150 for two",
+                "cuisines": ["Bakery", "Desserts"],
+                "avgRating": 4.4,
+                "veg": true,
+                "parentId": "306922",
+                "avgRatingString": "4.4",
+                "totalRatingsString": "206",
+                "sla": {
+                  "deliveryTime": 27,
+                  "lastMileTravel": 3,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "25-30 mins",
+                  "lastMileTravelString": "3.0 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2026-02-14 21:00:00",
+                  "opened": true
+                },
+                "badges": {
+                  "imageBadges": [
+                    {
+                      "imageId": "v1695133679/badges/Pure_Veg111.png",
+                      "description": "pureveg"
+                    }
+                  ]
+                },
+                "isOpen": true,
+                "aggregatedDiscountInfoV2": {},
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {
+                      "badgeObject": [
+                        {
+                          "attributes": {
+                            "imageId": "v1695133679/badges/Pure_Veg111.png",
+                            "description": "pureveg"
+                          }
+                        }
+                      ]
+                    },
+                    "textExtendedBadges": {}
+                  }
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {},
+                  "commsStyling": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                  "aggregatedRating": {
+                    "rating": "--"
+                  }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+              },
+              "analytics": {},
+              "cta": {
+                "link": "swiggy://menu?restaurant_id=513519&source=collection&query=Dessert",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            "relevance": {
+              "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+              "sectionId": "MENU_RETURN_FOOD"
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "680636",
+                "name": "Barista Coffee",
+                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/12/10/f5880e3a-6529-49a9-87dd-b34b96ce0704_680636.JPG",
+                "locality": "Kangra",
+                "areaName": "Kangra",
+                "costForTwo": "₹600 for two",
+                "cuisines": [
+                  "Beverages",
+                  "Fast Food",
+                  "Snacks",
+                  "Biryani",
+                  "Pastas",
+                  "Desserts"
+                ],
+                "avgRating": 4.6,
+                "parentId": "416281",
+                "avgRatingString": "4.6",
+                "totalRatingsString": "58",
+                "sla": {
+                  "deliveryTime": 37,
+                  "lastMileTravel": 4.4,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "35-40 mins",
+                  "lastMileTravelString": "4.4 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2026-02-14 23:00:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹125 OFF",
+                  "subHeader": "ABOVE ₹499",
+                  "discountTag": "FLAT DEAL",
+                  "logoCtx": {
+                    "text": "BENEFITS"
+                  }
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {},
+                  "commsStyling": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                  "aggregatedRating": {
+                    "rating": "4.6",
+                    "ratingCount": "112"
+                  },
+                  "source": "GOOGLE",
+                  "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+              },
+              "analytics": {},
+              "cta": {
+                "link": "swiggy://menu?restaurant_id=680636&source=collection&query=Dessert",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            "relevance": {
+              "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+              "sectionId": "MENU_RETURN_FOOD"
+            }
+          }
+        }
+      ],
+      "firstOffsetRequest": true,
+      "nextFetch": 3
+    },
+    "tid": "f0fd8cc8-4891-449b-ab84-4f6ad47b447c",
+    "sid": "pp574c86-eab3-430c-935e-164643d13432",
+    "deviceId": "6abcd79c-ea49-a2a8-ecc4-afb978658aa4",
+    "csrfToken": null
+  }
+}

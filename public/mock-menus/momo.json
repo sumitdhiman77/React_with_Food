@@ -1,0 +1,1143 @@
+{
+  "blocked": false,
+  "data": {
+    "statusCode": 0,
+    "data": {
+      "statusMessage": "done successfully",
+      "pageOffset": {
+        "nextOffset": "CJdkEOskKICYlM3y08nbODCfEjgD",
+        "widgetOffset": {
+          "restaurantCountWidget": "",
+          "inlineFacetFilter": "",
+          "collectionV5RestaurantListWidget_SimRestoRelevance_food": "11",
+          "collectionV5MastheadWidget": ""
+        }
+      },
+      "cards": [
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.CollectionMasthead",
+              "collectionId": "80461",
+              "title": "Momos",
+              "description": "Enjoy steamed dumplings stuffed with the juicy flavours of meat or veggies.",
+              "imageId": "COLLECTIONS/IMAGES/MERCH/2024/7/3/3e239b9f-a69b-444a-942b-358b24bdbd1f_pic",
+              "aspectRatio": "3.44",
+              "cta": {
+                "link": "swiggy://collectionV2?collection_id=80461&tags=layout_CCS_Momos,momos,layout_BAU_Contextual",
+                "type": "collectionv2"
+              },
+              "type": "COLLECTION_MASTHEAD_TYPE_IMAGE_WITH_TEXT",
+              "count": "20 restaurants",
+              "navBarConfig": {}
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.InlineViewFilterSortWidget",
+              "sortConfigs": [
+                {
+                  "key": "relevance",
+                  "title": "Relevance (Default)",
+                  "selected": true,
+                  "defaultSelection": true
+                },
+                {
+                  "key": "deliveryTimeAsc",
+                  "title": "Delivery Time"
+                },
+                {
+                  "key": "modelBasedRatingDesc",
+                  "title": "Rating"
+                },
+                {
+                  "key": "costForTwoAsc",
+                  "title": "Cost: Low to High"
+                },
+                {
+                  "key": "costForTwoDesc",
+                  "title": "Cost: High to Low"
+                }
+              ],
+              "restaurantCount": 20,
+              "facetList": [
+                {
+                  "label": "Veg/Non-Veg",
+                  "id": "isVeg",
+                  "selection": "SELECT_TYPE_MULTISELECT",
+                  "facetInfo": [
+                    {
+                      "label": "Non Veg",
+                      "id": "isVegfacetquery0",
+                      "analytics": {},
+                      "openFilter": true
+                    },
+                    {
+                      "label": "Pure Veg",
+                      "id": "isVegfacetquery1",
+                      "analytics": {},
+                      "openFilter": true
+                    }
+                  ],
+                  "viewType": "VIEW_TYPE_HALF_CARD",
+                  "subLabel": "Filter by",
+                  "openFilter": true
+                },
+                {
+                  "label": "Ratings",
+                  "id": "rating",
+                  "selection": "SELECT_TYPE_MULTISELECT",
+                  "facetInfo": [
+                    {
+                      "label": "Ratings",
+                      "id": "ratingfacetquery0",
+                      "analytics": {},
+                      "openFilter": true
+                    },
+                    {
+                      "label": "Ratings 4.0+",
+                      "id": "ratingfacetquery1",
+                      "analytics": {},
+                      "openFilter": true
+                    },
+                    {
+                      "label": "Ratings 4.5+",
+                      "id": "ratingfacetquery2",
+                      "analytics": {},
+                      "openFilter": true
+                    }
+                  ],
+                  "viewType": "VIEW_TYPE_HALF_CARD",
+                  "subLabel": "Filter by",
+                  "openFilter": true
+                },
+                {
+                  "label": "Delivery Time",
+                  "id": "deliveryTime",
+                  "selection": "SELECT_TYPE_MULTISELECT",
+                  "facetInfo": [
+                    {
+                      "label": "Less than 45 mins",
+                      "id": "deliveryTimefacetquery1",
+                      "analytics": {},
+                      "openFilter": true
+                    }
+                  ],
+                  "viewType": "VIEW_TYPE_HALF_CARD",
+                  "subLabel": "Filter by",
+                  "openFilter": true
+                },
+                {
+                  "label": "Cost For Two",
+                  "id": "costForTwo",
+                  "selection": "SELECT_TYPE_MULTISELECT",
+                  "facetInfo": [
+                    {
+                      "label": "Less than Rs. 300",
+                      "id": "costForTwofacetquery0",
+                      "analytics": {},
+                      "openFilter": true
+                    },
+                    {
+                      "label": "Rs.300 - Rs.600",
+                      "id": "costForTwofacetquery1",
+                      "analytics": {},
+                      "openFilter": true
+                    },
+                    {
+                      "label": "Greater than Rs. 600",
+                      "id": "costForTwofacetquery2",
+                      "analytics": {},
+                      "openFilter": true
+                    }
+                  ],
+                  "viewType": "VIEW_TYPE_HALF_CARD",
+                  "subLabel": "Filter by",
+                  "openFilter": true
+                }
+              ],
+              "widgetId": "inlineFacetFilter"
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget",
+              "layout": {
+                "rows": 1,
+                "widgetPadding": {
+                  "left": 16,
+                  "top": 12,
+                  "right": 16
+                },
+                "widgetTheme": {
+                  "defaultMode": {
+                    "backgroundColour": "#FFFFFF",
+                    "theme": "THEME_TYPE_LIGHT"
+                  },
+                  "darkMode": {
+                    "backgroundColour": "#1B3028",
+                    "theme": "THEME_TYPE_DARK"
+                  }
+                }
+              },
+              "id": "restaurantCountWidget",
+              "gridElements": {
+                "infoWithStyle": {
+                  "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.TextBoxV2",
+                  "text": "Restaurants to explore",
+                  "headerStyling": {
+                    "textSize": 15,
+                    "textColor": "text_color_highest_emphasis",
+                    "textFontName": "FONT_NAME_HEADER_H5",
+                    "maxLines": 1
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "839067",
+                "name": "El Bosque Restaurant And Club",
+                "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/3/27/54f9755d-e1a6-4383-97b6-c9df48a54d88_b2c02544-9baa-4667-a197-e2dc0dfde6cc.png",
+                "locality": "Tanda",
+                "areaName": "Kangra",
+                "costForTwo": "₹200 for two",
+                "cuisines": ["North Indian", "Snacks"],
+                "avgRating": 4.2,
+                "parentId": "497412",
+                "avgRatingString": "4.2",
+                "totalRatingsString": "327",
+                "promoted": true,
+                "adTrackingId": "cid=12355ec6-de36-48af-8d14-f3a0e5886617~p=0~adgrpid=12355ec6-de36-48af-8d14-f3a0e5886617#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=839067~plpr=COLLECTION~eid=eaba75a1-6b84-41f5-b835-af1781757397~srvts=1771070082560~collid=80461",
+                "sla": {
+                  "deliveryTime": 49,
+                  "lastMileTravel": 5.5,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "45-55 mins",
+                  "lastMileTravelString": "5.5 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2026-02-14 23:00:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textExtendedBadges": {},
+                    "textBased": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹40 OFF",
+                  "subHeader": "ABOVE ₹499",
+                  "discountTag": "FLAT DEAL",
+                  "logoCtx": {
+                    "text": "BENEFITS"
+                  }
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {},
+                  "commsStyling": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                  "aggregatedRating": {
+                    "rating": "--"
+                  }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                "campaignId": "12355ec6-de36-48af-8d14-f3a0e5886617"
+              },
+              "analytics": {},
+              "cta": {
+                "link": "swiggy://menu?restaurant_id=839067&source=collection&query=Momos",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            "relevance": {
+              "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+              "sectionId": "MENU_RETURN_FOOD"
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "814364",
+                "name": "Murli'S Dhaba",
+                "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2025/7/26/42377890-15d1-4981-b470-0dfa85541106_5a1bafca-9703-4b76-bbd0-5a11a893738c.jpeg",
+                "locality": "Govt Polytechnic",
+                "areaName": "Kangra",
+                "costForTwo": "₹350 for two",
+                "cuisines": [
+                  "South Indian",
+                  "Chinese",
+                  "Fast Food",
+                  "Pastas",
+                  "Snacks",
+                  "Beverages"
+                ],
+                "avgRating": 3.8,
+                "parentId": "485497",
+                "avgRatingString": "3.8",
+                "totalRatingsString": "262",
+                "promoted": true,
+                "adTrackingId": "cid=7f8ea118-32f8-4a87-b55d-170314b6ca7c~p=2~adgrpid=7f8ea118-32f8-4a87-b55d-170314b6ca7c#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=814364~plpr=COLLECTION~eid=84695c38-63aa-4fff-a1c0-5f8e0590b328~srvts=1771070082560~collid=80461",
+                "sla": {
+                  "deliveryTime": 35,
+                  "lastMileTravel": 3,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "35-40 mins",
+                  "lastMileTravelString": "3.0 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2026-02-14 21:30:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "ITEMS",
+                  "subHeader": "AT ₹5",
+                  "logoCtx": {
+                    "text": "BENEFITS"
+                  }
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {},
+                  "commsStyling": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                  "aggregatedRating": {
+                    "rating": "--"
+                  }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                "campaignId": "7f8ea118-32f8-4a87-b55d-170314b6ca7c"
+              },
+              "analytics": {},
+              "cta": {
+                "link": "swiggy://menu?restaurant_id=814364&source=collection&query=Momos",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            "relevance": {
+              "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+              "sectionId": "MENU_RETURN_FOOD"
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "816489",
+                "name": "Grill Inn",
+                "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2025/1/24/1a7d0fd1-b231-4ebd-99b6-f8eb7f5d937a_bb0adc95-4865-46ab-8572-33ae1fccf2c5.jpg",
+                "locality": "Kangra",
+                "areaName": "Kangra",
+                "costForTwo": "₹100 for two",
+                "cuisines": [
+                  "Snacks",
+                  "Fast Food",
+                  "Chinese",
+                  "Pizzas",
+                  "Pastas",
+                  "Burgers"
+                ],
+                "avgRating": 4.2,
+                "parentId": "432",
+                "avgRatingString": "4.2",
+                "totalRatingsString": "139",
+                "promoted": true,
+                "adTrackingId": "cid=dd9c5611-8a55-4f8a-9a93-90f532647736~p=3~adgrpid=dd9c5611-8a55-4f8a-9a93-90f532647736#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=816489~plpr=COLLECTION~eid=6625523d-07e7-47a2-934b-10913347b6be~srvts=1771070082560~collid=80461",
+                "sla": {
+                  "deliveryTime": 39,
+                  "lastMileTravel": 4.4,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "35-40 mins",
+                  "lastMileTravelString": "4.4 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2026-02-14 22:00:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "25% OFF",
+                  "subHeader": "UPTO ₹65",
+                  "logoCtx": {
+                    "text": "BENEFITS"
+                  }
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {},
+                  "commsStyling": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                  "aggregatedRating": {
+                    "rating": "--"
+                  }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                "campaignId": "dd9c5611-8a55-4f8a-9a93-90f532647736"
+              },
+              "analytics": {},
+              "cta": {
+                "link": "swiggy://menu?restaurant_id=816489&source=collection&query=Momos",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            "relevance": {
+              "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+              "sectionId": "MENU_RETURN_FOOD"
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "516333",
+                "name": "Abhi Vaishnav Bhojnalya",
+                "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/3/20/1377a9d4-c63b-4302-9dfe-ff6f14b561d1_11c70bce-8e2a-415d-9d62-cac2edad21c0.JPG",
+                "locality": "Adarsh Colony",
+                "areaName": "Kangra Locality",
+                "costForTwo": "₹300 for two",
+                "cuisines": [
+                  "Fast Food",
+                  "Chinese",
+                  "South Indian",
+                  "Beverages"
+                ],
+                "avgRating": 3.7,
+                "veg": true,
+                "parentId": "308672",
+                "avgRatingString": "3.7",
+                "totalRatingsString": "574",
+                "promoted": true,
+                "adTrackingId": "cid=1e2fe65d-01e9-4c69-8ebd-b64d43629618~p=5~adgrpid=1e2fe65d-01e9-4c69-8ebd-b64d43629618#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=516333~plpr=COLLECTION~eid=4de95bdd-df09-438f-83f7-bfda7a876556~srvts=1771070082560~collid=80461",
+                "sla": {
+                  "deliveryTime": 37,
+                  "lastMileTravel": 3.8,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "35-40 mins",
+                  "lastMileTravelString": "3.8 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2026-02-14 23:00:00",
+                  "opened": true
+                },
+                "badges": {
+                  "imageBadges": [
+                    {
+                      "imageId": "v1695133679/badges/Pure_Veg111.png",
+                      "description": "pureveg"
+                    }
+                  ]
+                },
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "textExtendedBadges": {},
+                    "textBased": {},
+                    "imageBased": {
+                      "badgeObject": [
+                        {
+                          "attributes": {
+                            "description": "pureveg",
+                            "imageId": "v1695133679/badges/Pure_Veg111.png"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "ITEMS",
+                  "subHeader": "AT ₹79",
+                  "logoCtx": {
+                    "text": "BENEFITS"
+                  }
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {},
+                  "commsStyling": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                  "aggregatedRating": {
+                    "rating": "--"
+                  }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                "campaignId": "1e2fe65d-01e9-4c69-8ebd-b64d43629618"
+              },
+              "analytics": {},
+              "cta": {
+                "link": "swiggy://menu?restaurant_id=516333&source=collection&query=Momos",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            "relevance": {
+              "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+              "sectionId": "MENU_RETURN_FOOD"
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "457173",
+                "name": "Kangra Kitchen",
+                "cloudinaryImageId": "sqbwp7x7pylopbltukvf",
+                "locality": "Tanda Hospital Road",
+                "areaName": "Kangra Locality",
+                "costForTwo": "₹200 for two",
+                "cuisines": [
+                  "Indian",
+                  "Biryani",
+                  "Chinese",
+                  "South Indian",
+                  "Mughlai"
+                ],
+                "avgRating": 3.9,
+                "parentId": "274624",
+                "avgRatingString": "3.9",
+                "totalRatingsString": "547",
+                "promoted": true,
+                "adTrackingId": "cid=4d2a74cc-3e39-4134-a75e-44e3696257fb~p=6~adgrpid=4d2a74cc-3e39-4134-a75e-44e3696257fb#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=457173~plpr=COLLECTION~eid=fdf45c11-8a59-4ce2-bddc-1d2e380eb0ff~srvts=1771070082560~collid=80461",
+                "sla": {
+                  "deliveryTime": 47,
+                  "lastMileTravel": 6.2,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "45-50 mins",
+                  "lastMileTravelString": "6.2 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2026-02-14 22:30:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "imageBased": {},
+                    "textExtendedBadges": {},
+                    "textBased": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "50% OFF",
+                  "subHeader": "UPTO ₹100",
+                  "logoCtx": {
+                    "text": "BENEFITS"
+                  }
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {},
+                  "commsStyling": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                  "aggregatedRating": {
+                    "rating": "--"
+                  }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                "campaignId": "4d2a74cc-3e39-4134-a75e-44e3696257fb"
+              },
+              "analytics": {},
+              "cta": {
+                "link": "swiggy://menu?restaurant_id=457173&source=collection&query=Momos",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            "relevance": {
+              "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+              "sectionId": "MENU_RETURN_FOOD"
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "190267",
+                "name": "Doon Eating Point",
+                "cloudinaryImageId": "j2weu8s1binfuuamxv81",
+                "locality": "Shimla-Kangra Road",
+                "areaName": "Kangra Locality",
+                "costForTwo": "₹200 for two",
+                "cuisines": [
+                  "South Indian",
+                  "Chinese",
+                  "Fast Food",
+                  "Beverages"
+                ],
+                "avgRating": 3.9,
+                "parentId": "74057",
+                "avgRatingString": "3.9",
+                "totalRatingsString": "664",
+                "promoted": true,
+                "adTrackingId": "cid=b0f93f1e-2019-49cb-a7e8-cf6910d96b4c~p=7~adgrpid=b0f93f1e-2019-49cb-a7e8-cf6910d96b4c#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=190267~plpr=COLLECTION~eid=064be86b-5db8-470f-a1cd-d22e9da5db0a~srvts=1771070082560~collid=80461",
+                "sla": {
+                  "deliveryTime": 42,
+                  "lastMileTravel": 2.9,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "40-45 mins",
+                  "lastMileTravelString": "2.9 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2026-02-14 22:00:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "aggregatedDiscountInfoV2": {},
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "textExtendedBadges": {},
+                    "textBased": {},
+                    "imageBased": {}
+                  }
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {},
+                  "commsStyling": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                  "aggregatedRating": {
+                    "rating": "--"
+                  }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                "campaignId": "b0f93f1e-2019-49cb-a7e8-cf6910d96b4c"
+              },
+              "analytics": {},
+              "cta": {
+                "link": "swiggy://menu?restaurant_id=190267&source=collection&query=Momos",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            "relevance": {
+              "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+              "sectionId": "MENU_RETURN_FOOD"
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "860069",
+                "name": "The Buger Company",
+                "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2025/3/29/293ed066-f0ec-4c25-a2be-044d25433e6f_0d6e2aec-11a7-4342-85b7-5439adceb785.jpg",
+                "locality": "New Kangra",
+                "areaName": "Kangra",
+                "costForTwo": "₹250 for two",
+                "cuisines": ["Burgers"],
+                "avgRating": 4.1,
+                "parentId": "505544",
+                "avgRatingString": "4.1",
+                "totalRatingsString": "269",
+                "sla": {
+                  "deliveryTime": 36,
+                  "lastMileTravel": 3,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "35-40 mins",
+                  "lastMileTravelString": "3.0 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2026-02-14 22:00:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "ITEMS",
+                  "subHeader": "AT ₹69",
+                  "logoCtx": {
+                    "text": "BENEFITS"
+                  }
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {},
+                  "commsStyling": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                  "aggregatedRating": {
+                    "rating": "--"
+                  }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+              },
+              "analytics": {},
+              "cta": {
+                "link": "swiggy://menu?restaurant_id=860069&source=collection&query=Momos",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            "relevance": {
+              "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+              "sectionId": "MENU_RETURN_FOOD"
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "192392",
+                "name": "Home Bakers",
+                "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/5/29/6c1d6aa7-ff94-4ad7-9e53-d8ff5c629fe4_9e570a2d-f12a-4180-8884-e5aa577a8329.JPG",
+                "locality": "College Road",
+                "areaName": "Kangra Locality",
+                "costForTwo": "₹300 for two",
+                "cuisines": ["Bakery", "Desserts"],
+                "avgRating": 4.3,
+                "veg": true,
+                "parentId": "96432",
+                "avgRatingString": "4.3",
+                "totalRatingsString": "605",
+                "sla": {
+                  "deliveryTime": 36,
+                  "lastMileTravel": 3,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "35-40 mins",
+                  "lastMileTravelString": "3.0 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2026-02-14 21:00:00",
+                  "opened": true
+                },
+                "badges": {
+                  "imageBadges": [
+                    {
+                      "imageId": "v1695133679/badges/Pure_Veg111.png",
+                      "description": "pureveg"
+                    }
+                  ]
+                },
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {
+                      "badgeObject": [
+                        {
+                          "attributes": {
+                            "imageId": "v1695133679/badges/Pure_Veg111.png",
+                            "description": "pureveg"
+                          }
+                        }
+                      ]
+                    },
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹100 OFF",
+                  "subHeader": "ABOVE ₹499",
+                  "discountTag": "FLAT DEAL",
+                  "logoCtx": {
+                    "text": "BENEFITS"
+                  }
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {},
+                  "commsStyling": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                  "aggregatedRating": {
+                    "rating": "--"
+                  }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+              },
+              "analytics": {},
+              "cta": {
+                "link": "swiggy://menu?restaurant_id=192392&source=collection&query=Momos",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            "relevance": {
+              "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+              "sectionId": "MENU_RETURN_FOOD"
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "629181",
+                "name": "Momo Nation Cafe",
+                "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/3/20/362744f4-6f07-4c8a-98d4-baf446470b9a_23322071-d63b-4c19-9681-ad0a3136aa28.JPG",
+                "locality": "Bahri commercial complex",
+                "areaName": "Kangra Locality",
+                "costForTwo": "₹250 for two",
+                "cuisines": [
+                  "Momos",
+                  "Fast Food",
+                  "Snacks",
+                  "Chinese",
+                  "North Indian"
+                ],
+                "avgRating": 3.9,
+                "parentId": "4157",
+                "avgRatingString": "3.9",
+                "totalRatingsString": "402",
+                "sla": {
+                  "deliveryTime": 47,
+                  "lastMileTravel": 3,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "45-50 mins",
+                  "lastMileTravelString": "3.0 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2026-02-14 21:30:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "40% OFF",
+                  "subHeader": "UPTO ₹80",
+                  "logoCtx": {
+                    "text": "BENEFITS"
+                  }
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {},
+                  "commsStyling": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                  "aggregatedRating": {
+                    "rating": "--"
+                  }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+              },
+              "analytics": {},
+              "cta": {
+                "link": "swiggy://menu?restaurant_id=629181&source=collection&query=Momos",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            "relevance": {
+              "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+              "sectionId": "MENU_RETURN_FOOD"
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "1036111",
+                "name": "ZORKO Brand of Food Lovers",
+                "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2025/4/21/16d5cece-39ec-4bb1-86d0-7215f2ea462b_e9928544-1229-463a-a02e-751cb08fa6a8.jpg",
+                "locality": "Kangra",
+                "areaName": "Kangra",
+                "costForTwo": "₹250 for two",
+                "cuisines": [
+                  "Chinese",
+                  "Desserts",
+                  "Continental",
+                  "Beverages",
+                  "Pizzas",
+                  "Burgers"
+                ],
+                "avgRating": 2.8,
+                "parentId": "490226",
+                "avgRatingString": "2.8",
+                "totalRatingsString": "30",
+                "sla": {
+                  "deliveryTime": 44,
+                  "lastMileTravel": 4.2,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "40-45 mins",
+                  "lastMileTravelString": "4.2 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2026-02-14 21:00:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "ITEMS",
+                  "subHeader": "AT ₹89",
+                  "logoCtx": {
+                    "text": "BENEFITS"
+                  }
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {},
+                  "commsStyling": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                  "aggregatedRating": {
+                    "rating": "--"
+                  }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+              },
+              "analytics": {},
+              "cta": {
+                "link": "swiggy://menu?restaurant_id=1036111&source=collection&query=Momos",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            "relevance": {
+              "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+              "sectionId": "MENU_RETURN_FOOD"
+            }
+          }
+        }
+      ],
+      "firstOffsetRequest": true,
+      "nextFetch": 3
+    },
+    "tid": "3a4b6eab-0cf0-4ad5-979a-5339c4dee864",
+    "sid": "pp5e31b4-1df3-400b-a259-946ba204f9cf",
+    "deviceId": "70aee05f-3453-6f54-71cb-f83b47879992",
+    "csrfToken": null
+  }
+}

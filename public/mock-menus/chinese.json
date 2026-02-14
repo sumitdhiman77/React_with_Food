@@ -1,0 +1,759 @@
+{
+  "blocked": false,
+  "data": {
+    "statusCode": 0,
+    "data": {
+      "statusMessage": "done successfully",
+      "pageOffset": {
+        "nextOffset": "CPpjENpSKIC45ZKBwf/xNzDEDjgD",
+        "widgetOffset": {
+          "restaurantCountWidget": "",
+          "collectionV5RestaurantListWidget_SimRestoRelevance_food": "8",
+          "inlineFacetFilter": "",
+          "collectionV5MastheadWidget": ""
+        }
+      },
+      "cards": [
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.CollectionMasthead",
+              "collectionId": "83636",
+              "title": "Chinese",
+              "description": "Transport your taste buds to the heart of Chinese cuisine with these scrumptious dishes.",
+              "imageId": "COLLECTIONS/IMAGES/MERCH/2025/1/24/6ce5077f-20c1-4232-a8e7-46c026430629_Chinese (3).png",
+              "aspectRatio": "3.44",
+              "cta": {
+                "link": "swiggy://collectionV2?collection_id=83636&tags=layout_CCS_Chinese,chinese,layout_Chinese,ads_pc_chinese",
+                "type": "collectionv2"
+              },
+              "type": "COLLECTION_MASTHEAD_TYPE_IMAGE_WITH_TEXT",
+              "count": "19 restaurants",
+              "navBarConfig": {}
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.InlineViewFilterSortWidget",
+              "sortConfigs": [
+                {
+                  "key": "relevance",
+                  "title": "Relevance (Default)",
+                  "selected": true,
+                  "defaultSelection": true
+                },
+                {
+                  "key": "deliveryTimeAsc",
+                  "title": "Delivery Time"
+                },
+                {
+                  "key": "modelBasedRatingDesc",
+                  "title": "Rating"
+                },
+                {
+                  "key": "costForTwoAsc",
+                  "title": "Cost: Low to High"
+                },
+                {
+                  "key": "costForTwoDesc",
+                  "title": "Cost: High to Low"
+                }
+              ],
+              "restaurantCount": 19,
+              "widgetId": "inlineFacetFilter"
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget",
+              "layout": {
+                "rows": 1,
+                "widgetPadding": {
+                  "left": 16,
+                  "top": 12,
+                  "right": 16
+                },
+                "widgetTheme": {
+                  "defaultMode": {
+                    "backgroundColour": "#FFFFFF",
+                    "theme": "THEME_TYPE_LIGHT"
+                  },
+                  "darkMode": {
+                    "backgroundColour": "#1B3028",
+                    "theme": "THEME_TYPE_DARK"
+                  }
+                }
+              },
+              "id": "restaurantCountWidget",
+              "gridElements": {
+                "infoWithStyle": {
+                  "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.TextBoxV2",
+                  "text": "Restaurants to explore",
+                  "headerStyling": {
+                    "textSize": 15,
+                    "textColor": "text_color_highest_emphasis",
+                    "textFontName": "FONT_NAME_HEADER_H5",
+                    "maxLines": 1
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "839067",
+                "name": "El Bosque Restaurant And Club",
+                "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/3/27/54f9755d-e1a6-4383-97b6-c9df48a54d88_b2c02544-9baa-4667-a197-e2dc0dfde6cc.png",
+                "locality": "Tanda",
+                "areaName": "Kangra",
+                "costForTwo": "₹200 for two",
+                "cuisines": ["North Indian", "Snacks"],
+                "avgRating": 4.2,
+                "parentId": "497412",
+                "avgRatingString": "4.2",
+                "totalRatingsString": "327",
+                "promoted": true,
+                "adTrackingId": "cid=12355ec6-de36-48af-8d14-f3a0e5886617~p=0~adgrpid=12355ec6-de36-48af-8d14-f3a0e5886617#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=839067~plpr=COLLECTION~eid=be31c0a1-257c-4e00-ac95-60de1a4cadc3~srvts=1771070523135~collid=83636",
+                "sla": {
+                  "deliveryTime": 48,
+                  "lastMileTravel": 5.5,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "45-55 mins",
+                  "lastMileTravelString": "5.5 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2026-02-14 23:00:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹40 OFF",
+                  "subHeader": "ABOVE ₹499",
+                  "discountTag": "FLAT DEAL",
+                  "logoCtx": {
+                    "text": "BENEFITS"
+                  }
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {},
+                  "commsStyling": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                  "aggregatedRating": {
+                    "rating": "--"
+                  }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                "campaignId": "12355ec6-de36-48af-8d14-f3a0e5886617"
+              },
+              "analytics": {},
+              "cta": {
+                "link": "swiggy://menu?restaurant_id=839067&source=collection&query=Chinese",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            "relevance": {
+              "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+              "sectionId": "MENU_RETURN_FOOD"
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "816489",
+                "name": "Grill Inn",
+                "cloudinaryImageId": "7368ed44662f4da5852b1c883f60a08e",
+                "locality": "Kangra",
+                "areaName": "Kangra",
+                "costForTwo": "₹100 for two",
+                "cuisines": [
+                  "Snacks",
+                  "Fast Food",
+                  "Chinese",
+                  "Pizzas",
+                  "Pastas",
+                  "Burgers"
+                ],
+                "avgRating": 4.2,
+                "parentId": "432",
+                "avgRatingString": "4.2",
+                "totalRatingsString": "139",
+                "promoted": true,
+                "adTrackingId": "cid=dd9c5611-8a55-4f8a-9a93-90f532647736~p=1~adgrpid=dd9c5611-8a55-4f8a-9a93-90f532647736#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=816489~plpr=COLLECTION~eid=1fd0368d-f062-4bd3-acc2-c2353d9f7e24~srvts=1771070523135~collid=83636",
+                "sla": {
+                  "deliveryTime": 49,
+                  "lastMileTravel": 4.4,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "45-50 mins",
+                  "lastMileTravelString": "4.4 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2026-02-14 22:00:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "25% OFF",
+                  "subHeader": "UPTO ₹65",
+                  "logoCtx": {
+                    "text": "BENEFITS"
+                  }
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {},
+                  "commsStyling": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                  "aggregatedRating": {
+                    "rating": "--"
+                  }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                "campaignId": "dd9c5611-8a55-4f8a-9a93-90f532647736"
+              },
+              "analytics": {},
+              "cta": {
+                "link": "swiggy://menu?restaurant_id=816489&source=collection&query=Chinese",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            "relevance": {
+              "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+              "sectionId": "MENU_RETURN_FOOD"
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "629181",
+                "name": "Momo Nation Cafe",
+                "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/16/e8189b87-ab62-40e1-a075-dfd5f626a8f1_33d35226-0e1a-4873-8864-7a1072eb3431.jpeg",
+                "locality": "Bahri commercial complex",
+                "areaName": "Kangra Locality",
+                "costForTwo": "₹250 for two",
+                "cuisines": [
+                  "Momos",
+                  "Fast Food",
+                  "Snacks",
+                  "Chinese",
+                  "North Indian"
+                ],
+                "avgRating": 3.9,
+                "parentId": "4157",
+                "avgRatingString": "3.9",
+                "totalRatingsString": "402",
+                "promoted": true,
+                "adTrackingId": "cid=32e6a3b5-f8ea-46e1-b8e8-c48d138a33f7~p=2~adgrpid=32e6a3b5-f8ea-46e1-b8e8-c48d138a33f7#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=629181~plpr=COLLECTION~eid=7e1c2102-2098-4a09-907e-0e1eb2289b42~srvts=1771070523135~collid=83636",
+                "sla": {
+                  "deliveryTime": 51,
+                  "lastMileTravel": 3,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "50-60 mins",
+                  "lastMileTravelString": "3.0 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2026-02-14 21:30:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "40% OFF",
+                  "subHeader": "UPTO ₹80",
+                  "logoCtx": {
+                    "text": "BENEFITS"
+                  }
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {},
+                  "commsStyling": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                  "aggregatedRating": {
+                    "rating": "--"
+                  }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                "campaignId": "32e6a3b5-f8ea-46e1-b8e8-c48d138a33f7"
+              },
+              "analytics": {},
+              "cta": {
+                "link": "swiggy://menu?restaurant_id=629181&source=collection&query=Chinese",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            "relevance": {
+              "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+              "sectionId": "MENU_RETURN_FOOD"
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "960775",
+                "name": "Royal Galaxy Dhaba",
+                "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/9/24/153b572e-db02-4db6-a3f4-05465e8fc5f2_dcc4daad-b79b-4530-89a5-1d4c798844d1.jpg",
+                "locality": "Kangra",
+                "areaName": "Kangra",
+                "costForTwo": "₹300 for two",
+                "cuisines": [
+                  "North Indian",
+                  "Biryani",
+                  "Chinese",
+                  "Street Food",
+                  "Beverages"
+                ],
+                "avgRating": 4.2,
+                "parentId": "563472",
+                "avgRatingString": "4.2",
+                "totalRatingsString": "97",
+                "promoted": true,
+                "adTrackingId": "cid=1038a2fa-2974-4953-a797-410abac893a8~p=3~adgrpid=1038a2fa-2974-4953-a797-410abac893a8#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=960775~plpr=COLLECTION~eid=9b0e30f4-3079-44a4-9b8b-33aef2e9f9c9~srvts=1771070523135~collid=83636",
+                "sla": {
+                  "deliveryTime": 46,
+                  "lastMileTravel": 6.4,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "45-50 mins",
+                  "lastMileTravelString": "6.4 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2026-02-14 21:45:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "textExtendedBadges": {},
+                    "textBased": {},
+                    "imageBased": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹100 OFF",
+                  "subHeader": "ABOVE ₹999",
+                  "discountTag": "FLAT DEAL",
+                  "logoCtx": {
+                    "text": "BENEFITS"
+                  }
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {},
+                  "commsStyling": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                  "aggregatedRating": {
+                    "rating": "--"
+                  }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                "campaignId": "1038a2fa-2974-4953-a797-410abac893a8"
+              },
+              "analytics": {},
+              "cta": {
+                "link": "swiggy://menu?restaurant_id=960775&source=collection&query=Chinese",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            "relevance": {
+              "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+              "sectionId": "MENU_RETURN_FOOD"
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "909197",
+                "name": "Hotel The Mango",
+                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/6/16/cd3bdf96-d410-46e9-8425-4879e6714e05_909197.jpg",
+                "locality": "Tanda",
+                "areaName": "Kangra",
+                "costForTwo": "₹350 for two",
+                "cuisines": [
+                  "Chinese",
+                  "Continental",
+                  "South Indian",
+                  "Indian",
+                  "Beverages",
+                  "Salads"
+                ],
+                "avgRating": 4.3,
+                "parentId": "528453",
+                "avgRatingString": "4.3",
+                "totalRatingsString": "65",
+                "promoted": true,
+                "adTrackingId": "cid=f4787d80-72e3-455a-8af0-9a2ed3bcb7b1~p=4~adgrpid=f4787d80-72e3-455a-8af0-9a2ed3bcb7b1#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=909197~plpr=COLLECTION~eid=9bbba5f2-6564-4a4f-b886-7fdfeee9460c~srvts=1771070523135~collid=83636",
+                "sla": {
+                  "deliveryTime": 46,
+                  "lastMileTravel": 5.5,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "45-50 mins",
+                  "lastMileTravelString": "5.5 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2026-02-14 22:30:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "₹200 OFF",
+                  "subHeader": "ABOVE ₹799",
+                  "discountTag": "FLAT DEAL",
+                  "logoCtx": {
+                    "text": "BENEFITS"
+                  }
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {},
+                  "commsStyling": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                  "aggregatedRating": {
+                    "rating": "--"
+                  }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                "campaignId": "f4787d80-72e3-455a-8af0-9a2ed3bcb7b1"
+              },
+              "analytics": {},
+              "cta": {
+                "link": "swiggy://menu?restaurant_id=909197&source=collection&query=Chinese",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            "relevance": {
+              "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+              "sectionId": "MENU_RETURN_FOOD"
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "457173",
+                "name": "Kangra Kitchen",
+                "cloudinaryImageId": "004894b215b192eafba7d9f4e99ba0d2",
+                "locality": "Tanda Hospital Road",
+                "areaName": "Kangra Locality",
+                "costForTwo": "₹200 for two",
+                "cuisines": [
+                  "Indian",
+                  "Biryani",
+                  "Chinese",
+                  "South Indian",
+                  "Mughlai"
+                ],
+                "avgRating": 3.9,
+                "parentId": "274624",
+                "avgRatingString": "3.9",
+                "totalRatingsString": "547",
+                "promoted": true,
+                "adTrackingId": "cid=4d2a74cc-3e39-4134-a75e-44e3696257fb~p=5~adgrpid=4d2a74cc-3e39-4134-a75e-44e3696257fb#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=457173~plpr=COLLECTION~eid=d6d94a6e-4690-47d2-b6ef-a5855f78355d~srvts=1771070523135~collid=83636",
+                "sla": {
+                  "deliveryTime": 44,
+                  "lastMileTravel": 6.2,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "40-45 mins",
+                  "lastMileTravelString": "6.2 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2026-02-14 22:30:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "aggregatedDiscountInfoV3": {
+                  "header": "50% OFF",
+                  "subHeader": "UPTO ₹100",
+                  "logoCtx": {
+                    "text": "BENEFITS"
+                  }
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {},
+                  "commsStyling": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                  "aggregatedRating": {
+                    "rating": "--"
+                  }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                "campaignId": "4d2a74cc-3e39-4134-a75e-44e3696257fb"
+              },
+              "analytics": {},
+              "cta": {
+                "link": "swiggy://menu?restaurant_id=457173&source=collection&query=Chinese",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            "relevance": {
+              "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+              "sectionId": "MENU_RETURN_FOOD"
+            }
+          }
+        },
+        {
+          "card": {
+            "card": {
+              "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+              "info": {
+                "id": "190267",
+                "name": "Doon Eating Point",
+                "cloudinaryImageId": "j7hhjj3moupg4ekjae4i",
+                "locality": "Shimla-Kangra Road",
+                "areaName": "Kangra Locality",
+                "costForTwo": "₹200 for two",
+                "cuisines": [
+                  "South Indian",
+                  "Chinese",
+                  "Fast Food",
+                  "Beverages"
+                ],
+                "avgRating": 3.9,
+                "parentId": "74057",
+                "avgRatingString": "3.9",
+                "totalRatingsString": "664",
+                "promoted": true,
+                "adTrackingId": "cid=b0f93f1e-2019-49cb-a7e8-cf6910d96b4c~p=6~adgrpid=b0f93f1e-2019-49cb-a7e8-cf6910d96b4c#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=190267~plpr=COLLECTION~eid=18717181-3fab-4549-8fb9-027f0a297537~srvts=1771070523135~collid=83636",
+                "sla": {
+                  "deliveryTime": 47,
+                  "lastMileTravel": 2.9,
+                  "serviceability": "SERVICEABLE",
+                  "slaString": "45-50 mins",
+                  "lastMileTravelString": "2.9 km",
+                  "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                  "nextCloseTime": "2026-02-14 22:00:00",
+                  "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "aggregatedDiscountInfoV2": {},
+                "type": "F",
+                "badgesV2": {
+                  "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {}
+                  }
+                },
+                "orderabilityCommunication": {
+                  "title": {},
+                  "subTitle": {},
+                  "message": {},
+                  "customIcon": {},
+                  "commsStyling": {}
+                },
+                "differentiatedUi": {
+                  "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                  "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                  }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                  "aggregatedRating": {
+                    "rating": "--"
+                  }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                "campaignId": "b0f93f1e-2019-49cb-a7e8-cf6910d96b4c"
+              },
+              "analytics": {},
+              "cta": {
+                "link": "swiggy://menu?restaurant_id=190267&source=collection&query=Chinese",
+                "text": "RESTAURANT_MENU",
+                "type": "DEEPLINK"
+              },
+              "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            "relevance": {
+              "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+              "sectionId": "MENU_RETURN_FOOD"
+            }
+          }
+        }
+      ],
+      "firstOffsetRequest": true,
+      "nextFetch": 3
+    },
+    "tid": "44592e55-7724-40b7-bf57-8643c5ff9565",
+    "sid": "pp5452ac-89bb-423c-b724-64cee917a3a8",
+    "deviceId": "fd9228e9-dff7-7536-083f-1a01ec6c6633",
+    "csrfToken": null
+  }
+}
