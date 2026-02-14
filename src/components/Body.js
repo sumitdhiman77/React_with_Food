@@ -84,7 +84,7 @@ const Body = () => {
 
   if (!onlineStatus) {
     return (
-      <div className="flex h-screen flex-col items-center justify-center font-roboto bg-white">
+      <div className="flex h-screen flex-col items-center justify-center font-roboto bg-gray">
         <h1 className="text-3xl font-bold text-red-500 mb-2">
           🔴 Connection Lost
         </h1>
@@ -98,9 +98,9 @@ const Body = () => {
   return listOfRestaurants?.length === 0 ? (
     <Shimmer />
   ) : (
-    <div className="min-h-screen bg-white font-roboto animate-slideIn">
+    <div className="min-h-screen bg-gray font-roboto animate-slideIn">
       {/* Search & Filter Sticky Bar */}
-      <div className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur-md">
+      <div className="sticky top-0 z-50 w-full border-b bg-gray/95 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-8 py-4 md:flex-row">
           <div className="flex w-full items-center md:w-auto">
             <input
@@ -127,7 +127,7 @@ const Body = () => {
 
           <div className="flex items-center gap-3">
             <button
-              className="rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-semibold text-gray-700 shadow-sm transition-all hover:bg-gray-50 hover:border-gray-400"
+              className="rounded-full border border-gray-300 bg-gray px-4 py-2 text-sm font-semibold text-gray-700 shadow-sm transition-all hover:bg-gray-50 hover:border-gray-400"
               onClick={() => {
                 const topRes = listOfRestaurants.filter(
                   (res) => res.info.avgRating >= 4,
@@ -141,7 +141,7 @@ const Body = () => {
             <div className="h-8 w-[1px] bg-gray-200 hidden md:block"></div>
 
             <input
-              className="rounded-lg border border-gray-200 bg-gray-50 p-2 text-sm text-gray-700 focus:bg-white focus:ring-1 focus:ring-orange-400 outline-none transition-all"
+              className="rounded-lg border border-gray-200 bg-gray-50 p-2 text-sm text-gray-700 focus:bg-gray focus:ring-1 focus:ring-orange-400 outline-none transition-all"
               placeholder="Enter Username"
               value={userInput}
               onChange={(e) => setUserInput(e.target.value)}
