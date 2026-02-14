@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-[1001] w-full bg-white shadow-md transition-all duration-300">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6">
         {/* Logo Section */}
         <div className="flex items-center">
           <Link to="/">
@@ -36,7 +36,7 @@ const Header = () => {
           <ul className="flex items-center gap-6 font-roboto text-[15px] font-semibold text-gray-700">
             <li>
               <Link
-                className="flex items-center gap-2 py-4 hover:text-orange-500 transition-colors"
+                className="flex items-center gap-2 py-1 hover:text-orange-500 transition-colors"
                 to="/"
               >
                 <FaMagnifyingGlass className="text-gray-500" />
@@ -45,7 +45,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                className="flex items-center gap-2 py-4 hover:text-orange-500 transition-colors"
+                className="flex items-center gap-2  hover:text-orange-500 transition-colors"
                 to="/about"
               >
                 <FaBriefcase className="text-gray-500" />
@@ -54,7 +54,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                className="flex items-center gap-2 py-4 hover:text-orange-500 transition-colors"
+                className="flex items-center gap-2  hover:text-orange-500 transition-colors"
                 to="/contact"
               >
                 <FaCompass className="text-gray-500" />
@@ -63,7 +63,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                className="flex items-center gap-2 py-4 hover:text-orange-500 transition-colors"
+                className="flex items-center gap-2  hover:text-orange-500 transition-colors"
                 to="/signin"
               >
                 <FaUser className="text-gray-500" />
@@ -72,7 +72,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                className="flex items-center gap-2 py-4 hover:text-orange-500 transition-colors"
+                className="flex items-center gap-2  hover:text-orange-500 transition-colors"
                 to="/grocery"
               >
                 <FaBriefcase className="text-gray-500" />
@@ -82,7 +82,7 @@ const Header = () => {
 
             {/* Cart Section */}
             <li className="relative group">
-              <Link to="/cart" className="flex items-center py-4">
+              <Link to="/cart" className="flex items-center ">
                 <FaCartShopping className="text-2xl text-gray-700 group-hover:text-orange-500 transition-colors" />
                 {cartItems.length > 0 && (
                   <span className="absolute -top-1 -right-2 flex h-5 w-5 items-center justify-center rounded-full bg-orange-500 text-[10px] font-bold text-white shadow-sm">
@@ -107,7 +107,7 @@ const Header = () => {
             </li>
 
             {/* Online Status Indicator */}
-            <li className="flex items-center pl-2 text-xs border-l border-gray-200 ml-2 py-4">
+            <li className="flex items-center pl-2 text-xs border-l border-gray-200 ml-2 ">
               <span className="mr-1 hidden lg:block text-gray-400">
                 Status:
               </span>
