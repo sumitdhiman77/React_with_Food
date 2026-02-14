@@ -34,7 +34,7 @@ export const withOffer = (RestaurantCard) => {
       <div className="relative transition-transform duration-200 hover:scale-95">
         {header && (
           <label
-            className="absolute z-10 bottom-[108px] left-4 right-4 
+            className="absolute z-10 bottom-[22px] left-4 right-4 
             text-white font-black text-xl uppercase italic tracking-tighter
             drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] pointer-events-none"
           >
