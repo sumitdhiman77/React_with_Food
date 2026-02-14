@@ -1,24 +1,15 @@
-import React, { StrictMode, Suspense } from "react";
-import ReactDOM from "react-dom/client";
-import { RouterProvider } from "react-router-dom";
-import { Provider } from "react-redux";
+import { Outlet } from "react-router-dom";
+import Header from "./components/Header";
 
-import { appRouter } from "./router";
-import { appStore } from "./utils/appStore";
-import { LocationProvider } from "./utils/LocationContext";
-import Shimmer from "./components/Shimmer";
-import "../index.css";
+const App = () => {
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <main className="flex-grow">
+        <Outlet />
+      </main>
+    </div>
+  );
+};
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(
-  <StrictMode>
-    <Provider store={appStore}>
-      <LocationProvider>
-        <Suspense fallback={<Shimmer />}>
-          <RouterProvider router={appRouter} />
-        </Suspense>
-      </LocationProvider>
-    </Provider>
-  </StrictMode>,
-);
+export default App;
