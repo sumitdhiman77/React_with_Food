@@ -5,16 +5,6 @@ import ReactDOM from "react-dom/client";
 import { RouterProvider, Outlet } from "react-router-dom";
 import { Provider } from "react-redux";
 
-import Header from "./components/Header";
-import Body from "./components/Body";
-import ExploreRestaurants from "./components/ExploreRestaurants";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Cart from "./components/Cart";
-import SignIn from "./components/SignIn";
-import RestaurantMenu from "./components/RestaurantMenu";
-import Error from "./components/Error";
-
 // Utils & Store
 import Shimmer from "./components/Shimmer";
 import { appStore } from "./utils/appStore";
