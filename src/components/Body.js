@@ -152,7 +152,7 @@ const Body = () => {
       </div>
 
       {/* Main Content Area */}
-      <div className="bg-[coral] mx-auto max-w-7xl px-8 pt-12">
+      <div className="mx-auto max-w-7xl px-8 pt-12">
         {/* Banner Carousel Section */}
         <section className="mb-16">
           <h2 className="mb-6 font-lato text-2xl font-extrabold tracking-tight text-gray-900">
