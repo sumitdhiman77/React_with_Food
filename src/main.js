@@ -7,7 +7,7 @@ import { appRouter } from "./router";
 import { appStore } from "./utils/appStore";
 import { LocationProvider } from "./utils/LocationContext";
 import Shimmer from "./components/Shimmer";
-import "./index.css";
+import "../index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
