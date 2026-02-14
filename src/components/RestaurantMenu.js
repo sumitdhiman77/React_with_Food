@@ -32,7 +32,7 @@ const RestaurantMenu = () => {
     feeDetails,
     sla,
     cloudinaryImageId,
-  } = resInfo?.data?.cards.find(
+  } = (resInfo?.data || resInfo?.data?.data)?.cards.find(
     (c) =>
       c.card?.card?.["@type"] ===
       "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
