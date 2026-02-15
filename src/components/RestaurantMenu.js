@@ -18,7 +18,7 @@ const RestaurantMenu = () => {
   let { name, query } = useParams();
   console.log("name is:", name, "query is:", query);
   query = query.replaceAll(" ", "");
-  console.log("name is :", name);
+  console.log("query is :", query);
   const resInfo = useRestaurantMenu(name, lat, lng, query);
   console.log("resInfo is:", resInfo);
   if (!resInfo) return <Shimmer />;
