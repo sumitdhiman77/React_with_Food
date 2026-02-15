@@ -38,12 +38,13 @@ const RestaurantMenu = () => {
       "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
   )?.card?.card?.info;
 
-  const categories =
-    resInfo?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
-      (c) =>
-        c?.card?.card?.["@type"] ===
-          "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory" || [],
-    );
+  const categories = (
+    resInfo?.data?.data || resInfo?.data
+  )?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
+    (c) =>
+      c?.card?.card?.["@type"] ===
+        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory" || [],
+  );
   console.log(categories);
   return (
     <>
