@@ -1,0 +1,1947 @@
+{
+    "statusCode": 0,
+    "data": {
+        "statusMessage": "done successfully",
+        "cards": [
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.TextBoxV2",
+                        "text": "Beliram Degchiwala",
+                        "headerStyling": {
+                            "textColor": "text_Highest_Emphasis",
+                            "textVariant": "header_H3_Black"
+                        }
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.RestaurantBlTab",
+                        "tabs": [
+                            {
+                                "id": "Order Online",
+                                "title": "Order Online"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+                        "info": {
+                            "id": "1083258",
+                            "name": "Beliram Degchiwala",
+                            "city": "Dharamshala",
+                            "slugs": {
+                                "restaurant": "beliram-degchiwala-dharamshala-city-dharamshala-city",
+                                "city": "dharamshala"
+                            },
+                            "uniqueId": "e51e6528-4859-48c8-8fed-e84c17dc2d76",
+                            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/4/22/4fb663a7-1dc1-4fdb-afc4-c42e3e9c599e_1083258.jpg",
+                            "locality": "Dharamshala City",
+                            "areaName": "Dharamshala City",
+                            "costForTwo": "50000",
+                            "costForTwoMessage": "₹500 for two",
+                            "cuisines": [
+                                "North Indian"
+                            ],
+                            "avgRating": 4.2,
+                            "feeDetails": {
+                                "restaurantId": "1083258",
+                                "fees": [
+                                    {}
+                                ]
+                            },
+                            "parentId": "2054",
+                            "avgRatingString": "4.2",
+                            "totalRatingsString": "179 ratings",
+                            "sla": {
+                                "restaurantId": "1083258",
+                                "deliveryTime": 31,
+                                "minDeliveryTime": 30,
+                                "maxDeliveryTime": 35,
+                                "lastMileTravel": 5.6,
+                                "serviceability": "SERVICEABLE",
+                                "stressFactor": 1,
+                                "rainMode": "RAIN_MODE_NONE",
+                                "longDistance": "LONG_DISTANCE_NOT_LONG_DISTANCE",
+                                "zoneId": 1248,
+                                "slaString": "30-35 MINS",
+                                "lastMileTravelString": "5.6 km",
+                                "iconType": "ICON_TYPE_EMPTY"
+                            },
+                            "availability": {
+                                "nextCloseTime": "2026-02-15 23:00:00",
+                                "visibility": true,
+                                "opened": true,
+                                "restaurantClosedMeta": {}
+                            },
+                            "aggregatedDiscountInfo": {
+                                "header": "50% off",
+                                "shortDescriptionList": [
+                                    {
+                                        "meta": "50% off | Use TRYNEW",
+                                        "discountType": "Percentage",
+                                        "operationType": "RESTAURANT"
+                                    },
+                                    {
+                                        "meta": "Flat ₹175 off on orders above ₹749",
+                                        "discountType": "Flat",
+                                        "operationType": "RESTAURANT"
+                                    }
+                                ],
+                                "descriptionList": [
+                                    {
+                                        "meta": "50% off up to ₹100 | Use code TRYNEW",
+                                        "discountType": "Percentage",
+                                        "operationType": "RESTAURANT"
+                                    },
+                                    {
+                                        "meta": "Flat ₹175 off on orders above ₹749 | Use code MEGASAVER",
+                                        "discountType": "Flat",
+                                        "operationType": "RESTAURANT"
+                                    }
+                                ],
+                                "visible": true
+                            },
+                            "badges": {},
+                            "slugString": "beliram-degchiwala-dharamshala-city-dharamshala-city",
+                            "isOpen": true,
+                            "labels": [
+                                {
+                                    "title": "Timings",
+                                    "message": "null"
+                                },
+                                {
+                                    "title": "Address",
+                                    "message": "GHURLU BRIDGE , SIDHPUR, DHARAMSHALA ,Dharamshala (Municipal Corporation),Kangra,Himachal Pradesh-176057\t"
+                                },
+                                {
+                                    "title": "Cuisines",
+                                    "message": "North Indian"
+                                }
+                            ],
+                            "totalRatings": 179,
+                            "aggregatedDiscountInfoV2": {
+                                "header": "50% off",
+                                "shortDescriptionList": [
+                                    {
+                                        "meta": "50% off | Use TRYNEW",
+                                        "discountType": "Percentage",
+                                        "operationType": "RESTAURANT"
+                                    },
+                                    {
+                                        "meta": "Flat ₹175 off on orders above ₹749",
+                                        "discountType": "Flat",
+                                        "operationType": "RESTAURANT"
+                                    }
+                                ],
+                                "descriptionList": [
+                                    {
+                                        "meta": "50% off up to ₹100 | Use code TRYNEW",
+                                        "discountType": "Percentage",
+                                        "operationType": "RESTAURANT"
+                                    },
+                                    {
+                                        "meta": "Flat ₹175 off on orders above ₹749 | Use code MEGASAVER",
+                                        "discountType": "Flat",
+                                        "operationType": "RESTAURANT"
+                                    }
+                                ],
+                                "couponDetailsCta": "View coupon details"
+                            },
+                            "type": "F",
+                            "nudgeBanners": [
+                                {
+                                    "minValue": 524,
+                                    "maxValue": 749,
+                                    "priority": 2,
+                                    "couponCode": "MEGASAVER",
+                                    "discountInfo": {
+                                        "discountType": "Flat",
+                                        "value": 175
+                                    },
+                                    "lockedMessage": "Add items worth ₹<amount> to save ₹175 | Code MEGASAVER",
+                                    "unlockedMessage": "MEGASAVER Coupon Unlocked! Use it to save ₹175",
+                                    "logoCtx": {},
+                                    "movComputationType": "MOV_COMPUTATION_TYPE_DISCOUNTED_PRICE"
+                                }
+                            ],
+                            "headerBanner": {
+                                "url": "swiggy://webview?is_external=false&webview_url=https://www.swiggy.com/restaurant-info/1083258"
+                            },
+                            "ratingSlab": "RATING_SLAB_5",
+                            "orderabilityCommunication": {
+                                "title": {},
+                                "subTitle": {},
+                                "message": {},
+                                "customIcon": {},
+                                "commsStyling": {}
+                            },
+                            "hasBestsellerItems": true,
+                            "cartOrderabilityNudgeBanner": {
+                                "parameters": {},
+                                "presentation": {}
+                            },
+                            "latLong": "32.1926625,76.3487031",
+                            "backgroundImageOverlayInfo": {},
+                            "featuredSectionInfo": {}
+                        },
+                        "analytics": {}
+                    },
+                    "relevance": {
+                        "type": "RELEVANCE_TYPE_CHECK_ORDERABILITY_AND_SHOW_MENU_OFFER_NUDGE",
+                        "sectionId": "MENU_ITEM_CART_UPDATE_POP_CROUTON"
+                    }
+                }
+            },
+            {
+                "card": {
+                    "card": {
+                        "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget",
+                        "layout": {
+                            "rows": 1,
+                            "columns": 5,
+                            "horizontalScrollEnabled": true,
+                            "itemSpacing": 12,
+                            "lineSpacing": 10,
+                            "widgetPadding": {},
+                            "containerStyle": {
+                                "containerPadding": {
+                                    "left": 10,
+                                    "right": 10,
+                                    "bottom": 16
+                                }
+                            }
+                        },
+                        "id": "offerCollectionWidget_UX4",
+                        "gridElements": {
+                            "infoWithStyle": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.OfferInfoWithStyle",
+                                "offers": [
+                                    {
+                                        "info": {
+                                            "header": "50% OFF UPTO ₹100",
+                                            "offerTagColor": "#E46D47",
+                                            "offerIds": [
+                                                "d8d35406-7008-4849-86b7-1f9b9b170ad3"
+                                            ],
+                                            "expiryTime": "1970-01-01T00:00:00Z",
+                                            "couponCode": "USE TRYNEW",
+                                            "description": "ABOVE ₹159",
+                                            "offerType": "offers",
+                                            "restId": "1083258",
+                                            "offerLogo": "offers/generic",
+                                            "descriptionTextColor": "#7302060C",
+                                            "primaryDescription": "USE TRYNEW"
+                                        },
+                                        "cta": {
+                                            "type": "OFFER_HALF_CARD"
+                                        }
+                                    },
+                                    {
+                                        "info": {
+                                            "header": "FLAT ₹175 OFF",
+                                            "offerTag": "DEFAULT",
+                                            "offerTagColor": "#E46D47",
+                                            "offerIds": [
+                                                "29218bcc-42f4-4195-b3d3-8f7524a086fb"
+                                            ],
+                                            "expiryTime": "1970-01-01T00:00:00Z",
+                                            "couponCode": "USE MEGASAVER",
+                                            "description": "ABOVE ₹749",
+                                            "offerType": "offers",
+                                            "restId": "1083258",
+                                            "offerLogo": "offers/generic",
+                                            "descriptionTextColor": "#7302060C",
+                                            "primaryDescription": "USE MEGASAVER"
+                                        },
+                                        "cta": {
+                                            "type": "OFFER_HALF_CARD"
+                                        }
+                                    },
+                                    {
+                                        "info": {
+                                            "header": "7.5% OFF UPTO ₹100",
+                                            "offerTagColor": "#E46D47",
+                                            "logoBottom": "MARKETING_BANNERS/IMAGES/OFFERS/2026/1/31/a7854ae9-0ce6-4dee-b5e5-7dc038a1574f_YESBankMenuLogoNew1.png",
+                                            "offerIds": [
+                                                "2a1dfb49-3abf-4387-891e-23dc9cb7a1dd"
+                                            ],
+                                            "expiryTime": "1970-01-01T00:00:00Z",
+                                            "couponCode": "NO CODE REQUIRED",
+                                            "description": "ABOVE ₹399",
+                                            "offerType": "offers",
+                                            "restId": "1083258",
+                                            "offerLogo": "MARKETING_BANNERS/IMAGES/OFFERS/2026/1/31/a7854ae9-0ce6-4dee-b5e5-7dc038a1574f_YESBankMenuLogoNew1.png",
+                                            "descriptionTextColor": "#7302060C",
+                                            "primaryDescription": "NO CODE REQUIRED"
+                                        },
+                                        "cta": {
+                                            "type": "OFFER_HALF_CARD"
+                                        }
+                                    },
+                                    {
+                                        "info": {
+                                            "header": "FLAT ₹150 OFF",
+                                            "offerTagColor": "#E46D47",
+                                            "logoBottom": "MARKETING_BANNERS/IMAGES/OFFERS/2026/1/31/41ce0d47-9d53-4cd2-b558-57a3990a411d_Axis.png",
+                                            "offerIds": [
+                                                "9eefddcf-4d28-491a-b2fe-505d579fa846"
+                                            ],
+                                            "expiryTime": "1970-01-01T00:00:00Z",
+                                            "couponCode": "USE AXISREWARDS",
+                                            "description": "ABOVE ₹500",
+                                            "offerType": "offers",
+                                            "restId": "1083258",
+                                            "offerLogo": "MARKETING_BANNERS/IMAGES/OFFERS/2026/1/31/41ce0d47-9d53-4cd2-b558-57a3990a411d_Axis.png",
+                                            "descriptionTextColor": "#7302060C",
+                                            "primaryDescription": "USE AXISREWARDS"
+                                        },
+                                        "cta": {
+                                            "type": "OFFER_HALF_CARD"
+                                        }
+                                    },
+                                    {
+                                        "info": {
+                                            "header": "FLAT ₹50 OFF",
+                                            "offerTagColor": "#E46D47",
+                                            "logoBottom": "MARKETING_BANNERS/IMAGES/OFFERS/2026/2/15/2a436ba8-cef0-4643-9652-9fa816092606_ICICIMenuLogo.png",
+                                            "offerIds": [
+                                                "389eb384-b450-407a-8573-618da8f1e8d0"
+                                            ],
+                                            "expiryTime": "1970-01-01T00:00:00Z",
+                                            "couponCode": "NO CODE REQUIRED",
+                                            "description": "ABOVE ₹599",
+                                            "offerType": "offers",
+                                            "restId": "1083258",
+                                            "offerLogo": "MARKETING_BANNERS/IMAGES/OFFERS/2026/2/15/2a436ba8-cef0-4643-9652-9fa816092606_ICICIMenuLogo.png",
+                                            "descriptionTextColor": "#7302060C",
+                                            "primaryDescription": "NO CODE REQUIRED"
+                                        },
+                                        "cta": {
+                                            "type": "OFFER_HALF_CARD"
+                                        }
+                                    }
+                                ],
+                                "habitMilestoneInfo": {
+                                    "callout": {}
+                                },
+                                "loyaltyDiscoverPresentationInfo": {
+                                    "logoCtx": {}
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "groupedCard": {
+                    "cardGroupMap": {
+                        "REGULAR": {
+                            "cards": [
+                                {
+                                    "card": {
+                                        "card": {
+                                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.MenuVegFilterAndBadge",
+                                            "badges": {},
+                                            "vegOnlyDetails": {
+                                                "imageId": "AutoVegOnly_qkjowj",
+                                                "title": "Showing only vegetarian options.",
+                                                "description": "Tap on the VEG ONLY button to turn off the setting"
+                                            },
+                                            "topRatedFilter": {
+                                                "attributes": {
+                                                    "displayText": "Ratings 4.0+"
+                                                }
+                                            },
+                                            "kidsCategoryFilter": {
+                                                "attributes": {
+                                                    "displayText": "Kids Favourites",
+                                                    "tooltip": {
+                                                        "enabled": true,
+                                                        "displayText": "Kids Favourites Filter applied. Remove this filter to see the full Menu."
+                                                    }
+                                                }
+                                            },
+                                            "vegFilter": {
+                                                "attributes": {
+                                                    "displayText": "VEG"
+                                                }
+                                            },
+                                            "nonvegFilter": {
+                                                "attributes": {
+                                                    "displayText": "NONVEG"
+                                                }
+                                            }
+                                        },
+                                        "relevance": {
+                                            "type": "RELEVANCE_TYPE_ON_MENU_FILTER_TOGGLED",
+                                            "sectionId": "MENU_FILTER_TOGGLE"
+                                        }
+                                    }
+                                },
+                                {
+                                    "card": {
+                                        "card": {
+                                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.NestedItemCategory",
+                                            "title": "Starters",
+                                            "categories": [
+                                                {
+                                                    "title": "Non Vegeterian Tandoor Se",
+                                                    "itemCards": [
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876303",
+                                                                    "name": "Non Veg Platter With Daal And Naan",
+                                                                    "category": "Starters",
+                                                                    "description": "Assorted chicken and mutton starters.",
+                                                                    "inStock": 1,
+                                                                    "price": 118800,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "NONVEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "parentId": "103098374",
+                                                                    "menuFilterIds": [
+                                                                        "NONVEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876300",
+                                                                    "name": "Fish Tikka",
+                                                                    "category": "Starters",
+                                                                    "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/12/15/1485e2c7-b003-4264-b1b0-a9923963f1b9_318adeed-4743-4594-9ffa-83847dc00e29.jpg",
+                                                                    "inStock": 1,
+                                                                    "price": 76300,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "NONVEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "parentId": "16554604",
+                                                                    "menuFilterIds": [
+                                                                        "NONVEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876302",
+                                                                    "name": "Mutton Tikka",
+                                                                    "category": "Starters",
+                                                                    "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/3/18/a64682cd-eac6-46d0-9942-1c8049afa063_13930394-07eb-46f5-8b58-fad64d723753.jpg",
+                                                                    "inStock": 1,
+                                                                    "price": 76300,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "NONVEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "parentId": "16554720",
+                                                                    "menuFilterIds": [
+                                                                        "NONVEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876301",
+                                                                    "name": "Mutton Seekh Kabab",
+                                                                    "category": "Starters",
+                                                                    "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/3/18/49b4d73b-c812-4c99-9547-ec8846773d51_ec04ab02-4211-4b83-9e66-603b0a422a47.jpg",
+                                                                    "inStock": 1,
+                                                                    "price": 73800,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "NONVEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "imageBadges": [
+                                                                        {
+                                                                            "imageId": "merch_bau/High%20Protein%201_1.png"
+                                                                        }
+                                                                    ],
+                                                                    "parentId": "16554716",
+                                                                    "menuFilterIds": [
+                                                                        "NONVEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876290",
+                                                                    "name": "Afghani Chicken",
+                                                                    "category": "Starters",
+                                                                    "inStock": 1,
+                                                                    "variants": {},
+                                                                    "variantsV2": {
+                                                                        "variantGroups": [
+                                                                            {
+                                                                                "groupId": "59540828",
+                                                                                "name": "Customisation",
+                                                                                "variations": [
+                                                                                    {
+                                                                                        "name": "Half",
+                                                                                        "price": 450,
+                                                                                        "default": 1,
+                                                                                        "id": "184569233",
+                                                                                        "inStock": 1,
+                                                                                        "isEnabled": 1
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "Full",
+                                                                                        "price": 813,
+                                                                                        "id": "184569234",
+                                                                                        "inStock": 1,
+                                                                                        "isEnabled": 1
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        ],
+                                                                        "pricingModels": [
+                                                                            {
+                                                                                "variations": [
+                                                                                    {
+                                                                                        "groupId": "59540828",
+                                                                                        "variationId": "184569233"
+                                                                                    }
+                                                                                ],
+                                                                                "price": 45000
+                                                                            },
+                                                                            {
+                                                                                "variations": [
+                                                                                    {
+                                                                                        "groupId": "59540828",
+                                                                                        "variationId": "184569234"
+                                                                                    }
+                                                                                ],
+                                                                                "price": 81300
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "NONVEG"
+                                                                    },
+                                                                    "defaultPrice": 45000,
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {
+                                                                            "rating": "4.2",
+                                                                            "ratingCount": "3 ratings",
+                                                                            "ratingCountV2": "3"
+                                                                        },
+                                                                        "ratingsPresentationConfig": {
+                                                                            "bgGradient": {
+                                                                                "colours": [
+                                                                                    "#C8F9E5",
+                                                                                    "#00FFFFFF"
+                                                                                ],
+                                                                                "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                                                            },
+                                                                            "ratingIconColor": "rating_very_good",
+                                                                            "ratingTextColor": "rating_very_good",
+                                                                            "ratingCountTextColor": "rating_very_good",
+                                                                            "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                                                            "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                                                        }
+                                                                    },
+                                                                    "imageBadges": [
+                                                                        {
+                                                                            "imageId": "merch_bau/High%20Protein%201_1.png"
+                                                                        }
+                                                                    ],
+                                                                    "parentId": "16554417",
+                                                                    "menuFilterIds": [
+                                                                        "NONVEG",
+                                                                        "toprated"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876298",
+                                                                    "name": "Chicken Tandoori",
+                                                                    "category": "Starters",
+                                                                    "imageId": "FOOD_CATALOG/IMAGES/CMS/2026/1/17/9d43a6de-a420-4e1a-a02b-ce2c51a82b4d_7dc4187e-2755-48cb-b8a7-0fae928b9a35.jpg_compressed",
+                                                                    "inStock": 1,
+                                                                    "variants": {},
+                                                                    "variantsV2": {
+                                                                        "variantGroups": [
+                                                                            {
+                                                                                "groupId": "59540830",
+                                                                                "name": "Customisation",
+                                                                                "variations": [
+                                                                                    {
+                                                                                        "name": "Half",
+                                                                                        "price": 438,
+                                                                                        "default": 1,
+                                                                                        "id": "184569237",
+                                                                                        "inStock": 1,
+                                                                                        "isEnabled": 1
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "Full",
+                                                                                        "price": 788,
+                                                                                        "id": "184569238",
+                                                                                        "inStock": 1,
+                                                                                        "isEnabled": 1
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        ],
+                                                                        "pricingModels": [
+                                                                            {
+                                                                                "variations": [
+                                                                                    {
+                                                                                        "groupId": "59540830",
+                                                                                        "variationId": "184569237"
+                                                                                    }
+                                                                                ],
+                                                                                "price": 43800
+                                                                            },
+                                                                            {
+                                                                                "variations": [
+                                                                                    {
+                                                                                        "groupId": "59540830",
+                                                                                        "variationId": "184569238"
+                                                                                    }
+                                                                                ],
+                                                                                "price": 78800
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "NONVEG"
+                                                                    },
+                                                                    "defaultPrice": 43800,
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {
+                                                                            "rating": "4.2",
+                                                                            "ratingCount": "7 ratings",
+                                                                            "ratingCountV2": "7"
+                                                                        },
+                                                                        "ratingsPresentationConfig": {
+                                                                            "bgGradient": {
+                                                                                "colours": [
+                                                                                    "#C8F9E5",
+                                                                                    "#00FFFFFF"
+                                                                                ],
+                                                                                "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                                                            },
+                                                                            "ratingIconColor": "rating_very_good",
+                                                                            "ratingTextColor": "rating_very_good",
+                                                                            "ratingCountTextColor": "rating_very_good",
+                                                                            "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                                                            "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                                                        }
+                                                                    },
+                                                                    "imageBadges": [
+                                                                        {
+                                                                            "imageId": "merch_bau/High%20Protein%201_1.png"
+                                                                        }
+                                                                    ],
+                                                                    "parentId": "16554527",
+                                                                    "menuFilterIds": [
+                                                                        "NONVEG",
+                                                                        "toprated"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876296",
+                                                                    "name": "Chicken Reshmi Kabab With Egg",
+                                                                    "category": "Starters",
+                                                                    "inStock": 1,
+                                                                    "price": 64400,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "NONVEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "parentId": "16554510",
+                                                                    "menuFilterIds": [
+                                                                        "NONVEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876291",
+                                                                    "name": "Bhatti Chicken Tikka",
+                                                                    "category": "Starters",
+                                                                    "imageId": "0b3a14608ecb4cdefc72be86806e730b",
+                                                                    "inStock": 1,
+                                                                    "price": 56300,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "NONVEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {
+                                                                            "rating": "4.6",
+                                                                            "ratingCount": "5 ratings",
+                                                                            "ratingCountV2": "5"
+                                                                        },
+                                                                        "ratingsPresentationConfig": {
+                                                                            "bgGradient": {
+                                                                                "colours": [
+                                                                                    "#C8F9E5",
+                                                                                    "#00FFFFFF"
+                                                                                ],
+                                                                                "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                                                            },
+                                                                            "ratingIconColor": "rating_very_good",
+                                                                            "ratingTextColor": "rating_very_good",
+                                                                            "ratingCountTextColor": "rating_very_good",
+                                                                            "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                                                            "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                                                        }
+                                                                    },
+                                                                    "parentId": "67657551",
+                                                                    "menuFilterIds": [
+                                                                        "NONVEG",
+                                                                        "toprated"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876295",
+                                                                    "name": "Chicken Malai Tikka",
+                                                                    "category": "Starters",
+                                                                    "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/3/18/197924d6-b128-4f49-9bb3-0ec711df2fe5_09921aab-4cf6-4457-964d-4974ea6d27d4.jpg",
+                                                                    "inStock": 1,
+                                                                    "price": 56300,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "NONVEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "imageBadges": [
+                                                                        {
+                                                                            "imageId": "merch_bau/High%20Protein%201_1.png"
+                                                                        }
+                                                                    ],
+                                                                    "parentId": "16554502",
+                                                                    "menuFilterIds": [
+                                                                        "NONVEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876294",
+                                                                    "name": "Chicken Kali Mirch Tikka",
+                                                                    "category": "Starters",
+                                                                    "imageId": "bc0d62ffc11f1d849ed774a832b85a3f",
+                                                                    "inStock": 1,
+                                                                    "price": 57800,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "NONVEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "parentId": "16554495",
+                                                                    "menuFilterIds": [
+                                                                        "NONVEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876292",
+                                                                    "name": "Chicken Achari Tikka",
+                                                                    "category": "Starters",
+                                                                    "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/12/15/cbb533ad-a521-4876-a49e-96cd4c87248f_02243828-db06-4457-b903-4c5990ae544f.jpg",
+                                                                    "inStock": 1,
+                                                                    "price": 51900,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "NONVEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "parentId": "16554468",
+                                                                    "menuFilterIds": [
+                                                                        "NONVEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876299",
+                                                                    "name": "Chicken Tikka",
+                                                                    "category": "Starters",
+                                                                    "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/3/18/e499524e-e31b-47e8-b002-1ef3543195db_cc70d9d7-14f5-4191-8311-737b17688d34.jpeg",
+                                                                    "inStock": 1,
+                                                                    "price": 51900,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "NONVEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "imageBadges": [
+                                                                        {
+                                                                            "imageId": "merch_bau/High%20Protein%201_1.png"
+                                                                        }
+                                                                    ],
+                                                                    "parentId": "16554533",
+                                                                    "menuFilterIds": [
+                                                                        "NONVEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876297",
+                                                                    "name": "Chicken Seekh Kabab",
+                                                                    "category": "Starters",
+                                                                    "imageId": "2cf2783019cce713de3e15100caa49ed",
+                                                                    "inStock": 1,
+                                                                    "price": 47500,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "NONVEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "imageBadges": [
+                                                                        {
+                                                                            "imageId": "merch_bau/High%20Protein%201_1.png"
+                                                                        }
+                                                                    ],
+                                                                    "parentId": "16554515",
+                                                                    "menuFilterIds": [
+                                                                        "NONVEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876304",
+                                                                    "name": "Tandoori Tangari [4 Pieces]",
+                                                                    "category": "Starters",
+                                                                    "inStock": 1,
+                                                                    "price": 48800,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "NONVEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "parentId": "16554835",
+                                                                    "menuFilterIds": [
+                                                                        "NONVEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876293",
+                                                                    "name": "Chicken Burrah",
+                                                                    "category": "Starters",
+                                                                    "inStock": 1,
+                                                                    "variants": {},
+                                                                    "variantsV2": {
+                                                                        "variantGroups": [
+                                                                            {
+                                                                                "groupId": "59540829",
+                                                                                "name": "Customisation",
+                                                                                "variations": [
+                                                                                    {
+                                                                                        "name": "Half",
+                                                                                        "price": 450,
+                                                                                        "default": 1,
+                                                                                        "id": "184569235",
+                                                                                        "inStock": 1,
+                                                                                        "isEnabled": 1
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "Full",
+                                                                                        "price": 813,
+                                                                                        "id": "184569236",
+                                                                                        "inStock": 1,
+                                                                                        "isEnabled": 1
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        ],
+                                                                        "pricingModels": [
+                                                                            {
+                                                                                "variations": [
+                                                                                    {
+                                                                                        "groupId": "59540829",
+                                                                                        "variationId": "184569235"
+                                                                                    }
+                                                                                ],
+                                                                                "price": 45000
+                                                                            },
+                                                                            {
+                                                                                "variations": [
+                                                                                    {
+                                                                                        "groupId": "59540829",
+                                                                                        "variationId": "184569236"
+                                                                                    }
+                                                                                ],
+                                                                                "price": 81300
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "NONVEG"
+                                                                    },
+                                                                    "defaultPrice": 45000,
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "parentId": "103098339",
+                                                                    "menuFilterIds": [
+                                                                        "NONVEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        }
+                                                    ],
+                                                    "subtitleSuffix": {},
+                                                    "categoryId": "61806027"
+                                                },
+                                                {
+                                                    "title": "Vegeterian Tandoor Se",
+                                                    "itemCards": [
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876288",
+                                                                    "name": "Veg Tandoori Platter With Naan & Dal",
+                                                                    "category": "Starters",
+                                                                    "imageId": "FOOD_CATALOG/IMAGES/CMS/2026/1/17/1f823d89-a74b-4274-af4b-541db9036269_710d5b5c-119a-441d-a496-52c7c0ed32f1.jpg_compressed",
+                                                                    "inStock": 1,
+                                                                    "isVeg": 1,
+                                                                    "price": 72500,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "VEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "parentId": "16554880",
+                                                                    "menuFilterIds": [
+                                                                        "VEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876284",
+                                                                    "name": "Paneer Kali Mirch Tikka",
+                                                                    "category": "Starters",
+                                                                    "imageId": "9004180a6d2fff94ff401dcc74f3b8f9",
+                                                                    "inStock": 1,
+                                                                    "isVeg": 1,
+                                                                    "price": 47500,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "VEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "parentId": "16554744",
+                                                                    "menuFilterIds": [
+                                                                        "VEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876285",
+                                                                    "name": "Paneer Tikka",
+                                                                    "category": "Starters",
+                                                                    "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/3/18/262c9c00-3566-4b9d-8368-c8b8d4edb3e3_7b0e9f49-e2c2-4779-bc14-2abe017e35ab.jpg",
+                                                                    "inStock": 1,
+                                                                    "isVeg": 1,
+                                                                    "price": 45000,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "VEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "imageBadges": [
+                                                                        {
+                                                                            "imageId": "merch_bau/High%20Protein%201_1.png"
+                                                                        }
+                                                                    ],
+                                                                    "parentId": "16554756",
+                                                                    "menuFilterIds": [
+                                                                        "VEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876281",
+                                                                    "name": "Malai Paneer Tikka",
+                                                                    "category": "Starters",
+                                                                    "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/12/15/59cef2b1-7b06-41ce-9247-d6f9d99e2439_ff17d9f7-ce08-44f8-96f4-ac008c0c93cd.jpg",
+                                                                    "inStock": 1,
+                                                                    "isVeg": 1,
+                                                                    "price": 47500,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "VEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "imageBadges": [
+                                                                        {
+                                                                            "imageId": "merch_bau/High%20Protein%201_1.png"
+                                                                        }
+                                                                    ],
+                                                                    "parentId": "16554663",
+                                                                    "menuFilterIds": [
+                                                                        "VEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876283",
+                                                                    "name": "Mushroom Tikka",
+                                                                    "category": "Starters",
+                                                                    "imageId": "gr5vdhxteva2suhdpiv5",
+                                                                    "inStock": 1,
+                                                                    "isVeg": 1,
+                                                                    "price": 43800,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "VEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "parentId": "16554697",
+                                                                    "menuFilterIds": [
+                                                                        "VEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876278",
+                                                                    "name": "Achari Paneer Tikka",
+                                                                    "category": "Starters",
+                                                                    "imageId": "d7dd595ec477883c9ae6c78c63e66248",
+                                                                    "inStock": 1,
+                                                                    "isVeg": 1,
+                                                                    "price": 45000,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "VEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "imageBadges": [
+                                                                        {
+                                                                            "imageId": "merch_bau/High%20Protein%201_1.png"
+                                                                        }
+                                                                    ],
+                                                                    "parentId": "16554414",
+                                                                    "menuFilterIds": [
+                                                                        "VEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876282",
+                                                                    "name": "Malai Soya Chaap",
+                                                                    "category": "Starters",
+                                                                    "inStock": 1,
+                                                                    "isVeg": 1,
+                                                                    "price": 38800,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "VEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "imageBadges": [
+                                                                        {
+                                                                            "imageId": "merch_bau/High%20Protein%201_1.png"
+                                                                        }
+                                                                    ],
+                                                                    "parentId": "16554664",
+                                                                    "menuFilterIds": [
+                                                                        "VEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876279",
+                                                                    "name": "Achari Soya Chaap",
+                                                                    "category": "Starters",
+                                                                    "inStock": 1,
+                                                                    "isVeg": 1,
+                                                                    "price": 38800,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "VEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "parentId": "16554415",
+                                                                    "menuFilterIds": [
+                                                                        "VEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876286",
+                                                                    "name": "Shahi Stuffed Chaap",
+                                                                    "category": "Starters",
+                                                                    "inStock": 1,
+                                                                    "isVeg": 1,
+                                                                    "price": 40000,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "VEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "parentId": "16554807",
+                                                                    "menuFilterIds": [
+                                                                        "VEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876289",
+                                                                    "name": "Veg Seekh Kabab",
+                                                                    "category": "Starters",
+                                                                    "imageId": "FOOD_CATALOG/IMAGES/CMS/2026/1/17/b5be80cd-4091-4a61-afd2-1ad697bf8388_e1454750-4b24-4e67-8843-d9691e1b0605.jpg_compressed",
+                                                                    "inStock": 1,
+                                                                    "isVeg": 1,
+                                                                    "price": 34400,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "VEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "parentId": "16554871",
+                                                                    "menuFilterIds": [
+                                                                        "VEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876287",
+                                                                    "name": "Soya Chaap",
+                                                                    "category": "Starters",
+                                                                    "inStock": 1,
+                                                                    "isVeg": 1,
+                                                                    "price": 34400,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "VEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "imageBadges": [
+                                                                        {
+                                                                            "imageId": "merch_bau/High%20Protein%201_1.png"
+                                                                        }
+                                                                    ],
+                                                                    "parentId": "16554814",
+                                                                    "menuFilterIds": [
+                                                                        "VEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876280",
+                                                                    "name": "Cheese Stuffed Tandoori Aloo",
+                                                                    "category": "Starters",
+                                                                    "imageId": "FOOD_CATALOG/IMAGES/CMS/2026/1/17/3690ae76-ce43-45f0-88e4-c9b4fb156054_52cc64e5-a7a8-45df-a04b-13894cd30d72.jpg_compressed",
+                                                                    "inStock": 1,
+                                                                    "isVeg": 1,
+                                                                    "price": 41300,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "VEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "parentId": "16554467",
+                                                                    "menuFilterIds": [
+                                                                        "VEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        }
+                                                    ],
+                                                    "subtitleSuffix": {},
+                                                    "categoryId": "61806026"
+                                                },
+                                                {
+                                                    "title": "Vegeterian Chinese Starter",
+                                                    "itemCards": [
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876317",
+                                                                    "name": "Cigar Rolls",
+                                                                    "category": "Starters",
+                                                                    "inStock": 1,
+                                                                    "isVeg": 1,
+                                                                    "price": 45600,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "VEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "parentId": "76758377",
+                                                                    "menuFilterIds": [
+                                                                        "VEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170080325",
+                                                                    "name": "Paneer 65",
+                                                                    "category": "Starters",
+                                                                    "inStock": 1,
+                                                                    "isVeg": 1,
+                                                                    "price": 41900,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "VEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "parentId": "16554739",
+                                                                    "menuFilterIds": [
+                                                                        "VEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876316",
+                                                                    "name": "Chilly Cottage Cheese",
+                                                                    "category": "Starters",
+                                                                    "imageId": "gi7ed3tunok2krptbh7n",
+                                                                    "inStock": 1,
+                                                                    "isVeg": 1,
+                                                                    "price": 40600,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "VEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "parentId": "103098349",
+                                                                    "menuFilterIds": [
+                                                                        "VEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876314",
+                                                                    "name": "Cheese Corn Roll",
+                                                                    "category": "Starters",
+                                                                    "imageId": "1fe0c068ab3d250ab57c714ccb826e78",
+                                                                    "inStock": 1,
+                                                                    "isVeg": 1,
+                                                                    "price": 41900,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "VEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "parentId": "71345674",
+                                                                    "menuFilterIds": [
+                                                                        "VEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876323",
+                                                                    "name": "Veg Spring Rolls",
+                                                                    "category": "Starters",
+                                                                    "inStock": 1,
+                                                                    "isVeg": 1,
+                                                                    "price": 40600,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "VEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "parentId": "16554874",
+                                                                    "menuFilterIds": [
+                                                                        "VEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876315",
+                                                                    "name": "Chilly Mushroom",
+                                                                    "category": "Starters",
+                                                                    "inStock": 1,
+                                                                    "isVeg": 1,
+                                                                    "price": 40600,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "VEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "parentId": "67874423",
+                                                                    "menuFilterIds": [
+                                                                        "VEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876320",
+                                                                    "name": "Crispy Veg Salt N Pepper",
+                                                                    "category": "Starters",
+                                                                    "imageId": "a2ffnx7vwccrxlbykyoq",
+                                                                    "inStock": 1,
+                                                                    "isVeg": 1,
+                                                                    "price": 39400,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "VEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "parentId": "16554579",
+                                                                    "menuFilterIds": [
+                                                                        "VEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876319",
+                                                                    "name": "Crispy Lotus Stem",
+                                                                    "category": "Starters",
+                                                                    "inStock": 1,
+                                                                    "isVeg": 1,
+                                                                    "price": 39400,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "VEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "parentId": "102621525",
+                                                                    "menuFilterIds": [
+                                                                        "VEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876322",
+                                                                    "name": "Veg Manchurian Dry",
+                                                                    "category": "Starters",
+                                                                    "imageId": "cpiybizldmrnqxsamdpv",
+                                                                    "inStock": 1,
+                                                                    "isVeg": 1,
+                                                                    "price": 36900,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "VEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "parentId": "16554864",
+                                                                    "menuFilterIds": [
+                                                                        "VEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876318",
+                                                                    "name": "Crispy Corn",
+                                                                    "category": "Starters",
+                                                                    "inStock": 1,
+                                                                    "isVeg": 1,
+                                                                    "price": 36900,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "VEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "parentId": "102621524",
+                                                                    "menuFilterIds": [
+                                                                        "VEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876321",
+                                                                    "name": "Honey Chilly Potato",
+                                                                    "category": "Starters",
+                                                                    "imageId": "zxftyokkxox3eylhjab0",
+                                                                    "inStock": 1,
+                                                                    "isVeg": 1,
+                                                                    "price": 35600,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "VEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "parentId": "16554632",
+                                                                    "menuFilterIds": [
+                                                                        "VEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        }
+                                                    ],
+                                                    "subtitleSuffix": {},
+                                                    "categoryId": "61806030"
+                                                },
+                                                {
+                                                    "title": "Non Vegeterian Chinese Starter",
+                                                    "itemCards": [
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876331",
+                                                                    "name": "Fish Finger Sole",
+                                                                    "category": "Starters",
+                                                                    "inStock": 1,
+                                                                    "price": 76900,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "NONVEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "parentId": "72861210",
+                                                                    "menuFilterIds": [
+                                                                        "NONVEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876328",
+                                                                    "name": "Chilly Chicken Dry",
+                                                                    "category": "Starters",
+                                                                    "imageId": "1f885f54165176de65cdb65dd006d233",
+                                                                    "inStock": 1,
+                                                                    "price": 49400,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "NONVEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "imageBadges": [
+                                                                        {
+                                                                            "imageId": "merch_bau/High%20Protein%201_1.png"
+                                                                        }
+                                                                    ],
+                                                                    "parentId": "49346362",
+                                                                    "menuFilterIds": [
+                                                                        "NONVEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                                                "info": {
+                                                                    "id": "170876325",
+                                                                    "name": "Chicken Lollipop [6 Pieces]",
+                                                                    "category": "Starters",
+                                                                    "inStock": 1,
+                                                                    "price": 49400,
+                                                                    "variants": {},
+                                                                    "variantsV2": {},
+                                                                    "itemAttribute": {
+                                                                        "vegClassifier": "NONVEG"
+                                                                    },
+                                                                    "ribbon": {},
+                                                                    "type": "ITEM",
+                                                                    "itemBadge": {},
+                                                                    "badgesV2": {},
+                                                                    "ratings": {
+                                                                        "aggregatedRating": {}
+                                                                    },
+                                                                    "parentId": "103098344",
+                                                                    "menuFilterIds": [
+                                                                        "NONVEG"
+                                                                    ]
+                                                                },
+                                                                "analytics": {},
+                                                                "hideRestaurantDetails": true
+                                                            }
+                                                        },
+                                                        {
+                                                            "card": {
+                                                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
