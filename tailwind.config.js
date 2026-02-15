@@ -22,7 +22,7 @@ module.exports = {
         },
       },
       animation: {
-        // You can now use 'animate-slideIn' instead of custom CSS classes
+        // we can now use 'animate-slideIn' instead of custom CSS classes
         slideIn: "slideInAnimate 0.3s ease-out forwards",
       },
     },

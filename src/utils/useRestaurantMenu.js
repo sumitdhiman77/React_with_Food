@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
-import { MENU_URL } from "./constants";
 const useRestaurantMenu = (name, lat, lng, query) => {
   const [resInfo, setResInfo] = useState(null);
   console.log(resInfo);
   const fetchData = async () => {
     try {
       const res = await fetch(`/mock-menus/${query}.json`);
-      // `${MENU_URL}&page-type=REGULAR_MENU&complete-menu=true&lat=${lat}&lng=${lng}&restaurantId=${resId}&catalog_qa=undefined&query=${query}&submitAction=ENTER`,
+
       if (!res.ok) {
         console.log("file missing or wrong file name");
         return;
@@ -19,7 +18,6 @@ const useRestaurantMenu = (name, lat, lng, query) => {
   };
 
   useEffect(() => {
-    // if (!lat || !lng) return;
     fetchData();
     console.log(resInfo);
   }, [query]);

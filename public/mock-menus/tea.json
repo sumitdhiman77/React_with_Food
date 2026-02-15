@@ -2,184 +2,199 @@
   "statusCode": 0,
   "data": {
     "statusMessage": "done successfully",
-    "pageOffset": {
-      "nextOffset": "CJFDEOskKIDwofirrO7WejDNEzgC",
-      "widgetOffset": {
-        "restaurantCountWidget": "",
-        "collectionV5RestaurantListWidget_SimRestoRelevance_food": "11",
-        "inlineFacetFilter": "",
-        "collectionV5MastheadWidget": ""
-      }
-    },
     "cards": [
       {
         "card": {
           "card": {
-            "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.CollectionMasthead",
-            "collectionId": "80406",
-            "title": "Tea",
-            "description": "Hot sips of tea to brighten your mood instantly.",
-            "imageId": "COLLECTIONS/IMAGES/MERCH/2024/7/1/4506c870-aabc-4ef3-ba26-9753c6bf293c_pic",
-            "aspectRatio": "3.44",
-            "cta": {
-              "link": "swiggy://collectionV2?collection_id=80406&tags=layout_CCS_Tea,tea",
-              "type": "collectionv2"
-            },
-            "type": "COLLECTION_MASTHEAD_TYPE_IMAGE_WITH_TEXT",
-            "count": "22 restaurants",
-            "navBarConfig": {}
+            "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.TextBoxV2",
+            "text": "New Shop 24 Hours",
+            "headerStyling": {
+              "textColor": "text_Highest_Emphasis",
+              "textVariant": "header_H3_Black"
+            }
           }
         }
       },
       {
         "card": {
           "card": {
-            "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.InlineViewFilterSortWidget",
-            "sortConfigs": [
+            "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.RestaurantBlTab",
+            "tabs": [
               {
-                "key": "relevance",
-                "title": "Relevance (Default)",
-                "selected": true,
-                "defaultSelection": true
-              },
-              {
-                "key": "deliveryTimeAsc",
-                "title": "Delivery Time"
-              },
-              {
-                "key": "modelBasedRatingDesc",
-                "title": "Rating"
-              },
-              {
-                "key": "costForTwoAsc",
-                "title": "Cost: Low to High"
-              },
-              {
-                "key": "costForTwoDesc",
-                "title": "Cost: High to Low"
+                "id": "Order Online",
+                "title": "Order Online"
               }
-            ],
-            "restaurantCount": 22,
-            "facetList": [
-              {
-                "label": "10 Mins Delivery",
-                "id": "isRestaurantBolt",
-                "selection": "SELECT_TYPE_SINGLESELECT",
-                "facetInfo": [
-                  {
-                    "label": "10 Mins Delivery",
-                    "id": "isRestaurantBoltfacetquery0",
-                    "analytics": {},
-                    "openFilter": true
-                  }
-                ],
-                "viewType": "VIEW_TYPE_FLATTENED",
-                "subLabel": "Filter by",
-                "icon": "COLLECTIONS/IMAGES/MERCH/2024/12/18/4b2e8903-0e25-401b-8ede-088491b4cfa0_937977a3-b03b-4a9e-8b6a-24937664d1a9_pic.png",
-                "selectedIcon": "COLLECTIONS/IMAGES/MERCH/2024/12/26/3072d307-2f8e-471c-862d-d426fb93c0bf_4b2e8903-0e25-401b-8ede-088491b4cfa0_937977a3-b03b-4a9e-8b6a-24937664d1a9_pic.png"
+            ]
+          }
+        }
+      },
+      {
+        "card": {
+          "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+              "id": "1173681",
+              "name": "New Shop 24 Hours",
+              "city": "Dharamshala",
+              "slugs": {
+                "restaurant": "new-shop-24-hours-dharamshala-city-dharamshala-city",
+                "city": "dharamshala"
               },
-              {
-                "label": "Veg/Non-Veg",
-                "id": "isVeg",
-                "selection": "SELECT_TYPE_MULTISELECT",
-                "facetInfo": [
-                  {
-                    "label": "Non Veg",
-                    "id": "isVegfacetquery0",
-                    "analytics": {},
-                    "openFilter": true
-                  },
-                  {
-                    "label": "Pure Veg",
-                    "id": "isVegfacetquery1",
-                    "analytics": {},
-                    "openFilter": true
-                  }
-                ],
-                "viewType": "VIEW_TYPE_HALF_CARD",
-                "subLabel": "Filter by",
-                "openFilter": true
+              "uniqueId": "e51e6528-4859-48c8-8fed-e84c17dc2d76",
+              "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/8/13/4ddba094-73e6-4b53-8dec-275b1a7c7872_1173681.jpg",
+              "locality": "Dharamshala City",
+              "areaName": "Dharamshala City",
+              "costForTwo": "25000",
+              "costForTwoMessage": "₹250 for two",
+              "cuisines": ["Beverages", "Burgers"],
+              "avgRating": 4.5,
+              "feeDetails": {
+                "restaurantId": "1173681",
+                "fees": [{}]
               },
-              {
-                "label": "Ratings",
-                "id": "rating",
-                "selection": "SELECT_TYPE_MULTISELECT",
-                "facetInfo": [
-                  {
-                    "label": "Ratings",
-                    "id": "ratingfacetquery0",
-                    "analytics": {},
-                    "openFilter": true
-                  },
-                  {
-                    "label": "Ratings 4.0+",
-                    "id": "ratingfacetquery1",
-                    "analytics": {},
-                    "openFilter": true
-                  },
-                  {
-                    "label": "Ratings 4.5+",
-                    "id": "ratingfacetquery2",
-                    "analytics": {},
-                    "openFilter": true
-                  }
-                ],
-                "viewType": "VIEW_TYPE_HALF_CARD",
-                "subLabel": "Filter by",
-                "openFilter": true
+              "parentId": "557514",
+              "avgRatingString": "4.5",
+              "totalRatingsString": "63 ratings",
+              "sla": {
+                "restaurantId": "1173681",
+                "deliveryTime": 41,
+                "minDeliveryTime": 40,
+                "maxDeliveryTime": 45,
+                "lastMileTravel": 5,
+                "serviceability": "SERVICEABLE",
+                "stressFactor": 1,
+                "rainMode": "RAIN_MODE_NONE",
+                "longDistance": "LONG_DISTANCE_NOT_LONG_DISTANCE",
+                "zoneId": 1248,
+                "slaString": "40-45 MINS",
+                "lastMileTravelString": "5.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
               },
-              {
-                "label": "Delivery Time",
-                "id": "deliveryTime",
-                "selection": "SELECT_TYPE_MULTISELECT",
-                "facetInfo": [
-                  {
-                    "label": "Less than 30 mins",
-                    "id": "deliveryTimefacetquery0",
-                    "analytics": {},
-                    "openFilter": true
-                  },
-                  {
-                    "label": "Less than 45 mins",
-                    "id": "deliveryTimefacetquery1",
-                    "analytics": {},
-                    "openFilter": true
-                  }
-                ],
-                "viewType": "VIEW_TYPE_HALF_CARD",
-                "subLabel": "Filter by",
-                "openFilter": true
+              "availability": {
+                "nextCloseTime": "2026-02-15 23:59:00",
+                "visibility": true,
+                "opened": true,
+                "restaurantClosedMeta": {}
               },
-              {
-                "label": "Cost For Two",
-                "id": "costForTwo",
-                "selection": "SELECT_TYPE_MULTISELECT",
-                "facetInfo": [
+              "aggregatedDiscountInfo": {
+                "header": "Get items under 69",
+                "shortDescriptionList": [
                   {
-                    "label": "Less than Rs. 300",
-                    "id": "costForTwofacetquery0",
-                    "analytics": {},
-                    "openFilter": true
+                    "meta": "99 store",
+                    "discountType": "FinalPrice",
+                    "operationType": "RESTAURANT"
                   },
                   {
-                    "label": "Rs.300 - Rs.600",
-                    "id": "costForTwofacetquery1",
-                    "analytics": {},
-                    "openFilter": true
-                  },
-                  {
-                    "label": "Greater than Rs. 600",
-                    "id": "costForTwofacetquery2",
-                    "analytics": {},
-                    "openFilter": true
+                    "meta": "20% off | Use TRYNEW",
+                    "discountType": "Percentage",
+                    "operationType": "RESTAURANT"
                   }
                 ],
-                "viewType": "VIEW_TYPE_HALF_CARD",
-                "subLabel": "Filter by",
-                "openFilter": true
-              }
-            ],
-            "widgetId": "inlineFacetFilter"
+                "descriptionList": [
+                  {
+                    "meta": "99 store",
+                    "discountType": "FinalPrice",
+                    "operationType": "RESTAURANT"
+                  },
+                  {
+                    "meta": "20% off up to ₹50 | Use code TRYNEW",
+                    "discountType": "Percentage",
+                    "operationType": "RESTAURANT"
+                  }
+                ],
+                "visible": true
+              },
+              "badges": {},
+              "slugString": "new-shop-24-hours-dharamshala-city-dharamshala-city",
+              "isOpen": true,
+              "labels": [
+                {
+                  "title": "Timings",
+                  "message": "null"
+                },
+                {
+                  "title": "Address",
+                  "message": "Near club Mahindra, Palampur Road, Sheela chownk ,Dharamshala (Municipal Corporation),Kangra,Himachal Pradesh-176057\t"
+                },
+                {
+                  "title": "Cuisines",
+                  "message": "Beverages,Burgers"
+                }
+              ],
+              "totalRatings": 63,
+              "aggregatedDiscountInfoV2": {
+                "header": "Get items under 69",
+                "shortDescriptionList": [
+                  {
+                    "meta": "99 store",
+                    "discountType": "FinalPrice",
+                    "operationType": "RESTAURANT"
+                  },
+                  {
+                    "meta": "20% off | Use TRYNEW",
+                    "discountType": "Percentage",
+                    "operationType": "RESTAURANT"
+                  }
+                ],
+                "descriptionList": [
+                  {
+                    "meta": "99 store",
+                    "discountType": "FinalPrice",
+                    "operationType": "RESTAURANT"
+                  },
+                  {
+                    "meta": "20% off up to ₹50 | Use code TRYNEW",
+                    "discountType": "Percentage",
+                    "operationType": "RESTAURANT"
+                  }
+                ],
+                "couponDetailsCta": "View coupon details"
+              },
+              "type": "F",
+              "nudgeBanners": [
+                {
+                  "priority": 4,
+                  "discountInfo": {
+                    "discountType": "FinalPrice",
+                    "value": 139
+                  },
+                  "unlockedMessage": "Deal of the Day unlocked!",
+                  "minItemCount": 1,
+                  "maxItemCount": 1,
+                  "type": "SILD",
+                  "nudgeTagInfo": {
+                    "title": "Deal of the Day",
+                    "fontName": "FONT_NAME_CONDENSED_BOLD"
+                  },
+                  "logoCtx": {},
+                  "movComputationType": "MOV_COMPUTATION_TYPE_DISCOUNTED_PRICE"
+                }
+              ],
+              "headerBanner": {
+                "url": "swiggy://webview?is_external=false&webview_url=https://www.swiggy.com/restaurant-info/1173681"
+              },
+              "ratingSlab": "RATING_SLAB_5",
+              "orderabilityCommunication": {
+                "title": {},
+                "subTitle": {},
+                "message": {},
+                "customIcon": {},
+                "commsStyling": {}
+              },
+              "cartOrderabilityNudgeBanner": {
+                "parameters": {},
+                "presentation": {}
+              },
+              "latLong": "32.19421320329024,76.34597701904909",
+              "backgroundImageOverlayInfo": {},
+              "featuredSectionInfo": {},
+              "requestContexts": ["enable_ecosaver", "99store"]
+            },
+            "analytics": {}
+          },
+          "relevance": {
+            "type": "RELEVANCE_TYPE_CHECK_ORDERABILITY_AND_SHOW_MENU_OFFER_NUDGE",
+            "sectionId": "MENU_ITEM_CART_UPDATE_POP_CROUTON"
           }
         }
       },
@@ -189,32 +204,122 @@
             "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget",
             "layout": {
               "rows": 1,
-              "widgetPadding": {
-                "left": 16,
-                "top": 12,
-                "right": 16
-              },
-              "widgetTheme": {
-                "defaultMode": {
-                  "backgroundColour": "#FFFFFF",
-                  "theme": "THEME_TYPE_LIGHT"
-                },
-                "darkMode": {
-                  "backgroundColour": "#1B3028",
-                  "theme": "THEME_TYPE_DARK"
+              "columns": 5,
+              "horizontalScrollEnabled": true,
+              "itemSpacing": 12,
+              "lineSpacing": 10,
+              "widgetPadding": {},
+              "containerStyle": {
+                "containerPadding": {
+                  "left": 10,
+                  "right": 10,
+                  "bottom": 16
                 }
               }
             },
-            "id": "restaurantCountWidget",
+            "id": "offerCollectionWidget_UX4",
             "gridElements": {
               "infoWithStyle": {
-                "@type": "type.googleapis.com/swiggy.gandalf.widgets.v2.TextBoxV2",
-                "text": "Restaurants to explore",
-                "headerStyling": {
-                  "textSize": 15,
-                  "textColor": "text_color_highest_emphasis",
-                  "textFontName": "FONT_NAME_HEADER_H5",
-                  "maxLines": 1
+                "@type": "type.googleapis.com/swiggy.presentation.food.v2.OfferInfoWithStyle",
+                "offers": [
+                  {
+                    "info": {
+                      "header": "ITEMS AT ₹69",
+                      "offerTag": "DEAL OF DAY",
+                      "offerTagColor": "#E46D47",
+                      "offerIds": ["63e47a4c-040b-4ccc-8510-49b3960c6104"],
+                      "expiryTime": "1970-01-01T00:00:00Z",
+                      "description": "ON SELECT ITEMS |",
+                      "offerType": "offers",
+                      "restId": "1173681",
+                      "offerLogo": "offers/deal-of-day",
+                      "descriptionTextColor": "#7302060C"
+                    },
+                    "cta": {
+                      "type": "OFFER_HALF_CARD"
+                    }
+                  },
+                  {
+                    "info": {
+                      "header": "20% OFF UPTO ₹50",
+                      "offerTagColor": "#E46D47",
+                      "offerIds": ["f49a4e14-ac9b-4be1-a226-ac6617e2bd0f"],
+                      "expiryTime": "1970-01-01T00:00:00Z",
+                      "couponCode": "USE TRYNEW",
+                      "description": "ABOVE ₹159",
+                      "offerType": "offers",
+                      "restId": "1173681",
+                      "offerLogo": "offers/generic",
+                      "descriptionTextColor": "#7302060C",
+                      "primaryDescription": "USE TRYNEW"
+                    },
+                    "cta": {
+                      "type": "OFFER_HALF_CARD"
+                    }
+                  },
+                  {
+                    "info": {
+                      "header": "7.5% OFF UPTO ₹100",
+                      "offerTagColor": "#E46D47",
+                      "logoBottom": "MARKETING_BANNERS/IMAGES/OFFERS/2026/1/31/a7854ae9-0ce6-4dee-b5e5-7dc038a1574f_YESBankMenuLogoNew1.png",
+                      "offerIds": ["2a1dfb49-3abf-4387-891e-23dc9cb7a1dd"],
+                      "expiryTime": "1970-01-01T00:00:00Z",
+                      "couponCode": "NO CODE REQUIRED",
+                      "description": "ABOVE ₹399",
+                      "offerType": "offers",
+                      "restId": "1173681",
+                      "offerLogo": "MARKETING_BANNERS/IMAGES/OFFERS/2026/1/31/a7854ae9-0ce6-4dee-b5e5-7dc038a1574f_YESBankMenuLogoNew1.png",
+                      "descriptionTextColor": "#7302060C",
+                      "primaryDescription": "NO CODE REQUIRED"
+                    },
+                    "cta": {
+                      "type": "OFFER_HALF_CARD"
+                    }
+                  },
+                  {
+                    "info": {
+                      "header": "FLAT ₹150 OFF",
+                      "offerTagColor": "#E46D47",
+                      "logoBottom": "MARKETING_BANNERS/IMAGES/OFFERS/2026/1/31/41ce0d47-9d53-4cd2-b558-57a3990a411d_Axis.png",
+                      "offerIds": ["9eefddcf-4d28-491a-b2fe-505d579fa846"],
+                      "expiryTime": "1970-01-01T00:00:00Z",
+                      "couponCode": "USE AXISREWARDS",
+                      "description": "ABOVE ₹500",
+                      "offerType": "offers",
+                      "restId": "1173681",
+                      "offerLogo": "MARKETING_BANNERS/IMAGES/OFFERS/2026/1/31/41ce0d47-9d53-4cd2-b558-57a3990a411d_Axis.png",
+                      "descriptionTextColor": "#7302060C",
+                      "primaryDescription": "USE AXISREWARDS"
+                    },
+                    "cta": {
+                      "type": "OFFER_HALF_CARD"
+                    }
+                  },
+                  {
+                    "info": {
+                      "header": "FLAT ₹50 OFF",
+                      "offerTagColor": "#E46D47",
+                      "logoBottom": "MARKETING_BANNERS/IMAGES/OFFERS/2026/2/15/2a436ba8-cef0-4643-9652-9fa816092606_ICICIMenuLogo.png",
+                      "offerIds": ["389eb384-b450-407a-8573-618da8f1e8d0"],
+                      "expiryTime": "1970-01-01T00:00:00Z",
+                      "couponCode": "NO CODE REQUIRED",
+                      "description": "ABOVE ₹599",
+                      "offerType": "offers",
+                      "restId": "1173681",
+                      "offerLogo": "MARKETING_BANNERS/IMAGES/OFFERS/2026/2/15/2a436ba8-cef0-4643-9652-9fa816092606_ICICIMenuLogo.png",
+                      "descriptionTextColor": "#7302060C",
+                      "primaryDescription": "NO CODE REQUIRED"
+                    },
+                    "cta": {
+                      "type": "OFFER_HALF_CARD"
+                    }
+                  }
+                ],
+                "habitMilestoneInfo": {
+                  "callout": {}
+                },
+                "loyaltyDiscoverPresentationInfo": {
+                  "logoCtx": {}
                 }
               }
             }
@@ -222,1056 +327,2244 @@
         }
       },
       {
-        "card": {
-          "card": {
-            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
-            "info": {
-              "id": "119501",
-              "name": "Sher-E-Punjab",
-              "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/7/13/980efe37-e44a-4af8-a46e-7fe1030134bd_9502667f-daf8-4610-b464-afd87d579e9c.jpg",
-              "locality": "Dharamshala City",
-              "areaName": "Kotwali Bazar",
-              "costForTwo": "₹400 for two",
-              "cuisines": ["Chinese", "Thalis", "Momos", "Biryani"],
-              "avgRating": 4.1,
-              "parentId": "840",
-              "avgRatingString": "4.1",
-              "totalRatingsString": "885",
-              "promoted": true,
-              "adTrackingId": "cid=456c1649-cb6f-49ac-a557-59f594f542fc~p=0~adgrpid=456c1649-cb6f-49ac-a557-59f594f542fc#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=119501~plpr=COLLECTION~eid=5b6b64cf-e985-4f0e-9e09-4df3f5599753~srvts=1769845922573~collid=80406",
-              "sla": {
-                "deliveryTime": 19,
-                "lastMileTravel": 0.6,
-                "serviceability": "SERVICEABLE",
-                "slaString": "15-20 mins",
-                "lastMileTravelString": "0.6 km",
-                "iconType": "ICON_TYPE_EMPTY"
-              },
-              "availability": {
-                "nextCloseTime": "2026-01-31 23:00:00",
-                "opened": true
-              },
-              "badges": {
-                "imageBadges": [
-                  {
-                    "imageId": "android/static-assets/icons/big_rx.png",
-                    "description": "bolt!"
-                  }
-                ]
-              },
-              "isOpen": true,
-              "type": "F",
-              "badgesV2": {
-                "entityBadges": {
-                  "imageBased": {
-                    "badgeObject": [
-                      {
+        "groupedCard": {
+          "cardGroupMap": {
+            "REGULAR": {
+              "cards": [
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.MenuVegFilterAndBadge",
+                      "badges": {},
+                      "vegOnlyDetails": {
+                        "imageId": "AutoVegOnly_qkjowj",
+                        "title": "Showing only vegetarian options.",
+                        "description": "Tap on the VEG ONLY button to turn off the setting"
+                      },
+                      "topRatedFilter": {
                         "attributes": {
-                          "imageId": "android/static-assets/icons/big_rx.png",
-                          "description": "bolt!"
-                        }
-                      }
-                    ]
-                  },
-                  "textExtendedBadges": {},
-                  "textBased": {}
-                }
-              },
-              "aggregatedDiscountInfoV3": {
-                "header": "10% OFF",
-                "subHeader": "UPTO ₹40",
-                "logoCtx": {
-                  "text": "BENEFITS"
-                }
-              },
-              "orderabilityCommunication": {
-                "title": {},
-                "subTitle": {},
-                "message": {},
-                "customIcon": {},
-                "commsStyling": {}
-              },
-              "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                  "lottie": {},
-                  "video": {}
-                }
-              },
-              "reviewsSummary": {},
-              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-              "restaurantOfferPresentationInfo": {},
-              "externalRatings": {
-                "aggregatedRating": {
-                  "rating": "--"
-                }
-              },
-              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
-              "campaignId": "456c1649-cb6f-49ac-a557-59f594f542fc"
-            },
-            "analytics": {},
-            "cta": {
-              "link": "swiggy://menu?restaurant_id=119501&source=collection&query=Tea",
-              "text": "RESTAURANT_MENU",
-              "type": "DEEPLINK"
-            },
-            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
-          },
-          "relevance": {
-            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
-            "sectionId": "MENU_RETURN_FOOD"
-          }
-        }
-      },
-      {
-        "card": {
-          "card": {
-            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
-            "info": {
-              "id": "126729",
-              "name": "Moti Mahal Delux",
-              "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/7/10/bf4f3422-3c15-466b-84b4-996bf1c289bc_eafe295d-06a5-4910-9254-c29e5342f5f2.jpg",
-              "locality": "Maximus Mall",
-              "areaName": "Chilgari",
-              "costForTwo": "₹600 for two",
-              "cuisines": [
-                "North Indian",
-                "Chinese",
-                "Biryani and Beverages",
-                "Tandoor",
-                "Desserts"
-              ],
-              "avgRating": 4.3,
-              "parentId": "739630",
-              "avgRatingString": "4.3",
-              "totalRatingsString": "199",
-              "sla": {
-                "deliveryTime": 24,
-                "lastMileTravel": 0.4,
-                "serviceability": "SERVICEABLE",
-                "slaString": "20-25 mins",
-                "lastMileTravelString": "0.4 km",
-                "iconType": "ICON_TYPE_EMPTY"
-              },
-              "availability": {
-                "nextCloseTime": "2026-01-31 22:15:00",
-                "opened": true
-              },
-              "badges": {
-                "imageBadges": [
-                  {
-                    "imageId": "android/static-assets/icons/big_rx.png",
-                    "description": "bolt!"
-                  }
-                ]
-              },
-              "isOpen": true,
-              "type": "F",
-              "badgesV2": {
-                "entityBadges": {
-                  "imageBased": {
-                    "badgeObject": [
-                      {
-                        "attributes": {
-                          "imageId": "android/static-assets/icons/big_rx.png",
-                          "description": "bolt!"
-                        }
-                      }
-                    ]
-                  },
-                  "textExtendedBadges": {},
-                  "textBased": {}
-                }
-              },
-              "aggregatedDiscountInfoV3": {
-                "header": "60% OFF",
-                "subHeader": "UPTO ₹120",
-                "logoCtx": {
-                  "text": "BENEFITS"
-                }
-              },
-              "orderabilityCommunication": {
-                "title": {},
-                "subTitle": {},
-                "message": {},
-                "customIcon": {},
-                "commsStyling": {}
-              },
-              "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                  "lottie": {},
-                  "video": {}
-                }
-              },
-              "reviewsSummary": {},
-              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-              "restaurantOfferPresentationInfo": {},
-              "externalRatings": {
-                "aggregatedRating": {
-                  "rating": "--"
-                }
-              },
-              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {},
-            "cta": {
-              "link": "swiggy://menu?restaurant_id=126729&source=collection&query=Tea",
-              "text": "RESTAURANT_MENU",
-              "type": "DEEPLINK"
-            },
-            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
-          },
-          "relevance": {
-            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
-            "sectionId": "MENU_RETURN_FOOD"
-          }
-        }
-      },
-      {
-        "card": {
-          "card": {
-            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
-            "info": {
-              "id": "417440",
-              "name": "Vinod Chat Bhandar",
-              "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2025/1/20/f1e04eb6-6609-4cbb-b0e4-9b3966e2e9ae_6387a53d-9f44-4d07-8e6c-a81dfe0d5db8.JPG",
-              "locality": "Cantt Road",
-              "areaName": "Dharamshala City",
-              "costForTwo": "₹300 for two",
-              "cuisines": ["South Indian", "Chinese", "Snacks", "Cafe"],
-              "avgRating": 4.6,
-              "veg": true,
-              "parentId": "223760",
-              "avgRatingString": "4.6",
-              "totalRatingsString": "3.2K+",
-              "promoted": true,
-              "adTrackingId": "cid=36c322a5-8d4d-4e54-94f3-ffa73e813fd7~p=1~adgrpid=36c322a5-8d4d-4e54-94f3-ffa73e813fd7#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=417440~plpr=COLLECTION~eid=9996a3f7-b685-4a54-b333-0dc301a9c174~srvts=1769845922573~collid=80406",
-              "sla": {
-                "deliveryTime": 17,
-                "lastMileTravel": 0.7,
-                "serviceability": "SERVICEABLE",
-                "slaString": "15-20 mins",
-                "lastMileTravelString": "0.7 km",
-                "iconType": "ICON_TYPE_EMPTY"
-              },
-              "availability": {
-                "nextCloseTime": "2026-01-31 22:00:00",
-                "opened": true
-              },
-              "badges": {
-                "imageBadges": [
-                  {
-                    "imageId": "android/static-assets/icons/big_rx.png",
-                    "description": "bolt!"
-                  },
-                  {
-                    "imageId": "Rxawards/_CATEGORY-North%20Indian.png",
-                    "description": "Delivery!"
-                  },
-                  {
-                    "imageId": "Ratnesh_Badges/Rx_Awards_2025/_Milestone%20Restaurants.png",
-                    "description": "Delivery!"
-                  }
-                ]
-              },
-              "isOpen": true,
-              "type": "F",
-              "badgesV2": {
-                "entityBadges": {
-                  "textExtendedBadges": {},
-                  "textBased": {},
-                  "imageBased": {
-                    "badgeObject": [
-                      {
-                        "attributes": {
-                          "imageId": "android/static-assets/icons/big_rx.png",
-                          "description": "bolt!"
+                          "displayText": "Ratings 4.0+"
                         }
                       },
-                      {
+                      "kidsCategoryFilter": {
                         "attributes": {
-                          "imageId": "Rxawards/_CATEGORY-North%20Indian.png",
-                          "description": "Delivery!"
+                          "displayText": "Kids Favourites",
+                          "tooltip": {
+                            "enabled": true,
+                            "displayText": "Kids Favourites Filter applied. Remove this filter to see the full Menu."
+                          }
                         }
                       },
-                      {
+                      "vegFilter": {
                         "attributes": {
-                          "imageId": "Ratnesh_Badges/Rx_Awards_2025/_Milestone%20Restaurants.png",
-                          "description": "Delivery!"
+                          "displayText": "VEG"
+                        }
+                      },
+                      "nonvegFilter": {
+                        "attributes": {
+                          "displayText": "NONVEG"
                         }
                       }
-                    ]
+                    },
+                    "relevance": {
+                      "type": "RELEVANCE_TYPE_ON_MENU_FILTER_TOGGLED",
+                      "sectionId": "MENU_FILTER_TOGGLE"
+                    }
                   }
-                }
-              },
-              "aggregatedDiscountInfoV3": {
-                "header": "ITEMS",
-                "subHeader": "AT ₹15",
-                "logoCtx": {
-                  "text": "BENEFITS"
-                }
-              },
-              "orderabilityCommunication": {
-                "title": {},
-                "subTitle": {},
-                "message": {},
-                "customIcon": {},
-                "commsStyling": {}
-              },
-              "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                  "lottie": {},
-                  "video": {}
-                }
-              },
-              "reviewsSummary": {},
-              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-              "restaurantOfferPresentationInfo": {},
-              "externalRatings": {
-                "aggregatedRating": {
-                  "rating": "--"
-                }
-              },
-              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
-              "campaignId": "36c322a5-8d4d-4e54-94f3-ffa73e813fd7"
-            },
-            "analytics": {},
-            "cta": {
-              "link": "swiggy://menu?restaurant_id=417440&source=collection&query=Tea",
-              "text": "RESTAURANT_MENU",
-              "type": "DEEPLINK"
-            },
-            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
-          },
-          "relevance": {
-            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
-            "sectionId": "MENU_RETURN_FOOD"
-          }
-        }
-      },
-      {
-        "card": {
-          "card": {
-            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
-            "info": {
-              "id": "989769",
-              "name": "Surya Sweets & Cafe",
-              "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/12/bbb9badf-fb09-4705-8932-c77c31a0c363_989769.jpg",
-              "locality": "Dharamshala City",
-              "areaName": "Dharamshala City",
-              "costForTwo": "₹250 for two",
-              "cuisines": [
-                "Chinese",
-                "Desserts",
-                "South Indian",
-                "Thalis",
-                "Indian",
-                "Beverages",
-                "Pastas"
-              ],
-              "avgRating": 4.1,
-              "parentId": "577591",
-              "avgRatingString": "4.1",
-              "totalRatingsString": "461",
-              "sla": {
-                "deliveryTime": 25,
-                "lastMileTravel": 1.3,
-                "serviceability": "SERVICEABLE",
-                "slaString": "25-30 mins",
-                "lastMileTravelString": "1.3 km",
-                "iconType": "ICON_TYPE_EMPTY"
-              },
-              "availability": {
-                "nextCloseTime": "2026-01-31 21:00:00",
-                "opened": true
-              },
-              "badges": {
-                "imageBadges": [
-                  {
-                    "imageId": "android/static-assets/icons/big_rx.png",
-                    "description": "bolt!"
-                  }
-                ]
-              },
-              "isOpen": true,
-              "type": "F",
-              "badgesV2": {
-                "entityBadges": {
-                  "textBased": {},
-                  "imageBased": {
-                    "badgeObject": [
-                      {
-                        "attributes": {
-                          "imageId": "android/static-assets/icons/big_rx.png",
-                          "description": "bolt!"
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Recommended",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712103",
+                              "name": "Chicken Tikki Burger",
+                              "category": "Burger",
+                              "description": "A juicy chicken tikki patty tucked in soft buns with fresh veggies and tangy sauces. A deliciously satisfying burger for chicken lovers.\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/10/3/e2683eab-c8fd-486a-9bb8-bb5e58d49ffe_9373f026-eb63-4ee4-857a-c6933ad75e81.jpg",
+                              "inStock": 1,
+                              "price": 9500,
+                              "variants": {},
+                              "variantsV2": {},
+                              "addons": [
+                                {
+                                  "groupId": "246129240",
+                                  "groupName": "Extra",
+                                  "choices": [
+                                    {
+                                      "id": "139068043",
+                                      "name": "Cheese",
+                                      "price": 2500,
+                                      "inStock": 1,
+                                      "isVeg": 1,
+                                      "isEnabled": 1
+                                    }
+                                  ],
+                                  "maxAddons": 1,
+                                  "maxFreeAddons": -1
+                                }
+                              ],
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "showImage": true,
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.4",
+                                  "ratingCount": "9 ratings",
+                                  "ratingCountV2": "9"
+                                },
+                                "ratingsPresentationConfig": {
+                                  "bgGradient": {
+                                    "colours": ["#C8F9E5", "#00FFFFFF"],
+                                    "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                  },
+                                  "ratingIconColor": "rating_very_good",
+                                  "ratingTextColor": "rating_very_good",
+                                  "ratingCountTextColor": "rating_very_good",
+                                  "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                  "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                }
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "88966371",
+                              "menuFilterIds": ["NONVEG", "offer", "toprated"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712100",
+                              "name": "Aloo Tikki Burger",
+                              "category": "Burger",
+                              "description": "A golden, crispy aloo tikki stacked with fresh veggies and tangy sauces in a soft bun. A delicious vegetarian treat that’s full of flavor!\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/9/15/69375d20-e93d-4aff-826a-8d9b4aaf819c_7126115c-1839-41c0-84ec-1655393b7105.jpg",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 9900,
+                              "finalPrice": 6900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "addons": [
+                                {
+                                  "groupId": "246129551",
+                                  "groupName": "Extra",
+                                  "choices": [
+                                    {
+                                      "id": "139068047",
+                                      "name": "Cheese",
+                                      "price": 2500,
+                                      "inStock": 1,
+                                      "isVeg": 1,
+                                      "isEnabled": 1
+                                    }
+                                  ],
+                                  "maxAddons": 1,
+                                  "maxFreeAddons": -1
+                                }
+                              ],
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "showImage": true,
+                              "offerTags": [
+                                {
+                                  "matchText": "SILD"
+                                }
+                              ],
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "itemNudgeType": "FinalPrice",
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.4",
+                                  "ratingCount": "21 ratings",
+                                  "ratingCountV2": "21"
+                                },
+                                "ratingsPresentationConfig": {
+                                  "bgGradient": {
+                                    "colours": ["#C8F9E5", "#00FFFFFF"],
+                                    "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                  },
+                                  "ratingIconColor": "rating_very_good",
+                                  "ratingTextColor": "rating_very_good",
+                                  "ratingCountTextColor": "rating_very_good",
+                                  "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                  "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                }
+                              },
+                              "itemPriceStrikeOff": true,
+                              "cartContext": "quick_prep",
+                              "offerIds": [
+                                "63e47a4c-040b-4ccc-8510-49b3960c6104"
+                              ],
+                              "isNinetyninestoreItem": true,
+                              "parentId": "88966355",
+                              "menuFilterIds": ["VEG", "offer", "toprated"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712113",
+                              "name": "Veggie Momos",
+                              "category": "Momos",
+                              "description": "Soft, steamed dumplings filled with a fresh, flavorful veggie mix. A light and tasty snack perfect for any craving!\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/9/15/493c1a55-7a34-4fad-8fd3-7470cbe2c743_1fa9e123-2916-431a-a77f-32238cbd5c7f.jpg",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 15900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "showImage": true,
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.9",
+                                  "ratingCount": "6 ratings",
+                                  "ratingCountV2": "6"
+                                },
+                                "ratingsPresentationConfig": {
+                                  "bgGradient": {
+                                    "colours": ["#C8F9E5", "#00FFFFFF"],
+                                    "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                  },
+                                  "ratingIconColor": "rating_very_good",
+                                  "ratingTextColor": "rating_very_good",
+                                  "ratingCountTextColor": "rating_very_good",
+                                  "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                  "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                }
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "88966418",
+                              "menuFilterIds": ["VEG", "offer", "toprated"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712114",
+                              "name": "Paneer Momos",
+                              "category": "Momos",
+                              "description": "Soft, steamed momos stuffed with spiced paneer filling. A deliciously creamy and satisfying snack for paneer lovers!\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/10/3/b8cbe10e-62b5-4010-bbe8-461be1cc898e_76a8816a-68dd-4153-a414-4e57dd185f2f.jpg",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 16900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "showImage": true,
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.6",
+                                  "ratingCount": "6 ratings",
+                                  "ratingCountV2": "6"
+                                },
+                                "ratingsPresentationConfig": {
+                                  "bgGradient": {
+                                    "colours": ["#C8F9E5", "#00FFFFFF"],
+                                    "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                  },
+                                  "ratingIconColor": "rating_very_good",
+                                  "ratingTextColor": "rating_very_good",
+                                  "ratingCountTextColor": "rating_very_good",
+                                  "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                  "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                }
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "88966395",
+                              "menuFilterIds": ["VEG", "offer", "toprated"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712130",
+                              "name": "Chicken Seekh Kebab",
+                              "category": "Snacks",
+                              "description": "Spiced, juicy chicken seekh kebabs grilled to perfection. A flavorful, smoky delight perfect as a snack or starter!\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/5/8/cc5b3701-5b59-41e1-b63b-eb12f53ea39d_f43b7797-f64b-4025-bd0e-2a462a618bbf.jpg",
+                              "inStock": 1,
+                              "price": 17900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "showImage": true,
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "5.0",
+                                  "ratingCount": "3 ratings",
+                                  "ratingCountV2": "3"
+                                },
+                                "ratingsPresentationConfig": {
+                                  "bgGradient": {
+                                    "colours": ["#C8F9E5", "#00FFFFFF"],
+                                    "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                  },
+                                  "ratingIconColor": "rating_very_good",
+                                  "ratingTextColor": "rating_very_good",
+                                  "ratingCountTextColor": "rating_very_good",
+                                  "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                  "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                }
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "95923568",
+                              "menuFilterIds": ["NONVEG", "offer", "toprated"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712128",
+                              "name": "Italian Cheese Maggi",
+                              "category": "Maggi",
+                              "description": "Cheesy Maggi with a rich Italian twist, loaded with gooey cheese and flavorful herbs. A creamy, indulgent snack in every bite!\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/9/15/875a2267-0e7c-4cf0-b07d-5c720c8fa1bf_130598ef-fd38-46dc-b055-a68c209a79f5.jpg",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 11900,
+                              "finalPrice": 8900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "showImage": true,
+                              "offerTags": [
+                                {
+                                  "matchText": "SILD"
+                                }
+                              ],
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "itemNudgeType": "FinalPrice",
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.2",
+                                  "ratingCount": "7 ratings",
+                                  "ratingCountV2": "7"
+                                },
+                                "ratingsPresentationConfig": {
+                                  "bgGradient": {
+                                    "colours": ["#C8F9E5", "#00FFFFFF"],
+                                    "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                  },
+                                  "ratingIconColor": "rating_very_good",
+                                  "ratingTextColor": "rating_very_good",
+                                  "ratingCountTextColor": "rating_very_good",
+                                  "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                  "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                }
+                              },
+                              "itemPriceStrikeOff": true,
+                              "cartContext": "quick_prep",
+                              "offerIds": [
+                                "2c115d61-b0bd-4ce8-98c1-dcf600357412"
+                              ],
+                              "isNinetyninestoreItem": true,
+                              "parentId": "88966385",
+                              "menuFilterIds": ["VEG", "offer", "toprated"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712127",
+                              "name": "Masaledar Maggi",
+                              "category": "Maggi",
+                              "description": "Hot and spicy Masaledar Maggi tossed with flavorful vegetables and aromatic spices. A quick, delicious, and comforting snack!\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/9/15/875a2267-0e7c-4cf0-b07d-5c720c8fa1bf_130598ef-fd38-46dc-b055-a68c209a79f5.jpg",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 8000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "showImage": true,
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.4",
+                                  "ratingCount": "9 ratings",
+                                  "ratingCountV2": "9"
+                                },
+                                "ratingsPresentationConfig": {
+                                  "bgGradient": {
+                                    "colours": ["#C8F9E5", "#00FFFFFF"],
+                                    "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                  },
+                                  "ratingIconColor": "rating_very_good",
+                                  "ratingTextColor": "rating_very_good",
+                                  "ratingCountTextColor": "rating_very_good",
+                                  "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                  "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                }
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "88966388",
+                              "menuFilterIds": ["VEG", "offer", "toprated"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
                         }
-                      }
-                    ]
-                  },
-                  "textExtendedBadges": {}
-                }
-              },
-              "aggregatedDiscountInfoV3": {
-                "header": "ITEMS",
-                "subHeader": "AT ₹49",
-                "logoCtx": {
-                  "text": "BENEFITS"
-                }
-              },
-              "orderabilityCommunication": {
-                "title": {},
-                "subTitle": {},
-                "message": {},
-                "customIcon": {},
-                "commsStyling": {}
-              },
-              "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                  "lottie": {},
-                  "video": {}
-                }
-              },
-              "reviewsSummary": {},
-              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-              "restaurantOfferPresentationInfo": {},
-              "externalRatings": {
-                "aggregatedRating": {
-                  "rating": "--"
-                }
-              },
-              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {},
-            "cta": {
-              "link": "swiggy://menu?restaurant_id=989769&source=collection&query=Tea",
-              "text": "RESTAURANT_MENU",
-              "type": "DEEPLINK"
-            },
-            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
-          },
-          "relevance": {
-            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
-            "sectionId": "MENU_RETURN_FOOD"
-          }
-        }
-      },
-      {
-        "card": {
-          "card": {
-            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
-            "info": {
-              "id": "753833",
-              "name": "Kala Momo",
-              "cloudinaryImageId": "37046e7dd84eb1b692b4b1a3c251faf0",
-              "locality": "Kangra",
-              "areaName": "Dharamshala City",
-              "costForTwo": "₹200 for two",
-              "cuisines": ["Indian"],
-              "avgRating": 4.4,
-              "parentId": "113850",
-              "avgRatingString": "4.4",
-              "totalRatingsString": "99",
-              "promoted": true,
-              "adTrackingId": "cid=c048b74f-4577-461e-8e37-3295d7854658~p=4~adgrpid=c048b74f-4577-461e-8e37-3295d7854658#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=753833~plpr=COLLECTION~eid=5e86ee19-506d-434b-927a-209cec08eb7c~srvts=1769845922573~collid=80406",
-              "sla": {
-                "deliveryTime": 23,
-                "lastMileTravel": 0.6,
-                "serviceability": "SERVICEABLE",
-                "slaString": "20-25 mins",
-                "lastMileTravelString": "0.6 km",
-                "iconType": "ICON_TYPE_EMPTY"
-              },
-              "availability": {
-                "nextCloseTime": "2026-01-31 22:45:00",
-                "opened": true
-              },
-              "badges": {
-                "imageBadges": [
-                  {
-                    "imageId": "android/static-assets/icons/big_rx.png",
-                    "description": "bolt!"
+                      ],
+                      "type": "CATEGORY_TYPE_RECOMMENDED",
+                      "subtitleSuffix": {},
+                      "categoryId": "-1"
+                    }
                   }
-                ]
-              },
-              "isOpen": true,
-              "type": "F",
-              "badgesV2": {
-                "entityBadges": {
-                  "textExtendedBadges": {},
-                  "textBased": {},
-                  "imageBased": {
-                    "badgeObject": [
-                      {
-                        "attributes": {
-                          "imageId": "android/static-assets/icons/big_rx.png",
-                          "description": "bolt!"
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Momos",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712115",
+                              "name": "Chicken momos",
+                              "category": "Momos",
+                              "inStock": 1,
+                              "price": 17900,
+                              "finalPrice": 12900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "offerTags": [
+                                {
+                                  "matchText": "SILD"
+                                }
+                              ],
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "itemNudgeType": "FinalPrice",
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "5.0",
+                                  "ratingCount": "4 ratings",
+                                  "ratingCountV2": "4"
+                                },
+                                "ratingsPresentationConfig": {
+                                  "bgGradient": {
+                                    "colours": ["#C8F9E5", "#00FFFFFF"],
+                                    "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                  },
+                                  "ratingIconColor": "rating_very_good",
+                                  "ratingTextColor": "rating_very_good",
+                                  "ratingCountTextColor": "rating_very_good",
+                                  "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                  "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                }
+                              },
+                              "itemPriceStrikeOff": true,
+                              "cartContext": "quick_prep",
+                              "offerIds": [
+                                "089edb76-e1e8-406c-9587-dcc34bf44e2e"
+                              ],
+                              "isNinetyninestoreItem": true,
+                              "parentId": "88966363",
+                              "menuFilterIds": ["NONVEG", "offer", "toprated"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712113",
+                              "name": "Veggie Momos",
+                              "category": "Momos",
+                              "description": "Soft, steamed dumplings filled with a fresh, flavorful veggie mix. A light and tasty snack perfect for any craving!\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/9/15/493c1a55-7a34-4fad-8fd3-7470cbe2c743_1fa9e123-2916-431a-a77f-32238cbd5c7f.jpg",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 15900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.9",
+                                  "ratingCount": "6 ratings",
+                                  "ratingCountV2": "6"
+                                },
+                                "ratingsPresentationConfig": {
+                                  "bgGradient": {
+                                    "colours": ["#C8F9E5", "#00FFFFFF"],
+                                    "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                  },
+                                  "ratingIconColor": "rating_very_good",
+                                  "ratingTextColor": "rating_very_good",
+                                  "ratingCountTextColor": "rating_very_good",
+                                  "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                  "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                }
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "88966418",
+                              "menuFilterIds": ["VEG", "offer", "toprated"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712114",
+                              "name": "Paneer Momos",
+                              "category": "Momos",
+                              "description": "Soft, steamed momos stuffed with spiced paneer filling. A deliciously creamy and satisfying snack for paneer lovers!\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/10/3/b8cbe10e-62b5-4010-bbe8-461be1cc898e_76a8816a-68dd-4153-a414-4e57dd185f2f.jpg",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 16900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.6",
+                                  "ratingCount": "6 ratings",
+                                  "ratingCountV2": "6"
+                                },
+                                "ratingsPresentationConfig": {
+                                  "bgGradient": {
+                                    "colours": ["#C8F9E5", "#00FFFFFF"],
+                                    "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                  },
+                                  "ratingIconColor": "rating_very_good",
+                                  "ratingTextColor": "rating_very_good",
+                                  "ratingCountTextColor": "rating_very_good",
+                                  "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                  "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                }
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "88966395",
+                              "menuFilterIds": ["VEG", "offer", "toprated"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "189673505",
+                              "name": "Mutton Momos",
+                              "category": "Momos",
+                              "inStock": 1,
+                              "price": 18000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "115424471",
+                              "menuFilterIds": ["NONVEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "189674195",
+                              "name": "Veg Fried Momos",
+                              "category": "Momos",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 16000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "106678402",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
                         }
-                      }
-                    ]
+                      ],
+                      "subtitleSuffix": {},
+                      "image": "FOOD_CATALOG/IMAGES/CMS/2025/9/15/493c1a55-7a34-4fad-8fd3-7470cbe2c743_1fa9e123-2916-431a-a77f-32238cbd5c7f.jpg",
+                      "categoryId": "65548465"
+                    }
                   }
-                }
-              },
-              "aggregatedDiscountInfoV3": {
-                "header": "ITEMS",
-                "subHeader": "AT ₹139",
-                "logoCtx": {
-                  "text": "BENEFITS"
-                }
-              },
-              "orderabilityCommunication": {
-                "title": {},
-                "subTitle": {},
-                "message": {},
-                "customIcon": {},
-                "commsStyling": {}
-              },
-              "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                  "lottie": {},
-                  "video": {}
-                }
-              },
-              "reviewsSummary": {},
-              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-              "restaurantOfferPresentationInfo": {},
-              "externalRatings": {
-                "aggregatedRating": {
-                  "rating": "--"
-                }
-              },
-              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
-              "campaignId": "c048b74f-4577-461e-8e37-3295d7854658"
-            },
-            "analytics": {},
-            "cta": {
-              "link": "swiggy://menu?restaurant_id=753833&source=collection&query=Tea",
-              "text": "RESTAURANT_MENU",
-              "type": "DEEPLINK"
-            },
-            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
-          },
-          "relevance": {
-            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
-            "sectionId": "MENU_RETURN_FOOD"
-          }
-        }
-      },
-      {
-        "card": {
-          "card": {
-            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
-            "info": {
-              "id": "788551",
-              "name": "Shiva Drink & Dine",
-              "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2025/2/10/0ef5a304-069c-4304-bbea-1c9e718fe94a_62e2051c-e56e-4629-ae26-acc9a7eb3fb7.jpg",
-              "locality": "Prayas Bhavan Dharamshala",
-              "areaName": "Dharamshala City",
-              "costForTwo": "₹250 for two",
-              "cuisines": [
-                "North Indian",
-                "Chinese",
-                "South Indian",
-                "Tandoor",
-                "Pizzas",
-                "Thali",
-                "Snacks",
-                "indian snacks",
-                "Burgers"
-              ],
-              "avgRating": 4.3,
-              "parentId": "470194",
-              "avgRatingString": "4.3",
-              "totalRatingsString": "660",
-              "sla": {
-                "deliveryTime": 32,
-                "lastMileTravel": 1.8,
-                "serviceability": "SERVICEABLE",
-                "slaString": "30-35 mins",
-                "lastMileTravelString": "1.8 km",
-                "iconType": "ICON_TYPE_EMPTY"
-              },
-              "availability": {
-                "nextCloseTime": "2026-01-31 22:45:00",
-                "opened": true
-              },
-              "badges": {},
-              "isOpen": true,
-              "type": "F",
-              "badgesV2": {
-                "entityBadges": {
-                  "imageBased": {},
-                  "textExtendedBadges": {},
-                  "textBased": {}
-                }
-              },
-              "aggregatedDiscountInfoV3": {
-                "header": "₹200 OFF",
-                "subHeader": "ABOVE ₹1299",
-                "discountTag": "FLAT DEAL",
-                "logoCtx": {
-                  "text": "BENEFITS"
-                }
-              },
-              "orderabilityCommunication": {
-                "title": {},
-                "subTitle": {},
-                "message": {},
-                "customIcon": {},
-                "commsStyling": {}
-              },
-              "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                  "lottie": {},
-                  "video": {}
-                }
-              },
-              "reviewsSummary": {},
-              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-              "restaurantOfferPresentationInfo": {},
-              "externalRatings": {
-                "aggregatedRating": {
-                  "rating": "--"
-                }
-              },
-              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {},
-            "cta": {
-              "link": "swiggy://menu?restaurant_id=788551&source=collection&query=Tea",
-              "text": "RESTAURANT_MENU",
-              "type": "DEEPLINK"
-            },
-            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
-          },
-          "relevance": {
-            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
-            "sectionId": "MENU_RETURN_FOOD"
-          }
-        }
-      },
-      {
-        "card": {
-          "card": {
-            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
-            "info": {
-              "id": "1087080",
-              "name": "Hops N Chops",
-              "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2025/4/30/cd0e5af9-1a57-4959-a93f-579afc6e95d7_75145e15-809e-4811-bbb9-8a35d7f0df3e.jpg",
-              "locality": "Dharamshala City",
-              "areaName": "Dharamshala City",
-              "costForTwo": "₹350 for two",
-              "cuisines": [
-                "Indian",
-                "Chinese",
-                "Tandoori",
-                "South Indian",
-                "Continental",
-                "Sweets"
-              ],
-              "avgRating": 4.4,
-              "parentId": "631805",
-              "avgRatingString": "4.4",
-              "totalRatingsString": "154",
-              "promoted": true,
-              "adTrackingId": "cid=cbf2d091-b407-4afc-aceb-8df7292fafc7~p=7~adgrpid=cbf2d091-b407-4afc-aceb-8df7292fafc7#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=1087080~plpr=COLLECTION~eid=19bddf6e-7d7a-4e44-bd7c-9b7ff376713b~srvts=1769845922573~collid=80406",
-              "sla": {
-                "deliveryTime": 35,
-                "lastMileTravel": 5.8,
-                "serviceability": "SERVICEABLE",
-                "slaString": "30-35 mins",
-                "lastMileTravelString": "5.8 km",
-                "iconType": "ICON_TYPE_EMPTY"
-              },
-              "availability": {
-                "nextCloseTime": "2026-01-31 22:30:00",
-                "opened": true
-              },
-              "badges": {},
-              "isOpen": true,
-              "type": "F",
-              "badgesV2": {
-                "entityBadges": {
-                  "textExtendedBadges": {},
-                  "textBased": {},
-                  "imageBased": {}
-                }
-              },
-              "aggregatedDiscountInfoV3": {
-                "header": "10% OFF",
-                "subHeader": "UPTO ₹40",
-                "logoCtx": {
-                  "text": "BENEFITS"
-                }
-              },
-              "orderabilityCommunication": {
-                "title": {},
-                "subTitle": {},
-                "message": {},
-                "customIcon": {},
-                "commsStyling": {}
-              },
-              "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                  "lottie": {},
-                  "video": {}
-                }
-              },
-              "reviewsSummary": {},
-              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-              "restaurantOfferPresentationInfo": {},
-              "externalRatings": {
-                "aggregatedRating": {
-                  "rating": "--"
-                }
-              },
-              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
-              "campaignId": "cbf2d091-b407-4afc-aceb-8df7292fafc7"
-            },
-            "analytics": {},
-            "cta": {
-              "link": "swiggy://menu?restaurant_id=1087080&source=collection&query=Tea",
-              "text": "RESTAURANT_MENU",
-              "type": "DEEPLINK"
-            },
-            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
-          },
-          "relevance": {
-            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
-            "sectionId": "MENU_RETURN_FOOD"
-          }
-        }
-      },
-      {
-        "card": {
-          "card": {
-            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
-            "info": {
-              "id": "542832",
-              "name": "RASEELA by Kaash I Wish",
-              "cloudinaryImageId": "jzdho8sgu14ktbc2koxo",
-              "locality": "Barol",
-              "areaName": "Shyam Nagar",
-              "costForTwo": "₹150 for two",
-              "cuisines": ["Fast Food", "North Indian", "Beverages"],
-              "avgRating": 4.3,
-              "veg": true,
-              "parentId": "326224",
-              "avgRatingString": "4.3",
-              "totalRatingsString": "638",
-              "sla": {
-                "deliveryTime": 24,
-                "lastMileTravel": 3,
-                "serviceability": "SERVICEABLE",
-                "slaString": "20-25 mins",
-                "lastMileTravelString": "3.0 km",
-                "iconType": "ICON_TYPE_EMPTY"
-              },
-              "availability": {
-                "nextCloseTime": "2026-01-31 22:00:00",
-                "opened": true
-              },
-              "badges": {
-                "imageBadges": [
-                  {
-                    "imageId": "v1695133679/badges/Pure_Veg111.png",
-                    "description": "pureveg"
-                  }
-                ]
-              },
-              "isOpen": true,
-              "type": "F",
-              "badgesV2": {
-                "entityBadges": {
-                  "imageBased": {
-                    "badgeObject": [
-                      {
-                        "attributes": {
-                          "imageId": "v1695133679/badges/Pure_Veg111.png",
-                          "description": "pureveg"
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Burger",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712103",
+                              "name": "Chicken Tikki Burger",
+                              "category": "Burger",
+                              "description": "A juicy chicken tikki patty tucked in soft buns with fresh veggies and tangy sauces. A deliciously satisfying burger for chicken lovers.\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/10/3/e2683eab-c8fd-486a-9bb8-bb5e58d49ffe_9373f026-eb63-4ee4-857a-c6933ad75e81.jpg",
+                              "inStock": 1,
+                              "price": 9500,
+                              "variants": {},
+                              "variantsV2": {},
+                              "addons": [
+                                {
+                                  "groupId": "246129240",
+                                  "groupName": "Extra",
+                                  "choices": [
+                                    {
+                                      "id": "139068043",
+                                      "name": "Cheese",
+                                      "price": 2500,
+                                      "inStock": 1,
+                                      "isVeg": 1,
+                                      "isEnabled": 1
+                                    }
+                                  ],
+                                  "maxAddons": 1,
+                                  "maxFreeAddons": -1
+                                }
+                              ],
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.4",
+                                  "ratingCount": "9 ratings",
+                                  "ratingCountV2": "9"
+                                },
+                                "ratingsPresentationConfig": {
+                                  "bgGradient": {
+                                    "colours": ["#C8F9E5", "#00FFFFFF"],
+                                    "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                  },
+                                  "ratingIconColor": "rating_very_good",
+                                  "ratingTextColor": "rating_very_good",
+                                  "ratingCountTextColor": "rating_very_good",
+                                  "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                  "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                }
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "88966371",
+                              "menuFilterIds": ["NONVEG", "offer", "toprated"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712104",
+                              "name": "Classic Chicken Mayo Burger",
+                              "category": "Burger",
+                              "description": "A tender chicken patty layered with creamy mayo and fresh veggies in a soft bun. A simple yet flavorful classic that never goes out of style.\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/5/9/b6260a54-6bf6-4a25-b62e-a5e10cd16608_373eb87b-2b38-46e5-89f5-48bc511b4a93.jpg",
+                              "inStock": 1,
+                              "price": 11900,
+                              "finalPrice": 8900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "addons": [
+                                {
+                                  "groupId": "246129543",
+                                  "groupName": "Extra",
+                                  "choices": [
+                                    {
+                                      "id": "139068045",
+                                      "name": "Cheese",
+                                      "price": 2500,
+                                      "inStock": 1,
+                                      "isVeg": 1,
+                                      "isEnabled": 1
+                                    }
+                                  ],
+                                  "maxAddons": 1,
+                                  "maxFreeAddons": -1
+                                }
+                              ],
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "offerTags": [
+                                {
+                                  "matchText": "SILD"
+                                }
+                              ],
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "itemNudgeType": "FinalPrice",
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.1",
+                                  "ratingCount": "5 ratings",
+                                  "ratingCountV2": "5"
+                                },
+                                "ratingsPresentationConfig": {
+                                  "bgGradient": {
+                                    "colours": ["#C8F9E5", "#00FFFFFF"],
+                                    "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                  },
+                                  "ratingIconColor": "rating_very_good",
+                                  "ratingTextColor": "rating_very_good",
+                                  "ratingCountTextColor": "rating_very_good",
+                                  "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                  "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                }
+                              },
+                              "itemPriceStrikeOff": true,
+                              "cartContext": "quick_prep",
+                              "offerIds": [
+                                "2c115d61-b0bd-4ce8-98c1-dcf600357412"
+                              ],
+                              "isNinetyninestoreItem": true,
+                              "parentId": "88966374",
+                              "menuFilterIds": ["NONVEG", "offer", "toprated"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712100",
+                              "name": "Aloo Tikki Burger",
+                              "category": "Burger",
+                              "description": "A golden, crispy aloo tikki stacked with fresh veggies and tangy sauces in a soft bun. A delicious vegetarian treat that’s full of flavor!\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/9/15/69375d20-e93d-4aff-826a-8d9b4aaf819c_7126115c-1839-41c0-84ec-1655393b7105.jpg",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 9900,
+                              "finalPrice": 6900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "addons": [
+                                {
+                                  "groupId": "246129551",
+                                  "groupName": "Extra",
+                                  "choices": [
+                                    {
+                                      "id": "139068047",
+                                      "name": "Cheese",
+                                      "price": 2500,
+                                      "inStock": 1,
+                                      "isVeg": 1,
+                                      "isEnabled": 1
+                                    }
+                                  ],
+                                  "maxAddons": 1,
+                                  "maxFreeAddons": -1
+                                }
+                              ],
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "offerTags": [
+                                {
+                                  "matchText": "SILD"
+                                }
+                              ],
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "itemNudgeType": "FinalPrice",
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.4",
+                                  "ratingCount": "21 ratings",
+                                  "ratingCountV2": "21"
+                                },
+                                "ratingsPresentationConfig": {
+                                  "bgGradient": {
+                                    "colours": ["#C8F9E5", "#00FFFFFF"],
+                                    "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                  },
+                                  "ratingIconColor": "rating_very_good",
+                                  "ratingTextColor": "rating_very_good",
+                                  "ratingCountTextColor": "rating_very_good",
+                                  "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                  "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                }
+                              },
+                              "itemPriceStrikeOff": true,
+                              "cartContext": "quick_prep",
+                              "offerIds": [
+                                "63e47a4c-040b-4ccc-8510-49b3960c6104"
+                              ],
+                              "isNinetyninestoreItem": true,
+                              "parentId": "88966355",
+                              "menuFilterIds": ["VEG", "offer", "toprated"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712102",
+                              "name": "Spicy Paneer Burger",
+                              "category": "Burger",
+                              "description": "A fiery twist with a crispy paneer patty, layered with fresh veggies and zesty sauces. This burger brings the perfect balance of spice and flavor in every bite.\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/5/9/d2b4564f-4bd3-4857-9c68-5facf60ce809_856a6e51-c432-4eda-9fca-adebac1992bc.jpg",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 20900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "addons": [
+                                {
+                                  "groupId": "246129237",
+                                  "groupName": "Extra",
+                                  "choices": [
+                                    {
+                                      "id": "139068050",
+                                      "name": "Cheese",
+                                      "price": 2500,
+                                      "inStock": 1,
+                                      "isVeg": 1,
+                                      "isEnabled": 1
+                                    }
+                                  ],
+                                  "maxAddons": 1,
+                                  "maxFreeAddons": -1
+                                }
+                              ],
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "88966413",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712105",
+                              "name": "Seasoned Chicken Burger",
+                              "category": "Burger",
+                              "description": "A perfectly seasoned chicken patty with crisp veggies and savory sauces, all packed in a soft bun. Bursting with flavor in every bite!\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/4/3/8951f3a6-5233-45e5-9177-f6202008f5c1_65320e44-9547-45bd-aa8f-785a32bced79.jpg",
+                              "inStock": 1,
+                              "price": 19900,
+                              "finalPrice": 13900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "addons": [
+                                {
+                                  "groupId": "246129544",
+                                  "groupName": "Extra",
+                                  "choices": [
+                                    {
+                                      "id": "139068040",
+                                      "name": "Cheese",
+                                      "price": 2500,
+                                      "inStock": 1,
+                                      "isVeg": 1,
+                                      "isEnabled": 1
+                                    }
+                                  ],
+                                  "maxAddons": 1,
+                                  "maxFreeAddons": -1
+                                }
+                              ],
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "offerTags": [
+                                {
+                                  "matchText": "SILD"
+                                }
+                              ],
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "itemNudgeType": "FinalPrice",
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "cartContext": "quick_prep",
+                              "offerIds": [
+                                "c6aa3ca5-67ba-469a-840c-076b694a78b0"
+                              ],
+                              "isNinetyninestoreItem": true,
+                              "parentId": "88966412",
+                              "menuFilterIds": ["NONVEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712101",
+                              "name": "Classic Veggie Burger",
+                              "category": "Burger",
+                              "description": "A wholesome burger loaded with a crispy veg patty, fresh veggies, and creamy sauces. A perfect classic delight for a satisfying bite.\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/9/15/60862cd7-cdda-4b86-84ed-c67b887df46b_8226ec49-b863-437a-8d2c-01ac6b06e9c6.jpg",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 17900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "addons": [
+                                {
+                                  "groupId": "246129214",
+                                  "groupName": "Extra",
+                                  "choices": [
+                                    {
+                                      "id": "139068056",
+                                      "name": "Cheese",
+                                      "price": 2500,
+                                      "inStock": 1,
+                                      "isVeg": 1,
+                                      "isEnabled": 1
+                                    }
+                                  ],
+                                  "maxAddons": 1,
+                                  "maxFreeAddons": -1
+                                }
+                              ],
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "88966376",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
                         }
-                      }
-                    ]
-                  },
-                  "textExtendedBadges": {},
-                  "textBased": {}
-                }
-              },
-              "aggregatedDiscountInfoV3": {
-                "header": "ITEMS",
-                "subHeader": "AT ₹55",
-                "logoCtx": {
-                  "text": "BENEFITS"
-                }
-              },
-              "orderabilityCommunication": {
-                "title": {},
-                "subTitle": {},
-                "message": {},
-                "customIcon": {},
-                "commsStyling": {}
-              },
-              "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                  "lottie": {},
-                  "video": {}
-                }
-              },
-              "reviewsSummary": {},
-              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-              "restaurantOfferPresentationInfo": {},
-              "externalRatings": {
-                "aggregatedRating": {
-                  "rating": "--"
-                }
-              },
-              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {},
-            "cta": {
-              "link": "swiggy://menu?restaurant_id=542832&source=collection&query=Tea",
-              "text": "RESTAURANT_MENU",
-              "type": "DEEPLINK"
-            },
-            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
-          },
-          "relevance": {
-            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
-            "sectionId": "MENU_RETURN_FOOD"
-          }
-        }
-      },
-      {
-        "card": {
-          "card": {
-            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
-            "info": {
-              "id": "1059752",
-              "name": "Cafe Coco London",
-              "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2025/3/15/064d66e7-2bf5-4e56-ac99-f37319b68ec8_ba3a3425-6234-4d75-9d1f-52f86211213a.jpg",
-              "locality": "Dharamshala City",
-              "areaName": "Dharamshala City",
-              "costForTwo": "₹250 for two",
-              "cuisines": [
-                "Desserts",
-                "Beverages",
-                "Pizzas",
-                "Pastas",
-                "Burgers",
-                "Cafe"
-              ],
-              "avgRating": 4.1,
-              "parentId": "615359",
-              "avgRatingString": "4.1",
-              "totalRatingsString": "37",
-              "promoted": true,
-              "adTrackingId": "cid=a4b07a66-d18f-4ab8-b49c-2b4be9c3bb89~p=8~adgrpid=a4b07a66-d18f-4ab8-b49c-2b4be9c3bb89#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=1059752~plpr=COLLECTION~eid=3f8706cb-fd2a-4e67-a110-ff63042c4da3~srvts=1769845922573~collid=80406",
-              "sla": {
-                "deliveryTime": 30,
-                "lastMileTravel": 2.1,
-                "serviceability": "SERVICEABLE",
-                "slaString": "25-30 mins",
-                "lastMileTravelString": "2.1 km",
-                "iconType": "ICON_TYPE_EMPTY"
-              },
-              "availability": {
-                "nextCloseTime": "2026-01-31 21:00:00",
-                "opened": true
-              },
-              "badges": {
-                "imageBadges": [
-                  {
-                    "imageId": "android/static-assets/icons/big_rx.png",
-                    "description": "bolt!"
+                      ],
+                      "subtitleSuffix": {},
+                      "image": "FOOD_CATALOG/IMAGES/CMS/2025/10/3/e2683eab-c8fd-486a-9bb8-bb5e58d49ffe_9373f026-eb63-4ee4-857a-c6933ad75e81.jpg",
+                      "categoryId": "65548463"
+                    }
                   }
-                ]
-              },
-              "isOpen": true,
-              "type": "F",
-              "badgesV2": {
-                "entityBadges": {
-                  "textBased": {},
-                  "imageBased": {
-                    "badgeObject": [
-                      {
-                        "attributes": {
-                          "description": "bolt!",
-                          "imageId": "android/static-assets/icons/big_rx.png"
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Sandwich",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712110",
+                              "name": "Chicken Shawarma Sandwich",
+                              "category": "Sandwich",
+                              "description": "Tender, spiced chicken wrapped with fresh veggies and creamy sauces in soft bread. A flavorful, handheld delight inspired by Middle Eastern cuisine.\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/26/5fd2584a-4f36-41ce-83c3-816c96b6a6ca_84fb30bf-28da-4aad-9ebd-28d4373858e5.jpg",
+                              "inStock": 1,
+                              "price": 19900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "addons": [
+                                {
+                                  "groupId": "246129615",
+                                  "groupName": "Extra",
+                                  "choices": [
+                                    {
+                                      "id": "139068044",
+                                      "name": "Dips",
+                                      "price": 2500,
+                                      "inStock": 1,
+                                      "isVeg": 1,
+                                      "isEnabled": 1
+                                    }
+                                  ],
+                                  "maxAddons": 1,
+                                  "maxFreeAddons": -1
+                                }
+                              ],
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "88966369",
+                              "menuFilterIds": ["NONVEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712108",
+                              "name": "Paneer Schezwan Sandwich",
+                              "category": "Sandwich",
+                              "description": "Fiery Schezwan-spiced paneer with fresh veggies, sandwiched between soft bread slices. A spicy, tangy delight for every snack lover!\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/26/b9c672d9-8c12-4b87-955f-a4fd9721e8bb_8e2fe5c5-429f-4ae9-812d-f7c47393abc4.jpg",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 18900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "addons": [
+                                {
+                                  "groupId": "246130154",
+                                  "groupName": "Extra",
+                                  "choices": [
+                                    {
+                                      "id": "139068049",
+                                      "name": "Dips",
+                                      "price": 2500,
+                                      "inStock": 1,
+                                      "isVeg": 1,
+                                      "isEnabled": 1
+                                    }
+                                  ],
+                                  "maxAddons": 1,
+                                  "maxFreeAddons": -1
+                                }
+                              ],
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "88966396",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712111",
+                              "name": "Chicken Tikka Sandwich",
+                              "category": "Sandwich",
+                              "description": "Tender chicken tikka with fresh veggies and creamy sauces, sandwiched in soft bread. A smoky, flavorful treat in every bite!\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/5/12/7c3d4b76-4a3f-48de-8f87-82a62133b8e0_bef1dada-bd37-47bc-b7bf-23194f201b8a.jpg",
+                              "inStock": 1,
+                              "price": 20900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "addons": [
+                                {
+                                  "groupId": "246130263",
+                                  "groupName": "Extra",
+                                  "choices": [
+                                    {
+                                      "id": "139068037",
+                                      "name": "Dips",
+                                      "price": 2500,
+                                      "inStock": 1,
+                                      "isVeg": 1,
+                                      "isEnabled": 1
+                                    }
+                                  ],
+                                  "maxAddons": 1,
+                                  "maxFreeAddons": -1
+                                }
+                              ],
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "88966370",
+                              "menuFilterIds": ["NONVEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712109",
+                              "name": "Kadhai Chicken Sandwich",
+                              "category": "Sandwich",
+                              "description": "Juicy kadhai chicken tossed in flavorful spices with fresh veggies, layered in soft bread. A spicy and savory sandwich perfect for a hearty snack!\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/2/14/ff77d33f-ed02-4eb6-8c9f-5c18623f2925_41430e1d-6fc4-4b79-96c0-b555ec5c41d5.jpg",
+                              "inStock": 1,
+                              "price": 19900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "addons": [
+                                {
+                                  "groupId": "246130210",
+                                  "groupName": "Extra",
+                                  "choices": [
+                                    {
+                                      "id": "139068041",
+                                      "name": "Dips",
+                                      "price": 2500,
+                                      "inStock": 1,
+                                      "isVeg": 1,
+                                      "isEnabled": 1
+                                    }
+                                  ],
+                                  "maxAddons": 1,
+                                  "maxFreeAddons": -1
+                                }
+                              ],
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "88966386",
+                              "menuFilterIds": ["NONVEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712106",
+                              "name": "Kadhai Paneer Sandwich",
+                              "category": "Sandwich",
+                              "description": "Spicy and flavorful kadhai paneer with fresh veggies, layered between soft bread slices. A perfect fusion of Indian taste in a handy sandwich!\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2024/4/26/113b3fb9-a38c-46de-980c-0584d3950a63_e7f780be-5f8c-467c-b980-4acc7f3e30f7.jpg",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 17900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "addons": [
+                                {
+                                  "groupId": "246129668",
+                                  "groupName": "Extra",
+                                  "choices": [
+                                    {
+                                      "id": "139068053",
+                                      "name": "Dips",
+                                      "price": 2500,
+                                      "inStock": 1,
+                                      "isVeg": 1,
+                                      "isEnabled": 1
+                                    }
+                                  ],
+                                  "maxAddons": 1,
+                                  "maxFreeAddons": -1
+                                }
+                              ],
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "88966387",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712107",
+                              "name": "Paneer tikka sandwich",
+                              "category": "Sandwich",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 18900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "addons": [
+                                {
+                                  "groupId": "237241033",
+                                  "groupName": "Extra",
+                                  "choices": [
+                                    {
+                                      "id": "139068052",
+                                      "name": "Dips",
+                                      "price": 2500,
+                                      "inStock": 1,
+                                      "isVeg": 1,
+                                      "isEnabled": 1
+                                    }
+                                  ],
+                                  "maxAddons": 1,
+                                  "maxFreeAddons": -1
+                                }
+                              ],
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "88966397",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712112",
+                              "name": "Chicken Schezwan Sandwich",
+                              "category": "Sandwich",
+                              "description": "Spicy Schezwan chicken with crisp veggies, layered between soft bread slices. A fiery and flavorful sandwich for spice lovers!\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/5/12/7c3d4b76-4a3f-48de-8f87-82a62133b8e0_bef1dada-bd37-47bc-b7bf-23194f201b8a.jpg",
+                              "inStock": 1,
+                              "price": 20900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "addons": [
+                                {
+                                  "groupId": "246130265",
+                                  "groupName": "Extra",
+                                  "choices": [
+                                    {
+                                      "id": "139068054",
+                                      "name": "Dips",
+                                      "price": 2500,
+                                      "inStock": 1,
+                                      "isVeg": 1,
+                                      "isEnabled": 1
+                                    }
+                                  ],
+                                  "maxAddons": 1,
+                                  "maxFreeAddons": -1
+                                }
+                              ],
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "88966368",
+                              "menuFilterIds": ["NONVEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
                         }
-                      }
-                    ]
-                  },
-                  "textExtendedBadges": {}
-                }
-              },
-              "aggregatedDiscountInfoV3": {
-                "header": "ITEMS",
-                "subHeader": "AT ₹44",
-                "logoCtx": {
-                  "text": "BENEFITS"
-                }
-              },
-              "orderabilityCommunication": {
-                "title": {},
-                "subTitle": {},
-                "message": {},
-                "customIcon": {},
-                "commsStyling": {}
-              },
-              "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                  "lottie": {},
-                  "video": {}
-                }
-              },
-              "reviewsSummary": {},
-              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-              "restaurantOfferPresentationInfo": {},
-              "externalRatings": {
-                "aggregatedRating": {
-                  "rating": "--"
-                }
-              },
-              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
-              "campaignId": "a4b07a66-d18f-4ab8-b49c-2b4be9c3bb89"
-            },
-            "analytics": {},
-            "cta": {
-              "link": "swiggy://menu?restaurant_id=1059752&source=collection&query=Tea",
-              "text": "RESTAURANT_MENU",
-              "type": "DEEPLINK"
-            },
-            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
-          },
-          "relevance": {
-            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
-            "sectionId": "MENU_RETURN_FOOD"
-          }
-        }
-      },
-      {
-        "card": {
-          "card": {
-            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
-            "info": {
-              "id": "1072795",
-              "name": "Chaat Express",
-              "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/4/1/beb5fc64-387c-49bf-97da-c28ff2e439eb_1072795.jpg",
-              "locality": "Dharamshala City",
-              "areaName": "Dharamshala City",
-              "costForTwo": "₹280 for two",
-              "cuisines": ["Chaat"],
-              "avgRating": 4.2,
-              "veg": true,
-              "parentId": "56643",
-              "avgRatingString": "4.2",
-              "totalRatingsString": "20",
-              "sla": {
-                "deliveryTime": 25,
-                "lastMileTravel": 0.4,
-                "serviceability": "SERVICEABLE",
-                "slaString": "20-25 mins",
-                "lastMileTravelString": "0.4 km",
-                "iconType": "ICON_TYPE_EMPTY"
-              },
-              "availability": {
-                "nextCloseTime": "2026-01-31 22:30:00",
-                "opened": true
-              },
-              "badges": {
-                "imageBadges": [
-                  {
-                    "imageId": "android/static-assets/icons/big_rx.png",
-                    "description": "bolt!"
+                      ],
+                      "subtitleSuffix": {},
+                      "image": "FOOD_CATALOG/IMAGES/CMS/2024/4/26/5fd2584a-4f36-41ce-83c3-816c96b6a6ca_84fb30bf-28da-4aad-9ebd-28d4373858e5.jpg",
+                      "categoryId": "65548464"
+                    }
                   }
-                ]
-              },
-              "isOpen": true,
-              "type": "F",
-              "badgesV2": {
-                "entityBadges": {
-                  "textBased": {},
-                  "imageBased": {
-                    "badgeObject": [
-                      {
-                        "attributes": {
-                          "description": "bolt!",
-                          "imageId": "android/static-assets/icons/big_rx.png"
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Fries Fritters",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712121",
+                              "name": "Peri Peri Overloaded Fries",
+                              "category": "Fries Fritters",
+                              "description": "Crispy golden fries loaded with spicy Peri Peri seasoning and zesty toppings. A fiery, irresistible snack for spice enthusiasts!\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/9/15/68b31b47-7a92-4c7e-a6a1-06897e650bbc_d427fa0d-97b8-41f8-a823-660e691951f2.jpg",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 19900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "addons": [
+                                {
+                                  "groupId": "246130676",
+                                  "groupName": "Extra",
+                                  "choices": [
+                                    {
+                                      "id": "139068051",
+                                      "name": "Dips",
+                                      "price": 2500,
+                                      "inStock": 1,
+                                      "isVeg": 1,
+                                      "isEnabled": 1
+                                    }
+                                  ],
+                                  "maxAddons": 1,
+                                  "maxFreeAddons": -1
+                                }
+                              ],
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "89622711",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712124",
+                              "name": "Chicken Nuggets",
+                              "category": "Fries Fritters",
+                              "description": "Golden, crispy chicken nuggets with a juicy, tender interior. Perfectly bite-sized and deliciously satisfying!\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/9/12/8fef928d-068b-438d-a5ee-e331fc3476fe_558c1830-3cc3-42bc-9533-f60d81302331.jpg",
+                              "inStock": 1,
+                              "price": 22900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "addons": [
+                                {
+                                  "groupId": "246141295",
+                                  "groupName": "Extra",
+                                  "choices": [
+                                    {
+                                      "id": "139068038",
+                                      "name": "Dips",
+                                      "price": 2500,
+                                      "inStock": 1,
+                                      "isVeg": 1,
+                                      "isEnabled": 1
+                                    }
+                                  ],
+                                  "maxAddons": 1,
+                                  "maxFreeAddons": -1
+                                }
+                              ],
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "3.5",
+                                  "ratingCount": "3 ratings",
+                                  "ratingCountV2": "3"
+                                },
+                                "ratingsPresentationConfig": {
+                                  "bgGradient": {
+                                    "colours": ["#D9EFEC", "#00FFFFFF"],
+                                    "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                  },
+                                  "ratingIconColor": "rating_medium",
+                                  "ratingTextColor": "rating_medium",
+                                  "ratingCountTextColor": "rating_medium",
+                                  "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                  "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                }
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "95923567",
+                              "menuFilterIds": ["NONVEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712122",
+                              "name": "Pizza Pocket",
+                              "category": "Fries Fritters",
+                              "description": "A soft, golden pocket stuffed with cheesy goodness and flavorful pizza fillings. Perfectly portable, delicious, and cheesy in every bite!\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/6/16/e390cc4e-9d9b-4c1b-b9ae-3df7fa4cf999_89cdf910-eff1-4a30-ab0a-c2492708ada1.jpeg",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 16900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "addons": [
+                                {
+                                  "groupId": "246133967",
+                                  "groupName": "Extra",
+                                  "choices": [
+                                    {
+                                      "id": "139068046",
+                                      "name": "Dips",
+                                      "price": 2500,
+                                      "inStock": 1,
+                                      "isVeg": 1,
+                                      "isEnabled": 1
+                                    }
+                                  ],
+                                  "maxAddons": 1,
+                                  "maxFreeAddons": -1
+                                }
+                              ],
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "88966406",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712119",
+                              "name": "Classic Salted Fries",
+                              "category": "Fries Fritters",
+                              "description": "Golden, crispy fries lightly seasoned with classic salt. A simple, timeless snack that never goes out of style!\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/9/12/a51a66c9-0a12-4abb-aa1d-318adbb3f5d1_1b50b39d-8d10-464d-87fd-c65a6e990e50.jpg",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 15900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "addons": [
+                                {
+                                  "groupId": "246152553",
+                                  "groupName": "Extra",
+                                  "choices": [
+                                    {
+                                      "id": "139068055",
+                                      "name": "Dips",
+                                      "price": 2500,
+                                      "inStock": 1,
+                                      "isVeg": 1,
+                                      "isEnabled": 1
+                                    }
+                                  ],
+                                  "maxAddons": 1,
+                                  "maxFreeAddons": -1
+                                }
+                              ],
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "89622692",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712120",
+                              "name": "Peri Peri Fries",
+                              "category": "Fries Fritters",
+                              "description": "Crispy golden fries tossed in spicy Peri Peri seasoning. A fiery, flavorful snack that’s hard to resist!\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/9/12/a51a66c9-0a12-4abb-aa1d-318adbb3f5d1_1b50b39d-8d10-464d-87fd-c65a6e990e50.jpg",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 16900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "addons": [
+                                {
+                                  "groupId": "246152388",
+                                  "groupName": "Extra",
+                                  "choices": [
+                                    {
+                                      "id": "139068048",
+                                      "name": "Dips",
+                                      "price": 2500,
+                                      "inStock": 1,
+                                      "isVeg": 1,
+                                      "isEnabled": 1
+                                    }
+                                  ],
+                                  "maxAddons": 1,
+                                  "maxFreeAddons": -1
+                                }
+                              ],
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "91462609",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
                         }
-                      }
-                    ]
-                  },
-                  "textExtendedBadges": {}
+                      ],
+                      "subtitleSuffix": {},
+                      "image": "FOOD_CATALOG/IMAGES/CMS/2025/9/15/68b31b47-7a92-4c7e-a6a1-06897e650bbc_d427fa0d-97b8-41f8-a823-660e691951f2.jpg",
+                      "categoryId": "65548467"
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Maggi",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712128",
+                              "name": "Italian Cheese Maggi",
+                              "category": "Maggi",
+                              "description": "Cheesy Maggi with a rich Italian twist, loaded with gooey cheese and flavorful herbs. A creamy, indulgent snack in every bite!\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/9/15/875a2267-0e7c-4cf0-b07d-5c720c8fa1bf_130598ef-fd38-46dc-b055-a68c209a79f5.jpg",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 11900,
+                              "finalPrice": 8900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "offerTags": [
+                                {
+                                  "matchText": "SILD"
+                                }
+                              ],
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "itemNudgeType": "FinalPrice",
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.2",
+                                  "ratingCount": "7 ratings",
+                                  "ratingCountV2": "7"
+                                },
+                                "ratingsPresentationConfig": {
+                                  "bgGradient": {
+                                    "colours": ["#C8F9E5", "#00FFFFFF"],
+                                    "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                  },
+                                  "ratingIconColor": "rating_very_good",
+                                  "ratingTextColor": "rating_very_good",
+                                  "ratingCountTextColor": "rating_very_good",
+                                  "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                  "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                }
+                              },
+                              "itemPriceStrikeOff": true,
+                              "cartContext": "quick_prep",
+                              "offerIds": [
+                                "2c115d61-b0bd-4ce8-98c1-dcf600357412"
+                              ],
+                              "isNinetyninestoreItem": true,
+                              "parentId": "88966385",
+                              "menuFilterIds": ["VEG", "offer", "toprated"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712127",
+                              "name": "Masaledar Maggi",
+                              "category": "Maggi",
+                              "description": "Hot and spicy Masaledar Maggi tossed with flavorful vegetables and aromatic spices. A quick, delicious, and comforting snack!\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/9/15/875a2267-0e7c-4cf0-b07d-5c720c8fa1bf_130598ef-fd38-46dc-b055-a68c209a79f5.jpg",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 8000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "4.4",
+                                  "ratingCount": "9 ratings",
+                                  "ratingCountV2": "9"
+                                },
+                                "ratingsPresentationConfig": {
+                                  "bgGradient": {
+                                    "colours": ["#C8F9E5", "#00FFFFFF"],
+                                    "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                  },
+                                  "ratingIconColor": "rating_very_good",
+                                  "ratingTextColor": "rating_very_good",
+                                  "ratingCountTextColor": "rating_very_good",
+                                  "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                  "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                }
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "88966388",
+                              "menuFilterIds": ["VEG", "offer", "toprated"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        }
+                      ],
+                      "subtitleSuffix": {},
+                      "image": "FOOD_CATALOG/IMAGES/CMS/2025/9/15/875a2267-0e7c-4cf0-b07d-5c720c8fa1bf_130598ef-fd38-46dc-b055-a68c209a79f5.jpg",
+                      "categoryId": "65548468"
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Cakes & pastry",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "192925048",
+                              "name": "Chocolate Truffle Cake",
+                              "category": "Cakes & pastry",
+                              "description": "Indulge in a rich, velvety cake that envelops your senses with decadent layers of chocolate bliss.",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 22500,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "109042698",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "193234704",
+                              "name": "Carrot Cake Slice",
+                              "category": "Cakes & pastry",
+                              "description": "Indulge in a moist, flavorful dessert that combines rich sweetness with a delightful hint of warmth, perfect for any occasion.",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 17500,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "117851922",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "193394210",
+                              "name": "Cinnamon Roll",
+                              "category": "Cakes & pastry",
+                              "description": "Indulge in a warm, fluffy delight, swirled with sweet cinnamon and topped with creamy icing for a heavenly treat.",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 13000,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "117942186",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        }
+                      ],
+                      "subtitleSuffix": {},
+                      "categoryId": "70064777"
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Wrap",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712116",
+                              "name": "Paneer Wrap Pocket",
+                              "category": "Wrap",
+                              "description": "Soft wrap stuffed with spiced paneer, fresh veggies, and creamy sauces. A flavorful, handheld treat perfect for any time!\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/9/15/e5b07dfd-9f4c-438c-a2f2-c195e129052d_f86fab3d-2a8a-4be6-a5c7-2e60d51c45ef.jpg",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 16900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "89622710",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712118",
+                              "name": "Meat Wrap Pocket [Double]",
+                              "category": "Wrap",
+                              "description": "A double-packed wrap loaded with tender, flavorful meat, fresh veggies, and zesty sauces. A hearty, satisfying meal in every bite!\n",
+                              "inStock": 1,
+                              "price": 11900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "89622702",
+                              "menuFilterIds": ["NONVEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712117",
+                              "name": "Chicken Wrap Pocket",
+                              "category": "Wrap",
+                              "description": "Soft wrap filled with juicy, spiced chicken, fresh veggies, and creamy sauces. A delicious, portable snack for any craving!\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/9/15/e94db550-cc9f-4b66-b582-60255ebfaaa2_84770bdc-a7ad-46bb-8c04-ac17d6871814.jpg",
+                              "inStock": 1,
+                              "price": 18900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "89622682",
+                              "menuFilterIds": ["NONVEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        }
+                      ],
+                      "subtitleSuffix": {},
+                      "image": "FOOD_CATALOG/IMAGES/CMS/2025/9/15/e5b07dfd-9f4c-438c-a2f2-c195e129052d_f86fab3d-2a8a-4be6-a5c7-2e60d51c45ef.jpg",
+                      "categoryId": "65548466"
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.NestedItemCategory",
+                      "title": "Special Combos",
+                      "categories": [
+                        {
+                          "title": "Exclusive Combos",
+                          "itemCards": [
+                            {
+                              "card": {
+                                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                                "info": {
+                                  "id": "179858210",
+                                  "name": "BUrger Blast Combo",
+                                  "category": "Special Combos",
+                                  "description": "1 Aloo Tikki Burger + 1 Crispy Fries + 1 Coke (250ml)\nA mouthwatering vegetarian burger combo that will satisfy all your cravings in one bite.",
+                                  "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/8/15/06a8c107-6dcf-4a2e-9fc3-9c10caf7ecf0_613f3ae5-4fde-4861-ad60-73cf0c5796ee.jpg",
+                                  "inStock": 1,
+                                  "isVeg": 1,
+                                  "price": 24900,
+                                  "variants": {},
+                                  "variantsV2": {},
+                                  "itemAttribute": {
+                                    "vegClassifier": "VEG"
+                                  },
+                                  "ribbon": {},
+                                  "type": "ITEM",
+                                  "itemBadge": {},
+                                  "badgesV2": {},
+                                  "ratings": {
+                                    "aggregatedRating": {}
+                                  },
+                                  "itemPriceStrikeOff": true,
+                                  "parentId": "108951954",
+                                  "menuFilterIds": ["VEG", "offer"]
+                                },
+                                "analytics": {},
+                                "hideRestaurantDetails": true
+                              }
+                            }
+                          ],
+                          "subtitleSuffix": {},
+                          "categoryId": "65621474"
+                        }
+                      ],
+                      "image": "FOOD_CATALOG/IMAGES/CMS/2025/8/15/06a8c107-6dcf-4a2e-9fc3-9c10caf7ecf0_613f3ae5-4fde-4861-ad60-73cf0c5796ee.jpg",
+                      "categoryId": "65621472"
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Snacks",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712130",
+                              "name": "Chicken Seekh Kebab",
+                              "category": "Snacks",
+                              "description": "Spiced, juicy chicken seekh kebabs grilled to perfection. A flavorful, smoky delight perfect as a snack or starter!\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/5/8/cc5b3701-5b59-41e1-b63b-eb12f53ea39d_f43b7797-f64b-4025-bd0e-2a462a618bbf.jpg",
+                              "inStock": 1,
+                              "price": 17900,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "NONVEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {
+                                  "rating": "5.0",
+                                  "ratingCount": "3 ratings",
+                                  "ratingCountV2": "3"
+                                },
+                                "ratingsPresentationConfig": {
+                                  "bgGradient": {
+                                    "colours": ["#C8F9E5", "#00FFFFFF"],
+                                    "gradientDirection": "GRADIENT_DIRECTION_LEFT_TO_RIGHT"
+                                  },
+                                  "ratingIconColor": "rating_very_good",
+                                  "ratingTextColor": "rating_very_good",
+                                  "ratingCountTextColor": "rating_very_good",
+                                  "ratingFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD",
+                                  "ratingCountFontName": "FONT_NAME_V2_OVERLINE_NEUTRAL_BOLD"
+                                }
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "95923568",
+                              "menuFilterIds": ["NONVEG", "offer", "toprated"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        }
+                      ],
+                      "subtitleSuffix": {},
+                      "image": "FOOD_CATALOG/IMAGES/CMS/2025/5/8/cc5b3701-5b59-41e1-b63b-eb12f53ea39d_f43b7797-f64b-4025-bd0e-2a462a618bbf.jpg",
+                      "categoryId": "65548469"
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory",
+                      "title": "Hot And Cold Beverages",
+                      "itemCards": [
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712137",
+                              "name": "Cappuccino",
+                              "category": "Hot And Cold Beverages",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 8100,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "91182932",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        },
+                        {
+                          "card": {
+                            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Dish",
+                            "info": {
+                              "id": "179712142",
+                              "name": "Elaichi Tea",
+                              "category": "Hot And Cold Beverages",
+                              "description": "Fragrant tea infused with the warm, sweet flavor of cardamom. A comforting and refreshing sip every time!\n",
+                              "imageId": "FOOD_CATALOG/IMAGES/CMS/2025/9/15/534bcb0f-991a-4b9c-b9e2-1560cbd70069_8e9785f9-c144-4521-9ae8-6accbc23407f.jpg",
+                              "inStock": 1,
+                              "isVeg": 1,
+                              "price": 4100,
+                              "variants": {},
+                              "variantsV2": {},
+                              "itemAttribute": {
+                                "vegClassifier": "VEG"
+                              },
+                              "ribbon": {},
+                              "type": "ITEM",
+                              "itemBadge": {},
+                              "badgesV2": {},
+                              "ratings": {
+                                "aggregatedRating": {}
+                              },
+                              "itemPriceStrikeOff": true,
+                              "parentId": "91462588",
+                              "menuFilterIds": ["VEG", "offer"]
+                            },
+                            "analytics": {},
+                            "hideRestaurantDetails": true
+                          }
+                        }
+                      ],
+                      "subtitleSuffix": {},
+                      "image": "FOOD_CATALOG/IMAGES/CMS/2025/9/15/534bcb0f-991a-4b9c-b9e2-1560cbd70069_8e9785f9-c144-4521-9ae8-6accbc23407f.jpg",
+                      "categoryId": "65548470"
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.RestaurantLicenseInfo",
+                      "type": "FSSAI",
+                      "imageId": "fssai_final_edss9i",
+                      "text": ["License No. 10925015000044"]
+                    }
+                  }
+                },
+                {
+                  "card": {
+                    "card": {
+                      "@type": "type.googleapis.com/swiggy.presentation.food.v2.RestaurantAddress",
+                      "name": "New Shop 24 Hours",
+                      "area": "Dharamshala City",
+                      "completeAddress": "Near club Mahindra, Palampur Road, Sheela chownk ,Dharamshala (Municipal Corporation),Kangra,Himachal Pradesh-176057\t"
+                    }
+                  }
                 }
-              },
-              "aggregatedDiscountInfoV3": {
-                "header": "10% OFF",
-                "subHeader": "UPTO ₹40",
-                "logoCtx": {
-                  "text": "BENEFITS"
-                }
-              },
-              "orderabilityCommunication": {
-                "title": {},
-                "subTitle": {},
-                "message": {},
-                "customIcon": {},
-                "commsStyling": {}
-              },
-              "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                  "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                  "lottie": {},
-                  "video": {}
-                }
-              },
-              "reviewsSummary": {},
-              "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-              "restaurantOfferPresentationInfo": {},
-              "externalRatings": {
-                "aggregatedRating": {
-                  "rating": "--"
-                }
-              },
-              "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {},
-            "cta": {
-              "link": "swiggy://menu?restaurant_id=1072795&source=collection&query=Tea",
-              "text": "RESTAURANT_MENU",
-              "type": "DEEPLINK"
-            },
-            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
-          },
-          "relevance": {
-            "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
-            "sectionId": "MENU_RETURN_FOOD"
+              ]
+            }
           }
         }
       }
     ],
     "firstOffsetRequest": true,
-    "nextFetch": 3
+    "isQCLink": false
   },
-  "tid": "922eb3ed-defa-4e01-9f54-3bafafb86e9a",
-  "sid": "pfo9e6ba-bd7b-449d-8f22-cd8944a8c7c1",
+  "tid": "54376fee-8c8b-41f5-96bf-ff5d355f7213",
+  "sid": "ppne84d0-50dd-406c-8c40-1ab5d060ecfa",
   "deviceId": "21586c2f-0280-981d-9ddf-e8842937269e",
-  "csrfToken": "fJtEhMHHektX-FmmVcL5KaydfMCbJoa3sRQpeicA"
+  "csrfToken": "oK578StaVqJN-cqWcUyWAPgBpW8s5PmYBY9FVP2g"
 }

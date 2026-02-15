@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import App from "./App";
-
+import Shimmer from "./components/Shimmer";
 import Body from "./components/Body";
 import ExploreRestaurants from "./components/ExploreRestaurants";
 import About from "./components/About";
@@ -26,7 +26,7 @@ export const appRouter = createBrowserRouter([
       {
         path: "/grocery",
         element: (
-          <Suspense fallback={<h1 className="p-10 text-center">Loading...</h1>}>
+          <Suspense fallback={<Shimmer />}>
             <Grocery />
           </Suspense>
         ),

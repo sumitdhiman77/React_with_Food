@@ -3,7 +3,7 @@ import useRestaurantMenu from "../utils/useRestaurantMenu";
 import RestaurantCategory from "./RestaurantCategory";
 import Shimmer from "./Shimmer";
 import LocationContext from "../utils/LocationContext";
-import { use, useContext, useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { useState } from "react";
 import { FaBicycle } from "react-icons/fa6";
 import { GiThreeLeaves } from "react-icons/gi";
@@ -15,8 +15,6 @@ const RestaurantMenu = () => {
   const { lat, lng } = useContext(LocationContext);
   const [item, setItem] = useState(null);
   const [veg, setVeg] = useState(false);
-  // const [vegItems, setVegItems] = useState(null);
-  // const [categories, setCategories] = useState([]);
   let { name, query } = useParams();
   name = decodeURIComponent(name);
   const resInfo = useRestaurantMenu(name, lat, lng, query);
