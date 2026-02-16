@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "#f8f9fa",
+        background: "coral",
         secondary: "#333333",
       },
       fontFamily: {
