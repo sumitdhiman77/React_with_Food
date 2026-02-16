@@ -101,9 +101,7 @@ const RestaurantMenu = () => {
 
           <label className="relative flex justify-between items-center mx-3 p-2 font-medium text-xl">
             <div className="flex items-center">
-              <GiThreeLeaves
-                className={`text-xl ${veg === true ? "text-green-600" : "text-gray-600"}`}
-              />
+              <GiThreeLeaves className="text-green-600" />
               <span> Only Veg</span>
             </div>
             <input
@@ -112,7 +110,7 @@ const RestaurantMenu = () => {
               onClick={() => setVeg(!veg)}
             />
             <span
-              className="w-16 h-10 flex items-center flex-shrink-0 ml-4 p-1 bg-gray-300 rounded-full duration-300 ease-in-out peer-checked:bg-green-400 after:w-8 after:h-8 after:bg-white after:rounded-full after:shadow-lg hover:shadow-xl
+              className="w-16 h-10 flex items-center flex-shrink-0 ml-4 p-1 bg-[#696969] rounded-full duration-300 ease-in-out peer-checked:bg-green-400 after:w-8 after:h-8 after:bg-white after:rounded-full after:shadow-lg hover:shadow-xl
  after:duration-300 peer-checked:after:translate-x-6"
             ></span>
           </label>
